@@ -1,0 +1,52 @@
+:root{
+
+    /* ========= CORES ========= */
+
+    --color-primary: #1E3D59;
+    --color-secondary: #846226;
+    --color-accent: #D4A43D;
+
+    --color-background: #ECECEC;
+    --color-surface: #FFFFFF;
+
+    --color-text: #292929;
+    --color-text-light: #666666;
+
+    --color-link: #3498DB;
+
+    --color-success: #2E7D32;
+    --color-warning: #F9A825;
+    --color-danger: #C62828;
+
+    --color-border: #D8D8D8;
+
+    /* ========= FONTES ========= */
+
+    --font-title: "Merriweather", serif;
+    --font-body: "Open Sans", sans-serif;
+
+    /* ========= ESPAÇAMENTOS ========= */
+
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+
+    /* ========= BORDAS ========= */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 18px;
+
+    /* ========= SOMBRAS ========= */
+
+    --shadow-sm: 0 2px 4px rgba(0,0,0,.08);
+    --shadow-md: 0 4px 10px rgba(0,0,0,.12);
+    --shadow-lg: 0 10px 20px rgba(0,0,0,.18);
+
+    /* ========= TRANSIÇÕES ========= */
+
+    --transition: .3s ease;
+}
