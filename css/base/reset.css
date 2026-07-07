@@ -1,24 +1,28 @@
-*, *::before, *::after{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ==========================================
+   RESET CSS
+   Biblioteca Apócrifa
+========================================== */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 body{
     min-height:100vh;
 }
 
-img{
+img,
+picture{
     display:block;
     max-width:100%;
-}
-
-button, input, textarea, select{
-    font:inherit;
 }
 
 a{
@@ -26,6 +30,17 @@ a{
     text-decoration:none;
 }
 
-ul, ol{
+button,
+input,
+textarea,
+select{
+    font:inherit;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+ul,
+ol{
     list-style:none;
 }

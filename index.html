@@ -4,54 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Apócrifa</title>
-   <link rel="stylesheet" href="../css/style.css">
-
-<style>
-
-:root {
-  /* Cores Principais */
-  --cor-cabecalho: #2c2520;
-  --cor-destaque-ouro: #d4a43d;
-  --cor-logo-escura: #846226;
-  
-  /* Cores de Fundo */
-  --cor-fundo-site: #ececec;
-  --cor-fundo-card: #ffffff;
-  
-  /* Cores de Texto */
-  --cor-texto-escuro: #292929;
-  --cor-titulo-azul: #1e3d59;
-  --cor-link-azul: #3498db;
-  --cor-rodape: #333333;
-
-  /*Letras usadas*/
-  --fonte-titulo: 'Merriweather', 'Georgia', serif;
-  --texto-menu: 'Open Sans', "Lato" "Roboto" sans-serif;
-}
-
-article {
-    background-color: var(--cor-fundo-card);
-    padding: 30px 90px;
-    box-shadow: 0px 0px 9px 2px #2929293f;
-    border-right: 8px solid #846226;
-    border-left: 8px solid #846226;
-}
-
-</style>
+   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><h1>BIBLIOTECA <br> APÓCRIFA</h1></a>
+   <header class="app-header">
+        <div class="container app-header__container">
+            <a href="index.html" class="app-header__logo"> <span>Biblioteca Apócrifa</span></a>
 
-        <i class="fa-solid fa-bars"></i>
-        <nav>
-             <menu>
-                <a href="index.html">Início</a>
-                <a href="paginas/biblioteca.html"> Biblioteca</a>
-                <a href="leitura.html">Área de Leitura</a>
-            </menu>
+            <nav class="app-header__nav">
+                <a href="#">Biblioteca</a>
+                <a href="#">Comunidade</a>
+                <a href="#">Jornadas</a>
             </nav>
+
+            <div class="app-header__actions">
+                <button class="icon-button">
+
+                    🔍
+
+                </button>
+
+                <button class="icon-button">
+
+                    👤
+
+                </button>
+            </div>
+        </div>
     </header>
 
     <main>
