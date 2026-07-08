@@ -1,12 +1,95 @@
-.container{
+/* ==========================================================
+   CONTAINER
+========================================================== */
 
-    width:min(1200px,92%);
-    margin:auto;
+.container {
+    width: min(100% - 2rem, var(--container-width));
+    margin-inline: auto;
+}
+
+/* ==========================================================
+   SEÇÕES
+========================================================== */
+
+section {
+    padding-block: var(--space-xl);
+}
+
+/* ==========================================================
+   ÁREA DE LEITURA
+========================================================== */
+
+.reading-container {
+    width: min(100% - 2rem, var(--reading-width));
+    margin-inline: auto;
+}
+
+/* ==========================================================
+   GRID GENÉRICO
+========================================================== */
+
+.grid {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+/* ==========================================================
+   GRID DE 2 COLUNAS
+========================================================== */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+/* ==========================================================
+   GRID DE 3 COLUNAS
+========================================================== */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+/* ==========================================================
+   FLEX GENÉRICO
+========================================================== */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ==========================================================
+   RESPONSIVIDADE
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
-section{
+@media (max-width: 640px) {
 
-    margin-block:3rem;
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
 
 }

@@ -10,15 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS global -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- CSS Global -->
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/components.css">
+    <!-- CSS pagina -->
+     <link rel="stylesheet" href="assets/css/paginas/home.css">
 
-    <!-- CSS da Página -->
-    <link rel="stylesheet" href="assets/css/home.css">
+
 </head>
 <body>
     <header class="app-header">
@@ -46,10 +44,9 @@
     </header>
 
     <main>
-        
         <!-- HERO -->
         <section class="hero">
-            <div class="container">
+            <div class="container hero__content">
                 <h1>Biblioteca Apócrifa</h1>
                 <p>Uma plataforma digital dedicada ao estudo, preservação e pesquisa de textos antigos, apócrifos e gnósticos.</p>
                 <a href="paginas/biblioteca.html" class="button-primary"> Explorar Biblioteca</a>
@@ -58,7 +55,7 @@
 
         <!-- INTRODUÇÃO -->
         <section class="intro">
-            <div class="container">
+            <div class="container intro__content">
                 <h2>O que são textos apócrifos?</h2>
             
                 <p>A palavra "apócrifo" origina-se do grego <em>apokryphos</em>, que significa <strong>"oculto"</strong> ou <strong>"secreto"</strong>. Inicialmente, esse termo poderia sugerir um sentido de respeito por escritos de conteúdo profundo ou esotérico, acessível apenas a círculos restritos.</p> 
@@ -70,7 +67,9 @@
                 <!-- CONTEXTO HISTÓRICO -->
             <section class="history">
                 <div class="container">
+                    <header class="section-header">
                     <h2>Contexto Histórico</h2>
+                    </header>
                 </div>
             </section>
 
@@ -143,7 +142,9 @@
         <!-- COMO FUNCIONA -->
         <section class="platform">
             <div class="container">
+                <div class="platform__content">
                     <h2>Como funciona a plataforma?</h2>
+                </div>
 
                 <div class="platform-grid">
                     <article class="feature-card">
@@ -169,13 +170,15 @@
             <div class="container">
                 <h2>Obras em destaque</h2>
 
-                <div class="books-grid">
-                <!-- Futuramente renderizado pelo livros.json -->
-                    <article class="book-card">
-                        <h3>Evangelho de Tomé</h3>
-                        <p>Texto gnóstico encontrado na Biblioteca de Nag Hammadi.</p>
-                        <a href="paginas/leitura.html">Começar estudo</a>
-                    </article>
+                <div class="featured-books__content">
+                    <div class="books-grid">
+                    <!-- Futuramente renderizado pelo livros.json -->
+                        <article class="book-card">
+                            <h3>Evangelho de Tomé</h3>
+                            <p>Texto gnóstico encontrado na Biblioteca de Nag Hammadi.</p>
+                            <a href="paginas/leitura.html">Começar estudo</a>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -191,7 +194,7 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__content">
             <p> © 2026 Biblioteca Apócrifa. Projeto desenvolvido para fins históricos, literários e académicos.</p>
             <p>Autor:<em>João de Sousa António</em></p>
         </div>
