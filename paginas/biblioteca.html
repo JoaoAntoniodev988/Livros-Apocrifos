@@ -1,44 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca Apócrifa</title>
-    <link rel="stylesheet" href="../assets/css/variables.css">
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/css/layout.css">
-    <link rel="stylesheet" href="../assets/css/components.css">
-    <link rel="stylesheet" href="../assets/css/biblioteca.css">
+    <title>Biblioteca | Biblioteca Apócrifa</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- CSS da Página -->
+    <link rel="stylesheet" href="../assets/css/paginas/biblioteca.css">
 </head>
+
 <body>
-    <nav>
-        <a href="../index.html">Início</a>
 
-        <a href="biblioteca.html">Biblioteca</a>
+    <!-- Header -->
+    <header class="app-header">
+        <!-- Futuramente será um componente reutilizável -->
+    </header>
 
-        <a href="leitura.html">Área de Leitura</a>
+    <main>
 
-        <a href="comunidade.html">Comunidade</a>
+        <!-- Hero -->
+        <section class="library-hero">
+            <div class="container">
+                <div class="library-hero__content">
+                    <h1>Biblioteca</h1>
+                    <p>
+                        Explore textos apócrifos, gnósticos e manuscritos históricos organizados para estudo e pesquisa.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <a href="perfil.html">Perfil</a>
-    </nav>
+        <!-- Pesquisa -->
+        <section class="library-search">
+            <div class="container">
+                <div class="library-search__content">
+                    <form class="search-form">
+                        <input
+                            type="search"
+                            placeholder="Pesquisar um livro..."
+                            aria-label="Pesquisar livro">
 
-<main class="container">
+                        <button
+                            type="submit"
+                            class="button-primary">
+                            Pesquisar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-    <section>
+        <!-- Filtros -->
+        <section class="library-filters">
+            <div class="container">
+                <div class="library-filters__content">
+                    <button class="button-secondary">Todos</button>
+                    <button class="button-secondary">Evangelhos</button>
+                    <button class="button-secondary">Atos</button>
+                    <button class="button-secondary">Cartas</button>
+                    <button class="button-secondary">Apocalipses</button>
+                    <button class="button-secondary">Manuscritos</button>
+                </div>
+            </div>
+        </section>
 
-        <h1>Biblioteca</h1>
+        <!-- Resultado -->
+        <section class="library-results">
+            <div class="container">
+                <div class="library-results__content">
+                    <p><strong>1</strong> livro encontrado</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="lista-livros"></div>
+        <!-- Livros -->
+        <section class="library-books">
+            <div class="container">
+                <div class="books-grid">
+                    <!-- Cards renderizados via JavaScript -->
+                </div>
+            </div>
+        </section>
 
-    </section>
+    </main>
 
-</main>
-<!-- <script src="../assets/js/menu.js" defer></script> -->
-<script src="../assets/js/livros.js" defer></script>
-<script src="../assets/js/biblioteca.js" defer></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Futuramente será um componente reutilizável -->
+    </footer>
+
 </body>
 
-</html>
-</body>
 </html>

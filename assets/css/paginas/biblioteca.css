@@ -1,0 +1,142 @@
+/* ==========================================================
+   BIBLIOTECA.CSS
+   Página: Biblioteca
+   ========================================================== */
+
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.library-hero {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.library-hero__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.library-hero__content h1 {
+    margin-bottom: var(--space-md);
+}
+
+.library-hero__content p {
+    color: var(--color-text-muted);
+}
+
+
+/* ==========================================================
+   PESQUISA
+   ========================================================== */
+
+.library-search {
+    padding: var(--space-lg) 0;
+}
+
+.library-search__content {
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+    gap: var(--space-md);
+    width: 100%;
+    max-width: 700px;
+}
+
+.search-form input {
+    flex: 1;
+    padding: var(--space-md);
+    font-size: 1rem;
+    font-family: var(--font-interface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background: var(--color-surface);
+    color: var(--color-text);
+}
+
+.search-form input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+
+/* ==========================================================
+   FILTROS
+   ========================================================== */
+
+.library-filters {
+    padding-bottom: var(--space-lg);
+}
+
+.library-filters__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
+
+/* ==========================================================
+   RESULTADOS
+   ========================================================== */
+
+.library-results {
+    margin-bottom: var(--space-lg);
+}
+
+.library-results__content {
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+
+/* ==========================================================
+   GRID DE LIVROS
+   ========================================================== */
+
+.library-books {
+    padding-bottom: var(--space-xl);
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE
+   ========================================================== */
+
+@media (max-width: 640px) {
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+
+    .library-filters__content {
+        justify-content: flex-start;
+    }
+
+}
+
+/* O que este CSS faz
+Hero da Biblioteca.
+Barra de pesquisa responsiva.
+Área de filtros.
+Contador de resultados.
+Grid responsivo para os livros.
+Não redefine estilos globais (eles permanecem em base.css, layout.css e components.css). */

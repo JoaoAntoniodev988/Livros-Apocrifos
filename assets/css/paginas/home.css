@@ -6,12 +6,10 @@
     display: flex;
     align-items: center;
     min-height: 80vh;
-
     text-align: center;
 }
 
-.hero__content,
-.hero_content {
+.hero__content {
     max-width: 760px;
     margin: 0 auto;
 }

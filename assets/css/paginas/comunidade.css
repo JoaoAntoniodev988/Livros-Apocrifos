@@ -1,0 +1,91 @@
+/* ==========================================================
+   COMUNIDADE.CSS
+   Página: Comunidade
+   ========================================================== */
+
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.community-hero {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.community-hero__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.community-hero__content h1 {
+    margin-bottom: var(--space-md);
+}
+
+.community-hero__content p {
+    color: var(--color-text-muted);
+}
+
+
+/* ==========================================================
+   INTRODUÇÃO
+   ========================================================== */
+
+.community-intro {
+    padding: var(--space-xl) 0;
+}
+
+.community-intro__content {
+    max-width: var(--reading-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.community-intro__content h2 {
+    margin-bottom: var(--space-md);
+}
+
+.community-intro__content p {
+    margin-bottom: var(--space-md);
+}
+
+
+/* ==========================================================
+   FUNCIONALIDADES
+   ========================================================== */
+
+.community-features {
+    padding-bottom: var(--space-xl);
+}
+
+.community-features__content {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    gap: var(--space-lg);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE
+   ========================================================== */
+
+@media (max-width: 640px) {
+
+    .community-hero {
+        padding: var(--space-lg) 0;
+    }
+
+    .community-intro {
+        padding: var(--space-lg) 0;
+    }
+
+}
