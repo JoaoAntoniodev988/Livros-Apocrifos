@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Apócrifa</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/biblioteca.css">
 </head>
 <body>
+    <nav>
+        <a href="../index.html">Início</a>
 
-<header>
-    <h1>BIBLIOTECA APÓCRIFA</h1>
-</header>
+        <a href="biblioteca.html">Biblioteca</a>
 
+        <a href="leitura.html">Área de Leitura</a>
 
-<main>
+        <a href="comunidade.html">Comunidade</a>
 
-    <section id="lista-livros">
-    <h2>Livros disponíveis</h2>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+
+<main class="container">
+
+    <section>
+
+        <h1>Biblioteca</h1>
+
+        <div class="lista-livros"></div>
+
     </section>
 
 </main>
-
-<script src="js/biblioteca.js"></script>
+<!-- <script src="../assets/js/menu.js" defer></script> -->
+<script src="../assets/js/livros.js" defer></script>
+<script src="../assets/js/biblioteca.js" defer></script>
 </body>
 
 </html>

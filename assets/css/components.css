@@ -1,0 +1,119 @@
+.card{
+
+    background:white;
+    border-radius:16px;
+    box-shadow:var(--shadow);
+
+}
+
+.card-livro{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.card-livro:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.livro-topo{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+.capa-livro{
+
+    width:70px;
+
+    height:90px;
+
+    background:#f0ece3;
+
+    border-radius:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:2rem;
+
+}
+
+.info-livro{
+
+    flex:1;
+
+}
+
+.info-livro h3{
+
+    margin:6px 0;
+
+}
+
+.jornada{
+
+    display:inline-block;
+
+    background:#C49B3D;
+
+    color:white;
+
+    padding:4px 10px;
+
+    border-radius:30px;
+
+    font-size:.8rem;
+
+}
+
+.livro-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+}
+
+.btn-ler{
+
+    background:#1E3A5F;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn-ler:hover{
+
+    background:#29507f;
+
+}

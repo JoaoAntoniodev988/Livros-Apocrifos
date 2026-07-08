@@ -1,0 +1,28 @@
+:root{
+
+    /* Cores */
+    --color-primary:#1E3A5F;
+    --color-secondary:#C49B3D;
+    --color-background:#F5F1E8;
+    --color-surface:#FFFFFF;
+    --color-text:#2F2F2F;
+    --color-border:#E3DDCF;
+
+    /* Fontes */
+    --font-title:"Merriweather", serif;
+    --font-text:"Open Sans", sans-serif;
+
+    /* Espaçamentos */
+    --space-xs:.5rem;
+    --space-sm:1rem;
+    --space-md:1.5rem;
+    --space-lg:2rem;
+    --space-xl:3rem;
+
+    /* Bordas */
+    --radius:16px;
+
+    /* Sombras */
+    --shadow:0 6px 18px rgba(0,0,0,.08);
+
+}
