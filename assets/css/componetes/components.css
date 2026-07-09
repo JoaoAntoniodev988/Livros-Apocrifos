@@ -476,6 +476,60 @@ img {
 }
 
 /* ==========================================================
+   SLIDER
+========================================================== */
+
+.books-slider{
+    overflow:hidden;
+    width:100%;
+}
+
+.books-track{
+
+    display:flex;
+
+    gap:var(--space-lg);
+
+    transition:transform .4s ease;
+}
+
+/* ==========================================================
+   CONTROLES
+========================================================== */
+
+.slider-controls{
+
+    display:flex;
+    gap:var(--space-sm);
+
+}
+
+.slider-button{
+
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.slider-button:hover{
+
+    background:var(--color-secondary);
+
+}
+
+/* ==========================================================
    FOOTER
 ========================================================== */
 
