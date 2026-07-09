@@ -79,17 +79,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    loadComponent(
-        "[data-component='header']",
-        `${basePath}assets/components/header.html`
-    );
+  loadComponent(
+    "[data-component='header']",
+    `${basePath}componentes/header.html`
+);
 
 
-
-    loadComponent(
-        "[data-component='footer']",
-        `${basePath}assets/components/footer.html`
-    );
+loadComponent(
+    "[data-component='footer']",
+    `${basePath}componentes/footer.html`
+);
 
 
 });
