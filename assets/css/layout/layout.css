@@ -12,7 +12,26 @@
 ========================================================== */
 
 section {
-    padding-block: var(--space-xl);
+    padding-top: var(--space-lg);
+}
+
+/* ==========================================================
+   CABEÇALHOS DAS SEÇÕES
+========================================================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.section-header h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+    max-width: 700px;
+    margin-inline: auto;
+    color: var(--color-text-muted);
 }
 
 /* ==========================================================
@@ -54,7 +73,7 @@ section {
 }
 
 /* ==========================================================
-   FLEX GENÉRICO
+   FLEX
 ========================================================== */
 
 .flex {
@@ -77,7 +96,17 @@ section {
    RESPONSIVIDADE
 ========================================================== */
 
+/* ---------- Tablet ---------- */
+
 @media (max-width: 1024px) {
+
+    .container {
+        width: min(100% - 3rem, var(--container-width));
+    }
+
+    section {
+        padding-block: var(--space-lg);
+    }
 
     .grid-3 {
         grid-template-columns: repeat(2, 1fr);
@@ -85,7 +114,17 @@ section {
 
 }
 
+/* ---------- Mobile ---------- */
+
 @media (max-width: 640px) {
+
+    .container {
+        width: min(100% - 1.5rem, var(--container-width));
+    }
+
+    section {
+        padding-block: var(--space-md);
+    }
 
     .grid-2,
     .grid-3 {

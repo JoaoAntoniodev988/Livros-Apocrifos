@@ -5,6 +5,20 @@
  * Carrega componentes HTML reutilizáveis.
  */
 
+document.addEventListener("componentsLoaded", () => {
+
+    const links = document.querySelectorAll(".app-header__nav a");
+
+    console.log(links);
+
+    const currentPage = window.location.pathname
+    .split("/")
+    .pop();
+
+console.log(currentPage);
+
+});
+
 async function loadComponent(selector, file) {
     const element = document.querySelector(selector);
 

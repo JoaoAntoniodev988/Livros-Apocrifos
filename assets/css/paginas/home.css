@@ -1,17 +1,43 @@
 /* ==========================================================
+   HOME LAYOUT
+========================================================== */
+
+.home-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) 340px;
+    gap: var(--space-xl);
+    align-items: start;
+    margin-bottom: var(--space-xl);
+}
+
+.main-content {
+    min-width: 0;
+}
+
+.home-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    position: sticky;
+    top: 2rem;
+}
+
+
+/* ==========================================================
    HERO
 ========================================================== */
 
 .hero {
     display: flex;
     align-items: center;
-    min-height: 80vh;
+    justify-content: center;
+    min-height: 20vh;
     text-align: center;
 }
 
 .hero__content {
     max-width: 760px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 .hero h1 {
@@ -28,23 +54,25 @@
 
 .intro__content {
     max-width: var(--reading-width);
-    margin: 0 auto;
+    margin-inline: auto;
+}
+
+.intro h2 {
+    margin-bottom: var(--space-md);
+    text-align: center;
 }
 
 /* ==========================================================
-   CONTEXTO HISTÓRICO
+   HISTÓRIA
 ========================================================== */
-
-.history {
-    padding-bottom: 0;
-}
 
 .history-section article {
     max-width: var(--reading-width);
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
-.history-section h3 {
+.history-section h2 {
+    text-align: center;
     margin-bottom: var(--space-md);
 }
 
@@ -53,69 +81,108 @@
 }
 
 /* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.home-sidebar section {
+    padding: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.home-sidebar h2 {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.2rem;
+}
+
+.home-sidebar h3 {
+    font-size: 1rem;
+}
+
+.home-sidebar p {
+    font-size: 0.8rem;
+}
+
+/* ==========================================================
    COMO FUNCIONA
 ========================================================== */
 
-.platform__content {
-    text-align: center;
-    margin-bottom: var(--space-xl);
+.platform-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
 }
 
-.platform-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
+.feature-card {
+    padding: var(--space-md);
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.feature-card h3 {
+    margin-bottom: var(--space-sm);
 }
 
 /* ==========================================================
    LIVROS EM DESTAQUE
 ========================================================== */
 
-.featured-books h2 {
-    text-align: center;
-    margin-bottom: var(--space-xl);
+.books-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
 }
 
-.books-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-lg);
+.book-card {
+    padding: var(--space-lg);
 }
 
 /* ==========================================================
    NOTA DO EDITOR
 ========================================================== */
 
-.editor-note {
-    text-align: center;
-}
-
 .editor-note p {
-    max-width: 700px;
-    margin: 0 auto;
+    margin: 0;
+    line-height: 1.8;
+    color: var(--color-text-muted);
 }
 
 /* ==========================================================
    RESPONSIVIDADE
 ========================================================== */
 
-@media (max-width: 1024px) {
+@media (max-width:1024px){
 
-    .platform-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .home-layout{
+        grid-template-columns:1fr;
+    }
+
+    .home-sidebar{
+        position:static;
+        margin-top:var(--space-xl);
+    }
+
+    .home-sidebar section{
+        padding:var(--space-md);
     }
 
 }
 
-@media (max-width: 640px) {
+@media (max-width:640px){
 
-    .hero {
-        min-height: 60vh;
-    }
-
-    .platform-grid,
-    .books-grid {
-        grid-template-columns: 1fr;
+    .hero{
+        min-height:40vh;
     }
 
 }
