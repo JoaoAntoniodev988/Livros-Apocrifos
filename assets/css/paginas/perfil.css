@@ -1,0 +1,247 @@
+/* =====================================
+   PERFIL.CSS
+   Biblioteca Apócrifa
+   Página: Perfil do usuário
+===================================== */
+
+
+/* =====================================
+   PERFIL - HERO
+===================================== */
+
+.profile-hero {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.profile-hero h1 {
+    font-family: var(--font-reading);
+    font-size: var(--font-size-h1);
+    margin-bottom: var(--space-md);
+    color: #ffffff;
+}
+
+.profile-hero p {
+    font-family: var(--font-interface);
+    max-width: 700px;
+}
+
+
+/* =====================================
+   PERFIL PRINCIPAL
+===================================== */
+
+.profile {
+    padding: var(--space-xl) 0;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-lg);
+}
+
+
+/* =====================================
+   CARD DO USUÁRIO
+===================================== */
+
+.profile-card {
+    background-color: var(--color-background);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--space-md);
+
+}
+
+
+.profile-card h2 {
+    font-family: var(--font-reading);
+    font-size: var(--font-size-h3);
+    margin-bottom: var(--space-sm);
+}
+
+
+.profile-card p {
+    color: var(--color-text-muted);
+
+}
+
+
+
+/* =====================================
+   INFORMAÇÕES DO PERFIL
+===================================== */
+
+.profile-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-lg);
+
+}
+
+
+.profile-section {
+
+    background-color: var(--color-reading-background);
+
+    padding: var(--space-lg);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.profile-section h2 {
+
+    font-family: var(--font-reading);
+
+    margin-bottom: var(--space-md);
+
+}
+
+
+.profile-section p {
+
+    font-family: var(--font-reading);
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =====================================
+   ESTATÍSTICAS
+===================================== */
+
+.profile-stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-md);
+
+}
+
+
+.stat-card {
+
+    padding: var(--space-md);
+
+    background-color: #ffffff;
+
+    border-radius: var(--radius-sm);
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+.stat-card strong {
+
+    display: block;
+
+    font-size: 1.8rem;
+
+    color: var(--color-primary);
+
+}
+
+
+.stat-card span {
+
+    color: var(--color-text-muted);
+
+}
+
+
+
+/* =====================================
+   LIVROS FAVORITOS
+===================================== */
+
+.profile-books {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: var(--space-md);
+
+}
+
+
+
+/* =====================================
+   BOTÕES
+===================================== */
+
+.profile-actions {
+
+    margin-top: var(--space-md);
+
+}
+
+
+.profile-actions .button-primary {
+
+    width: 100%;
+
+}
+
+
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 1024px) {
+
+
+    .profile-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+
+@media (max-width: 640px) {
+
+
+    .profile-stats {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .profile-hero {
+
+        text-align: center;
+
+    }
+
+}

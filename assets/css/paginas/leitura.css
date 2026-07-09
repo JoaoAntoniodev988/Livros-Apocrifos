@@ -1,0 +1,192 @@
+/* ==========================================================
+   LEITURA.CSS
+   Página: Área de Leitura
+   ========================================================== */
+
+
+/* ==========================================================
+   CABEÇALHO DO LIVRO
+   ========================================================== */
+
+.reading-header {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.reading-header__content {
+    max-width: var(--reading-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reading-header__content h1 {
+    margin-bottom: var(--space-md);
+}
+
+.reading-header__content p {
+    color: var(--color-text-muted);
+}
+
+
+/* ==========================================================
+   ÁREA PRINCIPAL DE LEITURA
+   ========================================================== */
+
+.reading-area {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-reading-background);
+}
+
+.reading-container {
+    width: 100%;
+    max-width: var(--reading-width);
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   CONTEÚDO DO TEXTO
+   ========================================================== */
+
+.reading-content {
+
+    font-family: var(--font-reading);
+
+    color: var(--color-text);
+
+}
+
+
+.reading-content__header {
+
+    margin-bottom: var(--space-lg);
+
+}
+
+
+.reading-content__header h2 {
+
+    font-family: var(--font-reading);
+
+}
+
+
+/* Texto principal */
+
+.reading-text {
+
+    font-size: 1.125rem;
+
+    line-height: 1.8;
+
+}
+
+
+.reading-text p {
+
+    margin-bottom: var(--space-lg);
+
+}
+
+
+
+/* ==========================================================
+   EXEGESE / COMENTÁRIO
+   ========================================================== */
+
+.exegesis {
+
+    margin-top: var(--space-xl);
+
+    padding: var(--space-lg);
+
+    background-color: var(--color-background);
+
+    border-left: 4px solid var(--color-secondary);
+
+    border-radius: var(--radius-md);
+
+}
+
+
+.exegesis h3 {
+
+    margin-bottom: var(--space-md);
+
+}
+
+
+.exegesis p {
+
+    color: var(--color-text-muted);
+
+}
+
+
+
+/* ==========================================================
+   NAVEGAÇÃO ENTRE SEÇÕES
+   ========================================================== */
+
+.reading-navigation {
+
+    padding: var(--space-lg) 0;
+
+}
+
+
+.reading-navigation .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: var(--space-md);
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVIDADE
+   ========================================================== */
+
+@media (max-width: 640px) {
+
+
+    .reading-header {
+
+        padding: var(--space-lg) 0;
+
+    }
+
+
+    .reading-area {
+
+        padding: var(--space-lg) 0;
+
+    }
+
+
+    .reading-navigation .container {
+
+        flex-direction: column;
+
+    }
+
+
+    .reading-navigation button {
+
+        width: 100%;
+
+    }
+
+
+    .reading-text {
+
+        font-size: 1rem;
+
+    }
+
+}

@@ -1,33 +1,152 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <a href="../index.html">Início</a>
 
-    <a href="biblioteca.html">Biblioteca</a>
+    <title>Área de Leitura | Biblioteca Apócrifa</title>
 
-    <a href="leitura.html">Área de Leitura</a>
 
-    <a href="comunidade.html">Comunidade</a>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <a href="perfil.html">Perfil</a>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS Global -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+
+    <!-- CSS da Página -->
+
+    <link rel="stylesheet" href="../assets/css/paginas/leitura.css">
+
+
 </head>
+
+
 <body>
 
+
+   <div data-component="header"></div>
+
     <main>
-        <section id="livro">
 
-            <h1 id="titulo"></h1>
 
-            <p id="descricao"></p>
+        <!-- Cabeçalho do Livro -->
 
-            <div id="conteudo"></div>
+        <section class="reading-header">
+
+            <div class="container">
+
+                <div class="reading-header__content">
+
+                    <h1>Evangelho de Tomé</h1>
+
+                    <p>
+                        Texto gnóstico encontrado na Biblioteca de Nag Hammadi.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
+
+
+
+
+        <!-- Área de Leitura -->
+
+        <section class="reading-area">
+
+            <div class="reading-container">
+
+
+                <article class="reading-content">
+
+
+                    <header class="reading-content__header">
+
+                        <h2>Seção 1</h2>
+
+                    </header>
+
+
+
+                    <div class="reading-text">
+
+                        <p>
+                            Texto original do documento será carregado aqui.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="exegesis">
+
+
+                        <h3>Comentário</h3>
+
+
+                        <p>
+                            A análise histórica e académica deste trecho será apresentada nesta área.
+                        </p>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Navegação -->
+
+        <section class="reading-navigation">
+
+            <div class="container">
+
+
+                <button class="button-secondary">
+
+                    ← Seção anterior
+
+                </button>
+
+
+
+                <button class="button-primary">
+
+                    Próxima seção →
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
     </main>
-   <!-- <script src="../assets/js/menu.js" defer></script> -->
-    <!-- <script src="../assets/js/leitura.js" defer></script> -->
+
+
+      <!-- Componente Footer -->
+    <div data-component="footer"></div>
+
+   <script src="../assets/js/components.js"></script>
 </body>
+
 </html>

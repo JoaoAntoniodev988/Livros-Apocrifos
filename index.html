@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- CSS global -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- CSS pagina -->
@@ -19,30 +19,7 @@
 
 </head>
 <body>
-    <header class="app-header">
-        <div class="container app-header__container">
-            <a href="index.html" class="app-header__logo">Biblioteca Apócrifa</a>
-
-            <nav class="app-header__nav">
-                <a href="index.html">Início</a>
-                <a href="paginas/biblioteca.html"> Biblioteca</a>
-                <a href="paginas/leitura.html">Área de Leitura</a>
-                <a href="paginas/comunidade.html">Comunidade</a>
-                <a href="paginas/perfil.html">Perfil</a>
-            </nav>
-
-            <div class="app-header__actions">
-                <button class="icon-button" aria-label="Pesquisar">
-                    🔍
-                </button>
-
-                <button class="icon-button" aria-label="Perfil">
-                    👤
-                </button>
-            </div>
-        </div>
-    </header>
-
+    <div data-component="header"></div>
     <main>
         <!-- HERO -->
         <section class="hero">
@@ -193,11 +170,9 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer__content">
-            <p> © 2026 Biblioteca Apócrifa. Projeto desenvolvido para fins históricos, literários e académicos.</p>
-            <p>Autor:<em>João de Sousa António</em></p>
-        </div>
-    </footer>
+       <!-- Componente Footer -->
+    <div data-component="footer"></div>
+
+    <script src="assets/js/components.js"></script>
 </body>
 </html>
