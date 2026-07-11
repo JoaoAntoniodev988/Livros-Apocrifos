@@ -180,6 +180,11 @@
     font-weight: 700;
 }
 
+/* Desktop */
+.mobile-menu{
+    display:none;
+}
+
 /* MENU MOBILE */
 
 .mobile-menu{
@@ -222,6 +227,10 @@
 
     .menu-toggle{
         display:flex;
+    }
+
+    .mobile-menu.open{
+        display:block;
     }
 
 }

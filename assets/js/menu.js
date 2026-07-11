@@ -1,18 +1,11 @@
 document.addEventListener("componentsLoaded", () => {
 
-    console.log("Menu inicializado");
-
     const button = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".mobile-menu");
-
-    console.log(button);
-    console.log(menu);
 
     if (!button || !menu) return;
 
     button.addEventListener("click", () => {
-
-        console.log("Clique");
 
         menu.classList.toggle("open");
 
@@ -20,6 +13,19 @@ document.addEventListener("componentsLoaded", () => {
             "aria-expanded",
             menu.classList.contains("open")
         );
+
+    });
+
+    // Fecha automaticamente ao voltar para desktop
+    window.addEventListener("resize", () => {
+
+        if (window.innerWidth > 640) {
+
+            menu.classList.remove("open");
+
+            button.setAttribute("aria-expanded", "false");
+
+        }
 
     });
 
