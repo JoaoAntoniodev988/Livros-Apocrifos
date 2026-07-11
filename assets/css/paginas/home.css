@@ -165,7 +165,7 @@
 
     .home-sidebar{
         position:static;
-        margin-top:var(--space-md);
+        margin-top:var(--space-lg);
     }
 
     .home-sidebar section{

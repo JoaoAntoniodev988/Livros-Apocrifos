@@ -105,7 +105,7 @@ section {
     }
 
     section {
-        padding-block: var(--space-lg);
+        padding-top: var(--space-md);
     }
 
     .grid-3 {
@@ -123,7 +123,7 @@ section {
     }
 
     section {
-        padding-block: var(--space-md);
+        padding-top: var(--space-md);
     }
 
     .grid-2,
