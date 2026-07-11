@@ -180,6 +180,52 @@
     font-weight: 700;
 }
 
+/* MENU MOBILE */
+
+.mobile-menu{
+
+    display:none;
+
+    background:var(--color-background);
+
+    border-top:1px solid var(--color-border);
+
+}
+
+.mobile-menu.open{
+
+    display:block;
+
+}
+
+.mobile-menu .app-header__nav{
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+    padding:var(--space-lg);
+
+    gap:var(--space-md);
+
+}
+
+@media (max-width:640px){
+
+    .app-header__actions{
+        display:none;
+    }
+
+    .app-header__nav{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+}
+
 /* ==========================================================
    AÇÕES DO HEADER
 ========================================================== */

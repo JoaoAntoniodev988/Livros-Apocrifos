@@ -5,26 +5,11 @@
  * Carrega componentes HTML reutilizáveis.
  */
 
-document.addEventListener("componentsLoaded", () => {
-
-    const links = document.querySelectorAll(".app-header__nav a");
-
-    console.log(links);
-
-    const currentPage = window.location.pathname
-    .split("/")
-    .pop();
-
-console.log(currentPage);
-
-});
-
 async function loadComponent(selector, file) {
+
     const element = document.querySelector(selector);
 
-    if (!element) {
-        return;
-    }
+    if (!element) return;
 
     try {
 
@@ -38,49 +23,58 @@ async function loadComponent(selector, file) {
 
         element.innerHTML = html;
 
-        return element;
-
     } catch (error) {
 
         console.error(error);
 
     }
+
 }
 
 /*
     Detecta o caminho base
 */
 function getBasePath() {
+
     const path = window.location.pathname;
+
     if (path.includes("/paginas/")) {
         return "../";
     }
+
     return "";
+
 }
 
 /*
-    Carregamento dos componentes globais
+    Carrega os componentes
 */
 document.addEventListener("DOMContentLoaded", async () => {
 
     const basePath = getBasePath();
 
-    await Promise.all([
+    await loadComponent(
+        "[data-component='header']",
+        `${basePath}componentes/header.html`
+    );
 
-        loadComponent(
-            "[data-component='header']",
-            `${basePath}componentes/header.html`
-        ),
+    await loadComponent(
+        "[data-component='navbar-desktop']",
+        `${basePath}componentes/navbar.html`
+    );
 
-        loadComponent(
-            "[data-component='footer']",
-            `${basePath}componentes/footer.html`
-        )
+    await loadComponent(
+        "[data-component='navbar-mobile']",
+        `${basePath}componentes/navbar.html`
+    );
 
-    ]);
+    await loadComponent(
+        "[data-component='footer']",
+        `${basePath}componentes/footer.html`
+    );
 
     document.dispatchEvent(
-        new Event("componentsLoaded")
+        new CustomEvent("componentsLoaded")
     );
 
 });
