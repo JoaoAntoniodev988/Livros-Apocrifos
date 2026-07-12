@@ -1,0 +1,422 @@
+{
+    "id": "apj-001",
+    "slug": "apocrifo-de-joao",
+    "titulo": {
+        "principal": "Apócrifo de João",
+        "alternativo": [
+            "Livro Secreto de João",
+            "Apocryphon of John",
+            "O Evangelho Secreto"
+        ]
+    },
+    "autor": {
+        "nome": "Anónimo",
+        "tradicao": "Gnosticismo Setiano",
+        "seculo": "Século II d.C.",
+        "nota": "Atribuído à tradição setiana. Irineu de Lyon referiu-o em 180 d.C., confirmando que o original é anterior a essa data."
+    },
+    "idioma": {
+        "original": "Grego",
+        "manuscrito": "Copta",
+        "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"]
+    },
+    "colecao": {
+        "nome": "Biblioteca de Nag Hammadi",
+        "codice": "II, III e IV",
+        "localizacao_fisica": "Museu Copta do Cairo, Egito",
+        "ano_descoberta": 1945,
+        "local_descoberta": "Nag Hammadi, Alto Egito"
+    },
+    "categoria": {
+        "principal": "Apocalipse Gnóstico",
+        "secundaria": [
+            "Cosmogonia",
+            "Soteriologia",
+            "Cristologia Gnóstica",
+            "Literatura Apócrifa",
+            "Gnosticismo Setiano"
+        ],
+        "testamento": "Novo Testamento Apócrifo",
+        "genero_literario": "Revelação Dialogada"
+    },
+    "imagem": {
+        "capa": {
+            "url": "/imagens/apocrifo-de-joao-capa.jpg",
+            "alt": "Manuscrito copta do Apócrifo de João — Nag Hammadi Códice II",
+            "credito": "Museu Copta do Cairo"
+        },
+        "manuscrito": {
+            "url": "/imagens/apocrifo-de-joao-manuscrito.jpg",
+            "alt": "Página original do manuscrito copta do Apócrifo de João",
+            "credito": "Biblioteca de Nag Hammadi — Códice II"
+        },
+        "thumbnail": {
+            "url": "/imagens/apocrifo-de-joao-thumb.jpg",
+            "alt": "Apócrifo de João — miniatura"
+        }
+    },
+    "descricao": {
+        "curta": "O texto fundacional do gnosticismo setiano — uma revelação do Cristo ressuscitado a João sobre a origem do cosmos, a queda de Sophia, o aprisionamento da centelha humana e o caminho de regresso à Luz.",
+        "longa": "O Apócrifo de João é o texto mais importante e mais copiado de toda a Biblioteca de Nag Hammadi. Existe em duas versões — curta e longa — encontradas em três cópias separadas. Foi escrito antes de 180 d.C. e pertence ao ramo gnóstico setiano.",
+        "temas_principais": [
+            "Cosmogonia gnóstica",
+            "A queda de Sophia",
+            "Ialdabaoth — o Demiurgo ignorante",
+            "A criação do ser humano",
+            "As sete almas implantadas pelos Arcontes",
+            "A anamnese como salvação",
+            "O Hino da Pronoia",
+            "A reencarnação e o destino das almas"
+        ]
+    },
+    "metadados": {
+        "data_criacao": "2024-01-15",
+        "data_atualizacao": "2024-04-24",
+        "versao": "2.0",
+        "estado": "publicado",
+        "visibilidade": "publico",
+        "tags": [
+            "apocrifo",
+            "gnostico",
+            "nag-hammadi",
+            "setiano",
+            "sophia",
+            "demiurgo",
+            "pleroma",
+            "cristologia",
+            "cosmogonia"
+        ],
+        "leitura_estimada_minutos": 45,
+        "nivel_dificuldade": "avancado"
+    },
+    "conteudo": {
+        "seccoes": [
+            {
+                "id": "prologo",
+                "numero": 0,
+                "titulo": "Prólogo — O Encontro que Desperta a Questão",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Um fariseu chamado Arimanias aborda João, filho de Zebedeu, pouco depois da crucificação de Jesus. Diz-lhe com desdém: \"Onde está o teu mestre? Ele enganou-te.\" João afasta-se perturbado, sobe a uma montanha e mergulha num estado de angústia profunda. As suas perguntas interiores são três:"
+                    ],
+                    "citacoes": [
+                        "— Como foi escolhido o Salvador?",
+                        "— Por que foi enviado ao mundo pelo seu Pai?",
+                        "— Quem é o Pai?"
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese do Prólogo",
+                    "paragrafos": [
+                        "Este prólogo é deceptivamente simples mas teologicamente denso. A provocação do fariseu não é apenas hostilidade — é a voz do mundo material a dizer que o conhecimento espiritual é ilusão. João retira-se do mundo (sobe a montanha) e entra num estado contemplativo.",
+                        "As três questões que formula não são perguntas teológicas abstractas — são, na tradição gnóstica, o movimento inicial da alma que desperta. O mesmo impulso que o Evangelho de Tomás descreve quando diz que quem encontra a interpretação das palavras 'não provará a morte' — a pergunta certa é já o início da gnose.",
+                        "A montanha é também simbólica: é o lugar da separação do mundo inferior, o espaço onde a revelação se torna possível. Moisés recebeu a Lei numa montanha. Aqui João receberá algo radicalmente diferente — não uma Lei, mas um desvelamento da estrutura oculta da realidade."
+                    ]
+                }
+            },
+            {
+                "id": "parte-1",
+                "numero": 1,
+                "titulo": "Parte I — A Teofania: O Ser que Não Tem Nome",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Enquanto João medita, a luz torna-se súbita e intensa ao seu redor. A terra treme. Surge então uma figura que muda de forma três vezes diante dele — aparece como criança, depois como ancião, depois como servo. E fala:"
+                    ],
+                    "dialogo_divino": [
+                        "\"João, João, por que duvidas? Por que tens medo? Não és estranho a esta forma. Não sejas tímido. Eu sou o que está contigo sempre. Eu sou o Pai. Eu sou a Mãe. Eu sou o Filho.\""
+                    ],
+                    "personagens_mencionados": ["criança", "ancião", "servo"]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte I",
+                    "paragrafos": [
+                        "A divindade suprema apresenta-se como simultaneamente Pai, Mãe e Filho — uma trindade que precede e subverte a trindade cristã ortodoxa. A figura tripla não é acidental: o princípio divino no gnosticismo setiano (a corrente a que pertence este texto) é fundamentalmente triádico e andrógino. Deus não é masculino. Não é sequer pessoa no sentido humano.",
+                        "As três formas — criança, ancião, servo — representam os três aspectos do divino: eternidade, sabedoria e serviço à criação. A criança é o eterno que ainda não foi corrompido pelo tempo. O ancião é a sabedoria acumulada além da compreensão humana. O servo é o aspect que desce ao mundo para guiar as almas — o que os gnósticos chamarão de Cristo.",
+                        "A afirmação 'Eu sou o que está contigo sempre' ecoa directamente o dito 77 do Evangelho de Tomás: 'Eu sou a luz que está sobre todas as coisas... Parti um pedaço de madeira e eu estou lá.' A presença divina não é transcendente apenas — é imanente, tecida na própria estrutura do ser."
+                    ],
+                    "referencias": ["Evangelho de Tomás — Dito 77", "Gnosticismo Setiano — Trindade Andrógina"]
+                }
+            },
+            {
+                "id": "parte-2",
+                "numero": 2,
+                "titulo": "Parte II — O Deus Inefável: O que Não Pode Ser Dito",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "A figura revela então a natureza do Pai supremo — chamado o Monógeno, o Espírito Invisível, o Ser Puro.",
+                        "E o texto faz algo extraordinário: em vez de descrever o que Deus é, descreve apenas o que Deus não é:",
+                        "Não é perfeito — porque a perfeição implica limite. Não é bem-aventurado — porque isso implicaria comparação. Não é divino — porque isso implicaria categoria. Não é infinito — porque o infinito ainda é uma definição.",
+                        "É luz pura na qual nenhum olho pode olhar. É inconcebível — e qualquer conceito que lhe seja aplicado já o diminui. É silêncio."
+                    ],
+                    "nomes_divinos": ["Monógeno", "Espírito Invisível", "Ser Puro"],
+                    "atributos_negativos": [
+                        "Não é perfeito — porque a perfeição implica limite",
+                        "Não é bem-aventurado — porque isso implicaria comparação",
+                        "Não é divino — porque isso implicaria categoria",
+                        "Não é infinito — porque o infinito ainda é uma definição"
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte II",
+                    "paragrafos": [
+                        "Estamos perante a teologia apofática na sua forma mais radical — a ideia de que Deus só pode ser conhecido pelo que não é. Esta tradição, que também encontramos no neoplatonismo de Plotino e mais tarde na mística cristã de Meister Eckhart, atinge aqui uma intensidade peculiar.",
+                        "Para o gnóstico, o Deus da Bíblia hebraica — que fala, que ordena, que pune, que tem ciúmes — não pode ser o Deus supremo, precisamente porque tem atributos. Um Deus com atributos é um Deus limited. O verdadeiro princípio divino está além de qualquer predicado. É o que os gnósticos chamam o Abismo (Bythos em grego) ou o Pré-Pai.",
+                        "Esta passagem é filosoficamente crucial porque estabelece a distinção fundamental do gnosticismo: o Deus que criou o mundo não é o Deus supremo. Entre o Abismo silencioso e o mundo material há uma distância ontológica enorme — e é essa distância que o texto vai agora preencher com a cosmogonia."
+                    ],
+                    "conceitos_chave": ["Teologia Apofática", "Abismo (Bythos)", "Pré-Pai", "Plotino", "Meister Eckhart"],
+                    "referencias": ["Neoplatonismo — Plotino", "Mística Cristã — Meister Eckhart"]
+                }
+            },
+            {
+                "id": "parte-3",
+                "numero": 3,
+                "titulo": "Parte III — O Pleroma: O Mundo da Luz Plena",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Do Espírito Invisível emerge, por contemplação de si mesmo, a primeira emanação: Barbelo — a Mãe Divina, o primeiro pensamento do Pai, descrita como 'a imagem perfeita, a glória da luz, a perfeição do Espírito'.",
+                        "Barbelo pede ao Pai quatro dons: Presciência, Incorruptibilidade, Vida Eterna e Verdade. Cada pedido é concedido, e cada concessão gera uma nova emanação — os Éons, seres de luz que constituem o Pleroma (a Plenitude).",
+                        "Do Espírito e de Barbelo nasce então Cristo — chamado aqui o Autógenes, o que se gerou a si mesmo — o Filho perfeito que ilumina o universo espiritual com a sua luz."
+                    ],
+                    "personagens": ["Barbelo", "Éons", "Cristo — Autógenes"],
+                    "dons_de_barbelo": ["Presciência", "Incorruptibilidade", "Vida Eterna", "Verdade"]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte III",
+                    "paragrafos": [
+                        "O Pleroma é o conceito central da cosmogonia gnóstica e merece toda a atenção. Não é um 'céu' no sentido popular — é a totalidade do ser espiritual, um universo de luz pura composto de consciências divinas que emanam umas das outras como luz de luz.",
+                        "Barbelo é uma das figuras mais fascinantes de toda a literatura gnóstica. É simultaneamente Mãe, Pensamento e Espírito Santo — o princípio feminino do divino que o Cristianismo ortodoxo apagaria sistematicamente. No Evangelho de Filipe, Barbelo é chamada de 'a matriz do universo'.",
+                        "O modelo de emanação — em que cada ser divino emerge da contemplação do anterior — é tomado directamente do neoplatonismo, especificamente de Plotino. Mas os gnósticos transformam-no: enquanto Plotino vê as emanações como necessárias e boas, o texto do Apócrifo de João vai mostrar que em algum momento algo corre mal neste processo perfeito — e é esse erro primordial que produz o mundo em que vivemos."
+                    ],
+                    "conceitos_chave": ["Pleroma", "Barbelo", "Autógenes", "Emanação", "Neoplatonismo"],
+                    "referencias": ["Evangelho de Filipe — Barbelo como matriz do universo", "Neoplatonismo — Plotino"]
+                }
+            },
+            {
+                "id": "parte-4",
+                "numero": 4,
+                "titulo": "Parte IV — A Queda de Sophia: O Momento que Parte o Universo",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "No seio do Pleroma, entre todos os Éons de luz, existe Sophia — a Sabedoria. Ela é o último e mais distante Éon do Pai, o ser de luz que habita a fronteira entre o mundo espiritual e o vazio que existe além dele.",
+                        "Sophia comete então o acto que vai mudar tudo. Movida por um desejo que não partiu do consentimento do Pai nem do seu consorte espiritual — um desejo solitário, autónomo, sem reciprocidade — ela decide criar algo por si mesma. Quer emanar sem a participação do Espírito. Quer gerar como o Pai gerou.",
+                        "O que emerge desse acto não é luz. É uma coisa informe, ignorante, diferente de tudo o que existe no Pleroma. Sophia olha para o que criou e horroriza-se. Tenta esconder a sua criação nas trevas abaixo do Pleroma. Envolve-a numa nuvem luminosa para que os outros Éons não a vejam. E abandona-a.",
+                        "Essa criatura abandonada é Ialdabaoth."
+                    ],
+                    "personagens": ["Sophia", "Ialdabaoth"],
+                    "evento_central": "A queda de Sophia — criação sem reciprocidade e sem o consentimento do Pai"
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte IV",
+                    "paragrafos": [
+                        "A queda de Sophia é o eixo dramático de todo o Apócrifo de João e de grande parte da cosmogonia gnóstica em geral. Merece uma leitura muito cuidada.",
+                        "O primeiro elemento a compreender é a natureza do erro de Sophia. Ela não peca por malícia — peca por desejo de criação sem relação. No Pleroma, toda a emanação ocorre em pares, em reciprocidade, com o consentimento do Pai. Sophia age sozinha, movida apenas pela sua própria vontade. O gnosticismo está a dizer aqui algo de profundo sobre a natureza da criação: criar sem o outro, sem reciprocidade, sem o fundamento do Ser, produz monstruosidade.",
+                        "Há uma ressonância imediata com o tema do Livro de Tomás — o do desejo (epithymia) como força que prende e deforma. Sophia não é destruída pelo desejo carnal como os homens ignorantes descritos nesse texto, mas é arrastada por uma forma mais subtil de desejo: o desejo de poder criativo sem fundamento. É o orgulho espiritual — a hybris gnóstica.",
+                        "O segundo elemento crucial é a reacção de Sophia ao que criou. Ela não destrói Ialdabaoth — esconde-o. Este gesto de ocultamento é fundamental: o mundo material não é uma criação intencional do Deus supremo. É um acidente escondido, uma vergonha enterrada nas profundezas do ser. O mundo em que vivemos é filho do horror e do abandono."
+                    ],
+                    "conceitos_chave": ["Epithymia", "Hybris gnóstica", "Criação sem reciprocidade", "Ialdabaoth"],
+                    "referencias": ["Livro de Tomás — o desejo como prisão"]
+                }
+            },
+            {
+                "id": "parte-5",
+                "numero": 5,
+                "titulo": "Parte V — Ialdabaoth: O Deus Ignorante",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Ialdabaoth cresce sozinho nas trevas. Herda de Sophia uma faísca de luz — a única coisa que ela inadvertidamente lhe transmitiu. Com essa faísca, cria os seus próprios mundos, os seus próprios poderes — os Arcontes, governadores das esferas planetárias que aprisionam as almas na matéria.",
+                        "E então Ialdabaoth proclama algo que o texto cita com precisão deliberada, em eco directo ao Deus do Êxodo:",
+                        "O Apócrifo de João comenta esta frase com uma ironia devastadora: se não há outro Deus além dele, por que diz que é ciumento? O ciúme pressupõe a existência de outros.",
+                        "Ialdabaoth não sabe que acima dele existe o Pleroma. Não sabe que a luz que possui não é sua. Não sabe que é filho de uma mãe que o abandonou. A sua ignorância não é apenas falta de conhecimento — é a sua natureza fundamental. O nome Ialdabaoth significa, em aramaico, 'filho do caos' ou 'filho das trevas'. Outros textos gnósticos chamam-lhe Saklas — o tolo — e Samael — o cego."
+                    ],
+                    "dialogo_demiurgo": "\"Eu sou um Deus ciumento e não há outro Deus além de mim.\"",
+                    "nomes_alternativos_ialdabaoth": ["Saklas — o tolo", "Samael — o cego", "filho do caos", "filho das trevas"],
+                    "arcontes": {
+                        "descricao": "Governadores das sete esferas planetárias",
+                        "esferas": ["Saturno", "Júpiter", "Marte", "Sol", "Vénus", "Mercúrio", "Lua"]
+                    }
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte V",
+                    "paragrafos": [
+                        "Esta é a passagem que mais perturbou o Cristianismo ortodoxo e que Irineu de Lyon combateu com maior veemência no seu Contra as Heresias. Os gnósticos estão a fazer uma afirmação teológica radicalmente subversiva: o Deus do Antigo Testamento não é o Deus supremo. É uma divindade menor, ignorante e arrogante, que criou uma prisão e a confundiu com um paraíso.",
+                        "A citação do Êxodo — 'Eu sou um Deus ciumento' — é usada como prova textual contra o próprio texto canónico. O argumento é elegante: um Deus verdadeiramente supremo não teria ciúmes. O ciúme é uma emoção de quem teme perder algo. Um Deus que teme não pode ser o fundamento de toda a existência.",
+                        "Há aqui também uma leitura política que não deve ser ignorada. Os gnósticos viviam sob o Império Romano e sob a autoridade crescente da Igreja institucional. A imagem de Ialdabaoth — um power que se proclama absoluto, que exige obediência total, que pune a desobediência com cólera — ressoa claramente com as estruturas de poder terrenas. Questionar Ialdabaoth é questionar todo o poder que se proclama divino sem o ser.",
+                        "Os Arcontes que Ialdabaoth cria governam as sete esferas planetárias — Saturno, Júpiter, Marte, o Sol, Vénus, Mercúrio, a Lua. A alma, ao descer ao mundo material, atravessa estas esferas e em cada uma recebe um 'revestimento' que a separa mais da sua origem luminosa. A vida humana é, para o gnóstico, o resultado de ter atravessado sete prisões antes de nascer."
+                    ],
+                    "conceitos_chave": ["Demiurgo", "Arcontes", "Heimarmene", "Esferas planetárias"],
+                    "referencias": ["Irineu de Lyon — Contra as Heresias", "Êxodo — O Deus ciumento"]
+                }
+            },
+            {
+                "id": "parte-6",
+                "numero": 6,
+                "titulo": "Parte VI — A Criação do Ser Humano: O Roubo de Luz",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Do Pleroma desce uma voz — alguns textos dizem que é a voz de Sophia arrependida, outros dizem que é o próprio Espírito Invisível. A voz diz a Ialdabaoth e aos seus Arcontes:",
+                        "Ialdabaoth e os Arcontes olham para baixo, para as águas abaixo deles, e vêem reflectida nessas águas a imagem do Homem Primordial — o Anthropos, a forma perfeita que existe no Pleroma. Movidos por inveja e por querer igualar o que está acima deles, decidem criar um ser à imagem do que viram.",
+                        "Criam assim o corpo humano — mas não conseguem fazê-lo erguer-se. O corpo jaz inerte, sem vida, sem luz. Ialdabaoth então, por instrução velada da sua mãe Sophia que ainda trabalha no plano espiritual para reparar o seu erro, sopra no rosto da criatura.",
+                        "Nesse sopro, inadvertidamente, transmite ao ser humano a faísca de luz que herdou de Sophia — a única luz que tinha. O ser humano ergue-se. Os Arcontes olham para a sua criação e reconhecem com terror que o ser que criaram é mais luminoso do que eles próprios."
+                    ],
+                    "dialogo_divino": "\"O Ser Humano existe e é filho do Ser Humano.\"",
+                    "personagens": ["Anthropos — Homem Primordial", "Ialdabaoth", "Arcontes", "Sophia"],
+                    "conceito_central": "A faísca de luz (pneuma) transmitida involuntariamente ao ser humano"
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte VI",
+                    "paragrafos": [
+                        "Este é o momento cosmológico mais importante do texto e um dos mais belos de toda a literatura gnóstica. A criação humana não é um acto de amor divino — é um acidente de roubo invertido. Ialdabaoth tenta criar um escravo e cria inadvertidamente um ser que carrega dentro de si a luz que ele próprio possuía.",
+                        "A imagem do reflexo nas águas é extraordinariamente rica. Os Arcontes não criam o ser humano a partir de nada — criam-no a partir de uma imagem, de um reflexo, de uma sombra do verdadeiro Homem que existe no Pleroma. O corpo humano é, neste sentido, uma tentativa falhada de copiar algo que os seus criadores nem sequer compreendiam completamente.",
+                        "A faísca de luz (pneuma em grego — espírito, sopro) que Ialdabaoth transmite involuntariamente é o elemento central de toda a soteriologia gnóstica. É por causa desta faísca que os humanos são diferentes de todas as outras criaturas materiais. É por causa dela que a salvação é possível. E é por causa dela que os Arcontes nos temem — porque carregamos dentro de nós algo que eles não possuem.",
+                        "Reconheces aqui imediatamente o eco do Livro de Tomás — a ideia de que há dentro do ser humano uma luz que o mundo material não conhece e não pode conter. O Evangelho de Tomás diz no dito 24: 'Há luz dentro de um homem de luz, e ele ilumina o mundo inteiro. Se não ilumina, é trevas.' O Apócrifo de João explica agora de onde vem essa luz e por que razão está aprisionada."
+                    ],
+                    "conceitos_chave": ["Pneuma", "Faísca de luz", "Anthropos", "Soteriologia gnóstica"],
+                    "referencias": ["Evangelho de Tomás — Dito 24"]
+                }
+            },
+            {
+                "id": "parte-7",
+                "numero": 7,
+                "titulo": "Parte VII — O Aprisionamento: O Esquecimento como Arma",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Os Arcontes, aterrorizados com a luminosidade do ser humano, elaboram um plano. Não podem destruir a faísca — está além do seu poder. Mas podem fazer o ser humano esquecer que a possui.",
+                        "Criam para isso três instrumentos:",
+                        "O ser humano é colocado no Jardim do Éden — que o texto descreve não como um paraíso mas como mais uma prisão, mais refinada mas igualmente fechada. A árvore do conhecimento do bem e do mal é a árvore que Ialdabaoth planta para manter os humanos na ignorância. Ele diz: 'Não comais.'",
+                        "A serpente, neste texto, não é o demónio. É Sophia — trabalhando a partir do interior do sistema para despertar o que foi aprisionado."
+                    ],
+                    "instrumentos_aprisionamento": [
+                        {
+                            "nome": "O corpo material",
+                            "descricao": "Denso, pesado, sujeito à dor, à doença e à morte. O corpo consome a atenção da consciência com as suas necessidades e sofrimentos."
+                        },
+                        {
+                            "nome": "O destino (heimarmene)",
+                            "descricao": "A cadeia de causalidade material que determina as circunstâncias do nascimento, da vida e da morte. A ilusão de que o que acontece no mundo material é a totalidade da realidade."
+                        },
+                        {
+                            "nome": "A imitação do espírito",
+                            "descricao": "Uma falsa alma, uma consciência fabricada pelos Arcontes, que imita o movimento do espírito verdadeiro mas o mantém orientado para baixo, para o mundo material."
+                        }
+                    ],
+                    "inversao_genesis": {
+                        "eden": "Prisão refinada — não paraíso",
+                        "proibicao": "Instrumento de ignorância — não protecção",
+                        "serpente": "Sophia — instrumento de libertação, não tentação",
+                        "conhecimento": "Salvação — não pecado",
+                        "expulsao": "Primeiro passo para a liberdade — não punição"
+                    }
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte VII",
+                    "paragrafos": [
+                        "A inversão da narrativa do Génesis que o Apócrifo de João opera é total e sistemática. Cada elemento da leitura ortodoxa é virado ao contrário: O Jardim do Éden não é bondade divina — é uma gaiola dourada. A proibição não protege os humanos — mantém-nos ignorantes. A serpente não tenta — liberta. O conhecimento não é pecado — é salvação. A expulsão do Paraíso não é punição — é o primeiro passo em direcção à liberdade.",
+                        "Esta leitura invertida tem uma lógica interna perfeita dentro do sistema gnóstico: se Ialdabaoth é un deus falso e ignorante, então tudo o que ele proíbe deve ser desejado, e tudo o que ele ordena deve ser questionado. A desobediência ao Demiurgo é obediência ao Deus verdadeiro.",
+                        "O conceito de heimarmene — destino, fado, a cadeia de causalidade material — é um dos mais importantes do pensamento gnóstico e tem ressonâncias directas com o estoicismo. Para os estóicos, o destino era divino e devia ser aceite. Para os gnósticos, o destino é uma prisão fabricada pelos Arcontes para manter as almas orientadas para o mundo material. A gnose — o conhecimento da própria natureza — é precisamente o que liberta da heimarmene."
+                    ],
+                    "conceitos_chave": ["Heimarmene", "Inversão do Génesis", "Gnose como libertação", "Estoicismo"],
+                    "referencias": ["Génesis — Inversão gnóstica", "Estoicismo — Heimarmene"]
+                }
+            },
+            {
+                "id": "parte-8",
+                "numero": 8,
+                "titulo": "Parte VIII — A Descida do Cristo: O Despertador",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "O Espírito Invisível, vendo o estado de aprisionamento das centelhas de luz espalhadas pelo mundo material, envia o Cristo — o Autógenes ao mundo. Mas não como um ser físico que nasce e morre. Como uma presença que desperta.",
+                        "O Cristo desce através das esferas dos Arcontes disfarçado — cada Arconte pensa que ele é um dos seus. Chega ao ser humano adormecido e sopra sobre ele uma segunda vez — não no corpo, mas na memória. E diz:",
+                        "A alma que recebe este sopro recorda. Não aprende algo novo — recorda o que sempre soube e havia esquecido. Recorda a sua origem luminosa. Recorda que o mundo em que vive não é a sua casa. Recorda que há um caminho de regresso."
+                    ],
+                    "dialogo_divino": [
+                        "\"Desperta do teu sono pesado. Levanta-te da morte. Porque eu sou o que está contigo sempre, eu sou o Pai, eu sou a Mãe, eu sou o Filho, eu sou o incorruptível e o impoluto.\""
+                    ],
+                    "conceito_central": "Anamnese — o des-esquecimento como salvação"
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte VIII",
+                    "paragrafos": [
+                        "A soteriologia — a teoria da salvação — do Apócrifo de João é radicalmente diferente da cristologia ortodoxa. Cristo não salva através da morte e ressurreição. Cristo salva através do despertar da memória.",
+                        "Este é o conceito gnóstico de anamnese — literalmente 'des-esquecimento'. A alma não precisa de ser redimida de um pecado original — precisa de ser acordada de um sono imposto. A condição humana não é culpa — é amnésia. E a cura não é fé — é conhecimento.",
+                        "Reconheces aqui a ressonância mais profunda com o Evangelho de Tomás, que começa com as palavras: 'Quem encontrar a interpretação destas palavras não provará a morte.' As palavras de Jesus em Tomás funcionam exactamente como o sopro do Cristo no Apócrifo de João — são instrumentos de anamnese, de despertar, de recordação da origem.",
+                        "A imagem do Cristo que desce disfarçado através das esferas dos Arcontes é também teologicamente significativa. O mundo material é hostil à luz. A luz não pode atravessá-lo abertamente — tem de se mover por entre as estruturas do poder sem ser reconhecida. É uma imagem que ressoa com a experiência histórica dos próprios gnósticos: comunidades que preservaram o conhecimento em segredo, disfarçadas, enterradas em potes de cerâmica no deserto."
+                    ],
+                    "conceitos_chave": ["Anamnese", "Soteriologia gnóstica", "Cristo Despertador", "Cristologia gnóstica"],
+                    "referencias": ["Evangelho de Tomás — Prólogo", "Nag Hammadi — Contexto histórico"]
+                }
+            },
+            {
+                "id": "epilogo",
+                "numero": 9,
+                "titulo": "Epílogo — A Pergunta de João e a Promessa",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "João pergunta então ao Cristo: 'O que acontece às almas que não despertam? Que não receberam a gnose?'",
+                        "A resposta é compassiva mas não confortante. As almas que não despertaram numa vida regressam ao mundo — reencarnadas, guiadas pelos Arcontes de volta a um novo corpo, de volta ao esquecimento. O ciclo repete-se.",
+                        "Mas há uma promessa: nenhuma centelha de luz se perde para sempre. O Espírito trabalha pacientemente através das vidas, através dos ciclos, colocando em cada alma em cada geração a possibilidade do despertar. A gnose pode chegar tarde — mas chega.",
+                        "O texto termina com João descendo da montanha e transmitindo o que recebeu aos seus companheiros — não como uma doutrina pública, mas como um ensinamento secreto, reservado aos que têm ouvidos para ouvir."
+                    ],
+                    "promessa_central": "Nenhuma centelha de luz se perde para sempre",
+                    "doutrina_reencarnacao": "As almas que não despertaram regressam ao mundo em novos corpos com novas oportunidades"
+                },
+                "exegese": {
+                    "titulo": "Exegese do Epílogo",
+                    "paragrafos": [
+                        "O texto constrói uma cosmologia completa em torno de uma única intuição central: a luz está aprisionada na matéria e não sabe que está aprisionada. Tudo o resto — Sophia, Ialdabaoth, os Arcontes, o Éden, o Cristo — serve para explicar como chegámos a este estado e como podemos sair dele.",
+                        "O que distingue este texto do Livro de Tomás que já conheces é a escala. Tomás trabalha no nível da experiência individual — o corpo, o desejo, a visão interior. O Apócrifo de João trabalha no nível cósmico — a origem do universo, a estrutura do ser, a história da queda e da redenção. São dois níveis do mesmo sistema: Tomás é o microcosmos, João é o macrocosmos."
+                    ],
+                    "conceitos_chave": ["Reencarnação", "Compaixão cósmica", "Transmissão do conhecimento secreto"],
+                    "sintese": "Tomás é o microcosmos — João é o macrocosmos. Dois níveis do mesmo sistema gnóstico."
+                }
+            }
+        ]
+    },
+    "referencias": {
+        "texto_original": {
+            "fonte": "Nag Hammadi Scriptures",
+            "editor": "Marvin Meyer",
+            "editora": "HarperOne",
+            "ano": 2007
+        },
+        "estudos_academicos": [
+            {
+                "autor": "Michael Waldstein e Frederik Wisse",
+                "titulo": "The Apocryphon of John: Synopsis of Nag Hammadi Codices II,1, III,1 and IV,1 with BG 8502,2",
+                "ano": 1995
+            },
+            {
+                "autor": "Karen L. King",
+                "titulo": "The Secret Revelation of John",
+                "editora": "Harvard University Press",
+                "ano": 2006
+            }
+        ]
+    },
+    "textos_relacionados": [
+        {
+            "id": "evf-002",
+            "titulo": "Evangelho de Filipe",
+            "relacao": "Complementar — os sacramentos como caminho prático do que o Apócrifo de João mapeia cosmologicamente"
+        },
+        {
+            "id": "evmm-003",
+            "titulo": "Evangelho de Maria Madalena",
+            "relacao": "Complementar — a experiência vivida da ascensão que o Apócrifo de João descreve estruturalmente"
+        },
+        {
+            "id": "ps-004",
+            "titulo": "Pistis Sophia",
+            "relacao": "Expansão — o mesmo sistema desenvolvido com muito maior detalhe e intensidade emocional"
+        },
+        {
+            "id": "hda-005",
+            "titulo": "Hipóstase dos Arcontes",
+            "relacao": "Paralelo — a mesma cosmologia setiana aplicada à releitura do Génesis"
+        },
+        {
+            "id": "evt-006",
+            "titulo": "Evangelho de Tomás",
+            "relacao": "Complementar — Tomás é o microcosmos, João é o macrocosmos do mesmo sistema"
+        }
+    ]
+}

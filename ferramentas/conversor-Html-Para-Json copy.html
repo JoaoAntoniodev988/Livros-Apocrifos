@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compilador de Livros: HTML para JSON Semântico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Open Sans', sans-serif; background-color: #0f172a; color: #e2e8f0; line-height: 1.6; padding: 20px; }
+        header { max-width: 1600px; margin: 0 auto 20px auto; text-align: center; padding: 10px 0; }
+        header h1 { color: #38bdf8; font-size: 1.8rem; margin-bottom: 8px; }
+        header p { color: #94a3b8; font-size: 0.95rem; }
+        
+        .container-metadados { max-width: 1600px; margin: 0 auto 20px auto; background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px; }
+        .grid-metadados { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 10px; }
+        .campo-meta { display: flex; flex-direction: column; }
+        .campo-meta label { font-size: 0.8rem; color: #38bdf8; font-weight: 600; margin-bottom: 5px; text-transform: uppercase; }
+        .campo-meta input { background: #0f172a; border: 1px solid #475569; color: #fff; padding: 8px; border-radius: 6px; font-family: inherit; }
+        .campo-meta input:focus { border-color: #38bdf8; outline: none; }
+
+        main { max-width: 1600px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+        
+        .painel { background: #1e293b; border-radius: 12px; border: 1px solid #334155; padding: 20px; display: flex; flex-direction: column; }
+        .painel h2 { font-size: 1.1rem; color: #f8fafc; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
+        textarea { width: 100%; height: 500px; font-family: 'Fira Code', monospace; font-size: 0.85rem; padding: 15px; border: 1px solid #475569; border-radius: 8px; resize: vertical; background-color: #0f172a; color: #f1f5f9; }
+        textarea:focus { outline: none; border-color: #38bdf8; }
+        
+        .acoes { grid-column: 1 / -1; text-align: center; margin-top: 10px; }
+        button { background-color: #0284c7; color: white; border: none; padding: 14px 40px; font-size: 1.05rem; font-weight: 600; border-radius: 8px; cursor: pointer; transition: all 0.2s ease; }
+        button:hover { background-color: #0369a1; }
+        .btn-copiar { background: #d97706; padding: 6px 14px; font-size: 0.8rem; border-radius: 4px; }
+        .btn-copiar:hover { background: #b45309; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Compilador de Livros (HTML ➔ Livro JSON)</h1>
+        <p>Extração semântica purificada com injeção automática de metadados.</p>
+    </header>
+
+    <!-- Seção de Metadados Globais do Livro -->
+    <div class="container-metadados">
+        <h3 style="font-size: 1rem; color: #fff;">Metadados do Livro</h3>
+        <div class="grid-metadados">
+            <div class="campo-meta"><label>ID</label><input type="text" id="metaId" value="apocrifo-joao"></div>
+            <div class="campo-meta"><label>Slug</label><input type="text" id="metaSlug" value="o-apocrifo-de-joao"></div>
+            <div class="campo-meta"><label>Título</label><input type="text" id="metaTitulo" value="Apócrifo de João"></div>
+            <div class="campo-meta"><label>Autor</label><input type="text" id="metaAutor" value="Atribuído a João (Filho de Zebedeu)"></div>
+            <div class="campo-meta"><label>Idioma</label><input type="text" id="metaIdioma" value="pt-PT"></div>
+            <div class="campo-meta"><label>Coleção</label><input type="text" id="metaColecao" value="Manuscritos de Nag Hammadi"></div>
+            <div class="campo-meta"><label>Categorias (Sinalizar com vírgula)</label><input type="text" id="metaCategorias" value="Gnóstico, Cristianismo Primitivo"></div>
+            <div class="campo-meta"><label>Imagem URL</label><input type="text" id="metaImagem" value="apocrifo-joao.webp"></div>
+        </div>
+        <div class="campo-meta" style="margin-top: 15px;">
+            <label>Descrição / Introdução Breve</label>
+            <input type="text" id="metaDescricao" value="Reconstrução Interpretativa e Exegese Gnóstica do texto sagrado setiano.">
+        </div>
+    </div>
+
+    <main>
+        <!-- Entrada do HTML Bruto -->
+        <div class="painel">
+            <h2>Cole o HTML (Completo ou Fragmentos de Sections)</h2>
+            <textarea id="inputHtml" placeholder="Cole aqui suas <section> com classe texto-sagrado e exegese..."></textarea>
+        </div>
+
+        <!-- Saída do JSON Purificado -->
+        <div class="painel">
+            <h2>
+                Estrutura de Dados Limpa
+                <button class="btn-copiar" id="btnCopiar" onclick="copiarJson()">Copiar JSON</button>
+            </h2>
+            <textarea id="outputJson" readonly placeholder="{ &quot;id&quot;: &quot;...&quot;, &quot;capitulos&quot;: [] }"></textarea>
+        </div>
+
+        <!-- Botão de Ação -->
+        <div class="acoes">
+            <button onclick="compilarLivro()">Compilar Livro Perfeito 🚀</button>
+        </div>
+    </main>
+
+    <script>
+        /**
+         * Executa o fluxo principal de compilação do Livro
+         */
+        function compilarLivro() {
+            const htmlBruto = document.getElementById('inputHtml').value;
+            if (!htmlBruto.trim()) {
+                alert('Por favor, insira o HTML para conversão.');
+                return;
+            }
+
+            // 1. Cria a base do documento com os metadados do formulário do topo
+            const livroJson = extrairMetadadosGlobais();
+
+            // 2. Resolve o problema de HTMLs incompletos usando um container virtual DOM
+            const containerVirtual = extrairDOMVirtual(htmlBruto);
+
+            // 3. Procura por elementos estruturais (<section>) que representam capítulos
+            const secoesCapitulos = containerVirtual.querySelectorAll('section');
+
+            if (secoesCapitulos.length === 0) {
+                alert('Aviso: Nenhuma tag <section> encontrada. Tentando processar o corpo inteiro como capítulo único.');
+                livroJson.capitulos.push(processarCapituloAvulso(containerVirtual));
+            } else {
+                // 4. Varre todas as seções mapeando a estrutura interna limpa
+                secoesCapitulos.forEach((secao, index) => {
+                    const dadosCapitulo = compilarSecaoCapitulo(secao, index + 1);
+                    livroJson.capitulos.push(dadosCapitulo);
+                });
+            }
+
+            // Renderiza o resultado limpo eliminando nós residuais inúteis
+            document.getElementById('outputJson').value = JSON.stringify(livroJson, null, 2);
+        }
+
+        /**
+         * Coleta os dados dos inputs da tela para montar o cabeçalho do JSON
+         */
+        function extrairMetadadosGlobais() {
+            const categoriasRaw = document.getElementById('metaCategorias').value;
+            const listaCategorias = categoriasRaw.split(',').map(c => c.trim()).filter(c => c.length > 0);
+
+            return {
+                id: document.getElementById('metaId').value,
+                slug: document.getElementById('metaSlug').value,
+                titulo: document.getElementById('metaTitulo').value,
+                autor: document.getElementById('metaAutor').value,
+                idioma: document.getElementById('metaIdioma').value,
+                colecao: document.getElementById('metaColecao').value,
+                categorias: listaCategorias,
+                imagem: document.getElementById('metaImagem').value,
+                descricao: document.getElementById('metaDescricao').value,
+                capitulos: []
+            };
+        }
+
+        /**
+         * Normaliza strings de HTML fragmentadas inserindo-as em um elemento DOM navegável
+         */
+        function extrairDOMVirtual(htmlString) {
+            const parser = new DOMParser();
+            // Resolve falhas de doc.documentElement se o texto vier quebrado ou sem tags estruturais padrão
+            const documentoHtml = parser.parseFromString(htmlString, 'text/html');
+            
+            const wrapper = documentoHtml.createElement('div');
+            wrapper.innerHTML = documentoHtml.body.innerHTML;
+            return wrapper;
+        }
+
+        /**
+         * Compila uma <section> específica transformando-a na árvore semântica do Capítulo
+         */
+        function compilarSecaoCapitulo(secao, indexPadrao) {
+            // Se houver ID na section ele usa, caso contrário gera um com base no índice
+            const idCapitulo = secao.getAttribute('id') || `capitulo-${indexPadrao}`;
+            
+            // Busca o primeiro título disponível (pode ser H1 ou H2 dependendo da section)
+            const elementoTitulo = secao.querySelector('h1, h2');
+            const tituloCapitulo = elementoTitulo ? elementoTitulo.textContent.trim() : `Capítulo ${indexPadrao}`;
+
+            const blocoConteudo = [];
+            const blocoExegese = [];
+
+            // Analisa elementos filhos da seção purificando o conteúdo interno
+            secao.childNodes.forEach(noFilho => {
+                if (noFilho.nodeType !== Node.ELEMENT_NODE) return; // Ignora nós de texto puro vazios entre tags
+
+                // Caso seja a div do Texto Sagrado
+                if (noFilho.classList.contains('texto-sagrado')) {
+                    extrairConteudoFormatado(noFilho, blocoConteudo);
+                } 
+                // Caso seja o bloco de Exegese
+                else if (noFilho.tagName.toLowerCase() === 'aside' || noFilho.classList.contains('exegese')) {
+                    extrairConteudoFormatado(noFilho, blocoExegese);
+                }
+            });
+
+            return {
+                id: idCapitulo,
+                titulo: tituloCapitulo,
+                conteudo: blocoConteudo,
+                exegese: blocoExegese
+            };
+        }
+
+        /**
+         * Extrai parágrafos e blockquotes mantendo marcas como strong, em e br intactas
+         */
+        function extrairConteudoFormatado(noPai, arrayDestino) {
+            noPai.childNodes.forEach(no => {
+                if (no.nodeType !== Node.ELEMENT_NODE) return;
+
+                const tag = no.tagName.toLowerCase();
+
+                // Filtra apenas elementos ricos de texto, ignorando títulos internos duplicados
+                if (['p', 'blockquote', 'ul', 'ol'].includes(tag)) {
+                    // Preserva o innerHTML original purificado eliminando espaços extras
+                    const stringHtmlInterna = no.innerHTML.trim().replace(/\s+/g, ' ');
+                    
+                    if (stringHtmlInterna) {
+                        arrayDestino.push({
+                            tipo: tag,
+                            html: stringHtmlInterna
+                        });
+                    }
+                }
+            });
+        }
+
+        /**
+         * Fallback de segurança: Caso o HTML colado não tenha <section> estruturadas
+         */
+        function processarCapituloAvulso(container) {
+            const blocoConteudo = [];
+            extrairConteudoFormatado(container, blocoConteudo);
+            return {
+                id: "gerado-automaticamente",
+                titulo: "Conteúdo Unificado",
+                conteudo: blocoConteudo,
+                exegese: []
+            };
+        }
+
+        function copiarJson() {
+            const caixaTexto = document.getElementById('outputJson');
+            if (!caixaTexto.value) return;
+
+            caixaTexto.select();
+            navigator.clipboard.writeText(caixaTexto.value);
+            
+            const botao = document.getElementById('btnCopiar');
+            botao.innerText = "Copiado! ✓";
+            setTimeout(() => { botao.innerText = "Copiar JSON"; }, 2000);
+        }
+    </script>
+</body>
+</html>

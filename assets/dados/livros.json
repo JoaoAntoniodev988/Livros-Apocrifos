@@ -1,9 +1,18 @@
 [
   {
-    "id": 1,
+    "id": "apj-001",
     "titulo": "Apócrifo de João",
-    "categoria": "Gnosticismo",
-    "autor": "Desconhecido",
-    "descricao": "Texto fundamental da literatura gnóstica."
+    "autor": "Anónimo (Setiano)",
+    "categoria": "Cosmologia Gnóstica",
+    "descricao": "Uma narrativa cosmológica profunda sobre a criação do universo e a queda da luz.",
+    "arquivo": "apocrifo-de-joao.json"
+  },
+  {
+    "id": "evf-002",
+    "titulo": "Evangelho de Filipe",
+    "autor": "Anónimo (Valentiniano)",
+    "categoria": "Evangelhos Gnósticos",
+    "descricao": "Um florilégio focado nos ritos de transformação e na união mística da alma.",
+    "arquivo": "evangelho-filipe.json"
   }
 ]

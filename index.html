@@ -195,5 +195,19 @@
     <script src="assets/js/componentes.js"></script>
     <script src="assets/js/navigation.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/services/LivrosService.js"></script>
+    <script>
+
+    document.addEventListener("DOMContentLoaded", async ()=>{
+
+        await livrosService.carregar();
+
+        console.log(
+            livrosService.getTodos()
+        );
+
+    });
+
+    </script>
 </body>
 </html>
