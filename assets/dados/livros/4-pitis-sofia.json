@@ -1,0 +1,323 @@
+{
+    "id": "ps-004",
+    "slug": "pistis-sophia",
+    "titulo": {
+        "principal": "Pistis Sophia",
+        "alternativo": [
+            "Livro do Salvador",
+            "Codex Askewianus"
+        ]
+    },
+    "autor": {
+        "nome": "Anónimo",
+        "tradicao": "Gnosticismo Tardio / Complexo",
+        "seculo": "Séculos III e IV d.C.",
+        "nota": "Texto preservado num manuscrito copta adquirido em 1773 por Anthony Askew. Ao contrário do corpus de Nag Hammadi, este códice já era conhecido na Europa desde o século XVIII."
+    },
+    "idioma": {
+        "original": "Grego",
+        "manuscrito": "Copta",
+        "traducao_disponivel": [
+            "Português",
+            "Inglês",
+            "Francês",
+            "Alemão",
+            "Espanhol"
+        ]
+    },
+    "colecao": {
+        "nome": "Codex Askewianus",
+        "codice": "MS Add 5114",
+        "localizacao_fisica": "British Museum (British Library), Londres",
+        "ano_descoberta": 1773,
+        "local_descoberta": "Egito (adquirido por Anthony Askew)"
+    },
+    "categoria": {
+        "principal": "Evangelho Gnóstico",
+        "secundaria": [
+            "Soteriologia",
+            "Ascensão da Alma",
+            "Cartografia Celestial",
+            "Literatura Apócrifa"
+        ],
+        "testamento": "Novo Testamento Apócrifo",
+        "genero_literario": "Diálogo de Revelação / Diálogo Pós-Ressurreição"
+    },
+    "imagem": {
+        "capa": {
+            "url": "/imagens/pistis-sophia-capa.jpg",
+            "alt": "Manuscrito copta da Pistis Sophia — Codex Askewianus",
+            "credito": "British Museum"
+        },
+        "manuscrito": {
+            "url": "/imagens/pistis-sophia-manuscrito.jpg",
+            "alt": "Página do manuscrito copta contendo os diálogos da Pistis Sophia",
+            "credito": "British Library — MS Add 5114"
+        },
+        "thumbnail": {
+            "url": "/imagens/pistis-sophia-thumb.jpg",
+            "alt": "Pistis Sophia — miniatura"
+        }
+    },
+    "descricao": {
+        "curta": "O mais longo e complexo texto gnóstico sobrevivente, detalhando os treze cânticos de queda e arrependimento de Sophia no caos, o seu resgate cooperativo por Jesus e a cartografia minuciosa dos mundos de luz.",
+        "longa": "A Pistis Sophia apresenta uma monumental revelação pós-ressurreição ocorrida onze anos após a Páscoa. Através de diálogos intensos com uma assembleia de discípulos onde as mulheres assumem o papel principal, Jesus descreve detalhadamente o drama cósmico de Sophia (Fé-Sabedoria), a queda no caos arquitetada por Authades, o processo gradual de salvação e os mistérios necessários para a travessia das esferas arcontes.",
+        "temas_principais": [
+            "A queda de Sophia no caos por desejo da Luz e o engano dos Arcontes",
+            "A figura de Authades como o princípio do egocentrismo cósmico",
+            "Os treze cânticos de arrependimento e a dimensão do sofrimento na gnose",
+            "A releitura esotérica dos Salmos do Antigo Testamento",
+            "A salvação como processo gradual, cooperativo e baseado no conhecimento",
+            "A arquitetura cósmica: Tesouro da Luz, Éons, o Décimo Terceiro Éon e o Amente",
+            "A reencarnação como expressão da compaixão cósmica infinita",
+            "A liderança espiritual e intelectual de Maria Madalena e das discípulas",
+            "A distinção ontológica e ética entre almas pneumáticas e psíquicas"
+        ]
+    },
+    "metadados": {
+        "data_criacao": "2024-02-01",
+        "data_atualizacao": "2026-07-12",
+        "versao": "2.0",
+        "estado": "publicado",
+        "visibilidade": "publico",
+        "tags": [
+            "apocrifo",
+            "gnostico",
+            "pistis-sophia",
+            "codex-askewianus",
+            "maria-madalena",
+            "reencarnacao",
+            "salmos",
+            "arcontes",
+            "caos"
+        ],
+        "leitura_estimada_minutos": 90,
+        "nivel_dificuldade": "avancado"
+    },
+    "conteudo": {
+        "seccoes": [
+            {
+                "id": "introducao",
+                "numero": 0,
+                "titulo": "Introdução: O Maior Texto Gnóstico",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "A Pistis Sophia é o texto gnóstico mais longo e mais complexo que chegou até nós. Não foi encontrada em Nag Hammadi — já era conhecida desde o século XVIII, quando o manuscrito copta foi adquirido em 1773 pelo médico e antiquário escocês Anthony Askew, dando-lhe o nome pelo qual é também conhecido: Codex Askewianus. Encontra-se actualmente no British Museum em Londres.",
+                        "O texto divide-se em quatro livros, provavelmente compostos em momentos diferentes entre os séculos III e IV. Os três primeiros formam um conjunto narrativo coerente. O quarto é estruturalmente diferente e possivelmente de origem distinta.",
+                        "A cena é a seguinte: onze anos após a ressurreição, Jesus ainda está com os seus discípulos. Numa manhã, enquanto meditam, uma luz imensuravelmente intensa desce sobre ele. Durante horas os discípulos não o conseguem ver — apenas a luz. Quando Jesus emerge da luz, diz-lhes que ascendeu aos mundos superiores e que vai revelar-lhes o que nunca foi revelado desde a fundação do mundo.",
+                        "O que se segue é uma das obras mais ambiciosas da literatura religiosa antiga — uma tentativa de descrever a totalidade do universo espiritual, a estrutura completa dos mundos de luz, a natureza da queda, e o caminho de regresso com uma precisão que beira o obsessivo."
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Introdução",
+                    "paragrafos": [
+                        "A introdução do texto estabelece uma rutura com a cronologia evangélica tradicional ao situar a grande revelação onze anos após a ressurreição. Este período simbólico marca a transição da instrução elementar (exotérica) para a transmissão dos mistérios profundos (esotéricos).",
+                        "O evento da teofania luminosa que oculta Jesus prepara os discípulos para uma cosmografia sem paralelos, onde o mestre deixa de falar como um instrutor terreno e assume a função de revelador universal do Pleroma."
+                    ]
+                }
+            },
+            {
+                "id": "parte-1",
+                "numero": 1,
+                "titulo": "Parte I — Sophia no Caos: A Queda Mais Profunda",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "A narrativa central dos três primeiros livros gira em torno de Pistis Sophia — literalmente 'Fé-Sabedoria' em grego. Sophia já a conhecemos do Apócrifo de João — é o Éon que caiu ao criar Ialdabaoth. Mas aqui a história é diferente e muito mais dramática.",
+                        "Sophia habita o décimo terceiro Éon — a última e mais elevada das esferas que existem abaixo do verdadeiro Pleroma. Ela vê acima de si a Luz das Luzes — o verdadeiro mundo de luz que está além dos mundos onde habita. É dominada por um desejo irresistível de ascender até essa Luz.",
+                        "Mas os Arcontes que governam as esferas abaixo dela — liderados por um ser chamado Authades, o Auto-Presunçoso — ressentem-na. Vêem a sua luz e querem-na para si. Authades envia emissários que se disfarçam de seres luminosos e enganam Sophia — fazem-na descer em vez de subir, convencendo-a de que a descida é o caminho para a Luz que procura.",
+                        "Sophia desce. E desce. E continua a descer — através das esferas dos Arcontes, cada vez mais profundamente no caos, cada vez mais longe da Luz que procurava. Os Arcontes rodeiam-na, tiram-lhe a sua luz, humilham-na, aprisionam-na no mais fundo do caos.",
+                        "E Sophia — sozinha, escarnecida, despojada — começa a cantar."
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte I",
+                    "paragrafos": [
+                        "A imagem de Sophia cantando no caos é uma das mais poderosas de toda a literatura religiosa. Não é resignation — é a alma que mesmo no ponto mais baixo da sua queda não para de se orientar para a Luz.",
+                        "Os cânticos de Sophia que Jesus cita e comenta ao longo da Pistis Sophia são estruturados a partir dos Salmos do Antigo Testamento — mas relidos através da lente gnóstica. O Salmo 22 — 'Deus meu, Deus meu, por que me abandonaste?' — torna-se a voz de Sophia no caos. O Salmo 69 — 'Salvai-me, ó Deus, pois as águas chegaram à minha alma' — é a sua oração de profundidade.",
+                        "Esta releitura dos Salmos é teologicamente audaciosa. O texto está a dizer que os Salmos mais desesperados do Antigo Testamento não são a voz de Israel histórico — são a voz da alma universal no seu momento de maior abandono. O sofrimento humano tem um arquétipo cósmico — Sophia no caos. E assim como Sophia foi eventualmente resgatada, também a alma humana pode sêlo.",
+                        "A figura de Authades — o Auto-Presunçoso — é particularmente significativa. Ele não é simplesmente mau — é o princípio do egocentrismo cósmico, a força que age sempre a partir do seu próprio interesse, que usa a aparência da luz para servir as trevas. É uma descrição precisa de uma forma de poder que reconhecemos facilmente no mundo humano."
+                    ],
+                    "referencias": [
+                        "Apócrifo de João — O Éon Sophia"
+                    ]
+                }
+            },
+            {
+                "id": "parte-2",
+                "numero": 2,
+                "titulo": "Parte II — Os Treze Cânitcos: Sophia Entre a Queda e o Resgate",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "No coração da Pistis Sophia encontram-se treze cânticos de Sophia — treze momentos em que a alma aprisionada se volta para a Luz e suplica. Cada cântico descreve um estado diferente da queda e uma dimensão diferente da esperança."
+                    ],
+                    "citacoes": [
+                        "A luz em que eu confiava foi tirada de mim e sou deixada na escuridão e na matéria do mundo. Enviei a minha força para o alto para a Luz e os guardiões das portas dos Éons humilharam-me.",
+                        "Olhei para cima e vi que a luz me abandonara. Olhei para baixo e vi trevas e matéria em grande quantidade. Não havia esperança de que alguém me salvasse. Procurei a luz e ela não estava. Procurei meu par e não o encontrei.",
+                        "Ouve-me pois a minha graça chegou ao seu fim. Eu sou uma que está no poder das trevas. Salva-me da mão dos leões e da boca dos dragões e das forças da matéria amarga.",
+                        "A minha força viu a Luz e alegrou-se. Os meus pés ficaram parados no lugar da rectidão. Louvai-o — o Senhor de todos os mundos — para que a sua graça e a sua bondade venham a todo o género."
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte II",
+                    "paragrafos": [
+                        "Os treze cânticos de Sophia são a espinha dorsal emocional da Pistis Sophia e revelam algo que os outros textos gnósticos que estudámos raramente mostram com esta intensidade: a dimensão do sofrimento na experiência gnóstica.",
+                        "O Apócrifo de João é relativamente frio e filosófico na sua descrição da queda. O Evangelho de Filipe é meditativo e sapiencial. Mas a Pistis Sophia mergulha na experiência visceral do abandono, da humilhação, da desesperança. É um texto que sabe o que é estar no fundo.",
+                        "Esta dimensão tem uma importância espiritual enorme. A gnose não é apenas conhecimento intelectual — é um caminho que passa pela escuridão. Sophia não ascende directamente da queda à Luz. Passa por treze momentos de crisis, de apelo, de esperança frustrada e renovada. A alma que busca a Luz tem de estar disposta a cantar no caos antes de o conseguir abandonar.",
+                        "Há aqui uma ressonância com a tradição mística cristã — em particular com o que João da Cruz chamou a 'noite escura da alma'. E não é coincidência: os grandes místicos cristãos medievais beberam, muitas vezes sem o saber, de fontes gnósticas que tinham sobrevivido de forma velada através dos séculos."
+                    ],
+                    "referencias": [
+                        "Apócrifo de João — Queda Cosmológica",
+                        "Evangelho de Filipe — Meditações Sapienciais"
+                    ]
+                }
+            },
+            {
+                "id": "parte-3",
+                "numero": 3,
+                "titulo": "Parte III — O Resgate: Jesus Desce ao Caos",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Após os treze cânticos de Sophia — após treze momentos de apelo sem resposta aparente — Jesus é enviado pelo Pai para descer ao caos e resgatar Sophia.",
+                        "A descida de Jesus ao caos é descrita com uma riqueza visual extraordinária. Ele desce através das esferas dos Arcontes, cada vez mais fundo, até chegar ao caos onde Sophia está aprisionada. Os Arcontes tentam detê-lo — não o reconhecem porque viaja disfarçado, como no Apócrifo de João.",
+                        "Quando chega a Sophia, Jesus não a liberta imediatamente. Primeiro dá-lhe a sua luz de volta — a luz que os Arcontes lhe roubaram. Sophia recobra a sua força. E então juntos — Sophia com a sua luz restaurada e Jesus como guia — começam a ascensão.",
+                        "Mas a ascensão não é simples. Cada esfera que atravessam tem guardiões que exigem palavras de passagem — nomes secretos, selos, mistérios que abrem as portas das esferas. Jesus conhece todas as palavras. Transmite-as a Sophia. E juntos sobem, esfera por esfera, até ao décimo terceiro Éon.",
+                        "Sophia não volta ao Pleroma imediatamente — fica no décimo terceiro Éon, restaurada mas ainda não completamente purificada. A purificação completa exigirá mais tempo e mais trabalho interior."
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte III",
+                    "paragrafos": [
+                        "A estrutura do resgate de Sophia revela algo de fundamental sobre a soteriologia da Pistis Sophia — a sua teoria da salvação é gradual, cooperativa e processual.",
+                        "Jesus não simplesmente liberta Sophia. Devolve-lhe primeiro a sua própria luz — restaura a sua capacidade de agir. E depois guia-a através das esferas, transmitindo os conhecimentos necessários para que ela própria abra as portas. A salvação aqui não é passiva — é uma colaboração entre o guia e a alma que ascende.",
+                        "Esta estrutura é muito diferente da soteriologia ortodoxa cristã, em que a salvação é um dom gratuito que o fiel recebe através da fé. Na Pistis Sophia, a salvação exige trabalho da alma — não trabalho moral no sentido de boas obras, mas trabalho de conhecimento, de purificação progressiva, de aprendizagem das realidades espirituais.",
+                        "As palavras de passagem que abrem as portas das esferas correspondem exactamente ao que no Evangelho de Maria Madalena a alma diz aos Arcontes durante a ascensão. São fórmulas de reconhecimento — não mágicas no sentido vulgar, mas declarações de conhecimento que provam que a alma sabe quem é e de onde vem. A porta que se abre não obedece a uma palavra mágica — obedece ao reconhecimento de uma verdade."
+                    ],
+                    "referencias": [
+                        "Apócrifo de João — O Salvador Disfarçado",
+                        "Evangelho de Maria Madalena — Ascensão da Alma e Arcontes"
+                    ]
+                }
+            },
+            {
+                "id": "parte-4",
+                "numero": 4,
+                "titulo": "Parte IV — Os Mistérios: A Arquitetura do Universo Espiritual",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Ao longo dos três primeiros livros, Jesus revela aos discípulos a estrutura completa do universo espiritual. Esta arquitectura é de uma complexidade que não tem paralelo em nenhum outro texto gnóstico.",
+                        "Existe o Tesouro da Luz — o mundo de luz supremo que está acima de todos os outros mundos. Divide-se em doze tesouros, cada um governado por um ser de luz diferente.",
+                        "Abaixo do Tesouro existem os doze Éons — as doze esferas de luz que constituem o Pleroma. Cada Éon tem os seus governadores, os seus habitantes, as suas leis.",
+                        "Abaixo dos doze Éons existe o décimo terceiro Éon — onde Sophia habita após o resgate, e que é o limiar entre o Pleroma e o caos.",
+                        "Abaixo do décimo terceiro Éon existem as esferas dos Arcontes — as sete esferas planetárias que já conhecemos do Apócrifo de João, governadas pelos poderes que aprisionam as almas.",
+                        "E abaixo de tudo existe o Amente — o mundo dos mortos, onde as almas que não alcançaram a gnose esperam o seu regresso ao mundo material através da reencarnação.",
+                        "Jesus descreve em detalhe o que acontece às almas em cada nível. Descreve os diferentes tipos de pecado e as diferentes consequências. Descreve os mistérios que permitem às almas ascender de esfera em esfera. Descreve o que acontece à alma de um gnóstico após a morte — como atravessa as esferas dos Arcontes sem ser retida, usando o conhecimento que recebeu em vida."
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte IV",
+                    "paragrafos": [
+                        "A arquitectura espiritual da Pistis Sophia é de uma ambição cartográfica impressionante. O texto quer mapear a totalidade do ser — desde o Tesouro da Luz supremo até ao mais fundo do Amente. Não deixa nenhum território por descrever.",
+                        "Esta obsessão com a arquitectura espiritual tem uma função que vai além da especulação teológica. Cada nível descrito corresponde a uma etapa do caminho da alma — e conhecer a arquitectura é parte essencial da viagem. A alma que sabe onde está e para onde vai pode navegar com precisão. A alma ignorante vagueia.",
+                        "O conceito do Amente — o mundo dos mortos — é particularmente interessante porque revela a posição da Pistis Sophia sobre a reencarnação. As almas que não alcançaram a gnose não são punidas eternamente — regressam ao mundo material em novos corpos, com novas oportunidades de despertar. A compaixão cósmica é infinita. Nenhuma centelha de luz se perde para sempre.",
+                        "Mas há uma urgência no texto. Jesus diz repetidamente aos discípulos: 'Estes são os últimos tempos.' A oportunidade de receber os mistérios e de ascender é preciosa e limitada. Não por crueldade divina mas porque cada vida é uma oportunidade que passa."
+                    ],
+                    "referencias": [
+                        "Apócrifo de João — As Sete Esferas Planetárias"
+                    ]
+                }
+            },
+            {
+                "id": "parte-5",
+                "numero": 5,
+                "titulo": "Parte V — As Discípulas: As Vozes que o Texto Preserva",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Um dos aspectos mais extraordinários da Pistis Sophia é a presença activa das discípulas no diálogo. Ao longo do texto são as mulheres que fazem as perguntas mais profundas e que recebem os elogios mais altos de Jesus.",
+                        "Maria Madalena domina o diálogo. Jesus diz dela em determinado momento: 'Maria, tu eres bem-aventurada, acima de todas as mulheres na terra, porque serás o Pleroma dos Pleromas e a consumação de todas as consumações.'",
+                        "Maria faz 39 das 46 perguntas nos dois primeiros livros. As suas perguntas não são pedidos de esclarecimento — são interpretações, associações, saltos de compreensão que Jesus confirma e aprofunda. Ela não é uma aluna — é uma interlocutora.",
+                        "Salomé pergunta sobre a natureza dos mistérios e a possibilidade de a mulher aceder a eles completamente. Jesus responde que não há distinção — o mistério não conhece género.",
+                        "Maria, mãe de Jesus, faz perguntas sobre a natureza da alma e sobre o destino dos que morrem sem gnose. A sua voz é mais materna, mais preocupada com o destino dos outros.",
+                        "Marta pergunta sobre a estrutura dos mondos e recebe uma resposta que a situa como guardiã de conhecimentos sobre os Arcontes."
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte V",
+                    "paragrafos": [
+                        "A presença dominante de Maria Madalena como interlocutora principal confirma o que o Evangelho de Filipe e o Evangelho de Maria Madalena já estabeleceram: ela é, na tradição gnóstica, a discípula que mais completamente recebeu e compreendeu.",
+                        "Mas há algo mais subtil aqui. A Pistis Sophia não apenas dá voz às mulheres — dá-lhes as perguntas mais complexas e as respostas mais elevadas. É como se o texto estivesse conscientemente a construir um contra-narrativa à Igreja institucional que sistematicamente excluía as mulheres do ensinamento e da autoridade espiritual.",
+                        "O confronto entre Pedro e Maria Madalena que vimos no Evangelho de Maria Madalena ressoa aqui de forma diferente. Em vez do conflito aberto, a Pistis Sophia simplesmente age como se o conflito não existisse — trata Maria Madalena como a principal discípula sem sequer questionar esse facto. É uma forma mais radical de subversão — não argumentar contra a exclusão mas simplesmente ignorá-la."
+                    ],
+                    "referencias": [
+                        "Evangelho de Filipe — Maria Madalena como Consorte",
+                        "Evangelho de Maria Madalena — O Confronto com Pedro"
+                    ]
+                }
+            },
+            {
+                "id": "parte-6",
+                "numero": 6,
+                "titulo": "Parte VI — O Quarto Livro: Os Dois Espaços e os Dois Tipos de Almas",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "O quarto livro da Pistis Sophia é estruturalmente diferente dos três primeiros. É mais filosófico, menos narrativo, e trata de dois temas que fecham o sistema teológico do texto inteiro.",
+                        "O primeiro tema é a distinção entre dois espaços onde as almas residem após a morte:",
+                        "O espaço dos justos — onde as almas que fizeram bem no mundo material mas não receberam os mistérios descansam até ao momento da sua purificação completa e eventual ascensão.",
+                        "O espaço dos ímpios — onde as almas que fizeram o mal são purificadas através de processos que o texto descreve com uma minúcia que antecipa o purgatório medieval cristão.",
+                        "O segundo tema é a distinção entre dois tipos de almas que recebem os mistérios:",
+                        "As almas pneumáticas — as que possuem a centelha de luz e têm capacidade natural para a gnose. São as almas que quando ouvem o ensinamento imediatamente o reconhecem como verdadeiro — porque já o sabiam, apenas haviam esquecido.",
+                        "As almas psíquicas — as que têm alma mas não possuem a faísca pneumática. Podem receber ensinamentos morais e viver bem, mas não conseguem ascender ao Pleroma por si mesmas. Dependem da graça e da intercessão dos pneumáticos."
+                    ]
+                },
+                "exegese": {
+                    "titulo": "Exegese da Parte VI",
+                    "paragrafos": [
+                        "A distinção entre almas pneumáticas e psíquicas é um dos aspectos mais controversos de toda a teologia gnóstica — e um dos mais mal compreendidos.",
+                        "À primeira vista parece um determinismo cruel: algumas almas podem ser salvas, outras não. Mas a leitura gnóstica é mais subtil. A distinção não é entre pessoas que merecem e não merecem a salvação — é entre níveis de capacidade espiritual que a própria alma desenvolveu ao longo de múltiplas encarnações.",
+                        "Mais importante: a Pistis Sophia não abandona as almas psíquicas. O texto tem uma compaixão genuína por elas — descreve os processos de purificação pelos quais passam, a ajuda que recebem dos seres de luz, as oportunidades que se repetem em cada vida. A diferença entre pneumáticos e psíquicos não é a diferença entre salvos e condenados — é a diferença entre quem pode ascender nesta vida e quem precisará de mais tempo.",
+                        "Esta visão tem uma implicação ética que o texto torna explícita: os pneumáticos têm responsabilidade para com os psíquicos. Quem recebeu os mistérios tem a obrigação de os transmitir, de guiar, de despertar. A gnose não é um privilégio a guardar — é uma luz a partilhar."
+                    ]
+                }
+            },
+            {
+                "id": "sintese",
+                "numero": 7,
+                "titulo": "Síntese: O Que a Pistis Sophia Acrescenta",
+                "texto_sagrado": {
+                    "paragrafos": [
+                        "Os quatro textos que estudámos formam agora uma arquitectura completa:",
+                        "O Apócrifo de João — o mapa cósmico da queda e da redenção.",
+                        "O Evangelho de Filipe — os sacramentos e a transformação interior.",
+                        "O Evangelho de Maria Madalena — a experiência vivida da ascensão e o conflito entre gnose e institution.",
+                        "A Pistis Sophia — a dimensão do sofrimento no caminho, a gradualidade da salvação, e a compaixão cósmica que não abandona nenhuma alma.",
+                        "O que a Pistis Sophia acrescenta de único é a escala do sofrimento e a paciência do divino. Sophia cai profundamente — mais profundamente do que qualquer outro texto descreve. E é resgatada — mas não de imediato, não sem esforço, não sem os seus treze cânticos no caos. A mensagem é de uma honestidade perturbadora: o caminho de volta à Luz pode ser longo e pode ser doloroso. Mas nenhuma faísca de luz se perde para sempre."
+                    ]
+                }
+            }
+        ]
+    },
+    "referencias": {
+        "texto_original": {
+            "fonte": "Codex Askewianus — British Museum Manuscripts",
+            "editor": "Anthony Askew (Historical Provenance)",
+            "editora": "British Museum Publications",
+            "ano": 1773
+        }
+    },
+    "textos_relacionados": [
+        {
+            "id": "apj-001",
+            "titulo": "Apócrifo de João",
+            "relacao": "Cosmológica — Fornece o antecedente de Sophia e a estrutura básica das sete esferas arcontes."
+        },
+        {
+            "id": "evf-002",
+            "titulo": "Evangelho de Filipe",
+            "relacao": "Paralelo — Expande o papel iniciático e espiritual de Maria Madalena como o par do Salvador."
+        },
+        {
+            "id": "evmm-003",
+            "titulo": "Evangelho de Maria Madalena",
+            "relacao": "Soteriológica — Partilha as fórmulas e o confronto da alma com os guardiões arcontes durante a ascensão cósmica."
+        }
+    ]
+}

@@ -74,7 +74,10 @@
         <section class="library-results">
             <div class="container">
                 <div class="library-results__content">
-                    <p><strong>1</strong> livro encontrado</p>
+                    <p>
+                        <strong id="booksCount">0</strong>
+                        livros encontrados
+                    </p>
                 </div>
             </div>
         </section>
@@ -82,8 +85,9 @@
         <!-- Livros -->
         <section class="library-books">
             <div class="container">
-                <div class="books-grid">
-                    <!-- Cards renderizados via JavaScript -->
+                <div
+                    id="booksContainer"
+                    class="books-grid">
                 </div>
             </div>
         </section>
@@ -95,6 +99,8 @@
     <script src="../assets/js/componentes.js"></script>
     <script src="../assets/js/navigation.js"></script>
     <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/services/livrosService.js"></script>
+    <script src="../assets/js/biblioteca.js"></script>
 </body>
 
 </html>

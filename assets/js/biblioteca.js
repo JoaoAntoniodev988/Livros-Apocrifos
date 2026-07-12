@@ -1,66 +1,52 @@
-const container = document.querySelector(".lista-livros");
-const pesquisa = document.querySelector("#pesquisa");
+document.addEventListener("DOMContentLoaded", async () => {
 
-function mostrarLivros(lista){
+    const container = document.getElementById("booksContainer");
 
-    container.innerHTML = "";
+    if(!container) return;
 
-    lista.forEach(livro=>{
+    const livros = await livrosService.carregar();
 
-        container.innerHTML += `
+    livros.forEach(livro => {
 
-<article class="card-livro">
-
-    <div class="livro-topo">
-
-        <div class="capa-livro">
-
-            📖
-
-        </div>
-
-        <div class="info-livro">
-
-            <span class="jornada">${livro.jornada}</span>
-
-            <h3>${livro.titulo}</h3>
-
-            <p>${livro.autor}</p>
-
-        </div>
-
-    </div>
-
-    <div class="livro-footer">
-
-        <span>⏱ ${livro.tempo}</span>
-
-        <a class="btn-ler" href="${livro.arquivo}">
-            Ler
-        </a>
-
-    </div>
-
-</article>
-
-`;
+        container.appendChild(
+            criarCard(livro)
+        );
 
     });
 
+});
+
+function criarCard(livro){
+    const article = document.createElement("article");
+    article.className = "book-card"; // Mantém a tua classe original
+
+    // Gera as tags apenas se existirem no JSON
+    const tagsHTML = livro.tags && livro.tags.length > 0 
+        ? `<div class="book-card-tags">
+            ${livro.tags.map(tag => `<span class="book-card-tag">#${tag}</span>`).join('')}
+           </div>`
+        : '';
+
+    article.innerHTML = `
+        <div class="book-card-meta">
+            <span class="book-card-category">${livro.categoria || ''}</span>
+            <span class="book-card-badge">${livro.seculo || ''}</span>
+        </div>
+
+        <h3 class="book-card-title">${livro.titulo}</h3>
+        
+        ${livro.subtitulo ? `<p class="book-card-subtitle">${livro.subtitulo}</p>` : ''}
+
+        <p class="book-card-author">Por: <strong>${livro.autor || 'Anónimo'}</strong></p>
+
+        <p class="book-card-description">${livro.descricao}</p>
+
+        ${tagsHTML}
+
+        <a href="leitura.html?id=${livro.id}" class="button-primary">
+            Ler Obra
+        </a>
+    `;
+
+    return article;
 }
-
-// mostrarLivros(livros);
-
-// pesquisa.addEventListener("input",()=>{
-
-//     const texto = pesquisa.value.toLowerCase();
-
-//     const resultado = livros.filter(livro=>{
-
-//         return livro.titulo.toLowerCase().includes(texto);
-
-//     });
-
-//     mostrarLivros(resultado);
-
-// });

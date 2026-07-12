@@ -1,16 +1,25 @@
 class LivrosService {
 
-    constructor() {
+    constructor(){
 
         this.livros = [];
 
+        this.basePath =
+            window.location.pathname.includes("/paginas/")
+                ? "../"
+                : "";
+
     }
 
-    async carregar() {
+    async carregar(){
 
         const response = await fetch(
-            "assets/data/livros.json"
+            `${this.basePath}assets/dados/livros.json`
         );
+
+        if(!response.ok){
+            throw new Error("Erro ao carregar livros.");
+        }
 
         this.livros = await response.json();
 
@@ -18,13 +27,13 @@ class LivrosService {
 
     }
 
-    getTodos() {
+    getTodos(){
 
         return this.livros;
 
     }
 
-    getPorId(id) {
+    getPorId(id){
 
         return this.livros.find(
             livro => livro.id === id
@@ -34,5 +43,4 @@ class LivrosService {
 
 }
 
-const livrosService =
-    new LivrosService();
+const livrosService = new LivrosService();
