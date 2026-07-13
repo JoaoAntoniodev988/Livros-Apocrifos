@@ -47,6 +47,82 @@ document.addEventListener("DOMContentLoaded", async () => {
 function renderCabecalho(livro) {
     document.getElementById("bookTitle").textContent = livro.titulo;
     document.getElementById("bookDescription").textContent = livro.subtitulo || "";
+    renderFichaTecnica(livro);
+}
+
+function renderFichaTecnica(livro) {
+
+    const container = document.getElementById("fichaTecnica");
+
+    const itens = [];
+
+    // Idioma — pode ser string ou objeto
+    if (livro.idioma) {
+        const idiomaTexto = typeof livro.idioma === "string"
+            ? livro.idioma
+            : livro.idioma.original;
+        itens.push({ label: "<strong>Idioma original:</strong>", valor: idiomaTexto });
+    }
+
+    if (livro.traducao_disponivel?.length) {
+        itens.push({ label: "<strong>Traduções disponíveis: </strong>", valor: livro.traducao_disponivel.join(", ") });
+    }
+
+    if (livro.colecao?.codice) {
+        itens.push({ label: "<Strong>Códice</strong>", valor: livro.colecao.codice });
+    }
+
+    if (livro.colecao?.local_descoberta) {
+        itens.push({ label: "<Strong>Local de descoberta: </strong>", valor: livro.colecao.local_descoberta });
+    }
+
+    if (livro.colecao?.ano_descoberta) {
+        itens.push({ label: "<Strong>Ano de descoberta</strong>", valor: livro.colecao.ano_descoberta });
+    }
+
+    if (livro.colecao?.localizacao_fisica) {
+        itens.push({ label: "<Strong>Localização atual</strong>", valor: livro.colecao.localizacao_fisica });
+    }
+
+    // Fonte do texto original
+    const fonte = livro.referencias?.texto_original;
+    if (fonte) {
+        const partes = [fonte.fonte, fonte.editor, fonte.editora, fonte.ano].filter(Boolean);
+        itens.push({ label: "<Strong>Fonte do texto</strong>", valor: partes.join(", ") });
+    }
+
+    container.innerHTML = `
+        <div class="ficha-tecnica__grid">
+            ${itens.map(item => `
+                <div class="ficha-tecnica__item">
+                    <dt>${item.label}</dt>
+                    <dd>${item.valor}</dd>
+                </div>
+            `).join("")}
+        </div>
+
+        ${renderEstudosAcademicos(livro.referencias?.estudos_academicos)}
+    `;
+
+}
+
+function renderEstudosAcademicos(estudos) {
+
+    if (!estudos || !estudos.length) return "";
+
+    return `
+        <div class="ficha-tecnica__estudos">
+            <h4>Estudos Académicos</h4>
+            <ul>
+                ${estudos.map(e => `
+                    <li>
+                        ${e.autor}. <em>${e.titulo}</em>${e.editora ? `, ${e.editora}` : ""}${e.ano ? ` (${e.ano})` : ""}.
+                    </li>
+                `).join("")}
+            </ul>
+        </div>
+    `;
+
 }
 
 function renderSeccaoAtual() {
