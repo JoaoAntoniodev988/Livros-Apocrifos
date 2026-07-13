@@ -1,94 +1,75 @@
 {
     "id": "apj-001",
     "slug": "apocrifo-de-joao",
-    "titulo": {
-        "principal": "Apócrifo de João",
-        "alternativo": [
-            "Livro Secreto de João",
-            "Apocryphon of John",
-            "O Evangelho Secreto"
-        ]
-    },
-    "autor": {
-        "nome": "Anónimo",
-        "tradicao": "Gnosticismo Setiano",
-        "seculo": "Século II d.C.",
-        "nota": "Atribuído à tradição setiana. Irineu de Lyon referiu-o em 180 d.C., confirmando que o original é anterior a essa data."
-    },
-    "idioma": {
-        "original": "Grego",
-        "manuscrito": "Copta",
-        "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"]
-    },
+    "titulo": "Apócrifo de João",
+    "titulos_alternativos": [
+    "Livro Secreto de João",
+    "Apocryphon of John",
+    "O Evangelho Secreto"
+    ], 
+    "arquivo": "1-apocrifo-de-joao.json",
+    "autor": "Anónimo",
+    "tradicao": "Gnosticismo Setiano",
+    "seculo": "Século II d.C.",
+    "nota": "Atribuído à tradição setiana. Irineu de Lyon referiu-o em 180 d.C., o que confirma que o original é anterior a essa data.",
+
+    "idioma_original": "Grego",
+    "idioma_manuscrito": "Copta",
+    "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+
     "colecao": {
-        "nome": "Biblioteca de Nag Hammadi",
-        "codice": "II, III e IV",
-        "localizacao_fisica": "Museu Copta do Cairo, Egito",
-        "ano_descoberta": 1945,
-        "local_descoberta": "Nag Hammadi, Alto Egito"
+    "nome": "Biblioteca de Nag Hammadi",
+    "codice": "II, III e IV",
+    "localizacao_fisica": "Museu Copta do Cairo, Egito",
+    "ano_descoberta": 1945,
+    "local_descoberta": "Nag Hammadi, Alto Egito"
     },
+    
     "categoria": {
-        "principal": "Apocalipse Gnóstico",
-        "secundaria": [
-            "Cosmogonia",
-            "Soteriologia",
-            "Cristologia Gnóstica",
-            "Literatura Apócrifa",
-            "Gnosticismo Setiano"
-        ],
+    "principal": "Apocalipse Gnóstico",
+    "secundaria": ["Cosmogonia", "Soteriologia", "Cristologia Gnóstica", "Literatura Apócrifa", "Gnosticismo Setiano"]
+    },
+
+    "classificacao": {
         "testamento": "Novo Testamento Apócrifo",
         "genero_literario": "Revelação Dialogada"
     },
-    "imagem": {
-        "capa": {
-            "url": "/imagens/apocrifo-de-joao-capa.jpg",
-            "alt": "Manuscrito copta do Apócrifo de João — Nag Hammadi Códice II",
-            "credito": "Museu Copta do Cairo"
-        },
-        "manuscrito": {
-            "url": "/imagens/apocrifo-de-joao-manuscrito.jpg",
-            "alt": "Página original do manuscrito copta do Apócrifo de João",
-            "credito": "Biblioteca de Nag Hammadi — Códice II"
-        },
-        "thumbnail": {
-            "url": "/imagens/apocrifo-de-joao-thumb.jpg",
-            "alt": "Apócrifo de João — miniatura"
-        }
+
+    "imagens": [
+    { "tipo": "capa", "url": "/imagens/apocrifo-de-joao-capa.jpg", "alt": "Manuscrito copta do Apócrifo de João — Nag Hammadi Códice II", "credito": "Museu Copta do Cairo" },
+    { "tipo": "manuscrito", "url": "/imagens/apocrifo-de-joao-manuscrito.jpg", "alt": "Página original do manuscrito copta do Apócrifo de João", "credito": "Biblioteca de Nag Hammadi — Códice II" },
+    { "tipo": "thumbnail", "url": "/imagens/apocrifo-de-joao-thumb.jpg", "alt": "Apócrifo de João — miniatura" }
+    ],
+
+   "descricao": {
+    "curta": "O texto fundacional do gnosticismo setiano — uma revelação do Cristo ressuscitado a João sobre a origem do cosmos, a queda de Sophia, o aprisionamento da centelha humana e o caminho de regresso à Luz.",
+    "longa": "O Apócrifo de João é o texto mais importante e mais copiado de toda a Biblioteca de Nag Hammadi. Existe em duas versões — curta e longa — encontradas em três cópias separadas. Foi escrito antes de 180 d.C. e pertence ao ramo gnóstico setiano. Narra o encontro de João com o Cristo ressuscitado numa montanha, e a revelação que recebe sobre a estrutura completa do cosmos espiritual: o Pai Invisível e Silencioso, a emanação de Barbelo como Mãe Divina, o Pleroma dos Éons, a queda de Sophia e o nascimento de Ialdabaoth, a criação do ser humano como acidente de roubo de luz, o aprisionamento da centelha pelo esquecimento e a descida do Cristo para despertar a memória adormecida. O texto inclui na versão longa o extraordinário Hino da Pronoia — um discurso na primeira pessoa em que o próprio Espírito Invisível descreve as suas três descidas ao mundo material para resgatar as centelhas aprisionadas.",
+    "temas_principais": [
+      "Cosmogonia gnóstica", "A queda de Sophia", "Ialdabaoth — o Demiurgo ignorante",
+      "A criação do ser humano", "As sete almas implantadas pelos Arcontes",
+      "A anamnese como salvação", "O Hino da Pronoia", "A reencarnação e o destino das almas"
+    ]
     },
-    "descricao": {
-        "curta": "O texto fundacional do gnosticismo setiano — uma revelação do Cristo ressuscitado a João sobre a origem do cosmos, a queda de Sophia, o aprisionamento da centelha humana e o caminho de regresso à Luz.",
-        "longa": "O Apócrifo de João é o texto mais importante e mais copiado de toda a Biblioteca de Nag Hammadi. Existe em duas versões — curta e longa — encontradas em três cópias separadas. Foi escrito antes de 180 d.C. e pertence ao ramo gnóstico setiano.",
-        "temas_principais": [
-            "Cosmogonia gnóstica",
-            "A queda de Sophia",
-            "Ialdabaoth — o Demiurgo ignorante",
-            "A criação do ser humano",
-            "As sete almas implantadas pelos Arcontes",
-            "A anamnese como salvação",
-            "O Hino da Pronoia",
-            "A reencarnação e o destino das almas"
-        ]
+
+    "referencias": {
+    "texto_original": { "fonte": "Nag Hammadi Scriptures", "editor": "Marvin Meyer", "editora": "HarperOne", "ano": 2007 },
+    "estudos_academicos": [
+      { "autor": "Michael Waldstein e Frederik Wisse", "titulo": "The Apocryphon of John: Synopsis of Nag Hammadi Codices II,1, III,1 and IV,1 with BG 8502,2", "ano": 1995 },
+      { "autor": "Karen L. King", "titulo": "The Secret Revelation of John", "editora": "Harvard University Press", "ano": 2006 }
+    ]
     },
+
     "metadados": {
-        "data_criacao": "2024-01-15",
-        "data_atualizacao": "2024-04-24",
-        "versao": "2.0",
-        "estado": "publicado",
-        "visibilidade": "publico",
-        "tags": [
-            "apocrifo",
-            "gnostico",
-            "nag-hammadi",
-            "setiano",
-            "sophia",
-            "demiurgo",
-            "pleroma",
-            "cristologia",
-            "cosmogonia"
-        ],
-        "leitura_estimada_minutos": 45,
-        "nivel_dificuldade": "avancado"
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["apocrifo", "gnostico", "nag-hammadi", "setiano", "sophia", "demiurgo", "pleroma", "cristologia", "cosmogonia"],
+    "leitura_estimada_minutos": 45,
+    "nivel_dificuldade": "avancado"
     },
+
     "conteudo": {
         "seccoes": [
             {
@@ -371,27 +352,7 @@
             }
         ]
     },
-    "referencias": {
-        "texto_original": {
-            "fonte": "Nag Hammadi Scriptures",
-            "editor": "Marvin Meyer",
-            "editora": "HarperOne",
-            "ano": 2007
-        },
-        "estudos_academicos": [
-            {
-                "autor": "Michael Waldstein e Frederik Wisse",
-                "titulo": "The Apocryphon of John: Synopsis of Nag Hammadi Codices II,1, III,1 and IV,1 with BG 8502,2",
-                "ano": 1995
-            },
-            {
-                "autor": "Karen L. King",
-                "titulo": "The Secret Revelation of John",
-                "editora": "Harvard University Press",
-                "ano": 2006
-            }
-        ]
-    },
+    
     "textos_relacionados": [
         {
             "id": "evf-002",

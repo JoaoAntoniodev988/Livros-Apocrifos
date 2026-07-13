@@ -3,64 +3,98 @@
   "id": "apj-001",
   "slug": "apocrifo-de-joao",
   "titulo": "Apócrifo de João",
-  "subtitulo": "O Livro Secreto de João (Apocryphon of John)",
+  "titulos_alternativos": [
+    "Livro Secreto de João",
+    "Apocryphon of John",
+    "O Evangelho Secreto"
+  ],
+  "arquivo": "1-apocrifo-de-joao.json",
+  "autor": "Anónimo",
+  "tradicao": "Gnosticismo Setiano",
   "seculo": "Século II d.C.",
-  "categoria": {
-    "principal": "Apocalipse Gnóstico"
-  },
-  "descricao": {
-    "curta": "O texto fundacional do gnosticismo setiano — uma revelação do Cristo ressuscitado a João sobre a origem do cosmos, a queda de Sophia, o aprisionamento da centelha humana e o caminho de regresso à Luz.",
-    "arquivo":"1-apocrifo-de-joao.json",
-    "temas_principais": [
-      "Cosmogonia gnóstica",
-      "A queda de Sophia",
-      "Ialdabaoth — o Demiurgo ignorante",
-      "A criação do ser humano",
-      "As sete almas implantadas pelos Arcontes",
-      "A anamnese como salvação",
-      "O Hino da Pronoia",
-      "A reencarnação e o destino das almas"
-    ]
-  },
-  "referencias": {
-    "texto_original": {
-      "fonte": "Nag Hammadi Scriptures",
-      "editor": "Marvin Meyer",
-      "editora": "HarperOne",
-      "ano": 2007
-    },
-    "estudos_academicos": [
-      {
-        "autor": "Michael Waldstein e Frederik Wisse",
-        "titulo": "The Apocryphon of John: Synopsis of Nag Hammadi Codices II,1, III,1 and IV,1 with BG 8502,2",
-        "ano": 1995
-      },
-      {
-        "autor": "Karen L. King",
-        "titulo": "The Secret Revelation of John",
-        "editora": "Harvard University Press",
-        "ano": 2006
-      }
-    ]
-  },
-  "idioma": "Grego",
+  "nota": "Atribuído à tradição setiana. Irineu de Lyon referiu-o em 180 d.C., o que confirma que o original é anterior a essa data.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta",
   "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+
   "colecao": {
     "nome": "Biblioteca de Nag Hammadi",
     "codice": "II, III e IV",
     "localizacao_fisica": "Museu Copta do Cairo, Egito",
     "ano_descoberta": 1945,
     "local_descoberta": "Nag Hammadi, Alto Egito"
+  },
+
+  "categoria": {
+    "principal": "Apocalipse Gnóstico",
+    "secundaria": ["Cosmogonia", "Soteriologia", "Cristologia Gnóstica", "Literatura Apócrifa", "Gnosticismo Setiano"]
+  },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Revelação Dialogada"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/apocrifo-de-joao-capa.jpg", "alt": "Manuscrito copta do Apócrifo de João — Nag Hammadi Códice II", "credito": "Museu Copta do Cairo" },
+    { "tipo": "manuscrito", "url": "/imagens/apocrifo-de-joao-manuscrito.jpg", "alt": "Página original do manuscrito copta do Apócrifo de João", "credito": "Biblioteca de Nag Hammadi — Códice II" },
+    { "tipo": "thumbnail", "url": "/imagens/apocrifo-de-joao-thumb.jpg", "alt": "Apócrifo de João — miniatura" }
+  ],
+
+  "descricao": {
+    "curta": "O texto fundacional do gnosticismo setiano — uma revelação do Cristo ressuscitado a João sobre a origem do cosmos, a queda de Sophia, o aprisionamento da centelha humana e o caminho de regresso à Luz.",
+    "longa": "O Apócrifo de João é o texto mais importante e mais copiado de toda a Biblioteca de Nag Hammadi. Existe em duas versões — curta e longa — encontradas em três cópias separadas. Foi escrito antes de 180 d.C. e pertence ao ramo gnóstico setiano. Narra o encontro de João com o Cristo ressuscitado numa montanha, e a revelação que recebe sobre a estrutura completa do cosmos espiritual: o Pai Invisível e Silencioso, a emanação de Barbelo como Mãe Divina, o Pleroma dos Éons, a queda de Sophia e o nascimento de Ialdabaoth, a criação do ser humano como acidente de roubo de luz, o aprisionamento da centelha pelo esquecimento e a descida do Cristo para despertar a memória adormecida. O texto inclui na versão longa o extraordinário Hino da Pronoia — um discurso na primeira pessoa em que o próprio Espírito Invisível descreve as suas três descidas ao mundo material para resgatar as centelhas aprisionadas.",
+    "temas_principais": [
+      "Cosmogonia gnóstica", "A queda de Sophia", "Ialdabaoth — o Demiurgo ignorante",
+      "A criação do ser humano", "As sete almas implantadas pelos Arcontes",
+      "A anamnese como salvação", "O Hino da Pronoia", "A reencarnação e o destino das almas"
+    ]
+  },
+
+  "referencias": {
+    "texto_original": { "fonte": "Nag Hammadi Scriptures", "editor": "Marvin Meyer", "editora": "HarperOne", "ano": 2007 },
+    "estudos_academicos": [
+      { "autor": "Michael Waldstein e Frederik Wisse", "titulo": "The Apocryphon of John: Synopsis of Nag Hammadi Codices II,1, III,1 and IV,1 with BG 8502,2", "ano": 1995 },
+      { "autor": "Karen L. King", "titulo": "The Secret Revelation of John", "editora": "Harvard University Press", "ano": 2006 }
+    ]
+  },
+
+    "metadados": {
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["apocrifo", "gnostico", "nag-hammadi", "setiano", "sophia", "demiurgo", "pleroma", "cristologia", "cosmogonia"],
+    "leitura_estimada_minutos": 45,
+    "nivel_dificuldade": "avancado"
   }
 },
   {
   "id": "evf-002",
   "slug": "evangelho-de-filipe",
   "titulo": "Evangelho de Filipe",
-  "subtitulo": "Os Sacramentos da Câmara Nupcial",
-  "autor": "Anónimo (Tradição Valentiniana)",
-  "nota": "Não é um evangelho narrativo, mas um florilégio de meditações teológicas valentinianas, provavelmente compilado a partir de fontes catequéticas ou litúrgicas diversas.",
+  "titulos_alternativos": [
+    "Os Sacramentos da Câmara Nupcial",
+    "The Gospel of Philip"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Valentinianismo",
   "seculo": "Século III d.C.",
+  "nota": "Não é um evangelho narrativo, mas um florilégio de meditações teológicas valentinianas, provavelmente compilado a partir de fontes catequéticas ou litúrgicas diversas.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta (Sahídico, provável tradução do grego)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+
+  "colecao": {
+    "nome": "Biblioteca de Nag Hammadi",
+    "codice": "II, 3",
+    "localizacao_fisica": "Museu Copta do Cairo, Egito",
+    "ano_descoberta": 1945,
+    "local_descoberta": "Nag Hammadi, Alto Egito"
+  },
+
   "categoria": {
     "principal": "Evangelhos Gnósticos",
     "secundaria": [
@@ -70,9 +104,20 @@
       "Teologia Nupcial"
     ]
   },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Florilégio Teológico"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/evangelho-de-filipe-capa.jpg", "alt": "Manuscrito copta do Evangelho de Filipe — Nag Hammadi Códice II", "credito": "Museu Copta do Cairo" },
+    { "tipo": "manuscrito", "url": "/imagens/evangelho-de-filipe-manuscrito.jpg", "alt": "Página original do manuscrito copta do Evangelho de Filipe", "credito": "Biblioteca de Nag Hammadi — Códice II" },
+    { "tipo": "thumbnail", "url": "/imagens/evangelho-de-filipe-thumb.jpg", "alt": "Evangelho de Filipe — miniatura" }
+  ],
+
   "descricao": {
     "curta": "Um florilégio focado nos ritos de transformação e na união mística da alma — batismo, unção, eucaristia, redenção e câmara nupcial como caminhos sacramentais de reintegração com o Pleroma.",
-    "arquivo": "2-evangelho-de-filipe.json",
+    "longa": "O Evangelho de Filipe não segue uma estrutura narrativa; é antes uma coleção de aforismos, meditações e fragmentos de instrução catequética valentiniana, organizados de forma associativa em torno de temas sacramentais. Discute os cinco sacramentos — batismo, crisma (unção), eucaristia, redenção e câmara nupcial — como etapas de um processo de reintegração da alma com o seu par celeste no Pleroma. Um dos seus temas centrais é a separação original entre Adão e Eva como origem simbólica da morte, e a câmara nupcial como o mistério que restaura essa unidade perdida. O texto também é conhecido por referir a proximidade entre Jesus e Maria Madalena, chamando-a de sua koinonos (companheira), um detalhe que gerou intenso debate acadêmico e popular sobre o papel das mulheres no cristianismo primitivo.",
     "temas_principais": [
       "Os cinco sacramentos valentinianos",
       "A Câmara Nupcial como mistério supremo",
@@ -84,6 +129,7 @@
       "Maria Madalena como companheira (koinonos) de Jesus"
     ]
   },
+
   "referencias": {
     "texto_original": {
       "fonte": "Nag Hammadi Scriptures",
@@ -92,41 +138,47 @@
       "ano": 2007
     },
     "estudos_academicos": [
-      {
-        "autor": "Wesley W. Isenberg",
-        "titulo": "The Gospel According to Philip (in The Nag Hammadi Library)",
-        "ano": 1988
-      },
-      {
-        "autor": "Hans-Martin Schenke",
-        "titulo": "Das Philippus-Evangelium (Nag-Hammadi-Codex II,3)",
-        "editora": "Akademie Verlag",
-        "ano": 1997
-      }
+      { "autor": "Wesley W. Isenberg", "titulo": "The Gospel According to Philip (in The Nag Hammadi Library)", "ano": 1988 },
+      { "autor": "Hans-Martin Schenke", "titulo": "Das Philippus-Evangelium (Nag-Hammadi-Codex II,3)", "editora": "Akademie Verlag", "ano": 1997 }
     ]
   },
-  "idioma": "Copta (Sahídico, provável tradução do grego)",
-  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
-  "colecao": {
-    "nome": "Biblioteca de Nag Hammadi",
-    "codice": "II, 3",
-    "localizacao_fisica": "Museu Copta do Cairo, Egito",
-    "ano_descoberta": 1945,
-    "local_descoberta": "Nag Hammadi, Alto Egito"
-  },
-  "tags": ["nag-hammadi", "apocrifo", "sacramentos", "valentino", "camara-nupcial"],
-  "leitura_estimada_minutos": 20,
-  "nivel_dificuldade": "intermedio",
-  "estado": "publicado"
+    "arquivo": "2-evangelho-de-filipe.json",
+    "metadados": {
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["nag-hammadi", "apocrifo", "sacramentos", "valentino", "camara-nupcial"],
+    "leitura_estimada_minutos": 20,
+    "nivel_dificuldade": "intermedio"
+  }
 },
-  {
+{
   "id": "evmm-003",
   "slug": "evangelho-de-maria-madalena",
   "titulo": "Evangelho de Maria Madalena",
-  "subtitulo": "A Ascensão do Pneuma e a Revelação do Ser",
-  "autor": "Anónimo (Tradição Gnóstica Primitiva)",
-  "nota": "O texto sobrevive de forma fragmentária: falta cerca de metade do original (páginas 1-6 e 11-14 estão perdidas). A versão mais completa está no Papiro de Berlim; dois fragmentos gregos mais breves (P.Oxy. 3525 e P.Ryl. 463) confirmam a antiguidade do texto.",
+  "titulos_alternativos": [
+    "A Ascensão do Pneuma e a Revelação do Ser",
+    "The Gospel of Mary"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Gnosticismo Primitivo",
   "seculo": "Século II d.C.",
+  "nota": "O texto sobrevive de forma fragmentária: falta cerca de metade do original (páginas 1-6 e 11-14 estão perdidas). A versão mais completa está no Papiro de Berlim (BG 8502); dois fragmentos gregos mais breves (P.Oxy. 3525 e P.Ryl. 463) confirmam a antiguidade do texto.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta (Sahídico, tradução de original grego)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+
+  "colecao": {
+    "nome": "Papiro de Berlim (Berolinensis Gnosticus)",
+    "codice": "BG 8502, 1",
+    "localizacao_fisica": "Museu Egípcio de Berlim, Alemanha",
+    "ano_descoberta": 1896,
+    "local_descoberta": "Akhmim, Egito (proveniência provável)"
+  },
+
   "categoria": {
     "principal": "Evangelhos Gnósticos",
     "secundaria": [
@@ -136,8 +188,20 @@
       "Autoridade Apostólica e Género"
     ]
   },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Diálogo de Revelação"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/evangelho-de-maria-madalena-capa.jpg", "alt": "Papiro de Berlim (BG 8502) — Evangelho de Maria Madalena", "credito": "Museu Egípcio de Berlim" },
+    { "tipo": "manuscrito", "url": "/imagens/evangelho-de-maria-madalena-manuscrito.jpg", "alt": "Página original do Papiro de Berlim contendo o Evangelho de Maria", "credito": "Papiro de Berlim — BG 8502,1" },
+    { "tipo": "thumbnail", "url": "/imagens/evangelho-de-maria-madalena-thumb.jpg", "alt": "Evangelho de Maria Madalena — miniatura" }
+  ],
+
   "descricao": {
     "curta": "O relato da ascensão da alma através dos poderes arcontes e o papel de Maria como guardiã da gnose — e o conflito subsequente com os discípulos sobre a legitimidade da sua revelação.",
+    "longa": "O Evangelho de Maria Madalena é um dos poucos textos gnósticos a atribuir a uma mulher o papel de principal destinatária e transmissora da revelação de Jesus. O texto sobrevivente abre já em meio a um diálogo entre o Salvador ressuscitado e os discípulos sobre a natureza da matéria e do pecado, seguido da partida de Jesus e do choro dos discípulos, temerosos de pregar ao mundo. É Maria quem os conforta, e a pedido de Pedro relata uma visão privada que recebeu do Salvador: uma descrição detalhada da ascensão da alma através de quatro poderes ou climas hostis, que tentam deter a sua subida com acusações sobre ignorância, desejo e domínio sobre o corpo. A segunda metade do texto (também fragmentária) narra o conflito entre Maria e os apóstolos Pedro e André, que duvidam da autenticidade da sua visão precisamente por ter sido dada a uma mulher — conflito resolvido pela defesa de Levi, que repreende Pedro e reafirma a legitimidade de Maria como portadora de um conhecimento superior ao dos demais.",
     "temas_principais": [
       "A ascensão da alma através dos quatro poderes (climas)",
       "A natureza da matéria e do pecado",
@@ -149,6 +213,7 @@
       "O silêncio final de Cristo e a comissão apostólica"
     ]
   },
+
   "referencias": {
     "texto_original": {
       "fonte": "Nag Hammadi Scriptures",
@@ -157,43 +222,47 @@
       "ano": 2007
     },
     "estudos_academicos": [
-      {
-        "autor": "Karen L. King",
-        "titulo": "The Gospel of Mary of Magdala: Jesus and the First Woman Apostle",
-        "editora": "Polebridge Press",
-        "ano": 2003
-      },
-      {
-        "autor": "Christopher Tuckett",
-        "titulo": "The Gospel of Mary",
-        "editora": "Oxford University Press",
-        "ano": 2007
-      }
+      { "autor": "Karen L. King", "titulo": "The Gospel of Mary of Magdala: Jesus and the First Woman Apostle", "editora": "Polebridge Press", "ano": 2003 },
+      { "autor": "Christopher Tuckett", "titulo": "The Gospel of Mary", "editora": "Oxford University Press", "ano": 2007 }
     ]
   },
-  "idioma": "Copta (Sahídico, tradução de original grego)",
-  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
-  "colecao": {
-    "nome": "Papiro de Berlim (Berolinensis Gnosticus)",
-    "codice": "BG 8502, 1",
-    "localizacao_fisica": "Museu Egípcio de Berlim, Alemanha",
-    "ano_descoberta": 1896,
-    "local_descoberta": "Akhmim, Egito (proveniência provável)"
-  },
-  "tags": ["apocrifo", "maria-madalena", "ascensao", "mistica", "arcontes"],
-  "leitura_estimada_minutos": 15,
-  "nivel_dificuldade": "intermedio",
-  "estado": "publicado",
-  "arquivo": "evangelho-maria-madalena.json"
+    "arquivo": "3-evangelho-de-maria-madalena.json",
+    "metadados": {
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["apocrifo", "maria-madalena", "ascensao", "mistica", "arcontes"],
+    "leitura_estimada_minutos": 15,
+    "nivel_dificuldade": "intermedio"
+  }
 },
-  {
+{
   "id": "ps-004",
   "slug": "pistis-sophia",
   "titulo": "Pistis Sophia",
-  "subtitulo": "A Fé e a Sabedoria no Abismo Cósmico",
-  "autor": "Anónimo (Tradição Gnóstica / Ascética)",
-  "nota": "O texto é composto por quatro livros de origem e datação possivelmente distintas, unidos num único códice. Os Livros I-III formam o núcleo mais antigo (o drama de Pistis Sophia propriamente dito); o Livro IV é considerado por muitos estudiosos uma composição independente e anterior, anexada posteriormente.",
+  "titulos_alternativos": [
+    "A Fé e a Sabedoria no Abismo Cósmico",
+    "Pistis Sophia: A Gnostic Gospel"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Gnosticismo Sincrético / Ascético",
   "seculo": "Século III-IV d.C.",
+  "nota": "O texto é composto por quatro livros de origem e datação possivelmente distintas, unidos num único códice. Os Livros I-III formam o núcleo mais antigo (o drama de Pistis Sophia propriamente dito); o Livro IV é considerado por muitos estudiosos uma composição independente e anterior, anexada posteriormente.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta (Sahídico, tradução de original grego)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão"],
+
+  "colecao": {
+    "nome": "Codex Askewianus",
+    "codice": "British Library, Add. MS 5114",
+    "localizacao_fisica": "British Library, Londres, Reino Unido",
+    "ano_descoberta": 1785,
+    "local_descoberta": "Origem desconhecida — adquirido em Londres pelo colecionador Anthony Askew"
+  },
+
   "categoria": {
     "principal": "Tratado Gnóstico / Revelação",
     "secundaria": [
@@ -204,8 +273,20 @@
       "Gnosticismo Sincrético"
     ]
   },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Diálogo de Revelação Pós-Ressurreição"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/pistis-sophia-capa.jpg", "alt": "Codex Askewianus — manuscrito da Pistis Sophia", "credito": "British Library" },
+    { "tipo": "manuscrito", "url": "/imagens/pistis-sophia-manuscrito.jpg", "alt": "Página original do Codex Askewianus contendo a Pistis Sophia", "credito": "British Library, Add. MS 5114" },
+    { "tipo": "thumbnail", "url": "/imagens/pistis-sophia-thumb.jpg", "alt": "Pistis Sophia — miniatura" }
+  ],
+
   "descricao": {
     "curta": "O complexo drama do arrependimento de Sophia, os seus 13 metanoias e os diálogos pós-ressurreição com Jesus — um extenso tratado sobre queda, penitência, hierarquias celestes e o destino da alma no juízo final.",
+    "longa": "A Pistis Sophia é um dos textos gnósticos mais extensos que sobreviveram, apresentado como uma série de diálogos entre Jesus ressuscitado e os seus discípulos ao longo de onze anos após a ressurreição — um período muito mais longo do que os quarenta dias da tradição canônica. O núcleo narrativo dos Livros I-III gira em torno do drama de Pistis Sophia, uma entidade celeste que, movida por um desejo excessivo de conhecer a Luz, desce ao caos e é atacada por poderes hostis; o texto detalha as suas treze metanoias (cânticos de arrependimento e súplica), intercaladas com as respostas de Jesus e os comentários exegéticos de Maria Madalena, que se destaca como a interlocutora mais perspicaz entre os discípulos. O Livro IV, provavelmente mais antigo e de origem independente, trata de temas cosmológicos e escatológicos relacionados aos mistérios do Tesouro da Luz e ao destino das almas após a morte, incluindo referências a práticas astrológicas e mágicas incomuns noutros textos gnósticos clássicos.",
     "temas_principais": [
       "As 13 metanoias (arrependimentos) de Pistis Sophia",
       "Jesus como revelador pós-ressurreição durante 11 anos",
@@ -217,6 +298,7 @@
       "Sincretismo com elementos astrológicos e mágicos"
     ]
   },
+
   "referencias": {
     "texto_original": {
       "fonte": "Pistis Sophia: A Gnostic Gospel",
@@ -225,42 +307,47 @@
       "ano": 1978
     },
     "estudos_academicos": [
-      {
-        "autor": "Carl Schmidt",
-        "titulo": "Koptisch-gnostische Schriften I: Die Pistis Sophia",
-        "editora": "J.C. Hinrichs",
-        "ano": 1905
-      },
-      {
-        "autor": "Anne Pasquier",
-        "titulo": "Étude sur la Pistis Sophia",
-        "ano": 1992
-      }
+      { "autor": "Carl Schmidt", "titulo": "Koptisch-gnostische Schriften I: Die Pistis Sophia", "editora": "J.C. Hinrichs", "ano": 1905 },
+      { "autor": "Anne Pasquier", "titulo": "Étude sur la Pistis Sophia", "ano": 1992 }
     ]
   },
-  "idioma": "Copta (Sahídico, tradução de original grego)",
-  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão"],
-  "colecao": {
-    "nome": "Codex Askewianus",
-    "codice": "British Library, Add. MS 5114",
-    "localizacao_fisica": "British Library, Londres, Reino Unido",
-    "ano_descoberta": 1785,
-    "local_descoberta": "Origem desconhecida — adquirido em Londres pelo colecionador Anthony Askew"
-  },
-  "tags": ["codex-askewianus", "apocrifo", "pistis-sophia", "metanoia", "salvacao"],
-  "leitura_estimada_minutos": 45,
-  "nivel_dificuldade": "avancado",
-  "estado": "publicado",
-  "arquivo": "pistis-sophia.json"
+    "arquivo": "4-pistis-sophia.json",
+    "metadados": {
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["codex-askewianus", "apocrifo", "pistis-sophia", "metanoia", "salvacao"],
+    "leitura_estimada_minutos": 45,
+    "nivel_dificuldade": "avancado"
+  }
 },
-  {
+{
   "id": "ha-005",
   "slug": "hipostase-dos-arcontes",
   "titulo": "Hipóstase dos Arcontes",
-  "subtitulo": "A Realidade dos Governadores",
-  "autor": "Anónimo (Tradição Setiana)",
-  "nota": "O texto funciona como um comentário exegético direto ao Génesis 1-6, invertendo sistematicamente o sentido do relato bíblico à luz da cosmologia setiana. Partilha material substancial com Sobre a Origem do Mundo (também em Nag Hammadi), sugerindo uma fonte comum ou dependência textual.",
+  "titulos_alternativos": [
+    "A Realidade dos Governadores",
+    "The Hypostasis of the Archons"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Gnosticismo Setiano",
   "seculo": "Século III d.C.",
+  "nota": "O texto funciona como um comentário exegético direto ao Génesis 1-6, invertendo sistematicamente o sentido do relato bíblico à luz da cosmologia setiana. Partilha material substancial com Sobre a Origem do Mundo (também em Nag Hammadi), sugerindo uma fonte comum ou dependência textual.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta (Sahídico, tradução de original grego)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+
+  "colecao": {
+    "nome": "Biblioteca de Nag Hammadi",
+    "codice": "II, 4",
+    "localizacao_fisica": "Museu Copta do Cairo, Egito",
+    "ano_descoberta": 1945,
+    "local_descoberta": "Nag Hammadi, Alto Egito"
+  },
+
   "categoria": {
     "principal": "Tratado Gnóstico / Cosmologia",
     "secundaria": [
@@ -270,8 +357,20 @@
       "Mitologia de Norea"
     ]
   },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Comentário Exegético"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/hipostase-dos-arcontes-capa.jpg", "alt": "Manuscrito copta da Hipóstase dos Arcontes — Nag Hammadi Códice II", "credito": "Museu Copta do Cairo" },
+    { "tipo": "manuscrito", "url": "/imagens/hipostase-dos-arcontes-manuscrito.jpg", "alt": "Página original do manuscrito copta da Hipóstase dos Arcontes", "credito": "Biblioteca de Nag Hammadi — Códice II" },
+    { "tipo": "thumbnail", "url": "/imagens/hipostase-dos-arcontes-thumb.jpg", "alt": "Hipóstase dos Arcontes — miniatura" }
+  ],
+
   "descricao": {
     "curta": "Uma desconstrução exegética do Génesis que revela a ignorância de Saclas e a mística de Norea — expondo os Arcontes como poderes psíquicos cegos e impotentes diante da verdadeira origem espiritual da humanidade.",
+    "longa": "A Hipóstase dos Arcontes apresenta-se como uma exegese ponto a ponto dos capítulos iniciais do Génesis, reinterpretando cada episódio à luz da cosmologia setiana. Saclas (identificado com Ialdabaoth), o Arconte principal, proclama-se o único deus, mas é imediatamente repreendido por uma voz vinda da Incorruptibilidade, que expõe a sua ignorância sobre a existência de realidades superiores. Os Arcontes criam o corpo psíquico de Adão, mas este permanece inerte até receber a centelha espiritual; Eva, na sua forma espiritual, surge como instrutora que desperta Adão para o conhecimento verdadeiro, provocando a fúria e tentativa de violação por parte dos Arcontes — episódio que o texto usa para expor a impotência última desses poderes diante da realidade pneumática. A segunda parte do texto foca em Norea, filha de Eva, que resiste às investidas arcônticas e é protegida pelo anjo Eleleth, recebendo revelações sobre a origem do mal e o destino final da criação. O texto termina com a narrativa do arrependimento de Sabaoth, um dos Arcontes, que se volta contra Ialdabaoth e é elevado acima dele como recompensa pela sua conversão.",
     "temas_principais": [
       "Saclas/Ialdabaoth e a blasfémia da autoproclamação divina",
       "A repreensão da Incorruptibilidade aos Arcontes",
@@ -283,6 +382,7 @@
       "A promessa final do Espírito de Verdade"
     ]
   },
+
   "referencias": {
     "texto_original": {
       "fonte": "Nag Hammadi Scriptures",
@@ -291,43 +391,47 @@
       "ano": 2007
     },
     "estudos_academicos": [
-      {
-        "autor": "Bentley Layton",
-        "titulo": "The Hypostasis of the Archons (in The Gnostic Scriptures)",
-        "editora": "Doubleday",
-        "ano": 1987
-      },
-      {
-        "autor": "Roger A. Bullard",
-        "titulo": "The Hypostasis of the Archons: The Coptic Text with Translation and Commentary",
-        "editora": "Walter de Gruyter",
-        "ano": 1970
-      }
+      { "autor": "Bentley Layton", "titulo": "The Hypostasis of the Archons (in The Gnostic Scriptures)", "editora": "Doubleday", "ano": 1987 },
+      { "autor": "Roger A. Bullard", "titulo": "The Hypostasis of the Archons: The Coptic Text with Translation and Commentary", "editora": "Walter de Gruyter", "ano": 1970 }
     ]
   },
-  "idioma": "Copta (Sahídico, tradução de original grego)",
-  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
-  "colecao": {
-    "nome": "Biblioteca de Nag Hammadi",
-    "codice": "II, 4",
-    "localizacao_fisica": "Museu Copta do Cairo, Egito",
-    "ano_descoberta": 1945,
-    "local_descoberta": "Nag Hammadi, Alto Egito"
-  },
-  "tags": ["nag-hammadi", "apocrifo", "arcontes", "saclas", "norea", "setiano"],
-  "leitura_estimada_minutos": 25,
-  "nivel_dificuldade": "avancado",
-  "estado": "publicado",
-  "arquivo": "hipostase-dos-arcontes.json"
+    "arquivo": "5-hipostase-dos-arcontes.json",
+    "metadados": {
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["nag-hammadi", "apocrifo", "arcontes", "saclas", "norea", "setiano"],
+    "leitura_estimada_minutos": 25,
+    "nivel_dificuldade": "avancado"
+  }
 },
-  {
+ {
   "id": "lj-006",
   "slug": "livro-dos-jubileus",
   "titulo": "Livro dos Jubileus",
-  "subtitulo": "O Pequeno Génesis",
-  "autor": "Anónimo (Judaísmo do Segundo Templo)",
-  "nota": "Considerado canónico apenas na Bíblia Etíope (Tewahedo). O texto sobrevive na íntegra somente em ge'ez; fragmentos em hebraico foram encontrados em Qumran (confirmando a antiguidade e autoridade do texto na comunidade essénia), além de fragmentos em grego, siríaco e latim.",
+  "titulos_alternativos": [
+    "O Pequeno Génesis",
+    "The Book of Jubilees"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Judaísmo do Segundo Templo",
   "seculo": "Século II a.C. (c. 160–150 a.C.)",
+  "nota": "Considerado canónico apenas na Bíblia Etíope (Tewahedo). O texto sobrevive na íntegra somente em ge'ez; fragmentos em hebraico foram encontrados em Qumran (confirmando a antiguidade e autoridade do texto na comunidade essénia), além de fragmentos em grego, siríaco e latim.",
+
+  "idioma_original": "Hebraico",
+  "idioma_manuscrito": "Ge'ez (texto completo, via grego intermediário); fragmentos em hebraico (Qumran)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão"],
+
+  "colecao": {
+    "nome": "Manuscritos do Mar Morto (fragmentos) e Cânone Bíblico Etíope (texto completo)",
+    "codice": "4Q216–4Q224 (Qumran); tradição manuscrita etíope (Beta Ester)",
+    "localizacao_fisica": "Israel Museum, Jerusalém (fragmentos); diversos manuscritos etíopes em bibliotecas europeias e etíopes",
+    "ano_descoberta": 1947,
+    "local_descoberta": "Qumran, Cisjordânia (fragmentos hebraicos)"
+  },
+
   "categoria": {
     "principal": "Pseudoepígrafo / História Sagrada Reescrita",
     "secundaria": [
@@ -337,8 +441,20 @@
       "Literatura de Qumran"
     ]
   },
+  "classificacao": {
+    "testamento": "Antigo Testamento Pseudoepígrafo",
+    "genero_literario": "História Reescrita (Rewritten Bible)"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/livro-dos-jubileus-capa.jpg", "alt": "Fragmento de Qumran do Livro dos Jubileus", "credito": "Israel Museum, Jerusalém" },
+    { "tipo": "manuscrito", "url": "/imagens/livro-dos-jubileus-manuscrito.jpg", "alt": "Manuscrito etíope do Livro dos Jubileus", "credito": "Tradição manuscrita etíope" },
+    { "tipo": "thumbnail", "url": "/imagens/livro-dos-jubileus-thumb.jpg", "alt": "Livro dos Jubileus — miniatura" }
+  ],
+
   "descricao": {
     "curta": "Uma reescrita cronológica do Génesis mediada por anjos, introduzindo a figura de Mastema — organizando a história desde a Criação até o Sinai em 49 ciclos de jubileus, com ênfase na lei, no calendário solar e na origem do mal.",
+    "longa": "O Livro dos Jubileus reescreve a narrativa de Génesis 1 a Êxodo 12, apresentando-se como uma revelação adicional feita a Moisés no Sinai pelo Anjo da Presença, por ordem de Deus. A obra organiza toda a história em blocos de 49 anos — os 'jubileus' que dão nome ao livro — atribuindo datas precisas a eventos bíblicos e retroprojetando a observância da Lei mosaica (incluindo festivais, leis alimentares e a circuncisão) aos próprios patriarcas, muito antes da revelação no Sinai. Um dos elementos mais distintivos é a introdução de Mastema, um anjo acusador análogo a Satanás, responsável por testar a humanidade e semear o mal — explicando, por exemplo, o pedido do sacrifício de Isaac como um teste instigado por Mastema. O texto também expande a história dos Vigilantes (anjos caídos que se uniram a mulheres humanas, gerando os gigantes) como origem da corrupção pré-diluviana, e defende vigorosamente um calendário solar de 364 dias como a ordem cronológica correta estabelecida por Deus, em polémica implícita contra calendários lunares ou lunisolares concorrentes.",
     "temas_principais": [
       "A revelação a Moisés pelo Anjo da Presença",
       "A estrutura cronológica em jubileus, semanas e anos",
@@ -350,6 +466,7 @@
       "A polémica contra a assimilação helenística"
     ]
   },
+
   "referencias": {
     "texto_original": {
       "fonte": "The Book of Jubilees: A Critical Text and Translation",
@@ -358,33 +475,20 @@
       "ano": 1989
     },
     "estudos_academicos": [
-      {
-        "autor": "James C. VanderKam",
-        "titulo": "The Book of Jubilees (Guides to Apocrypha and Pseudepigrapha)",
-        "editora": "Sheffield Academic Press",
-        "ano": 2001
-      },
-      {
-        "autor": "James H. Charlesworth (org.)",
-        "titulo": "The Old Testament Pseudepigrapha, Vol. 2",
-        "editora": "Doubleday",
-        "ano": 1985
-      }
+      { "autor": "James C. VanderKam", "titulo": "The Book of Jubilees (Guides to Apocrypha and Pseudepigrapha)", "editora": "Sheffield Academic Press", "ano": 2001 },
+      { "autor": "James H. Charlesworth (org.)", "titulo": "The Old Testament Pseudepigrapha, Vol. 2", "editora": "Doubleday", "ano": 1985 }
     ]
   },
-  "idioma": "Ge'ez (tradução de original hebraico, via grego intermediário)",
-  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão"],
-  "colecao": {
-    "nome": "Manuscritos do Mar Morto (fragmentos) e Cânone Bíblico Etíope (texto completo)",
-    "codice": "4Q216–4Q224 (Qumran); Beta Ester (tradição etíope)",
-    "localizacao_fisica": "Israel Museum, Jerusalém (fragmentos); diversos manuscritos etíopes em bibliotecas europeias e etíopes",
-    "ano_descoberta": 1947,
-    "local_descoberta": "Qumran, Cisjordânia (fragmentos hebraicos)"
-  },
-  "tags": ["qumran", "pseudoepigrafo", "mastema", "vigilantes", "calendario-solar"],
-  "leitura_estimada_minutos": 35,
-  "nivel_dificuldade": "intermedio",
-  "estado": "publicado",
-  "arquivo": "livro-dos-jubileus.json"
+    "arquivo": "6-livro-dos-jubileus.json",
+    "metadados": {
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["qumran", "pseudoepigrafo", "mastema", "vigilantes", "calendario-solar"],
+    "leitura_estimada_minutos": 35,
+    "nivel_dificuldade": "intermedio"
+  }
 }
 ]
