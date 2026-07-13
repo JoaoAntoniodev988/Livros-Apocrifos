@@ -45,11 +45,9 @@
 
                 <div class="reading-header__content">
 
-                    <h1>Evangelho de Tomé</h1>
+                   <h1 id="bookTitle"></h1>
 
-                    <p>
-                        Texto gnóstico encontrado na Biblioteca de Nag Hammadi.
-                    </p>
+                    <p id="bookDescription"></p>
 
                 </div>
 
@@ -72,33 +70,22 @@
 
                     <header class="reading-content__header">
 
-                        <h2>Seção 1</h2>
+                        <h2 id="chapterTitle"></h2>
 
                     </header>
 
 
 
-                    <div class="reading-text">
-
-                        <p>
-                            Texto original do documento será carregado aqui.
-                        </p>
-
+                    <div
+                        class="reading-text"
+                        id="readingText">
                     </div>
 
 
 
-                    <div class="exegesis">
-
-
-                        <h3>Comentário</h3>
-
-
-                        <p>
-                            A análise histórica e académica deste trecho será apresentada nesta área.
-                        </p>
-
-
+                    <div
+                        class="exegesis"
+                        id="exegesis">
                     </div>
 
 
@@ -118,20 +105,13 @@
             <div class="container">
 
 
-                <button class="button-secondary">
-
+                <button class="button-secondary" id="btnAnterior">
                     ← Seção anterior
-
                 </button>
 
-
-
-                <button class="button-primary">
-
+                <button class="button-primary" id="btnProxima">
                     Próxima seção →
-
                 </button>
-
 
             </div>
 
@@ -141,11 +121,13 @@
     </main>
 
 
-      <!-- Componente Footer -->
-    <div data-component="footer"></div>
-  <script src="../assets/js/componentes.js"></script>
+<div data-component="footer"></div>
+
+<script src="../assets/js/componentes.js"></script>
 <script src="../assets/js/navigation.js"></script>
 <script src="../assets/js/menu.js"></script>
+<script src="../assets/js/services/livrosService.js"></script>
+<script src="../assets/js/services/leituraService.js"></script>
 </body>
 
 </html>

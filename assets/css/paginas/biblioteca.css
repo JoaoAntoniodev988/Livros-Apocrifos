@@ -108,9 +108,22 @@
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-xl);
 }
+
+
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.book-card .button-primary {
+    margin-top: auto;
+}
+
 
 /* ==========================================================
    RESPONSIVIDADE

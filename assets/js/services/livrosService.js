@@ -1,44 +1,43 @@
 class LivrosService {
 
-    constructor(){
-
+    constructor() {
         this.livros = [];
-
-        this.basePath =
-            window.location.pathname.includes("/paginas/")
-                ? "../"
-                : "";
-
     }
 
-    async carregar(){
+    async carregar() {
+        if (this.livros.length) {
+            return this.livros;
+        }
+        const response = await fetch("../assets/dados/livros.json");
+        this.livros = await response.json();
+        return this.livros;
+    }
 
-        const response = await fetch(
-            `${this.basePath}assets/dados/livros.json`
-        );
+    async getTodos() {
+        return await this.carregar();
+    }
 
-        if(!response.ok){
-            throw new Error("Erro ao carregar livros.");
+    async getPorId(id) {
+        const livros = await this.carregar();
+        return livros.find(livro => livro.id === id);
+    }
+
+    async getConteudo(livro) {
+
+        const nomeArquivo = livro.descricao?.arquivo || livro.arquivo;
+
+        if (!nomeArquivo) {
+            throw new Error(`Livro "${livro.id}" não tem o campo "arquivo" definido (nem em descricao.arquivo, nem na raiz).`);
         }
 
-        this.livros = await response.json();
+        const caminho = `../assets/dados/livros/${nomeArquivo}`;
+        const response = await fetch(caminho);
 
-        return this.livros;
+        if (!response.ok) {
+            throw new Error(`Não foi possível carregar o conteúdo de: ${caminho}`);
+        }
 
-    }
-
-    getTodos(){
-
-        return this.livros;
-
-    }
-
-    getPorId(id){
-
-        return this.livros.find(
-            livro => livro.id === id
-        );
-
+        return await response.json();
     }
 
 }

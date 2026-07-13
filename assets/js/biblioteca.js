@@ -62,29 +62,15 @@ function criarCard(livro) {
     const tituloPrincipal = livro.titulo || "";
     const subtitulo = livro.subtitulo || "";
     const seculo = livro.seculo || "";
-    const idioma = livro.idioma || "";
-    const nota = livro.nota || "";
-
     // Categoria (objeto: principal + secundaria[])
     const categoriaPrincipal = extrairCampo(livro.categoria, "principal");
 
     // Descrição (objeto: curta + temas_principais[])
     const descricaoCurta = extrairCampo(livro.descricao, "curta");
 
-    // Referências (objeto: texto_original + estudos_academicos[])
-    // const textoOriginal = livro.referencias?.texto_original;
-    // const estudosAcademicos = livro.referencias?.estudos_academicos || [];
-
-    // Traduções disponíveis
-    const traducoes = livro.traducao_disponivel || [];
-
     // Coleção (objeto completo)
     const colecao = livro.colecao || {};
     const nomeColecao = colecao.nome || "";
-    const codiceColecao = colecao.codice || "";
-    const localizacaoFisica = colecao.localizacao_fisica || "";
-    const anoDescoberta = colecao.ano_descoberta || "";
-    const localDescoberta = colecao.local_descoberta || "";
 
     // --- Montagem do HTML ---
 
@@ -101,16 +87,8 @@ function criarCard(livro) {
 
         <p class="book-card-description">${escapeHTML(descricaoCurta)}</p>
 
-        ${nota ? `<p class="book-card-note"><strong>Nota:</strong> ${escapeHTML(nota)}</p>` : ""}
-
         <div class="book-card-origin">
-            <span><strong>Coleção:</strong> ${escapeHTML(nomeColecao)}</span><br>
-            ${codiceColecao ? `<span><strong>Códice:</strong> ${escapeHTML(codiceColecao)}</span><br>` : ""}
-            ${localizacaoFisica ? `<span><strong>Localização atual:</strong> ${escapeHTML(localizacaoFisica)}</span><br>` : ""}
-            ${localDescoberta ? `<span><strong>Local da descoberta:</strong> ${escapeHTML(localDescoberta)}</span><br>` : ""}
-            ${anoDescoberta ? `<span><strong>Ano da descoberta:</strong> ${escapeHTML(String(anoDescoberta))}</span><br>` : ""}
-            <span><strong>Idioma original:</strong> ${escapeHTML(idioma)}</span>
-            ${traducoes.length ? `<br><span><strong>Traduções disponíveis:</strong> ${escapeHTML(traducoes.join(", "))}</span>` : ""}
+            <span><strong>Coleção:</strong> ${escapeHTML(nomeColecao)}</span>
         </div>
         
         <a href="leitura.html?id=${encodeURIComponent(livro.id)}" class="button-primary">

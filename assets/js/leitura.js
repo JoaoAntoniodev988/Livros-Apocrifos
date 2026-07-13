@@ -1,80 +1,148 @@
-const conteudo = document.querySelector("#conteudo");
-const titulo = document.querySelector("#titulo");
-const descricao = document.querySelector("#descricao");
+document.addEventListener("DOMContentLoaded", async () => {
 
+    const params = new URLSearchParams(window.location.search);
 
-const parametros = new URLSearchParams(window.location.search);
+    const id = params.get("id");
 
-const idLivro = parametros.get("id");
+    if (!id) {
 
+        document.getElementById("readingContainer").innerHTML = `
+            <h2>Livro não encontrado.</h2>
+        `;
 
-fetch("dados/livros.json")
-.then(resposta => resposta.json())
-
-.then(livros => {
-
-
-    const livro = livros.find(
-        item => item.id == idLivro
-    );
-
-
-    if(!livro){
-
-        titulo.textContent = "Livro não encontrado";
         return;
 
     }
 
+    const livro = await livrosService.getPorId(id);
 
-    titulo.textContent = livro.titulo;
+    if (!livro) {
 
-    descricao.textContent = livro.descricao;
+        document.getElementById("readingContainer").innerHTML = `
+            <h2>Livro inexistente.</h2>
+        `;
 
+        return;
 
+    }
 
-    livro.secoes.forEach(secao => {
+    renderLivro(livro);
 
+});
 
-        const bloco = document.createElement("article");
+function renderLivro(livro){
 
+    const container =
+        document.getElementById("readingContainer");
 
-        bloco.innerHTML = `
+    container.innerHTML = `
 
-        <h2>${secao.titulo}</h2>
+        <header class="reading-header">
 
+            <h1>${livro.titulo}</h1>
 
-        <div class="texto-sagrado">
+            <p>${livro.subtitulo || ""}</p>
 
-        ${secao.texto.map(item =>
+        </header>
 
-            `<p>${item.conteudo}</p>`
+        <div class="reading-content">
 
-        ).join("")}
+            ${renderCapitulos(livro.capitulos)}
 
         </div>
 
+    `;
 
-        <aside>
+}
 
-        <h3>${secao.exegese.titulo}</h3>
+function renderCapitulos(capitulos){
 
-        ${secao.exegese.texto.map(paragrafo =>
+    return capitulos.map(capitulo=>`
 
-            `<p>${paragrafo}</p>`
+        <section id="${capitulo.id}" class="chapter">
 
-        ).join("")}
+            <h2>${capitulo.titulo}</h2>
 
+            ${renderConteudo(capitulo.conteudo)}
 
-        </aside>
+            ${
+                capitulo.exegese.length
+                ?`
 
-        `;
+                <aside class="chapter-exegesis">
 
+                    <h3>Exegese</h3>
 
-        conteudo.appendChild(bloco);
+                    ${renderConteudo(capitulo.exegese)}
 
+                </aside>
 
-    });
+                `
+                :""
+            }
 
+        </section>
 
-});
+    `).join("");
+
+}
+
+function renderConteudo(conteudo){
+
+    return conteudo.map(item=>{
+
+        switch(item.tipo){
+
+            case "paragrafo":
+
+                return `<p>${item.texto}</p>`;
+
+            case "citacao":
+
+                return `
+                    <blockquote>
+                        ${item.texto}
+                    </blockquote>
+                `;
+
+            case "subtitulo":
+
+                return `<h3>${item.texto}</h3>`;
+
+            case "lista":
+
+                return `
+                    <ul>
+
+                        ${item.itens.map(li=>`<li>${li}</li>`).join("")}
+
+                    </ul>
+                `;
+
+            case "lista-numerada":
+
+                return `
+                    <ol>
+
+                        ${item.itens.map(li=>`<li>${li}</li>`).join("")}
+
+                    </ol>
+                `;
+
+            case "imagem":
+
+                return `
+                    <img
+                        src="${item.src}"
+                        alt="${item.alt}">
+                `;
+
+            default:
+
+                return "";
+
+        }
+
+    }).join("");
+
+}
