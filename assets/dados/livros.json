@@ -1,19 +1,57 @@
 [
-  {
-    "id": "apj-001",
-    "slug": "apocrifo-de-joao",
-    "titulo": "Apócrifo de João",
-    "subtitulo": "O Livro Secreto de João",
-    "autor": "Anónimo (Tradição Setiana)",
-    "seculo": "Século II d.C.",
-    "categoria": "Cosmologia Gnóstica",
-    "descricao": "Uma narrativa cosmológica profunda sobre a criação do universo e a queda da luz.",
-    "tags": ["nag-hammadi", "apocrifo", "ialdabaoth", "sophia", "setiano"],
-    "leitura_estimada_minutos": 30,
-    "nivel_dificuldade": "avancado",
-    "estado": "publicado",
-    "arquivo": "apocrifo-de-joao.json"
+ {
+  "id": "apj-001",
+  "slug": "apocrifo-de-joao",
+  "titulo": "Apócrifo de João",
+  "subtitulo": "O Livro Secreto de João (Apocryphon of John)",
+  "seculo": "Século II d.C.",
+  "categoria": {
+    "principal": "Apocalipse Gnóstico"
   },
+  "descricao": {
+    "curta": "O texto fundacional do gnosticismo setiano — uma revelação do Cristo ressuscitado a João sobre a origem do cosmos, a queda de Sophia, o aprisionamento da centelha humana e o caminho de regresso à Luz.",
+    "temas_principais": [
+      "Cosmogonia gnóstica",
+      "A queda de Sophia",
+      "Ialdabaoth — o Demiurgo ignorante",
+      "A criação do ser humano",
+      "As sete almas implantadas pelos Arcontes",
+      "A anamnese como salvação",
+      "O Hino da Pronoia",
+      "A reencarnação e o destino das almas"
+    ]
+  },
+  "referencias": {
+    "texto_original": {
+      "fonte": "Nag Hammadi Scriptures",
+      "editor": "Marvin Meyer",
+      "editora": "HarperOne",
+      "ano": 2007
+    },
+    "estudos_academicos": [
+      {
+        "autor": "Michael Waldstein e Frederik Wisse",
+        "titulo": "The Apocryphon of John: Synopsis of Nag Hammadi Codices II,1, III,1 and IV,1 with BG 8502,2",
+        "ano": 1995
+      },
+      {
+        "autor": "Karen L. King",
+        "titulo": "The Secret Revelation of John",
+        "editora": "Harvard University Press",
+        "ano": 2006
+      }
+    ]
+  },
+  "idioma": "Grego",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+  "colecao": {
+    "nome": "Biblioteca de Nag Hammadi",
+    "codice": "II, III e IV",
+    "localizacao_fisica": "Museu Copta do Cairo, Egito",
+    "ano_descoberta": 1945,
+    "local_descoberta": "Nag Hammadi, Alto Egito"
+  }
+},
   {
     "id": "evf-002",
     "slug": "evangelho-de-filipe",
