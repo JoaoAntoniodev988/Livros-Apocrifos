@@ -1,97 +1,86 @@
 {
-    "id": "evf-002",
-    "slug": "evangelho-de-filipe",
-    "titulo": {
-        "principal": "Evangelho de Filipe",
-        "alternativo": [
-            "Gospel of Philip"
-        ]
+  "id": "evf-002",
+  "slug": "evangelho-de-filipe",
+  "titulo": "Evangelho de Filipe",
+  "titulos_alternativos": [
+    "Os Sacramentos da Câmara Nupcial",
+    "The Gospel of Philip"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Valentinianismo",
+  "seculo": "Século III d.C.",
+  "nota": "Não é um evangelho narrativo, mas um florilégio de meditações teológicas valentinianas, provavelmente compilado a partir de fontes catequéticas ou litúrgicas diversas.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta (Sahídico, provável tradução do grego)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+
+  "colecao": {
+    "nome": "Biblioteca de Nag Hammadi",
+    "codice": "II, 3",
+    "localizacao_fisica": "Museu Copta do Cairo, Egito",
+    "ano_descoberta": 1945,
+    "local_descoberta": "Nag Hammadi, Alto Egito"
+  },
+
+  "categoria": {
+    "principal": "Evangelhos Gnósticos",
+    "secundaria": [
+      "Sacramentologia Gnóstica",
+      "Valentinianismo",
+      "Literatura Apócrifa",
+      "Teologia Nupcial"
+    ]
+  },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Florilégio Teológico"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/evangelho-de-filipe-capa.jpg", "alt": "Manuscrito copta do Evangelho de Filipe — Nag Hammadi Códice II", "credito": "Museu Copta do Cairo" },
+    { "tipo": "manuscrito", "url": "/imagens/evangelho-de-filipe-manuscrito.jpg", "alt": "Página original do manuscrito copta do Evangelho de Filipe", "credito": "Biblioteca de Nag Hammadi — Códice II" },
+    { "tipo": "thumbnail", "url": "/imagens/evangelho-de-filipe-thumb.jpg", "alt": "Evangelho de Filipe — miniatura" }
+  ],
+
+  "descricao": {
+    "curta": "Um florilégio focado nos ritos de transformação e na união mística da alma — batismo, unção, eucaristia, redenção e câmara nupcial como caminhos sacramentais de reintegração com o Pleroma.",
+    "longa": "O Evangelho de Filipe não segue uma estrutura narrativa; é antes uma coleção de aforismos, meditações e fragmentos de instrução catequética valentiniana, organizados de forma associativa em torno de temas sacramentais. Discute os cinco sacramentos — batismo, crisma (unção), eucaristia, redenção e câmara nupcial — como etapas de um processo de reintegração da alma com o seu par celeste no Pleroma. Um dos seus temas centrais é a separação original entre Adão e Eva como origem simbólica da morte, e a câmara nupcial como o mistério que restaura essa unidade perdida. O texto também é conhecido por referir a proximidade entre Jesus e Maria Madalena, chamando-a de sua koinonos (companheira), um detalhe que gerou intenso debate acadêmico e popular sobre o papel das mulheres no cristianismo primitivo.",
+    "temas_principais": [
+      "Os cinco sacramentos valentinianos",
+      "A Câmara Nupcial como mistério supremo",
+      "A separação original de Adão e Eva",
+      "A reunificação dos sexos como restauração",
+      "Cristo e Sophia como par sizígico",
+      "A distinção entre nome exotérico e realidade esotérica",
+      "Crítica à ressurreição puramente carnal",
+      "Maria Madalena como companheira (koinonos) de Jesus"
+    ]
+  },
+
+  "referencias": {
+    "texto_original": {
+      "fonte": "Nag Hammadi Scriptures",
+      "editor": "Marvin Meyer",
+      "editora": "HarperOne",
+      "ano": 2007
     },
-    "autor": {
-        "nome": "Anónimo",
-        "tradicao": "Gnosticismo Valentiniano",
-        "seculo": "Século III d.C.",
-        "nota": "Atribuído à tradição valentiniana (seguidores de Valentim). Provavelmente compilado na Síria, reunindo ensinamentos orais e escritos da comunidade."
-    },
-    "idioma": {
-        "original": "Grego",
-        "manuscrito": "Copta",
-        "traducao_disponivel": [
-            "Português",
-            "Inglês",
-            "Francês",
-            "Alemão",
-            "Espanhol"
-        ]
-    },
-    "colecao": {
-        "nome": "Biblioteca de Nag Hammadi",
-        "codice": "II",
-        "localizacao_fisica": "Museu Copta do Cairo, Egito",
-        "ano_descoberta": 1945,
-        "local_descoberta": "Nag Hammadi, Alto Egito"
-    },
-    "categoria": {
-        "principal": "Evangelho Gnóstico",
-        "secundaria": [
-            "Soteriologia",
-            "Sacramentos Gnósticos",
-            "Mística Valentiniana",
-            "Literatura Apócrifa"
-        ],
-        "testamento": "Novo Testamento Apócrifo",
-        "genero_literario": "Florilégio / Coleção de Aforismos e Parábolas"
-    },
-    "imagem": {
-        "capa": {
-            "url": "/imagens/evangelho-de-filipe-capa.jpg",
-            "alt": "Manuscrito copta do Evangelho de Filipe — Nag Hammadi Códice II",
-            "credito": "Museu Copta do Cairo"
-        },
-        "manuscrito": {
-            "url": "/imagens/evangelho-de-filipe-manuscrito.jpg",
-            "alt": "Página do manuscrito copta contendo o Evangelho de Filipe",
-            "credito": "Biblioteca de Nag Hammadi — Códice II"
-        },
-        "thumbnail": {
-            "url": "/imagens/evangelho-de-filipe-thumb.jpg",
-            "alt": "Evangelho de Filipe — miniatura"
-        }
-    },
-    "descricao": {
-        "curta": "Um florilégio valentiniano centrado nos ritos de transformação e na união mística da alma, apresentando os cinco sacramentos e a célebre visão de Maria Madalena como a parceira espiritual do Salvador.",
-        "longa": "O Evangelho de Filipe é uma coleção de meditações, aforismos e reflexões teológicas sem ordem narrativa aparente, característico da sofisticação da escola valentiniana. Foca-se na transformação ontológica do ser humano através dos sacramentos e no despertar da luz interior.",
-        "temas_principais": [
-            "A unção como transformação ontológica",
-            "A linguagem e os nomes como limitação da verdade",
-            "Os cinco sacramentos valentinianos",
-            "A Câmara Nupcial e a androginia primordial",
-            "O mundo material como resultado de um erro",
-            "A ressurreição em vida através da gnose",
-            "Maria Madalena (Koinonos) e o beijo da transmissão espiritual",
-            "A dissolução das categorias duais na luz plena"
-        ]
-    },
+    "estudos_academicos": [
+      { "autor": "Wesley W. Isenberg", "titulo": "The Gospel According to Philip (in The Nag Hammadi Library)", "ano": 1988 },
+      { "autor": "Hans-Martin Schenke", "titulo": "Das Philippus-Evangelium (Nag-Hammadi-Codex II,3)", "editora": "Akademie Verlag", "ano": 1997 }
+    ]
+  },
+    "arquivo": "2-evangelho-de-filipe.json",
     "metadados": {
-        "data_criacao": "2024-01-15",
-        "data_atualizacao": "2026-07-12",
-        "versao": "2.0",
-        "estado": "publicado",
-        "visibilidade": "publico",
-        "tags": [
-            "apocrifo",
-            "gnostico",
-            "nag-hammadi",
-            "valentiniano",
-            "sacramentos",
-            "camara-nupcial",
-            "maria-madalena",
-            "gnose",
-            "valentim"
-        ],
-        "leitura_estimada_minutos": 35,
-        "nivel_dificuldade": "avancado"
-    },
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["nag-hammadi", "apocrifo", "sacramentos", "valentino", "camara-nupcial"],
+    "leitura_estimada_minutos": 20,
+    "nivel_dificuldade": "intermedio"
+  },
     "conteudo": {
         "seccoes": [
             {
@@ -296,14 +285,6 @@
                 }
             }
         ]
-    },
-    "referencias": {
-        "texto_original": {
-            "fonte": "Nag Hammadi Scriptures",
-            "editor": "Marvin Meyer",
-            "editora": "HarperOne",
-            "ano": 2007
-        }
     },
     "textos_relacionados": [
         {
