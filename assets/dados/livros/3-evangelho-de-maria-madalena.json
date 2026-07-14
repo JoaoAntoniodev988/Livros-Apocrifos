@@ -1,96 +1,87 @@
 {
-    "id": "evmm-003",
-    "slug": "evangelho-de-maria-madalena",
-    "titulo": {
-        "principal": "Evangelho de Maria Madalena",
-        "alternativo": [
-            "Gospel of Mary"
-        ]
+  "id": "evmm-003",
+  "slug": "evangelho-de-maria-madalena",
+  "titulo": "Evangelho de Maria Madalena",
+  "titulos_alternativos": [
+    "A Ascensão do Pneuma e a Revelação do Ser",
+    "The Gospel of Mary"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Gnosticismo Primitivo",
+  "seculo": "Século II d.C.",
+  "nota": "O texto sobrevive de forma fragmentária: falta cerca de metade do original (páginas 1-6 e 11-14 estão perdidas). A versão mais completa está no Papiro de Berlim (BG 8502); dois fragmentos gregos mais breves (P.Oxy. 3525 e P.Ryl. 463) confirmam a antiguidade do texto.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta (Sahídico, tradução de original grego)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+
+  "colecao": {
+    "nome": "Papiro de Berlim (Berolinensis Gnosticus)",
+    "codice": "BG 8502, 1",
+    "localizacao_fisica": "Museu Egípcio de Berlim, Alemanha",
+    "ano_descoberta": 1896,
+    "local_descoberta": "Akhmim, Egito (proveniência provável)"
+  },
+
+  "categoria": {
+    "principal": "Evangelhos Gnósticos",
+    "secundaria": [
+      "Cristologia Gnóstica",
+      "Literatura Apócrifa",
+      "Escatologia da Alma",
+      "Autoridade Apostólica e Género"
+    ]
+  },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Diálogo de Revelação"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/evangelho-de-maria-madalena-capa.jpg", "alt": "Papiro de Berlim (BG 8502) — Evangelho de Maria Madalena", "credito": "Museu Egípcio de Berlim" },
+    { "tipo": "manuscrito", "url": "/imagens/evangelho-de-maria-madalena-manuscrito.jpg", "alt": "Página original do Papiro de Berlim contendo o Evangelho de Maria", "credito": "Papiro de Berlim — BG 8502,1" },
+    { "tipo": "thumbnail", "url": "/imagens/evangelho-de-maria-madalena-thumb.jpg", "alt": "Evangelho de Maria Madalena — miniatura" }
+  ],
+
+  "descricao": {
+    "curta": "O relato da ascensão da alma através dos poderes arcontes e o papel de Maria como guardiã da gnose — e o conflito subsequente com os discípulos sobre a legitimidade da sua revelação.",
+    "longa": "O Evangelho de Maria Madalena é um dos poucos textos gnósticos a atribuir a uma mulher o papel de principal destinatária e transmissora da revelação de Jesus. O texto sobrevivente abre já em meio a um diálogo entre o Salvador ressuscitado e os discípulos sobre a natureza da matéria e do pecado, seguido da partida de Jesus e do choro dos discípulos, temerosos de pregar ao mundo. É Maria quem os conforta, e a pedido de Pedro relata uma visão privada que recebeu do Salvador: uma descrição detalhada da ascensão da alma através de quatro poderes ou climas hostis, que tentam deter a sua subida com acusações sobre ignorância, desejo e domínio sobre o corpo. A segunda metade do texto (também fragmentária) narra o conflito entre Maria e os apóstolos Pedro e André, que duvidam da autenticidade da sua visão precisamente por ter sido dada a uma mulher — conflito resolvido pela defesa de Levi, que repreende Pedro e reafirma a legitimidade de Maria como portadora de um conhecimento superior ao dos demais.",
+    "temas_principais": [
+      "A ascensão da alma através dos quatro poderes (climas)",
+      "A natureza da matéria e do pecado",
+      "Maria como recipiente privilegiado da revelação de Jesus",
+      "O conflito entre Maria e Pedro sobre autoridade",
+      "A defesa de Maria por Levi",
+      "A distinção entre visão interior (nous) e visão pela alma",
+      "Crítica à lei como origem do pecado",
+      "O silêncio final de Cristo e a comissão apostólica"
+    ]
+  },
+
+  "referencias": {
+    "texto_original": {
+      "fonte": "Nag Hammadi Scriptures",
+      "editor": "Marvin Meyer",
+      "editora": "HarperOne",
+      "ano": 2007
     },
-    "autor": {
-        "nome": "Anónimo",
-        "tradicao": "Gnosticismo Revelatório / Experiencial",
-        "seculo": "Século II d.C.",
-        "nota": "Atribuído à tradição carismática associada a Maria Madalena. O texto original sobreviveu fragmentado no Códice de Berlim 8502 (escrito em copta) e em dois fragmentos gregos (Papiro Oxyrhynchus 3525 e Papiro Rylands 463)."
-    },
-    "idioma": {
-        "original": "Grego",
-        "manuscrito": "Copta / Grego",
-        "traducao_disponivel": [
-            "Português",
-            "Inglês",
-            "Francês",
-            "Alemão",
-            "Espanhol"
-        ]
-    },
-    "colecao": {
-        "nome": "Códice de Berlim (e fragmentos Oxyrhynchus)",
-        "codice": "BG 8502,1",
-        "localizacao_fisica": "Museu Egípcio de Berlim, Alemanha",
-        "ano_descoberta": 1896,
-        "local_descoberta": "Akhmim, Alto Egito"
-    },
-    "categoria": {
-        "principal": "Evangelho Gnóstico",
-        "secundaria": [
-            "Soteriologia",
-            "Ascensão da Alma",
-            "Autoridade Carismática",
-            "Literatura Apócrifa"
-        ],
-        "testamento": "Novo Testamento Apócrifo",
-        "genero_literario": "Diálogo de Revelação / Diálogo Pós-Ressurreição"
-    },
-    "imagem": {
-        "capa": {
-            "url": "/imagens/evangelho-de-maria-capa.jpg",
-            "alt": "Manuscrito copta do Evangelho de Maria — Códice de Berlim 8502",
-            "credito": "Museu Egípcio de Berlim"
-        },
-        "manuscrito": {
-            "url": "/imagens/evangelho-de-maria-manuscrito.jpg",
-            "alt": "Página sobrevivente do Evangelho de Maria Madalena em copta",
-            "credito": "Códice de Berlim — BG 8502"
-        },
-        "thumbnail": {
-            "url": "/imagens/evangelho-de-maria-thumb.jpg",
-            "alt": "Evangelho de Maria Madalena — miniatura"
-        }
-    },
-    "descricao": {
-        "curta": "O mais íntimo dos textos gnósticos, focado na ausência do pecado original, na ascensão mística da alma através dos poderes arcontes e na defesa da revelação interior de Maria contra a autoridade institucional.",
-        "longa": "O Evangelho de Maria Madalena chega até nós marcado por lacunas físicas dramáticas: das dezoito páginas originais, as páginas 1 a 6 e 11 a 14 foram perdidas. O texto sobrevivente divide-se entre um diálogo cósmico do Salvador ressuscitado sobre a matéria e a célebre visão de Maria Madalena sobre a viagem da consciência, desencadeando um conflito de liderança com Pedro e André.",
-        "temas_principais": [
-            "A inexistência do pecado como substância ontológica",
-            "O Bem como força de restauração da natureza à sua raiz",
-            "A presença do Filho do Homem no interior do ser",
-            "A autoridade espiritual baseada na visão e na gnose eclesial",
-            "As quatro potências arcontes que barram a ascensão da alma",
-            "O repouso final da alma no Silêncio e no Éon",
-            "O confronto entre a autoridade carismática feminina e a hierarquia institucional"
-        ]
-    },
+    "estudos_academicos": [
+      { "autor": "Karen L. King", "titulo": "The Gospel of Mary of Magdala: Jesus and the First Woman Apostle", "editora": "Polebridge Press", "ano": 2003 },
+      { "autor": "Christopher Tuckett", "titulo": "The Gospel of Mary", "editora": "Oxford University Press", "ano": 2007 }
+    ]
+  },
+    "arquivo": "3-evangelho-de-maria-madalena.json",
     "metadados": {
-        "data_criacao": "2024-01-20",
-        "data_atualizacao": "2026-07-12",
-        "versao": "2.0",
-        "estado": "publicado",
-        "visibilidade": "publico",
-        "tags": [
-            "apocrifo",
-            "gnostico",
-            "codice-berlim",
-            "maria-madalena",
-            "ascensao-da-alma",
-            "arcontes",
-            "nous",
-            "pneuma",
-            "autoridade"
-        ],
-        "leitura_estimada_minutos": 20,
-        "nivel_dificuldade": "avancado"
-    },
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["apocrifo", "maria-madalena", "ascensao", "mistica", "arcontes"],
+    "leitura_estimada_minutos": 15,
+    "nivel_dificuldade": "intermedio"
+  },
+  
     "conteudo": {
         "seccoes": [
             {
@@ -247,14 +238,7 @@
             }
         ]
     },
-    "referencias": {
-        "texto_original": {
-            "fonte": "The Gnostic Scriptures",
-            "editor": "Bentley Layton",
-            "editora": "Doubleday",
-            "ano": 1987
-        }
-    },
+    
     "textos_relacionados": [
         {
             "id": "apj-001",

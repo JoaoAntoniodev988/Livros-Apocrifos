@@ -1,99 +1,88 @@
 {
-    "id": "ps-004",
-    "slug": "pistis-sophia",
-    "titulo": {
-        "principal": "Pistis Sophia",
-        "alternativo": [
-            "Livro do Salvador",
-            "Codex Askewianus"
-        ]
+  "id": "ps-004",
+  "slug": "pistis-sophia",
+  "titulo": "Pistis Sophia",
+  "titulos_alternativos": [
+    "A Fé e a Sabedoria no Abismo Cósmico",
+    "Pistis Sophia: A Gnostic Gospel"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Gnosticismo Sincrético / Ascético",
+  "seculo": "Século III-IV d.C.",
+  "nota": "O texto é composto por quatro livros de origem e datação possivelmente distintas, unidos num único códice. Os Livros I-III formam o núcleo mais antigo (o drama de Pistis Sophia propriamente dito); o Livro IV é considerado por muitos estudiosos uma composição independente e anterior, anexada posteriormente.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta (Sahídico, tradução de original grego)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão"],
+
+  "colecao": {
+    "nome": "Codex Askewianus",
+    "codice": "British Library, Add. MS 5114",
+    "localizacao_fisica": "British Library, Londres, Reino Unido",
+    "ano_descoberta": 1785,
+    "local_descoberta": "Origem desconhecida — adquirido em Londres pelo colecionador Anthony Askew"
+  },
+
+  "categoria": {
+    "principal": "Tratado Gnóstico / Revelação",
+    "secundaria": [
+      "Cosmogonia",
+      "Soteriologia",
+      "Diálogos Pós-Ressurreição",
+      "Escatologia Penitencial",
+      "Gnosticismo Sincrético"
+    ]
+  },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Diálogo de Revelação Pós-Ressurreição"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/pistis-sophia-capa.jpg", "alt": "Codex Askewianus — manuscrito da Pistis Sophia", "credito": "British Library" },
+    { "tipo": "manuscrito", "url": "/imagens/pistis-sophia-manuscrito.jpg", "alt": "Página original do Codex Askewianus contendo a Pistis Sophia", "credito": "British Library, Add. MS 5114" },
+    { "tipo": "thumbnail", "url": "/imagens/pistis-sophia-thumb.jpg", "alt": "Pistis Sophia — miniatura" }
+  ],
+
+  "descricao": {
+    "curta": "O complexo drama do arrependimento de Sophia, os seus 13 metanoias e os diálogos pós-ressurreição com Jesus — um extenso tratado sobre queda, penitência, hierarquias celestes e o destino da alma no juízo final.",
+    "longa": "A Pistis Sophia é um dos textos gnósticos mais extensos que sobreviveram, apresentado como uma série de diálogos entre Jesus ressuscitado e os seus discípulos ao longo de onze anos após a ressurreição — um período muito mais longo do que os quarenta dias da tradição canônica. O núcleo narrativo dos Livros I-III gira em torno do drama de Pistis Sophia, uma entidade celeste que, movida por um desejo excessivo de conhecer a Luz, desce ao caos e é atacada por poderes hostis; o texto detalha as suas treze metanoias (cânticos de arrependimento e súplica), intercaladas com as respostas de Jesus e os comentários exegéticos de Maria Madalena, que se destaca como a interlocutora mais perspicaz entre os discípulos. O Livro IV, provavelmente mais antigo e de origem independente, trata de temas cosmológicos e escatológicos relacionados aos mistérios do Tesouro da Luz e ao destino das almas após a morte, incluindo referências a práticas astrológicas e mágicas incomuns noutros textos gnósticos clássicos.",
+    "temas_principais": [
+      "As 13 metanoias (arrependimentos) de Pistis Sophia",
+      "Jesus como revelador pós-ressurreição durante 11 anos",
+      "As hierarquias de Éons, Arcontes e poderes emanados",
+      "O papel intercessor de Maria Madalena como principal interlocutora",
+      "O Tesouro da Luz e as regiões cósmicas",
+      "Os mistérios do batismo de fogo e do Espírito",
+      "O juízo das almas e a transmigração",
+      "Sincretismo com elementos astrológicos e mágicos"
+    ]
+  },
+
+  "referencias": {
+    "texto_original": {
+      "fonte": "Pistis Sophia: A Gnostic Gospel",
+      "editor": "Violet MacDermot (tradução) / Carl Schmidt (edição crítica)",
+      "editora": "E.J. Brill",
+      "ano": 1978
     },
-    "autor": {
-        "nome": "Anónimo",
-        "tradicao": "Gnosticismo Tardio / Complexo",
-        "seculo": "Séculos III e IV d.C.",
-        "nota": "Texto preservado num manuscrito copta adquirido em 1773 por Anthony Askew. Ao contrário do corpus de Nag Hammadi, este códice já era conhecido na Europa desde o século XVIII."
-    },
-    "idioma": {
-        "original": "Grego",
-        "manuscrito": "Copta",
-        "traducao_disponivel": [
-            "Português",
-            "Inglês",
-            "Francês",
-            "Alemão",
-            "Espanhol"
-        ]
-    },
-    "colecao": {
-        "nome": "Codex Askewianus",
-        "codice": "MS Add 5114",
-        "localizacao_fisica": "British Museum (British Library), Londres",
-        "ano_descoberta": 1773,
-        "local_descoberta": "Egito (adquirido por Anthony Askew)"
-    },
-    "categoria": {
-        "principal": "Evangelho Gnóstico",
-        "secundaria": [
-            "Soteriologia",
-            "Ascensão da Alma",
-            "Cartografia Celestial",
-            "Literatura Apócrifa"
-        ],
-        "testamento": "Novo Testamento Apócrifo",
-        "genero_literario": "Diálogo de Revelação / Diálogo Pós-Ressurreição"
-    },
-    "imagem": {
-        "capa": {
-            "url": "/imagens/pistis-sophia-capa.jpg",
-            "alt": "Manuscrito copta da Pistis Sophia — Codex Askewianus",
-            "credito": "British Museum"
-        },
-        "manuscrito": {
-            "url": "/imagens/pistis-sophia-manuscrito.jpg",
-            "alt": "Página do manuscrito copta contendo os diálogos da Pistis Sophia",
-            "credito": "British Library — MS Add 5114"
-        },
-        "thumbnail": {
-            "url": "/imagens/pistis-sophia-thumb.jpg",
-            "alt": "Pistis Sophia — miniatura"
-        }
-    },
-    "descricao": {
-        "curta": "O mais longo e complexo texto gnóstico sobrevivente, detalhando os treze cânticos de queda e arrependimento de Sophia no caos, o seu resgate cooperativo por Jesus e a cartografia minuciosa dos mundos de luz.",
-        "longa": "A Pistis Sophia apresenta uma monumental revelação pós-ressurreição ocorrida onze anos após a Páscoa. Através de diálogos intensos com uma assembleia de discípulos onde as mulheres assumem o papel principal, Jesus descreve detalhadamente o drama cósmico de Sophia (Fé-Sabedoria), a queda no caos arquitetada por Authades, o processo gradual de salvação e os mistérios necessários para a travessia das esferas arcontes.",
-        "temas_principais": [
-            "A queda de Sophia no caos por desejo da Luz e o engano dos Arcontes",
-            "A figura de Authades como o princípio do egocentrismo cósmico",
-            "Os treze cânticos de arrependimento e a dimensão do sofrimento na gnose",
-            "A releitura esotérica dos Salmos do Antigo Testamento",
-            "A salvação como processo gradual, cooperativo e baseado no conhecimento",
-            "A arquitetura cósmica: Tesouro da Luz, Éons, o Décimo Terceiro Éon e o Amente",
-            "A reencarnação como expressão da compaixão cósmica infinita",
-            "A liderança espiritual e intelectual de Maria Madalena e das discípulas",
-            "A distinção ontológica e ética entre almas pneumáticas e psíquicas"
-        ]
-    },
+    "estudos_academicos": [
+      { "autor": "Carl Schmidt", "titulo": "Koptisch-gnostische Schriften I: Die Pistis Sophia", "editora": "J.C. Hinrichs", "ano": 1905 },
+      { "autor": "Anne Pasquier", "titulo": "Étude sur la Pistis Sophia", "ano": 1992 }
+    ]
+  },
+    "arquivo": "4-pistis-sophia.json",
     "metadados": {
-        "data_criacao": "2024-02-01",
-        "data_atualizacao": "2026-07-12",
-        "versao": "2.0",
-        "estado": "publicado",
-        "visibilidade": "publico",
-        "tags": [
-            "apocrifo",
-            "gnostico",
-            "pistis-sophia",
-            "codex-askewianus",
-            "maria-madalena",
-            "reencarnacao",
-            "salmos",
-            "arcontes",
-            "caos"
-        ],
-        "leitura_estimada_minutos": 90,
-        "nivel_dificuldade": "avancado"
-    },
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["codex-askewianus", "apocrifo", "pistis-sophia", "metanoia", "salvacao"],
+    "leitura_estimada_minutos": 45,
+    "nivel_dificuldade": "avancado"
+  },
+
     "conteudo": {
         "seccoes": [
             {
@@ -295,14 +284,7 @@
             }
         ]
     },
-    "referencias": {
-        "texto_original": {
-            "fonte": "Codex Askewianus — British Museum Manuscripts",
-            "editor": "Anthony Askew (Historical Provenance)",
-            "editora": "British Museum Publications",
-            "ano": 1773
-        }
-    },
+   
     "textos_relacionados": [
         {
             "id": "apj-001",

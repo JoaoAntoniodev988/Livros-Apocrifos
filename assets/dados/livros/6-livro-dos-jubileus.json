@@ -1,100 +1,87 @@
 {
-    "id": "lj-006",
-    "slug": "livro-dos-jubileus",
-    "titulo": {
-        "principal": "Livro dos Jubileus",
-        "alternativo": [
-            "Pequeno Génesis",
-            "Testamento de Moisés",
-            "Livro das Divisões dos Tempos"
-        ]
+  "id": "lj-006",
+  "slug": "livro-dos-jubileus",
+  "titulo": "Livro dos Jubileus",
+  "titulos_alternativos": [
+    "O Pequeno Génesis",
+    "The Book of Jubilees"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Judaísmo do Segundo Templo",
+  "seculo": "Século II a.C. (c. 160–150 a.C.)",
+  "nota": "Considerado canónico apenas na Bíblia Etíope (Tewahedo). O texto sobrevive na íntegra somente em ge'ez; fragmentos em hebraico foram encontrados em Qumran (confirmando a antiguidade e autoridade do texto na comunidade essénia), além de fragmentos em grego, siríaco e latim.",
+
+  "idioma_original": "Hebraico",
+  "idioma_manuscrito": "Ge'ez (texto completo, via grego intermediário); fragmentos em hebraico (Qumran)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão"],
+
+  "colecao": {
+    "nome": "Manuscritos do Mar Morto (fragmentos) e Cânone Bíblico Etíope (texto completo)",
+    "codice": "4Q216–4Q224 (Qumran); tradição manuscrita etíope (Beta Ester)",
+    "localizacao_fisica": "Israel Museum, Jerusalém (fragmentos); diversos manuscritos etíopes em bibliotecas europeias e etíopes",
+    "ano_descoberta": 1947,
+    "local_descoberta": "Qumran, Cisjordânia (fragmentos hebraicos)"
+  },
+
+  "categoria": {
+    "principal": "Pseudoepígrafo / História Sagrada Reescrita",
+    "secundaria": [
+      "Literatura Apocalíptica Judaica",
+      "Angelologia e Demonologia",
+      "Calendário Solar Sacerdotal",
+      "Literatura de Qumran"
+    ]
+  },
+  "classificacao": {
+    "testamento": "Antigo Testamento Pseudoepígrafo",
+    "genero_literario": "História Reescrita (Rewritten Bible)"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/livro-dos-jubileus-capa.jpg", "alt": "Fragmento de Qumran do Livro dos Jubileus", "credito": "Israel Museum, Jerusalém" },
+    { "tipo": "manuscrito", "url": "/imagens/livro-dos-jubileus-manuscrito.jpg", "alt": "Manuscrito etíope do Livro dos Jubileus", "credito": "Tradição manuscrita etíope" },
+    { "tipo": "thumbnail", "url": "/imagens/livro-dos-jubileus-thumb.jpg", "alt": "Livro dos Jubileus — miniatura" }
+  ],
+
+  "descricao": {
+    "curta": "Uma reescrita cronológica do Génesis mediada por anjos, introduzindo a figura de Mastema — organizando a história desde a Criação até o Sinai em 49 ciclos de jubileus, com ênfase na lei, no calendário solar e na origem do mal.",
+    "longa": "O Livro dos Jubileus reescreve a narrativa de Génesis 1 a Êxodo 12, apresentando-se como uma revelação adicional feita a Moisés no Sinai pelo Anjo da Presença, por ordem de Deus. A obra organiza toda a história em blocos de 49 anos — os 'jubileus' que dão nome ao livro — atribuindo datas precisas a eventos bíblicos e retroprojetando a observância da Lei mosaica (incluindo festivais, leis alimentares e a circuncisão) aos próprios patriarcas, muito antes da revelação no Sinai. Um dos elementos mais distintivos é a introdução de Mastema, um anjo acusador análogo a Satanás, responsável por testar a humanidade e semear o mal — explicando, por exemplo, o pedido do sacrifício de Isaac como um teste instigado por Mastema. O texto também expande a história dos Vigilantes (anjos caídos que se uniram a mulheres humanas, gerando os gigantes) como origem da corrupção pré-diluviana, e defende vigorosamente um calendário solar de 364 dias como a ordem cronológica correta estabelecida por Deus, em polémica implícita contra calendários lunares ou lunisolares concorrentes.",
+    "temas_principais": [
+      "A revelação a Moisés pelo Anjo da Presença",
+      "A estrutura cronológica em jubileus, semanas e anos",
+      "Mastema como acusador e origem do mal",
+      "Os Vigilantes (Anjos Caídos) e a corrupção pré-diluviana",
+      "O calendário solar de 364 dias como ordem divina",
+      "A retroprojeção da Lei mosaica aos patriarcas",
+      "A circuncisão como sinal eterno da aliança",
+      "A polémica contra a assimilação helenística"
+    ]
+  },
+
+  "referencias": {
+    "texto_original": {
+      "fonte": "The Book of Jubilees: A Critical Text and Translation",
+      "editor": "James C. VanderKam",
+      "editora": "Peeters (CSCO)",
+      "ano": 1989
     },
-    "autor": {
-        "nome": "Anónimo (Atribuído pseudoepigraficamente a um Anjo da Presença / Moisés)",
-        "tradicao": "Judaísmo do Segundo Templo / Proto-Apocalíptica",
-        "seculo": "Século II a.C. (c. 160–150 a.C.)",
-        "nota": "Texto redigido na Palestina durante a crise macabaica e a perseguição de Antíoco IV Epífanes. Embora profundamente judaico e focado na Torá, estabelece as fundações cosmológicas, angelológicas e demonológicas que a Gnose posterior absorveu e subverteu."
-    },
-    "idioma": {
-        "original": "Hebraico",
-        "manuscrito": "Ge'ez (Etíope Clássico - preservado na íntegra), Fragmentos em Hebraico (Manuscritos do Mar Morto)",
-        "traducao_disponivel": [
-            "Português",
-            "Inglês",
-            "Francês",
-            "Alemão",
-            "Espanhol"
-        ]
-    },
-    "colecao": {
-        "nome": "Apócrifos e Pseudoepígrafos do Antigo Testamento / Literatura de Qumran",
-        "codice": "Múltiplos fragmentos (Cave 1, 2, 4, 11 de Qumran)",
-        "localizacao_fisica": "Santuário do Livro, Museu de Israel, Jerusalém",
-        "ano_descoberta": 1947,
-        "local_descoberta": "Deserto da Judeia e Qumran"
-    },
-    "categoria": {
-        "principal": "Pseudoepígrafo do Antigo Testamento",
-        "secundaria": [
-            "História Sagrada Reescrita",
-            "Angelologia",
-            "Calendologia Sagrada",
-            "Apocalíptica Primitiva"
-        ],
-        "testamento": "Intertestamentário / Apócrifo Hebraico",
-        "genero_literario": "Narrativa Exegética Expandida / Revelação Angelical"
-    },
-    "imagem": {
-        "capa": {
-            "url": "/imagens/livro-jubileus-capa.jpg",
-            "alt": "Manuscrito etíope do Livro dos Jubileus",
-            "credito": "Biblioteca Nacional de Paris"
-        },
-        "manuscrito": {
-            "url": "/imagens/livro-jubileus-qumran.jpg",
-            "alt": "Fragmento em hebraico 4Q216 (4QJubilees a) encontrado em Qumran",
-            "credito": "Autoridade de Antiguidades de Israel"
-        },
-        "thumbnail": {
-            "url": "/imagens/livro-jubileus-thumb.jpg",
-            "alt": "Livro dos Jubileus — miniatura"
-        }
-    },
-    "descricao": {
-        "curta": "Uma reescrita cronológica e teológica do Génesis e do Êxodo que preenche os silêncios bíblicos, introduzindo um cosmos mediado por hierarquias angelicais, o mistério do adversário Mastema e o conceito de imunidade identitária através das Tábuas Celestiais.",
-        "longa": "O Livro dos Jubileus opera como uma ponte concetual entre a ortodoxia bíblica e a subsequente cosmovisão gnóstica. Sob o pretexto de uma revelação ditada a Moisés por um Anjo da Presença, o texto reorganiza a história em ciclos de 49 anos, revela a criação simultânea de ordens espirituais e materiais, e contextualiza o mal através de Mastema — o príncipe dos espíritos maus cuja hostilidade é pedagogicamente integrada no plano divino. Ao fixar um calendário solar de 364 dias e proclamar a preexistência cósmica de Israel, o tratado oferece uma resistência teológica à opressão histórica.",
-        "temas_principais": [
-            "A cronologia da história humana baseada em ciclos jubilares de 49 anos",
-            "A expansão do primeiro dia da criação com a inclusão das hierarquias angelicais",
-            "A porosidade entre anjos servidores e a génese das forças arcontes ou hostis",
-            "A estadia exacta de sete anos de Adão e Eva no Éden e a prontidão para o conhecimento",
-            "A revelação de Mastema como o acusador que integra e serve o plano divino",
-            "A transmissão aos patriarcas de livros secretos de medicina, astronomia e mundos celestes",
-            "A queda dos Vigilantes por contaminação com a matéria e o desejo físico",
-            "A persistência dos demónios no mundo como espíritos desincorporados dos Nefilim",
-            "A defesa dogmática de um calendário solar de 364 dias contra o desvio lunar",
-            "A preexistência de Israel nas Tábuas Celestiais como âncora inviolável face à opressão"
-        ]
-    },
+    "estudos_academicos": [
+      { "autor": "James C. VanderKam", "titulo": "The Book of Jubilees (Guides to Apocrypha and Pseudepigrapha)", "editora": "Sheffield Academic Press", "ano": 2001 },
+      { "autor": "James H. Charlesworth (org.)", "titulo": "The Old Testament Pseudepigrapha, Vol. 2", "editora": "Doubleday", "ano": 1985 }
+    ]
+  },
+    "arquivo": "6-livro-dos-jubileus.json",
     "metadados": {
-        "data_criacao": "2024-03-01",
-        "data_atualizacao": "2026-07-12",
-        "versao": "1.5",
-        "estado": "publicado",
-        "visibilidade": "publico",
-        "tags": [
-            "qumran",
-            "pseudoepigrafo",
-            "mastema",
-            "vigilantes",
-            "calendario-solar",
-            "tabuas-celestiais",
-            "pequeno-genesis",
-            "angelologia"
-        ],
-        "leitura_estimada_minutos": 35,
-        "nivel_dificuldade": "intermedio"
-    },
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["qumran", "pseudoepigrafo", "mastema", "vigilantes", "calendario-solar"],
+    "leitura_estimada_minutos": 35,
+    "nivel_dificuldade": "intermedio"
+  },
+
     "conteudo": {
         "seccoes": [
             {
@@ -287,14 +274,7 @@
             }
         ]
     },
-    "referencias": {
-        "texto_original": {
-            "fonte": "The Apocrypha and Pseudepigrapha of the Old Testament in English",
-            "editor": "R.H. Charles",
-            "editora": "Clarendon Press",
-            "ano": 1913
-        }
-    },
+    
     "textos_relacionados": [
         {
             "id": "apj-001",

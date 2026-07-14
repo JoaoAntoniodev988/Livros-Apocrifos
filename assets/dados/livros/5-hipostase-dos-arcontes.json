@@ -1,100 +1,86 @@
 {
-    "id": "ha-005",
-    "slug": "hipostase-dos-arcontes",
-    "titulo": {
-        "principal": "Hipóstase dos Arcontes",
-        "alternativo": [
-            "A Realidade dos Governadores",
-            "A Substância dos Arcontes",
-            "The Reality of the Rulers"
-        ]
+  "id": "ha-005",
+  "slug": "hipostase-dos-arcontes",
+  "titulo": "Hipóstase dos Arcontes",
+  "titulos_alternativos": [
+    "A Realidade dos Governadores",
+    "The Hypostasis of the Archons"
+  ],
+  "autor": "Anónimo",
+  "tradicao": "Gnosticismo Setiano",
+  "seculo": "Século III d.C.",
+  "nota": "O texto funciona como um comentário exegético direto ao Génesis 1-6, invertendo sistematicamente o sentido do relato bíblico à luz da cosmologia setiana. Partilha material substancial com Sobre a Origem do Mundo (também em Nag Hammadi), sugerindo uma fonte comum ou dependência textual.",
+
+  "idioma_original": "Grego",
+  "idioma_manuscrito": "Copta (Sahídico, tradução de original grego)",
+  "traducao_disponivel": ["Português", "Inglês", "Francês", "Alemão", "Espanhol"],
+
+  "colecao": {
+    "nome": "Biblioteca de Nag Hammadi",
+    "codice": "II, 4",
+    "localizacao_fisica": "Museu Copta do Cairo, Egito",
+    "ano_descoberta": 1945,
+    "local_descoberta": "Nag Hammadi, Alto Egito"
+  },
+
+  "categoria": {
+    "principal": "Tratado Gnóstico / Cosmologia",
+    "secundaria": [
+      "Exegese Gnóstica do Génesis",
+      "Gnosticismo Setiano",
+      "Hamartiologia Arcôntica",
+      "Mitologia de Norea"
+    ]
+  },
+  "classificacao": {
+    "testamento": "Novo Testamento Apócrifo",
+    "genero_literario": "Comentário Exegético"
+  },
+
+  "imagens": [
+    { "tipo": "capa", "url": "/imagens/hipostase-dos-arcontes-capa.jpg", "alt": "Manuscrito copta da Hipóstase dos Arcontes — Nag Hammadi Códice II", "credito": "Museu Copta do Cairo" },
+    { "tipo": "manuscrito", "url": "/imagens/hipostase-dos-arcontes-manuscrito.jpg", "alt": "Página original do manuscrito copta da Hipóstase dos Arcontes", "credito": "Biblioteca de Nag Hammadi — Códice II" },
+    { "tipo": "thumbnail", "url": "/imagens/hipostase-dos-arcontes-thumb.jpg", "alt": "Hipóstase dos Arcontes — miniatura" }
+  ],
+
+  "descricao": {
+    "curta": "Uma desconstrução exegética do Génesis que revela a ignorância de Saclas e a mística de Norea — expondo os Arcontes como poderes psíquicos cegos e impotentes diante da verdadeira origem espiritual da humanidade.",
+    "longa": "A Hipóstase dos Arcontes apresenta-se como uma exegese ponto a ponto dos capítulos iniciais do Génesis, reinterpretando cada episódio à luz da cosmologia setiana. Saclas (identificado com Ialdabaoth), o Arconte principal, proclama-se o único deus, mas é imediatamente repreendido por uma voz vinda da Incorruptibilidade, que expõe a sua ignorância sobre a existência de realidades superiores. Os Arcontes criam o corpo psíquico de Adão, mas este permanece inerte até receber a centelha espiritual; Eva, na sua forma espiritual, surge como instrutora que desperta Adão para o conhecimento verdadeiro, provocando a fúria e tentativa de violação por parte dos Arcontes — episódio que o texto usa para expor a impotência última desses poderes diante da realidade pneumática. A segunda parte do texto foca em Norea, filha de Eva, que resiste às investidas arcônticas e é protegida pelo anjo Eleleth, recebendo revelações sobre a origem do mal e o destino final da criação. O texto termina com a narrativa do arrependimento de Sabaoth, um dos Arcontes, que se volta contra Ialdabaoth e é elevado acima dele como recompensa pela sua conversão.",
+    "temas_principais": [
+      "Saclas/Ialdabaoth e a blasfémia da autoproclamação divina",
+      "A repreensão da Incorruptibilidade aos Arcontes",
+      "A criação do corpo psíquico de Adão pelos Arcontes",
+      "Eva espiritual como instrutora e libertadora de Adão",
+      "A violação frustrada de Eva pelos Arcontes",
+      "Norea como filha de Eva e sua resistência aos Arcontes",
+      "Sabaoth e o seu arrependimento — ascensão acima de Ialdabaoth",
+      "A promessa final do Espírito de Verdade"
+    ]
+  },
+
+  "referencias": {
+    "texto_original": {
+      "fonte": "Nag Hammadi Scriptures",
+      "editor": "Marvin Meyer",
+      "editora": "HarperOne",
+      "ano": 2007
     },
-    "autor": {
-        "nome": "Anónimo",
-        "tradicao": "Gnosticismo Setiano / Crítica Ontológica",
-        "seculo": "Século III d.C.",
-        "nota": "Texto preservado no Códice II da Biblioteca de Nag Hammadi (NHC II,4). Caracteriza-se por uma abordagem altamente filosófica e analítica acerca da natureza do poder arcóntico, estruturado como uma exegese corretiva do livro do Génesis."
-    },
-    "idioma": {
-        "original": "Grego",
-        "manuscrito": "Copta Sahídico",
-        "traducao_disponivel": [
-            "Português",
-            "Inglês",
-            "Francês",
-            "Alemão",
-            "Espanhol"
-        ]
-    },
-    "colecao": {
-        "nome": "Biblioteca de Nag Hammadi",
-        "codice": "NHC II,4",
-        "localizacao_fisica": "Museu Copta do Cairo, Egito",
-        "ano_descoberta": 1945,
-        "local_descoberta": "Nag Hammadi, Alto Egito"
-    },
-    "categoria": {
-        "principal": "Tratado Gnóstico",
-        "secundaria": [
-            "Cosmologia",
-            "Antropologia Esotérica",
-            "Crítica do Poder",
-            "Revelação Apocalíptica"
-        ],
-        "testamento": "Novo Testamento Apócrifo",
-        "genero_literario": "Tratado Exegético / Apocalipse de Revelação"
-    },
-    "imagem": {
-        "capa": {
-            "url": "/imagens/hipostase-arcontes-capa.jpg",
-            "alt": "Manuscrito em papiro da Hipóstase dos Arcontes — Nag Hammadi Códice II",
-            "credito": "Museu Copta do Cairo"
-        },
-        "manuscrito": {
-            "url": "/imagens/hipostase-arcontes-manuscrito.jpg",
-            "alt": "Fólio de papiro contendo o início da Hipóstase dos Arcontes",
-            "credito": "Institute for Antiquity and Christianity, Claremont"
-        },
-        "thumbnail": {
-            "url": "/imagens/hipostase-arcontes-thumb.jpg",
-            "alt": "Hipóstase dos Arcontes — miniatura"
-        }
-    },
-    "descricao": {
-        "curta": "Um tratado gnóstico de precisão ontológica que desconstrói os primeiros capítulos do Génesis, desvelando a ignorância de Saclas, o roubo cósmico da luz na matéria, a invulnerabilidade mística de Norea e os limites geopolíticos dos Arcontes.",
-        "longa": "A Hipóstase dos Arcontes assume-se como uma investigação filosófica disfarçada de mitologia para responder à advertência paulina sobre os principados e potestades. Dividido entre uma reinterpretação radical do Éden e um diálogo apocalíptico com o anjo Eleleth, o texto disseca a natureza mecânica e cega dos governadores arcontes, mapeia a linhagem espiritual da semente imóvel de Seth e proclama a imunidade ontológica do ser humano desperto perante os poderes deste mundo.",
-        "temas_principais": [
-            "A desconstrução corretiva da narrativa canónica do Génesis (1 a 6)",
-            "A ignorância ontológica de Saclas/Ialdabaoth e a proclamação falsa de divindade",
-            "A anterioridade e superioridade do Ser Humano Imortal face aos Arcontes",
-            "A incapacidade dos Arcontes em animar o corpo físico sem o sopro do Espírito",
-            "O Jardim do Éden redefinido como uma prisão sofisticada contra a Gnose",
-            "A inversão da Serpente e de Eva como agentes de libertação e sabedoria",
-            "A figura de Norea como arquétipo da alma desperta e invulnerável ao poder",
-            "A definição da criação material como um roubo ou crime cósmico de luz",
-            "A semente imóvel de Seth como a linhagem histórica e espiritual da Gnose"
-        ]
-    },
+    "estudos_academicos": [
+      { "autor": "Bentley Layton", "titulo": "The Hypostasis of the Archons (in The Gnostic Scriptures)", "editora": "Doubleday", "ano": 1987 },
+      { "autor": "Roger A. Bullard", "titulo": "The Hypostasis of the Archons: The Coptic Text with Translation and Commentary", "editora": "Walter de Gruyter", "ano": 1970 }
+    ]
+  },
+    "arquivo": "5-hipostase-dos-arcontes.json",
     "metadados": {
-        "data_criacao": "2024-02-15",
-        "data_atualizacao": "2026-07-12",
-        "versao": "2.0",
-        "estado": "publicado",
-        "visibilidade": "publico",
-        "tags": [
-            "nag-hammadi",
-            "apocrifo",
-            "arcontes",
-            "saclas",
-            "norea",
-            "eleleth",
-            "genesis-gnostico",
-            "semente-imovel",
-            "setiano"
-        ],
-        "leitura_estimada_minutos": 25,
-        "nivel_dificuldade": "avancado"
-    },
+    "data_criacao": "2024-01-15",
+    "data_atualizacao": "2024-04-24",
+    "versao": "2.0",
+    "estado": "publicado",
+    "visibilidade": "publico",
+    "tags": ["nag-hammadi", "apocrifo", "arcontes", "saclas", "norea", "setiano"],
+    "leitura_estimada_minutos": 25,
+    "nivel_dificuldade": "avancado"
+  },
     "conteudo": {
         "seccoes": [
             {
@@ -300,14 +286,7 @@
             }
         ]
     },
-    "referencias": {
-        "texto_original": {
-            "fonte": "The Coptic Gnostic Library: A Complete Transliteration and Translation of the Nag Hammadi Codices",
-            "editor": "Bentley Layton (Volume Códice II)",
-            "editora": "Brill",
-            "ano": 1989
-        }
-    },
+    
     "textos_relacionados": [
         {
             "id": "apj-001",
