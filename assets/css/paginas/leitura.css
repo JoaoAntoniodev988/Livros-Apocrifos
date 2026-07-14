@@ -75,18 +75,13 @@
 /* Texto principal */
 
 .reading-text {
-
     font-size: 1.125rem;
-
     line-height: 1.8;
-
 }
 
 
 .reading-text p {
-
-    margin-bottom: var(--space-lg);
-
+    margin-bottom: var(--space-md);
 }
 
 
@@ -97,7 +92,7 @@
 
 .exegesis {
 
-    margin-top: var(--space-xl);
+    margin-top: var(--space-md);
 
     padding: var(--space-lg);
 
@@ -156,15 +151,13 @@
 
 
     .reading-header {
-
         padding: var(--space-lg) 0;
 
     }
 
 
     .reading-area {
-
-        padding: var(--space-lg) 0;
+        padding: var(--space-lg);
 
     }
 
