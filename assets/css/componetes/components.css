@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: var(--space-sm) var(--space-lg);
+    padding: var(--space-sm);
 
     font-family: var(--font-interface);
     font-weight: var(--font-weight-semibold);
@@ -127,6 +127,17 @@
     white-space: nowrap;
 
 }
+
+/* ==========================================================
+   AÇÕES DO HEADER
+========================================================== */
+
+.app-header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
 
 /* ==========================================================
    NAVBAR
@@ -236,14 +247,24 @@
 }
 
 /* ==========================================================
-   AÇÕES DO HEADER
+   SECTION HEADER
 ========================================================== */
 
-.app-header__actions {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
 }
+
+.section-header h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+}
+
 
 /* ==========================================================
    BOTÃO MENU MOBILE
@@ -275,6 +296,7 @@
 .menu-toggle:hover {
     background: rgba(0, 0, 0, .08);
 }
+
 
 /* ==========================================================
    RESPONSIVIDADE DO HEADER
@@ -413,26 +435,6 @@
 }
 
 /* ==========================================================
-   SECTION HEADER
-========================================================== */
-
-.section-header {
-    text-align: center;
-    margin-bottom: var(--space-xl);
-}
-
-.section-header h2 {
-    margin-bottom: var(--space-sm);
-}
-
-.section-header p {
-    max-width: 700px;
-    margin: 0 auto;
-    color: var(--color-text-muted);
-}
-
-
-/* ==========================================================
    COMPONENTES AUXILIARES
 ========================================================== */
 
@@ -524,20 +526,11 @@ img {
         padding:var(--space-md);
     }
 
-    .section-header{
-        margin-bottom:var(--space-md);
-    }
-
 }
 
 /* ==========================================================
    SLIDER
 ========================================================== */
-
-.section-header {
-    margin-bottom:var(--space-md);
-}
-
 
 .slider-controls{
 
@@ -595,12 +588,8 @@ img {
 
 }
 
-.book-card-body h3 {
-    margin-bottom: var(--space-sm);
-}
-
-.book-card-body p {
-    margin-bottom: var(--space-lg);
+.book-card-body p, .book-card-body h3  {
+    margin-bottom: var(--space-md);
 }
 
 /* ==========================================================
@@ -612,52 +601,6 @@ img {
     border-top: 2px solid var(--color-secondary);
     text-align: center;
 }
-
-/* ==========================================================
-   CONTEÚDO
-========================================================== */
-
-/* .footer__content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: var(--space-xl);
-    padding: var(--space-xl) 0;
-} */
-
-/* .footer__brand,
-.footer__nav,
-.footer__info {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-} */
-
-/* .footer h2,
-.footer h3 {
-    color: var(--color-surface);
-    margin: 0;
-} */
-
-/* .footer p {
-    margin: 0;
-    color: rgba(255,255,255,.85);
-    line-height: 1.7;
-} */
-
-/* ==========================================================
-   LINKS
-========================================================== */
-
-/* .footer__nav a {
-    color: rgba(255,255,255,.85);
-    text-decoration: none;
-
-    transition: color var(--transition-normal);
-}
-
-.footer__nav a:hover {
-    color: var(--color-secondary);
-} */
 
 
 /* ==========================================================
