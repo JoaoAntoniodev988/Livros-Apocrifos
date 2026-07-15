@@ -58,7 +58,7 @@
       { "autor": "Karen L. King", "titulo": "The Secret Revelation of John", "editora": "Harvard University Press", "ano": 2006 }
     ]
   },
-
+    "destaque": true,
     "metadados": {
     "data_criacao": "2024-01-15",
     "data_atualizacao": "2024-04-24",
@@ -141,7 +141,7 @@
       { "autor": "Wesley W. Isenberg", "titulo": "The Gospel According to Philip (in The Nag Hammadi Library)", "ano": 1988 },
       { "autor": "Hans-Martin Schenke", "titulo": "Das Philippus-Evangelium (Nag-Hammadi-Codex II,3)", "editora": "Akademie Verlag", "ano": 1997 }
     ]
-  },
+  },"destaque": true,
     "arquivo": "2-evangelho-de-filipe.json",
     "metadados": {
     "data_criacao": "2024-01-15",
@@ -225,7 +225,7 @@
       { "autor": "Karen L. King", "titulo": "The Gospel of Mary of Magdala: Jesus and the First Woman Apostle", "editora": "Polebridge Press", "ano": 2003 },
       { "autor": "Christopher Tuckett", "titulo": "The Gospel of Mary", "editora": "Oxford University Press", "ano": 2007 }
     ]
-  },
+  },"destaque": true,
     "arquivo": "3-evangelho-de-maria-madalena.json",
     "metadados": {
     "data_criacao": "2024-01-15",

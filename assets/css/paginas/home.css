@@ -14,15 +14,6 @@
     min-width: 0;
 }
 
-.home-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    position: sticky;
-    top: 2rem;
-}
-
-
 /* ==========================================================
    HERO
 ========================================================== */
@@ -83,6 +74,13 @@
 /* ==========================================================
    SIDEBAR
 ========================================================== */
+.home-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    position: sticky;
+    top: 2rem;
+}
 
 .home-sidebar section {
     padding: var(--space-md);
@@ -96,7 +94,7 @@
     margin-bottom: var(--space-lg);
     padding-bottom: var(--space-sm);
     border-bottom: 1px solid var(--color-border);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .home-sidebar h3 {

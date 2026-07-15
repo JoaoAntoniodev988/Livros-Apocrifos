@@ -6,21 +6,23 @@ class Slider {
 
         if (!this.container) return;
 
-        this.slider = this.container.querySelector(".books-slider");
         this.track = this.container.querySelector(".books-track");
 
-        this.cards = [...this.track.children];
-
         this.prev = this.container.querySelector(".slider-prev");
+
         this.next = this.container.querySelector(".slider-next");
 
         this.index = 0;
 
-        this.visibleCards = 1;
+        this.maxIndex = 0;
 
-        this.cardWidth = 0;
+        this.init();
 
-        this.calculate();
+    }
+
+    init() {
+
+        this.updateSizes();
 
         this.events();
 
@@ -28,39 +30,53 @@ class Slider {
 
     }
 
-    calculate() {
+    getCardWidth() {
 
-        if (!this.cards.length) return;
+        const card = this.track.querySelector(".book-card");
 
-        if (window.innerWidth >= 1200) {
+        if (!card) return 0;
 
-            this.visibleCards = 3;
+        const gap = parseFloat(
+            getComputedStyle(this.track).gap
+        ) || 0;
 
-        } else if (window.innerWidth >= 768) {
+        return card.offsetWidth + gap;
 
-            this.visibleCards = 2;
+    }
 
-        } else {
+    updateSizes() {
 
-            this.visibleCards = 1;
+        const cards = this.track.querySelectorAll(".book-card");
+
+        if (!cards.length) return;
+
+        const slider = this.container.querySelector(".books-slider");
+
+        const cardWidth = this.getCardWidth();
+
+        const visibleCards = Math.max(
+            1,
+            Math.floor(slider.offsetWidth / cardWidth)
+        );
+
+        this.maxIndex = Math.max(
+            0,
+            cards.length - visibleCards
+        );
+
+        if (this.index > this.maxIndex) {
+
+            this.index = this.maxIndex;
 
         }
-
-        this.cardWidth = this.slider.clientWidth / this.visibleCards;
-
-        this.cards.forEach(card => {
-
-            card.style.minWidth = `${this.cardWidth}px`;
-
-        });
 
     }
 
     events() {
 
-        this.next.addEventListener("click", () => {
+        this.next?.addEventListener("click", () => {
 
-            if (this.index < this.cards.length - this.visibleCards) {
+            if (this.index < this.maxIndex) {
 
                 this.index++;
 
@@ -70,7 +86,7 @@ class Slider {
 
         });
 
-        this.prev.addEventListener("click", () => {
+        this.prev?.addEventListener("click", () => {
 
             if (this.index > 0) {
 
@@ -84,7 +100,7 @@ class Slider {
 
         window.addEventListener("resize", () => {
 
-            this.calculate();
+            this.updateSizes();
 
             this.update();
 
@@ -94,15 +110,11 @@ class Slider {
 
     update() {
 
+        const largura = this.getCardWidth();
+
         this.track.style.transform =
-            `translateX(-${this.index * this.cardWidth}px)`;
+            `translateX(-${this.index * largura}px)`;
 
     }
 
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    new Slider(".featured-books");
-
-});

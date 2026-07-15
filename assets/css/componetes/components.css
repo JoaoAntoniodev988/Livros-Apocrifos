@@ -525,7 +525,7 @@ img {
     }
 
     .section-header{
-        margin-bottom:var(--space-lg);
+        margin-bottom:var(--space-sm);
     }
 
 }
@@ -534,32 +534,10 @@ img {
    SLIDER
 ========================================================== */
 
-.books-slider{
-    overflow:hidden;
-    width:100%;
+.section-header {
+    margin-bottom:var(--space-md);
 }
 
-.books-track{
-
-    display:flex;
-
-    gap:var(--space-lg);
-
-    transition:transform .35s ease;
-
-    will-change:transform;
-
-}
-
-.books-track .book-card{
-
-    flex:0 0 auto;
-
-}
-
-/* ==========================================================
-   slider CONTROLES
-========================================================== */
 
 .slider-controls{
 
@@ -591,6 +569,38 @@ img {
 
     background:var(--color-secondary);
 
+}
+
+.books-slider{
+    overflow:hidden;
+    width:100%;
+    padding: var(--space-md) 0;
+}
+
+.books-track{
+
+    display:flex;
+
+    gap:var(--space-sm);
+
+    transition:transform .4s ease;
+
+    will-change:transform;
+
+}
+
+.book-card{
+    padding: var(--space-md);
+    flex:0 0 250px;
+
+}
+
+.book-card-body h3 {
+    margin-bottom: var(--space-sm);
+}
+
+.book-card-body p {
+    margin-bottom: var(--space-lg);
 }
 
 /* ==========================================================
@@ -674,6 +684,10 @@ img {
         grid-column:1 / -1;
     }
 
+    .book-card{
+        flex:0 0 calc(50% - .75rem);
+    }
+
 }
 
 /* ==========================================================
@@ -696,6 +710,10 @@ img {
     .footer__bottom{
         flex-direction:column;
         text-align:center;
+    }
+
+    .book-card{
+        flex:0 0 100%;
     }
 
 }

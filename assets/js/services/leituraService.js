@@ -269,3 +269,53 @@ function atualizarBotoes(totalSeccoes) {
     document.getElementById("btnAnterior").disabled = seccaoIndex === 0;
     document.getElementById("btnProxima").disabled = seccaoIndex === totalSeccoes - 1;
 }
+
+// Visão geral
+// Este ficheiro é o controlador da página leitura.html — ele é responsável por carregar um livro específico, renderizar os seus metadados e permitir a navegação entre secções do texto. Tem três variáveis de estado no topo do módulo (livroAtual, conteudoAtual, seccaoIndex) que mantêm o contexto da leitura em curso.
+// 1. Inicialização (DOMContentLoaded)
+// Responsável por todo o bootstrap da página:
+
+// Lê o parâmetro id da URL (?id=...) para saber qual livro mostrar.
+// Trata dois casos de erro cedo (sem id, ou id inexistente), escrevendo mensagens diretamente no chapterTitle.
+// Busca o livro (livrosService.getPorId) e depois o seu conteúdo (livrosService.getConteudo) — duas chamadas assíncronas sequenciais, já que a segunda depende da primeira.
+// Guarda os resultados no estado global (livroAtual, conteudoAtual).
+// Dispara a primeira renderização: cabeçalho + secção atual (índice 0).
+// Regista os listeners dos botões de navegação (Anterior/Próxima).
+
+// 2. Navegação entre secções
+// Os dois listeners de clique (btnAnterior, btnProxima) são responsáveis por:
+
+// Incrementar/decrementar seccaoIndex com guardas de limite (não deixa ir abaixo de 0 nem acima do total de secções).
+// Re-renderizar apenas a secção atual após a mudança (não recarrega o livro inteiro).
+
+// 3. renderCabecalho(livro)
+// Responsável pelo título e subtítulo do livro:
+
+// Escolhe um título alternativo específico (índice fixo 1, hardcoded) para colocar entre parênteses ao lado do título principal — ex: "Título (English Title)".
+// Junta os restantes títulos alternativos numa descrição secundária.
+// Delega a ficha técnica para renderFichaTecnica.
+
+// ⚠️ Nota: o indiceDestaque = 1 está hardcoded — se algum livro tiver menos de 2 títulos alternativos, destaque será undefined e cai no fallback (livro.titulo sozinho), o que é seguro, mas vale a pena confirmar se é sempre o segundo item do array que queres em destaque.
+// 4. renderFichaTecnica(livro)
+// Esta é a função mais extensa e a que provavelmente já discutiste antes. É responsável por construir dinamicamente a lista de metadados bibliográficos, agrupados em blocos temáticos:
+
+// Autoria e contexto (autor, tradição, século)
+// Idioma (original, manuscrito, traduções disponíveis)
+// Classificação (categoria, temas, género literário, corpus/testamento)
+// Proveniência (coleção, códice, local/ano de descoberta, localização atual)
+// Fonte do texto original (concatenando fonte/editor/editora/ano)
+// Metadados de leitura (tempo estimado, dificuldade)
+
+// Cada item só é adicionado ao array itens se o campo existir (optional chaining consistente) — isto é o que torna a função tolerante a esquemas incompletos entre os teus 6 textos. No final, monta o HTML via template literal, incluindo a nota opcional e delegando os estudos académicos a renderEstudosAcademicos.
+// 5. renderEstudosAcademicos(estudos)
+// Sub-função isolada, responsável só por formatar a lista de referências académicas (autor, título em itálico, editora, ano) — retorna string vazia se não houver estudos.
+// 6. escapeHTML(str)
+// Utilitário de segurança: usa o truque do div.textContent para sanitizar strings antes de as inserir via innerHTML, prevenindo injeção de HTML nos campos vindos dos dados (autor, valores da ficha técnica, etc.). Nota que é aplicado na ficha técnica, mas não em renderTextoSagrado nem em renderExegese — lá o conteúdo vai direto para innerHTML sem escaping.
+// 7. renderSeccaoAtual()
+// Orquestra a renderização de uma secção de leitura: título, texto sagrado, exegese, e atualiza o estado dos botões de navegação.
+// 8. renderTextoSagrado(texto)
+// Responsável por transformar o objeto texto_sagrado em HTML, suportando três formas de conteúdo possíveis e combináveis: parágrafos simples, diálogo divino (blockquote, aceita string ou array), e citações (lista, aceita string ou array). A normalização Array.isArray(...) ? ... : [...] é o padrão que usas para tolerar tanto valor único como array no JSON.
+// 9. renderExegese(exegese)
+// Semelhante, mas mais simples: título (com fallback "Exegese"), parágrafos, e referências concatenadas com "·".
+// 10. atualizarBotoes(totalSeccoes)
+// Responsável apenas por ativar/desativar os botões conforme a posição atual (disabled no início e no fim).
