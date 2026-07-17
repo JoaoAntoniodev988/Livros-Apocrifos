@@ -32,17 +32,21 @@ function criarCardHome(livro){
         <div class="book-card-body">
 
             <h3>
-
                 ${livro.titulo}
-
             </h3>
 
-          
+            <p>  
+                <strong>Coleção:</strong> ${livro.colecao.nome}<br>
 
-            <p>  <strong> Temas Principais: </strong>
+                <strong>Codice:</strong> ${livro.colecao.codice}<br>
 
-                ${livro.descricao.temas_principais}
+                <strong>Localização Física:</strong> ${livro.colecao.localizacao_fisica}
 
+                <br>
+                <strong>Ano da Descoberta:</strong> ${livro.colecao.ano_descoberta}
+
+                <br>
+                <strong>Local da Descoberta:</strong> ${livro.colecao.local_descoberta}
             </p>
 
             <a

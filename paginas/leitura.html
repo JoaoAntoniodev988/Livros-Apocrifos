@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Área de Leitura | Biblioteca Apócrifa</title>
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
     <!-- CSS Global -->
-
     <link rel="stylesheet" href="../assets/css/style.css">
-
-
     <!-- CSS da Página -->
-
     <link rel="stylesheet" href="../assets/css/paginas/leitura.css">
-
-
 </head>
 
 
 <body>
 
-
    <div data-component="header"></div>
 
-<main>
+    <main>
 
-    <!-- Cabeçalho do Livro -->
-    <section class="reading-header">
-        <div class="container">
-            <div class="reading-header__content">
-                <h1 id="bookTitle"></h1>
-                <p id="bookDescription"></p>
+        <!-- Cabeçalho do Livro -->
+        <section class="reading-header">
+            <div class="container">
+                <div class="reading-header__content">
+                   <h1 id="bookTitle"></h1>
+                    <p id="bookDescription"></p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Ficha Técnica (aparece primeiro) -->
-    <section class="ficha-tecnica">
-        <div class="container">
-            <h3 class="ficha-tecnica__titulo">Ficha Técnica</h3>
-            <dl id="fichaTecnica" class="ficha-tecnica__grid"></dl>
+        <!-- Área de Leitura -->
+        <section class="reading-area">
+            <div class="reading-container">
+                <article class="reading-content">
+                    <header class="reading-content__header">
+                        <h2 id="chapterTitle"></h2>
+                    </header>
 
-            <div class="ficha-tecnica__acao">
-                <button id="btnComecarLeitura" class="button-primary">
-                    Começar a ler
+                    <div
+                        class="reading-text"
+                        id="readingText">
+                    </div>
+
+                    <div
+                        class="exegesis"
+                        id="exegesis">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Navegação -->
+        <section class="reading-navigation">
+            <div class="container">
+                <button class="button-secondary" id="btnAnterior">
+                    ← Seção anterior
+                </button>
+
+                <button class="button-primary" id="btnProxima">
+                    Próxima seção →
                 </button>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Área de Leitura (escondida até clicar no botão) -->
-    <section class="reading-area" id="readingArea" hidden>
-        <div class="reading-container">
-            <article class="reading-content">
-                <header class="reading-content__header">
-                    <h2 id="chapterTitle"></h2>
-                </header>
-                <div class="reading-text" id="readingText"></div>
-                <div class="exegesis" id="exegesis"></div>
-            </article>
-        </div>
-    </section>
+        <section class="reading-header">
+            <div class="container">
+                <div class="reading-header__content">
+                    <h1 id="bookTitle"></h1>
+                    <p id="bookDescription"></p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Navegação (escondida até clicar no botão) -->
-    <section class="reading-navigation" id="readingNavigation" hidden>
-        <div class="container">
-            <button class="button-secondary" id="btnAnterior">← Seção anterior</button>
-            <button class="button-primary" id="btnProxima">Próxima seção →</button>
-        </div>
-    </section>
+       <!-- Ficha Técnica (rodapé do livro) -->
+        <footer class="ficha-tecnica">
+            <div class="container">
+                <h3 class="ficha-tecnica__titulo">Ficha Técnica</h3>
+                <dl id="fichaTecnica" class="ficha-tecnica__grid"></dl>
+            </div>
+        </footer>
 
-</main>
+    </main>
 
-
-<div data-component="footer"></div>
+    <div data-component="footer"></div>
 
 <script src="../assets/js/layouts/componentes.js"></script>
 <script src="../assets/js/layouts/navigation.js"></script>

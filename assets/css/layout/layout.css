@@ -21,7 +21,7 @@ section {
 
 .section-header {
     text-align: center;
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
 }
 
 .section-header h2 {

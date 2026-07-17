@@ -1,6 +1,5 @@
-
 let todosLivros = [];
-let filtroAtual = { busca: "", categoria: "Todos", seculo: "Todos" };
+let filtroAtual = { busca: "", categoria: "Todos" };
 
 document.addEventListener("DOMContentLoaded", async () => {
 
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     todosLivros = await livrosService.carregar();
 
     renderFiltrosCategoria(todosLivros);
-    renderFiltrosSeculo(todosLivros);
     aplicarFiltros();
 
     // Pesquisa
@@ -19,13 +17,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-        filtroAtual.busca = input.value.trim().toLowerCase();
+        filtroAtual.busca = normalizarTexto(input.value.trim());
         aplicarFiltros();
     });
 
     // Também filtra ao digitar, sem precisar de submeter
     input.addEventListener("input", () => {
-        filtroAtual.busca = input.value.trim().toLowerCase();
+        filtroAtual.busca = normalizarTexto(input.value.trim());
         aplicarFiltros();
     });
 
@@ -63,37 +61,6 @@ function renderFiltrosCategoria(livros) {
 
 }
 
-function renderFiltrosSeculo(livros) {
-
-    const container = document.getElementById("seculoFiltros");
-    if (!container) return;
-
-    const seculos = new Set();
-    livros.forEach(livro => {
-        if (livro.seculo) seculos.add(livro.seculo);
-    });
-
-    const opcoes = ["Todos", ...Array.from(seculos).sort()];
-
-    container.innerHTML = opcoes.map(sec => `
-        <button
-            class="button-secondary filtro-btn ${sec === "Todos" ? "is-active" : ""}"
-            data-seculo="${escapeHTML(sec)}">
-            ${escapeHTML(sec)}
-        </button>
-    `).join("");
-
-    container.querySelectorAll(".filtro-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-            container.querySelectorAll(".filtro-btn").forEach(b => b.classList.remove("is-active"));
-            btn.classList.add("is-active");
-            filtroAtual.seculo = btn.dataset.seculo;
-            aplicarFiltros();
-        });
-    });
-
-}
-
 function aplicarFiltros() {
 
     let resultado = todosLivros;
@@ -104,17 +71,13 @@ function aplicarFiltros() {
         );
     }
 
-    if (filtroAtual.seculo !== "Todos") {
-        resultado = resultado.filter(livro => livro.seculo === filtroAtual.seculo);
-    }
-
     if (filtroAtual.busca) {
         resultado = resultado.filter(livro => {
-            const alvo = [
+            const alvo = normalizarTexto([
                 livro.titulo,
                 livro.subtitulo,
                 extrairCampo(livro.descricao, "curta")
-            ].join(" ").toLowerCase();
+            ].join(" "));
             return alvo.includes(filtroAtual.busca);
         });
     }
@@ -148,6 +111,15 @@ function escapeHTML(str) {
     const div = document.createElement("div");
     div.textContent = str;
     return div.innerHTML;
+}
+
+// Remove acentos para permitir pesquisa "joao" encontrar "João"
+function normalizarTexto(str) {
+    if (typeof str !== "string") return "";
+    return str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
 }
 
 // Extrai um valor aninhado com fallback, aceitando tanto objeto quanto string solta
@@ -187,33 +159,38 @@ function criarCard(livro) {
     article.className = "book-card";
 
     const tituloPrincipal = livro.titulo || "";
-    const subtitulo = livro.subtitulo || "";
-    const seculo = livro.seculo || "";
-    const categoriaPrincipal = extrairCampo(livro.categoria, "principal");
     const descricaoCurta = extrairCampo(livro.descricao, "curta");
+    const categoriaPrincipal = extrairCampo(livro.categoria, "principal");
+
     const colecao = livro.colecao || {};
     const nomeColecao = colecao.nome || "";
+    const codice = colecao.codice || "";
+    const localizacaoFisica = colecao.localizacao_fisica || "";
+    const anoDescoberta = colecao.ano_descoberta || "";
+    const localDescoberta = colecao.local_descoberta || "";
 
     article.innerHTML = `
-        <div class="book-card-header">
-            <span class="book-card-category">
-                <strong>Categoria:</strong> ${escapeHTML(categoriaPrincipal)}
-            </span>
-            <span class="book-card-date">${escapeHTML(seculo)}</span>
+        <div class="book-card-body">
+
+            <p>${escapeHTML(categoriaPrincipal)}</p>
+
+            <h3>${escapeHTML(tituloPrincipal)}</h3>
+
+            <p>${escapeHTML(descricaoCurta)}</p>
+
+            <p>
+                ${nomeColecao ? `<strong>Coleção:</strong> ${escapeHTML(nomeColecao)}<br>` : ""}
+                ${codice ? `<strong>Códice:</strong> ${escapeHTML(codice)}<br>` : ""}
+                ${localizacaoFisica ? `<strong>Localização Física:</strong> ${escapeHTML(localizacaoFisica)}<br>` : ""}
+                ${anoDescoberta ? `<strong>Ano da Descoberta:</strong> ${escapeHTML(String(anoDescoberta))}<br>` : ""}
+                ${localDescoberta ? `<strong>Local da Descoberta:</strong> ${escapeHTML(localDescoberta)}` : ""}
+            </p>
+
+            <a href="leitura.html?id=${encodeURIComponent(livro.id)}" class="button-primary">
+                Ler Obra
+            </a>
+
         </div>
-
-        <h3 class="book-card-title">${escapeHTML(tituloPrincipal)}</h3>
-        ${subtitulo ? `<p class="book-card-subtitle">${escapeHTML(subtitulo)}</p>` : ""}
-
-        <p class="book-card-description">${escapeHTML(descricaoCurta)}</p>
-
-        <div class="book-card-origin">
-            <span><strong>Coleção:</strong> ${escapeHTML(nomeColecao)}</span>
-        </div>
-        
-        <a href="leitura.html?id=${encodeURIComponent(livro.id)}" class="button-primary">
-            Ler Obra
-        </a>
     `;
 
     return article;
