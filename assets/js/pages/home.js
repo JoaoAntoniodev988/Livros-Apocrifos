@@ -37,9 +37,11 @@ function criarCardHome(livro){
 
             </h3>
 
-            <p>
+          
 
-                ${livro.descricao.curta}
+            <p>  <strong> Temas Principais: </strong>
+
+                ${livro.descricao.temas_principais}
 
             </p>
 

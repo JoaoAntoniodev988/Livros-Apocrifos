@@ -1,16 +1,146 @@
+
+let todosLivros = [];
+let filtroAtual = { busca: "", categoria: "Todos", seculo: "Todos" };
+
 document.addEventListener("DOMContentLoaded", async () => {
 
     const container = document.getElementById("booksContainer");
-
     if (!container) return;
 
-    const livros = await livrosService.carregar();
+    todosLivros = await livrosService.carregar();
 
-    livros.forEach(livro => {
-        container.appendChild(criarCard(livro));
+    renderFiltrosCategoria(todosLivros);
+    renderFiltrosSeculo(todosLivros);
+    aplicarFiltros();
+
+    // Pesquisa
+    const form = document.querySelector(".search-form");
+    const input = form.querySelector("input[type='search']");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        filtroAtual.busca = input.value.trim().toLowerCase();
+        aplicarFiltros();
+    });
+
+    // Também filtra ao digitar, sem precisar de submeter
+    input.addEventListener("input", () => {
+        filtroAtual.busca = input.value.trim().toLowerCase();
+        aplicarFiltros();
     });
 
 });
+
+function renderFiltrosCategoria(livros) {
+
+    const container = document.getElementById("categoriaFiltros");
+    if (!container) return;
+
+    const categorias = new Set();
+    livros.forEach(livro => {
+        const cat = extrairCampo(livro.categoria, "principal");
+        if (cat) categorias.add(cat);
+    });
+
+    const opcoes = ["Todos", ...Array.from(categorias).sort()];
+
+    container.innerHTML = opcoes.map(cat => `
+        <button
+            class="button-secondary filtro-btn ${cat === "Todos" ? "is-active" : ""}"
+            data-categoria="${escapeHTML(cat)}">
+            ${escapeHTML(cat)}
+        </button>
+    `).join("");
+
+    container.querySelectorAll(".filtro-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            container.querySelectorAll(".filtro-btn").forEach(b => b.classList.remove("is-active"));
+            btn.classList.add("is-active");
+            filtroAtual.categoria = btn.dataset.categoria;
+            aplicarFiltros();
+        });
+    });
+
+}
+
+function renderFiltrosSeculo(livros) {
+
+    const container = document.getElementById("seculoFiltros");
+    if (!container) return;
+
+    const seculos = new Set();
+    livros.forEach(livro => {
+        if (livro.seculo) seculos.add(livro.seculo);
+    });
+
+    const opcoes = ["Todos", ...Array.from(seculos).sort()];
+
+    container.innerHTML = opcoes.map(sec => `
+        <button
+            class="button-secondary filtro-btn ${sec === "Todos" ? "is-active" : ""}"
+            data-seculo="${escapeHTML(sec)}">
+            ${escapeHTML(sec)}
+        </button>
+    `).join("");
+
+    container.querySelectorAll(".filtro-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            container.querySelectorAll(".filtro-btn").forEach(b => b.classList.remove("is-active"));
+            btn.classList.add("is-active");
+            filtroAtual.seculo = btn.dataset.seculo;
+            aplicarFiltros();
+        });
+    });
+
+}
+
+function aplicarFiltros() {
+
+    let resultado = todosLivros;
+
+    if (filtroAtual.categoria !== "Todos") {
+        resultado = resultado.filter(livro =>
+            extrairCampo(livro.categoria, "principal") === filtroAtual.categoria
+        );
+    }
+
+    if (filtroAtual.seculo !== "Todos") {
+        resultado = resultado.filter(livro => livro.seculo === filtroAtual.seculo);
+    }
+
+    if (filtroAtual.busca) {
+        resultado = resultado.filter(livro => {
+            const alvo = [
+                livro.titulo,
+                livro.subtitulo,
+                extrairCampo(livro.descricao, "curta")
+            ].join(" ").toLowerCase();
+            return alvo.includes(filtroAtual.busca);
+        });
+    }
+
+    renderBooks(resultado);
+
+}
+
+function renderBooks(livros) {
+
+    const container = document.getElementById("booksContainer");
+    const countEl = document.getElementById("booksCount");
+
+    container.innerHTML = "";
+
+    if (livros.length === 0) {
+        container.innerHTML = `<p class="books-empty">Nenhum livro encontrado.</p>`;
+    } else {
+        livros.forEach(livro => {
+            container.appendChild(criarCard(livro));
+        });
+    }
+
+    if (countEl) countEl.textContent = livros.length;
+
+}
 
 // Evita injeção de HTML vindo dos dados
 function escapeHTML(str) {
@@ -56,23 +186,13 @@ function criarCard(livro) {
     const article = document.createElement("article");
     article.className = "book-card";
 
-    // --- Extração segura das propriedades ---
-
-    // Identificação básica
     const tituloPrincipal = livro.titulo || "";
     const subtitulo = livro.subtitulo || "";
     const seculo = livro.seculo || "";
-    // Categoria (objeto: principal + secundaria[])
     const categoriaPrincipal = extrairCampo(livro.categoria, "principal");
-
-    // Descrição (objeto: curta + temas_principais[])
     const descricaoCurta = extrairCampo(livro.descricao, "curta");
-
-    // Coleção (objeto completo)
     const colecao = livro.colecao || {};
     const nomeColecao = colecao.nome || "";
-
-    // --- Montagem do HTML ---
 
     article.innerHTML = `
         <div class="book-card-header">
