@@ -151,13 +151,10 @@
 
 .app-header__nav a {
     position: relative;
-
     padding: .35rem 0;
-
     color: var(--color-text);
     text-decoration: none;
     font-weight: 600;
-
     transition:
         color var(--transition-normal);
 }
@@ -168,16 +165,12 @@
 
 .app-header__nav a::after {
     content: "";
-
     position: absolute;
     left: 0;
     bottom: -6px;
-
     width: 0;
     height: 2px;
-
     background: var(--color-secondary);
-
     transition: width var(--transition-normal);
 }
 

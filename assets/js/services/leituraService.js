@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     const id = params.get("id");
 
     if (!id) {
-        document.getElementById("chapterTitle").textContent = "Livro não encontrado.";
+        mostrarMensagem("Escolhe um livro na biblioteca para começares a ler.");
         return;
     }
 
     const livro = await livrosService.getPorId(id);
 
     if (!livro) {
-        document.getElementById("chapterTitle").textContent = "Livro inexistente.";
+        mostrarMensagem("Este livro não foi encontrado. Volta à biblioteca e escolhe outro.");
         return;
     }
 
@@ -41,6 +41,26 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
 });
+
+function mostrarMensagem(texto) {
+
+    document.getElementById("bookTitle").textContent = "";
+    document.getElementById("bookDescription").textContent = "";
+
+    document.getElementById("fichaTecnicaDetails").hidden = true;
+
+    const container = document.querySelector(".reading-header .container");
+
+    const aviso = document.createElement("div");
+    aviso.className = "reading-empty-state";
+    aviso.innerHTML = `
+        <p>${texto}</p>
+        <a href="biblioteca.html" class="button-primary">Ir para a Biblioteca</a>
+    `;
+
+    container.appendChild(aviso);
+
+};
 
 function renderCabecalho(livro) {
 

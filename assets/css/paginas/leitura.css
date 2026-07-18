@@ -35,11 +35,9 @@
 
 .ficha-tecnica {
     max-width: var(--reading-width);
-    margin: var(--space-lg) auto;
-    padding: var(--space-lg);
+    margin: var(--space-sm) 215px;
+    /* padding: var(--space-lg); */
     background-color: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
 }
 
 .ficha-tecnica__titulo {
@@ -132,7 +130,7 @@
 .reading-layout {
     max-width: calc(var(--reading-width) + 240px);
     margin: 0 auto;
-    padding: var(--space-xl) 0;
+    padding: var(--space-sm) 0;
     display: grid;
     grid-template-columns: 1fr 220px;
     gap: var(--space-xl);
@@ -197,7 +195,6 @@
     color: var(--color-text-muted);
 }
 
-
 /* ==========================================================
    ÍNDICE DE SEÇÕES (lateral)
    ========================================================== */
@@ -222,34 +219,63 @@
 .reading-toc__lista {
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
+    gap: var(--space-sm);
 }
 
 .reading-toc__item {
-    padding: 0.4rem 0.75rem;
+    position: relative;
+    align-self: flex-start;
+    padding: .35rem 0;
     border: none;
-    border-left: 3px solid transparent;
-    border-radius: 0;
-    background: transparent;
-    color: var(--color-text-muted);
-    font-size: 0.85rem;
+    background: none;
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 0.9rem;
     text-align: left;
     cursor: pointer;
-    transition: all 0.15s ease;
+    transition: color var(--transition-normal);
 }
 
 .reading-toc__item:hover {
-    color: var(--color-text);
-    background-color: var(--color-reading-background);
+    color: var(--color-secondary);
+}
+
+.reading-toc__item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--color-secondary);
+    transition: width var(--transition-normal);
+}
+
+.reading-toc__item:hover::after,
+.reading-toc__item.is-active::after {
+    width: 100%;
 }
 
 .reading-toc__item.is-active {
-    border-left-color: var(--color-secondary);
-    color: var(--color-text);
-    font-weight: 600;
-    background-color: var(--color-reading-background);
+    color: var(--color-secondary);
+    font-weight: 700;
 }
 
+/* ==========================================================
+   ESTADO VAZIO (sem id ou livro inexistente)
+   ========================================================== */
+
+.reading-empty-state {
+    max-width: var(--reading-width);
+    margin: var(--space-lg) auto 0;
+    text-align: center;
+}
+
+.reading-empty-state p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-md);
+    font-size: 1.05rem;
+}
 
 /* ==========================================================
    NAVEGAÇÃO ENTRE SEÇÕES
