@@ -32,10 +32,10 @@
 /* ==========================================================
    PESQUISA
    ========================================================== */
-
+/* 
 .library-search {
-    padding: var(--space-lg) 0;
-}
+    padding: var(--space-md) 0;
+} */
 
 .library-search__content {
     display: flex;
@@ -88,10 +88,6 @@
    RESULTADOS
    ========================================================== */
 
-.library-results {
-    margin-bottom: var(--space-lg);
-}
-
 .library-results__content {
     text-align: center;
     color: var(--color-text-muted);
@@ -104,12 +100,13 @@
 
 .library-books {
     padding-bottom: var(--space-xl);
+    padding-top: 0;
 }
 
 .books-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: var(--space-xl);
+    gap: var(--space-md);
 }
 
 
