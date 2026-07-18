@@ -323,6 +323,10 @@
     transition: width 0.25s ease;
 }
 
+#chapterTitle {
+    scroll-margin-top: 400px;
+}
+
 
 /* ==========================================================
    RESPONSIVIDADE
