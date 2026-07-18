@@ -215,11 +215,6 @@ function irParaProxima() {
     }
 }
 
-function atualizarProgresso(totalSeccoes) {
-    const percentual = ((seccaoIndex + 1) / totalSeccoes) * 100;
-    document.getElementById("readingProgressBar").style.width = `${percentual}%`;
-}
-
 function renderSeccaoAtual() {
 
     const seccoes = conteudoAtual.conteudo.seccoes;
@@ -232,6 +227,7 @@ function renderSeccaoAtual() {
     atualizarBotoes(seccoes.length);
     atualizarIndiceAtivo();
     atualizarProgresso(seccoes.length);
+    atualizarContador(seccoes.length);
 
 }
 
@@ -276,6 +272,15 @@ function atualizarIndiceAtivo() {
     document.querySelectorAll(".reading-toc__item").forEach((btn, index) => {
         btn.classList.toggle("is-active", index === seccaoIndex);
     });
+}
+
+function atualizarProgresso(totalSeccoes) {
+    const percentual = ((seccaoIndex + 1) / totalSeccoes) * 100;
+    document.getElementById("readingProgressBar").style.width = `${percentual}%`;
+}
+
+function atualizarContador(totalSeccoes) {
+    document.getElementById("seccaoContador").textContent = `${seccaoIndex + 1}/${totalSeccoes}`;
 }
 
 function escapeHTML(str) {

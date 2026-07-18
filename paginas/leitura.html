@@ -63,32 +63,35 @@
                     <div class="exegesis" id="exegesis"></div>
                 </article>
             </div>
+
+                    <!-- Navegação -->
+            <section class="reading-navigation" id="readingNavigation" hidden>
+                <div class="container">
+                    <button class="button-secondary" id="btnAnterior">
+                        ← Seção anterior
+                    </button>
+
+                    <span class="reading-navigation__contador" id="seccaoContador"></span>
+
+                    <button class="button-primary" id="btnProxima">
+                        Próxima seção →
+                    </button>
+                </div>
+            </section>
+
+                <!-- Botão para abrir/fechar índice (só visível em mobile) -->
+            <button class="reading-toc__toggle" id="btnToggleToc" hidden>Índice de Seções
+            </button>
+
+            <!-- Índice de Seções (lateral) -->
+            <aside class="reading-toc" id="readingToc" hidden>
+                <h3 class="reading-toc__titulo">Índice</h3>
+                <nav id="tocLista" class="reading-toc__lista"></nav>
+            </aside>
         </section>
-
-        <!-- Botão para abrir/fechar índice (só visível em mobile) -->
-        <button class="reading-toc__toggle" id="btnToggleToc" hidden>Índice de Seções
-        </button>
-
-        <!-- Índice de Seções (lateral) -->
-        <aside class="reading-toc" id="readingToc" hidden>
-            <h3 class="reading-toc__titulo">Índice</h3>
-            <nav id="tocLista" class="reading-toc__lista"></nav>
-        </aside>
-
     </div>
 
-    <!-- Navegação -->
-    <section class="reading-navigation" id="readingNavigation" hidden>
-        <div class="container">
-            <button class="button-secondary" id="btnAnterior">
-                ← Seção anterior
-            </button>
-
-            <button class="button-primary" id="btnProxima">
-                Próxima seção →
-            </button>
-        </div>
-    </section>
+  
 
 </main>
     <div data-component="footer"></div>

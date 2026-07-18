@@ -35,8 +35,7 @@
 
 .ficha-tecnica {
     max-width: var(--reading-width);
-    margin: var(--space-sm) 215px;
-    /* padding: var(--space-lg); */
+    margin: var(--space-sm) auto;
     background-color: var(--color-background);
 }
 
@@ -182,7 +181,7 @@
 .exegesis {
     margin-top: var(--space-md);
     padding: var(--space-lg);
-    background-color: var(--color-background);
+    background-color: var(--color-surface);
     border-left: 4px solid var(--color-secondary);
     border-radius: var(--radius-md);
 }
@@ -194,6 +193,7 @@
 .exegesis p {
     color: var(--color-text-muted);
 }
+
 
 /* ==========================================================
    ÍNDICE DE SEÇÕES (lateral)
@@ -261,6 +261,7 @@
     font-weight: 700;
 }
 
+
 /* ==========================================================
    ESTADO VAZIO (sem id ou livro inexistente)
    ========================================================== */
@@ -277,39 +278,6 @@
     font-size: 1.05rem;
 }
 
-/* ==========================================================
-   TOGGLE DO ÍNDICE (mobile)
-   ========================================================== */
-
-.reading-toc__toggle {
-    display: none;
-}
-
-@media (max-width: 900px) {
-
-    .reading-toc__toggle {
-        display: block;
-        width: 100%;
-        margin-bottom: var(--space-md);
-        padding: var(--space-sm) var(--space-md);
-        background-color: var(--color-background);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-md);
-        color: var(--color-text);
-        font-weight: 600;
-        text-align: left;
-        cursor: pointer;
-    }
-
-    .reading-toc {
-        display: none;
-    }
-
-    .reading-toc.is-open {
-        display: block;
-    }
-
-}
 
 /* ==========================================================
    NAVEGAÇÃO ENTRE SEÇÕES
@@ -321,9 +289,19 @@
 
 .reading-navigation .container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: var(--space-md);
 }
+
+.reading-navigation__contador {
+    display: none;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 
 /* ==========================================================
    BARRA DE PROGRESSO DE LEITURA
@@ -345,6 +323,7 @@
     transition: width 0.25s ease;
 }
 
+
 /* ==========================================================
    RESPONSIVIDADE
    ========================================================== */
@@ -355,8 +334,10 @@
         grid-template-columns: 1fr;
     }
 
-    .reading-toc {
-        position: static;
+    /* Índice desaparece por completo em mobile */
+    .reading-toc,
+    .reading-toc__toggle {
+        display: none !important;
     }
 
 }
@@ -377,16 +358,36 @@
         grid-template-columns: 1fr;
     }
 
-    .reading-navigation .container {
-        flex-direction: column;
+    .reading-text {
+        font-size: 1rem;
+    }
+
+    /* Navegação vira barra fixa no fundo do ecrã */
+    .reading-navigation {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        padding: var(--space-sm) 0;
+        background-color: var(--color-background);
+        border-top: 1px solid var(--color-border);
+    }
+
+    .reading-navigation__contador {
+        display: block;
     }
 
     .reading-navigation button {
-        width: 100%;
+        width: auto;
+        flex: 1;
+        padding: var(--space-sm);
+        font-size: 0.85rem;
     }
 
-    .reading-text {
-        font-size: 1rem;
+    /* Compensa a barra fixa para o conteúdo não ficar escondido atrás dela */
+    .reading-layout {
+        padding-bottom: 4rem;
     }
 
 }
