@@ -167,9 +167,14 @@ async function iniciarLeitura() {
     seccaoIndex = 0;
 
     document.getElementById("readingToc").hidden = false;
+    document.getElementById("btnToggleToc").hidden = false;
     document.getElementById("readingArea").hidden = false;
     document.getElementById("readingNavigation").hidden = false;
     document.getElementById("fichaTecnicaDetails").open = false;
+
+    document.getElementById("btnToggleToc").addEventListener("click", () => {
+        document.getElementById("readingToc").classList.toggle("is-open");
+    });
 
     renderIndice();
     renderSeccaoAtual();
