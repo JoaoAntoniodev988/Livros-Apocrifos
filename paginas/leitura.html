@@ -18,72 +18,70 @@
 <body>
 
    <div data-component="header"></div>
+<main>
 
-    <main>
-
-        <!-- Cabeçalho do Livro -->
-        <section class="reading-header">
-            <div class="container">
-                <div class="reading-header__content">
-                   <h1 id="bookTitle"></h1>
-                    <p id="bookDescription"></p>
-                </div>
+    <!-- Cabeçalho do Livro -->
+    <section class="reading-header">
+        <div class="container">
+            <div class="reading-header__content">
+                <h1 id="bookTitle"></h1>
+                <p id="bookDescription"></p>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- Ficha Técnica (colapsável, aparece primeiro) -->
+    <details class="ficha-tecnica" id="fichaTecnicaDetails" open>
+        <summary class="ficha-tecnica__titulo">Ficha Técnica</summary>
+
+        <dl id="fichaTecnica" class="ficha-tecnica__grid"></dl>
+
+        <div class="ficha-tecnica__acao">
+            <button id="btnComecarLeitura" class="button-primary">
+                Começar a ler
+            </button>
+        </div>
+    </details>
+
+        <!-- Layout de Leitura: conteúdo + índice lateral -->
+    <div class="reading-layout">
 
         <!-- Área de Leitura -->
-        <section class="reading-area">
+        <section class="reading-area" id="readingArea" hidden>
             <div class="reading-container">
                 <article class="reading-content">
                     <header class="reading-content__header">
                         <h2 id="chapterTitle"></h2>
                     </header>
 
-                    <div
-                        class="reading-text"
-                        id="readingText">
-                    </div>
-
-                    <div
-                        class="exegesis"
-                        id="exegesis">
-                    </div>
+                    <div class="reading-text" id="readingText"></div>
+                    <div class="exegesis" id="exegesis"></div>
                 </article>
             </div>
         </section>
 
-        <!-- Navegação -->
-        <section class="reading-navigation">
-            <div class="container">
-                <button class="button-secondary" id="btnAnterior">
-                    ← Seção anterior
-                </button>
+        <!-- Índice de Seções (lateral) -->
+        <aside class="reading-toc" id="readingToc" hidden>
+            <h3 class="reading-toc__titulo">Índice</h3>
+            <nav id="tocLista" class="reading-toc__lista"></nav>
+        </aside>
 
-                <button class="button-primary" id="btnProxima">
-                    Próxima seção →
-                </button>
-            </div>
-        </section>
+    </div>
 
-        <section class="reading-header">
-            <div class="container">
-                <div class="reading-header__content">
-                    <h1 id="bookTitle"></h1>
-                    <p id="bookDescription"></p>
-                </div>
-            </div>
-        </section>
+    <!-- Navegação -->
+    <section class="reading-navigation" id="readingNavigation" hidden>
+        <div class="container">
+            <button class="button-secondary" id="btnAnterior">
+                ← Seção anterior
+            </button>
 
-       <!-- Ficha Técnica (rodapé do livro) -->
-        <footer class="ficha-tecnica">
-            <div class="container">
-                <h3 class="ficha-tecnica__titulo">Ficha Técnica</h3>
-                <dl id="fichaTecnica" class="ficha-tecnica__grid"></dl>
-            </div>
-        </footer>
+            <button class="button-primary" id="btnProxima">
+                Próxima seção →
+            </button>
+        </div>
+    </section>
 
-    </main>
-
+</main>
     <div data-component="footer"></div>
 
 <script src="../assets/js/layouts/componentes.js"></script>

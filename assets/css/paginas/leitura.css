@@ -30,18 +30,123 @@
 
 
 /* ==========================================================
-   ÁREA PRINCIPAL DE LEITURA
+   FICHA TÉCNICA (colapsável)
    ========================================================== */
 
-.reading-area {
-    padding: var(--space-xl) 0;
-    background-color: var(--color-reading-background);
+.ficha-tecnica {
+    max-width: var(--reading-width);
+    margin: var(--space-lg) auto;
+    padding: var(--space-lg);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
 }
 
-.reading-container {
-    width: 100%;
-    max-width: var(--reading-width);
+.ficha-tecnica__titulo {
+    font-family: var(--font-reading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    color: var(--color-text);
+}
+
+.ficha-tecnica__titulo::-webkit-details-marker {
+    display: none;
+}
+
+.ficha-tecnica__titulo::before {
+    content: "▸ ";
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.ficha-tecnica[open] .ficha-tecnica__titulo::before {
+    transform: rotate(90deg);
+}
+
+.ficha-tecnica__nota {
+    margin-top: var(--space-md);
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.ficha-tecnica__grid {
+    margin-top: var(--space-md);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md) var(--space-lg);
+}
+
+.ficha-tecnica__item dt {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.ficha-tecnica__item dd {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.ficha-tecnica__estudos {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+.ficha-tecnica__estudos h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+}
+
+.ficha-tecnica__estudos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ficha-tecnica__estudos li {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+    line-height: 1.5;
+}
+
+.ficha-tecnica__acao {
+    margin-top: var(--space-lg);
+    text-align: center;
+}
+
+
+/* ==========================================================
+   LAYOUT DE LEITURA (conteúdo + índice lateral)
+   ========================================================== */
+
+.reading-layout {
+    max-width: calc(var(--reading-width) + 240px);
     margin: 0 auto;
+    padding: var(--space-xl) 0;
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: var(--space-xl);
+    align-items: start;
+}
+
+.reading-layout .reading-area {
+    padding: 0;
+    background-color: transparent;
+}
+
+.reading-layout .reading-container {
+    max-width: none;
+    margin: 0;
 }
 
 
@@ -50,40 +155,26 @@
    ========================================================== */
 
 .reading-content {
-
     font-family: var(--font-reading);
-
     color: var(--color-text);
-
 }
-
 
 .reading-content__header {
-
     margin-bottom: var(--space-lg);
-
 }
-
 
 .reading-content__header h2 {
-
     font-family: var(--font-reading);
-
 }
-
-
-/* Texto principal */
 
 .reading-text {
     font-size: 1.125rem;
     line-height: 1.8;
 }
 
-
 .reading-text p {
     margin-bottom: var(--space-md);
 }
-
 
 
 /* ==========================================================
@@ -91,33 +182,73 @@
    ========================================================== */
 
 .exegesis {
-
     margin-top: var(--space-md);
-
     padding: var(--space-lg);
-
     background-color: var(--color-background);
-
     border-left: 4px solid var(--color-secondary);
-
     border-radius: var(--radius-md);
-
 }
-
 
 .exegesis h3 {
-
     margin-bottom: var(--space-md);
-
 }
-
 
 .exegesis p {
-
     color: var(--color-text-muted);
-
 }
 
+
+/* ==========================================================
+   ÍNDICE DE SEÇÕES (lateral)
+   ========================================================== */
+
+.reading-toc {
+    position: sticky;
+    top: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.reading-toc__titulo {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+}
+
+.reading-toc__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.reading-toc__item {
+    padding: 0.4rem 0.75rem;
+    border: none;
+    border-left: 3px solid transparent;
+    border-radius: 0;
+    background: transparent;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.reading-toc__item:hover {
+    color: var(--color-text);
+    background-color: var(--color-reading-background);
+}
+
+.reading-toc__item.is-active {
+    border-left-color: var(--color-secondary);
+    color: var(--color-text);
+    font-weight: 600;
+    background-color: var(--color-reading-background);
+}
 
 
 /* ==========================================================
@@ -125,61 +256,59 @@
    ========================================================== */
 
 .reading-navigation {
-
     padding: var(--space-lg) 0;
-
 }
-
 
 .reading-navigation .container {
-
     display: flex;
-
     justify-content: space-between;
-
     gap: var(--space-md);
-
 }
-
 
 
 /* ==========================================================
    RESPONSIVIDADE
    ========================================================== */
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
 
+    .reading-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .reading-toc {
+        position: static;
+        order: -1;
+    }
+
+}
+
+@media (max-width: 640px) {
 
     .reading-header {
         padding: var(--space-lg) 0;
-
     }
 
-
-    .reading-area {
-        padding: var(--space-lg);
-
+    .ficha-tecnica,
+    .reading-layout {
+        margin: var(--space-md) var(--space-sm);
+        padding: var(--space-md);
     }
 
+    .ficha-tecnica__grid {
+        grid-template-columns: 1fr;
+    }
 
     .reading-navigation .container {
-
         flex-direction: column;
-
     }
-
 
     .reading-navigation button {
-
         width: 100%;
-
     }
 
-
     .reading-text {
-
         font-size: 1rem;
-
     }
 
 }
