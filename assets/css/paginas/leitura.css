@@ -239,6 +239,57 @@
 }
 
 /* ==========================================================
+   TEXTOS RELACIONADOS (referências cruzadas)
+   ========================================================== */
+
+.textos-relacionados {
+    max-width: calc(var(--reading-width) + 240px);
+    margin: var(--space-xl) auto;
+    padding: var(--space-lg) 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.textos-relacionados__titulo {
+    font-family: var(--font-reading);
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+}
+
+.textos-relacionados__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-md);
+}
+
+.textos-relacionados__card {
+    display: block;
+    padding: var(--space-md);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: border-color var(--transition-normal);
+}
+
+.textos-relacionados__card:hover {
+    border-color: var(--color-secondary);
+}
+
+.textos-relacionados__card h4 {
+    font-size: 0.95rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.4rem;
+}
+
+.textos-relacionados__card p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ==========================================================
    ÍNDICE DE SEÇÕES (lateral)
    ========================================================== */
 

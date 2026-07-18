@@ -186,8 +186,30 @@ async function iniciarLeitura() {
 
     renderIndice();
     renderSeccaoAtual();
+    renderTextosRelacionados(conteudoAtual.textos_relacionados);
 
     document.getElementById("readingArea").scrollIntoView({ behavior: "smooth" });
+
+}
+
+function renderTextosRelacionados(textos) {
+
+    const section = document.getElementById("textosRelacionadosSection");
+    const container = document.getElementById("textosRelacionados");
+
+    if (!textos?.length) {
+        section.hidden = true;
+        return;
+    }
+
+    section.hidden = false;
+
+    container.innerHTML = textos.map(item => `
+        <a href="leitura.html?id=${encodeURIComponent(item.id)}" class="textos-relacionados__card">
+            <h4>${escapeHTML(item.titulo)}</h4>
+            <p>${escapeHTML(item.relacao)}</p>
+        </a>
+    `).join("");
 
 }
 
