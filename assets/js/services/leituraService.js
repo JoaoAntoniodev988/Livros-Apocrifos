@@ -13,32 +13,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     const livro = await livrosService.getPorId(id);
-
     if (!livro) {
         mostrarMensagem("Este livro não foi encontrado. Volta à biblioteca e escolhe outro.");
         return;
     }
 
     livroAtual = livro;
-
     renderCabecalho(livro);
 
     document.getElementById("btnComecarLeitura").addEventListener("click", iniciarLeitura);
-
-    document.getElementById("btnAnterior").addEventListener("click", () => {
-        if (seccaoIndex > 0) {
-            seccaoIndex--;
-            renderSeccaoAtual();
-        }
-    });
-
-    document.getElementById("btnProxima").addEventListener("click", () => {
-        const total = conteudoAtual.conteudo.seccoes.length;
-        if (seccaoIndex < total - 1) {
-            seccaoIndex++;
-            renderSeccaoAtual();
-        }
-    });
+    document.getElementById("btnAnterior").addEventListener("click", irParaAnterior);
+    document.getElementById("btnProxima").addEventListener("click", irParaProxima);
 
 });
 
@@ -46,7 +31,6 @@ function mostrarMensagem(texto) {
 
     document.getElementById("bookTitle").textContent = "";
     document.getElementById("bookDescription").textContent = "";
-
     document.getElementById("fichaTecnicaDetails").hidden = true;
 
     const container = document.querySelector(".reading-header .container");
@@ -60,7 +44,7 @@ function mostrarMensagem(texto) {
 
     container.appendChild(aviso);
 
-};
+}
 
 function renderCabecalho(livro) {
 
@@ -72,7 +56,6 @@ function renderCabecalho(livro) {
         : livro.titulo;
 
     const resto = alternativos.filter((_, i) => i !== 1);
-
     document.getElementById("bookDescription").textContent = resto.length
         ? `${resto.join(", ")}.`
         : "";
@@ -170,11 +153,14 @@ async function iniciarLeitura() {
     document.getElementById("btnToggleToc").hidden = false;
     document.getElementById("readingArea").hidden = false;
     document.getElementById("readingNavigation").hidden = false;
+    document.getElementById("readingProgress").hidden = false;
     document.getElementById("fichaTecnicaDetails").open = false;
 
     document.getElementById("btnToggleToc").addEventListener("click", () => {
         document.getElementById("readingToc").classList.toggle("is-open");
     });
+
+    document.addEventListener("keydown", navegarComTeclado);
 
     renderIndice();
     renderSeccaoAtual();
@@ -204,6 +190,36 @@ function renderIndice() {
 
 }
 
+function navegarComTeclado(evento) {
+
+    const tag = document.activeElement.tagName;
+    if (tag === "INPUT" || tag === "TEXTAREA") return;
+
+    if (evento.key === "ArrowRight") irParaProxima();
+    if (evento.key === "ArrowLeft") irParaAnterior();
+
+}
+
+function irParaAnterior() {
+    if (seccaoIndex > 0) {
+        seccaoIndex--;
+        renderSeccaoAtual();
+    }
+}
+
+function irParaProxima() {
+    const total = conteudoAtual.conteudo.seccoes.length;
+    if (seccaoIndex < total - 1) {
+        seccaoIndex++;
+        renderSeccaoAtual();
+    }
+}
+
+function atualizarProgresso(totalSeccoes) {
+    const percentual = ((seccaoIndex + 1) / totalSeccoes) * 100;
+    document.getElementById("readingProgressBar").style.width = `${percentual}%`;
+}
+
 function renderSeccaoAtual() {
 
     const seccoes = conteudoAtual.conteudo.seccoes;
@@ -215,6 +231,7 @@ function renderSeccaoAtual() {
 
     atualizarBotoes(seccoes.length);
     atualizarIndiceAtivo();
+    atualizarProgresso(seccoes.length);
 
 }
 
