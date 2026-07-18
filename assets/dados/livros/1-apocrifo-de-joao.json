@@ -51,6 +51,75 @@
     ]
     },
 
+    "recursos_estudo": {
+    "glossario": [
+        {
+            "termo": "Pleroma",
+            "definicao": "A 'Plenitude' — o universo espiritual de luz composto pelos Éons, em oposição ao mundo material criado por Ialdabaoth."
+        },
+        {
+            "termo": "Sophia",
+            "definicao": "O último e mais distante Éon do Pleroma. A sua criação sem reciprocidade nem consentimento do Pai dá origem a Ialdabaoth e, por extensão, ao mundo material."
+        },
+        {
+            "termo": "Ialdabaoth",
+            "definicao": "O Demiurgo — criatura informe nascida do erro de Sophia, que se torna criador ignorante do mundo material e se proclama falsamente Deus supremo."
+        },
+        {
+            "termo": "Arcontes",
+            "definicao": "Governadores das sete esferas planetárias criados por Ialdabaoth, responsáveis por aprisionar as almas na matéria e no esquecimento."
+        },
+        {
+            "termo": "Anamnese",
+            "definicao": "Literalmente 'des-esquecimento' — o processo de recordar a origem divina da alma, central à ideia gnóstica de salvação."
+        },
+        {
+            "termo": "Éons",
+            "definicao": "Seres de luz que emanam uns dos outros dentro do Pleroma, constituindo a sua Plenitude espiritual."
+        },
+        {
+            "termo": "Barbelo",
+            "definicao": "A Mãe Divina — primeira emanação do Espírito Invisível, descrita como o primeiro pensamento do Pai."
+        },
+        {
+            "termo": "Autógenes",
+            "definicao": "'O que se gerou a si mesmo' — nome dado a Cristo como Filho perfeito nascido do Espírito e de Barbelo."
+        },
+        {
+            "termo": "Anthropos",
+            "definicao": "O Homem Primordial — a forma perfeita existente no Pleroma, cujo reflexo nas águas os Arcontes tentam copiar ao criar o corpo humano."
+        },
+        {
+            "termo": "Pneuma",
+            "definicao": "A faísca de luz espiritual transmitida involuntariamente por Ialdabaoth ao ser humano, elemento central da soteriologia gnóstica."
+        },
+        {
+            "termo": "Heimarmene",
+            "definicao": "O destino ou fado — a cadeia de causalidade material fabricada pelos Arcontes para manter as almas presas ao mundo físico."
+        },
+        {
+            "termo": "Demiurgo",
+            "definicao": "Termo geral para o criador do mundo material — neste texto identificado com Ialdabaoth, uma divindade menor e ignorante."
+        },
+        {
+            "termo": "Abismo",
+            "definicao": "Também chamado Bythos ou Pré-Pai — o princípio divino supremo, anterior a qualquer atributo ou definição."
+        },
+        {
+            "termo": "Monógeno",
+            "definicao": "Um dos nomes do Pai supremo, também chamado Espírito Invisível ou Ser Puro — descrito apenas pelo que não é (teologia apofática)."
+        },
+        {
+            "termo": "Hybris",
+            "definicao": "O orgulho espiritual de Sophia ao tentar criar sozinha, sem reciprocidade nem consentimento — a raiz da queda cósmica."
+        },
+        {
+            "termo": "Saklas",
+            "definicao": "Um dos nomes alternativos de Ialdabaoth, significando 'o tolo', usado noutros textos gnósticos."
+        }
+    ]
+    },
+
     "referencias": {
     "texto_original": { "fonte": "Nag Hammadi Scriptures", "editor": "Marvin Meyer", "editora": "HarperOne", "ano": 2007 },
     "estudos_academicos": [

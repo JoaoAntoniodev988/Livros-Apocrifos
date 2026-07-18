@@ -58,6 +58,59 @@
     ]
   },
 
+  "recursos_estudo": {
+    "glossario": [
+        {
+            "termo": "Koinonos",
+            "definicao": "Termo copta traduzido como 'companheira' — parceira espiritual que partilha o mesmo caminho, usado para descrever a relação entre Jesus e Maria Madalena."
+        },
+        {
+            "termo": "Câmara Nupcial",
+            "definicao": "O mais sagrado dos cinco sacramentos — a união mística da alma com o seu ser de luz original, restaurando a totalidade andrógina perdida na queda."
+        },
+        {
+            "termo": "Christos",
+            "definicao": "'Ungido' em grego — designa quem recebeu a unção interior e a transformação ontológica, não apenas o nome de cristão."
+        },
+        {
+            "termo": "Pneuma",
+            "definicao": "O espírito ou sopro transmitido através do beijo ritual — o elemento que desperta a faísca de luz na alma."
+        },
+        {
+            "termo": "Valentinianismo",
+            "definicao": "Tradição gnóstica fundada por Valentim, à qual pertence este texto, conhecida pela sofisticação teológica dos seus ensinamentos sobre o Pleroma e a redenção."
+        },
+        {
+            "termo": "Sacramentos",
+            "definicao": "Os cinco ritos de transformação descritos no texto: baptismo, unção, eucaristia, redenção e câmara nupcial."
+        },
+        {
+            "termo": "Heimarmene",
+            "definicao": "O destino ou cadeia de causalidade material fabricada pelos Arcontes, da qual o sacramento da redenção liberta a alma."
+        },
+        {
+            "termo": "Florilégio",
+            "definicao": "Género literário do texto — uma coleção de aforismos, meditações e reflexões teológicas sem estrutura narrativa contínua."
+        },
+        {
+            "termo": "Andrógino",
+            "definicao": "Estado original de totalidade antes da separação entre masculino e feminino, restaurado simbolicamente pela câmara nupcial."
+        },
+        {
+            "termo": "Pleroma",
+            "definicao": "A 'Plenitude' — o universo espiritual de luz composto pelos Éons, com o qual a alma busca reintegração através dos sacramentos."
+        },
+        {
+            "termo": "Arcontes",
+            "definicao": "Governadores das esferas planetárias que fabricam a heimarmene, a cadeia de destino que aprisiona as almas no mundo material."
+        },
+        {
+            "termo": "Anthropos",
+            "definicao": "O Homem Primordial andrógino do Pleroma — a forma original e íntegra à imagem da qual o ser humano foi criado, antes da separação dos sexos."
+        }
+    ]
+    },
+
   "referencias": {
     "texto_original": {
       "fonte": "Nag Hammadi Scriptures",

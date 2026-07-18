@@ -58,6 +58,47 @@
     ]
   },
 
+  "recursos_estudo": {
+    "glossario": [
+        {
+            "termo": "Mastema",
+            "definicao": "Príncipe dos espíritos maus e acusador — obtém de Deus permissão para manter um décimo dos espíritos maus a seu serviço, testando e tentando a humanidade como parte do plano divino."
+        },
+        {
+            "termo": "Vigilantes",
+            "definicao": "Anjos enviados originalmente para ensinar a humanidade, que se corrompem pelo desejo ao unirem-se às filhas dos homens, gerando os Nefilim."
+        },
+        {
+            "termo": "Nefilim",
+            "definicao": "Gigantes de natureza híbrida, nascidos da união entre os Vigilantes caídos e mulheres humanas — nem completamente espirituais nem completamente materiais."
+        },
+        {
+            "termo": "Jubileu",
+            "definicao": "Ciclo de 49 anos que estrutura toda a cronologia do texto, desde a Criação até ao Sinai, organizando a história sagrada em unidades matemáticas precisas."
+        },
+        {
+            "termo": "Anjo da Presença",
+            "definicao": "Ser celeste que dita a Moisés, no Sinai, a revelação que constitui o próprio Livro dos Jubileus — incluindo os relatos expandidos do Génesis."
+        },
+        {
+            "termo": "Calendário Solar",
+            "definicao": "Sistema de 364 dias defendido pelo texto como a ordem cronológica correta estabelecida por Deus, em oposição aos calendários lunares ou lunisolares concorrentes."
+        },
+        {
+            "termo": "Anjos das Nações",
+            "definicao": "Seres celestes que governam cada povo do mundo, exceto Israel — governado diretamente por Deus — funcionando como intermediários entre o divino e as nações."
+        },
+        {
+            "termo": "Tábuas Celestiais",
+            "definicao": "Registo eterno onde o nome de Israel e a sua aliança com Deus estavam inscritos antes da criação do mundo, garantindo que a aliança não pode ser definitivamente destruída."
+        },
+        {
+            "termo": "Pseudoepígrafo",
+            "definicao": "Género literário do texto — obra atribuída a uma figura antiga (aqui, revelada a Moisés) mas na realidade composta muito depois, como forma de conferir autoridade à narrativa."
+        }
+    ]
+},
+
   "referencias": {
     "texto_original": {
       "fonte": "The Book of Jubilees: A Critical Text and Translation",

@@ -27,6 +27,28 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 });
 
+// Fecha/mostra o popover do glossário ao clicar num termo destacado
+document.addEventListener("click", (evento) => {
+
+    const termo = evento.target.closest(".glossario-termo");
+
+    document.querySelectorAll(".glossario-popover").forEach(p => p.remove());
+
+    if (!termo) return;
+
+    const popover = document.createElement("div");
+    popover.className = "glossario-popover";
+    popover.innerHTML = `
+        <strong>${termo.dataset.termo}</strong>
+        <p>${termo.dataset.definicao}</p>
+    `;
+
+    termo.appendChild(popover);
+
+    evento.stopPropagation();
+
+});
+
 function mostrarMensagem(texto) {
 
     document.getElementById("bookTitle").textContent = "";
@@ -230,6 +252,10 @@ function renderSeccaoAtual() {
     document.getElementById("readingText").innerHTML = renderTextoSagrado(seccao.texto_sagrado);
     document.getElementById("exegesis").innerHTML = renderExegese(seccao.exegese);
 
+    const glossario = conteudoAtual.recursos_estudo?.glossario;
+    aplicarGlossarioNoTexto(document.getElementById("readingText"), glossario);
+    aplicarGlossarioNoTexto(document.getElementById("exegesis"), glossario);
+
     atualizarBotoes(seccoes.length);
     atualizarIndiceAtivo();
     atualizarProgresso(seccoes.length);
@@ -254,6 +280,71 @@ function renderTextoSagrado(texto) {
 
     return paragrafos + dialogo + citacoes;
 
+}
+
+function aplicarGlossarioNoTexto(container, glossario) {
+
+    if (!glossario?.length) return;
+
+    const termosOrdenados = [...glossario].sort((a, b) => b.termo.length - a.termo.length);
+    const termosJaMarcados = new Set();
+
+    const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+    const nos = [];
+    while (walker.nextNode()) nos.push(walker.currentNode);
+
+    nos.forEach(no => {
+
+        const texto = no.textContent;
+        const matches = [];
+
+        // Encontra, no texto original, a primeira ocorrência de cada termo ainda por marcar
+        termosOrdenados.forEach(item => {
+            if (termosJaMarcados.has(item.termo)) return;
+            const regex = new RegExp(`\\b(${escapeRegex(item.termo)})\\b`, "i");
+            const match = regex.exec(texto);
+            if (match) {
+                matches.push({ start: match.index, end: match.index + match[0].length, texto: match[0], item });
+            }
+        });
+
+        if (matches.length === 0) return;
+
+        // Ordena por posição e remove sobreposições
+        matches.sort((a, b) => a.start - b.start);
+        const finais = [];
+        let ultimoFim = -1;
+        matches.forEach(m => {
+            if (m.start >= ultimoFim) {
+                finais.push(m);
+                ultimoFim = m.end;
+            }
+        });
+
+        finais.forEach(m => termosJaMarcados.add(m.item.termo));
+
+        // Constrói o HTML final numa só passagem, sem re-analisar HTML já inserido
+        let resultado = "";
+        let cursor = 0;
+
+        finais.forEach(m => {
+            resultado += escapeHTML(texto.slice(cursor, m.start));
+            resultado += `<span class="glossario-termo" data-termo="${escapeHTML(m.item.termo)}" data-definicao="${escapeHTML(m.item.definicao)}">${escapeHTML(m.texto)}</span>`;
+            cursor = m.end;
+        });
+
+        resultado += escapeHTML(texto.slice(cursor));
+
+        const span = document.createElement("span");
+        span.innerHTML = resultado;
+        no.replaceWith(span);
+
+    });
+
+}
+
+function escapeRegex(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function renderExegese(exegese) {
@@ -291,7 +382,10 @@ function atualizarContador(totalSeccoes) {
 
 function escapeHTML(str) {
     if (typeof str !== "string") return "";
-    const div = document.createElement("div");
-    div.textContent = str;
-    return div.innerHTML;
+    return str
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
 }

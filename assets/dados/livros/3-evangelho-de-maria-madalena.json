@@ -58,6 +58,43 @@
     ]
   },
 
+  "recursos_estudo": {
+    "glossario": [
+        {
+            "termo": "Nous",
+            "definicao": "A mente espiritual superior — faculdade intermédia entre a alma e o espírito, capaz de traduzir os mistérios do Pleroma em consciência inteligível. É através dela que Maria recebe a sua visão."
+        },
+        {
+            "termo": "Anapausis",
+            "definicao": "O Repouso Absoluto — o destino final da alma vitoriosa após vencer as quatro potências, fundindo-se no silêncio primordial do Éon."
+        },
+        {
+            "termo": "Homem Perfeito",
+            "definicao": "Estado de plenitude espiritual que os discípulos são exortados a vestir antes de pregar — a reintegração da totalidade original, paralela à androginia da Câmara Nupcial."
+        },
+        {
+            "termo": "As Quatro Potências",
+            "definicao": "Trevas, Desejo, Ignorância e a potência de sete formas (incluindo o Zelo da Morte e as Sabedorias da Carne) — os guardiões que a alma enfrenta e supera na sua ascensão pós-morte."
+        },
+        {
+            "termo": "Koinonos",
+            "definicao": "Termo copta traduzido como 'companheira' — parceira espiritual que partilha o mesmo caminho, usado para descrever a relação entre Jesus e Maria Madalena."
+        },
+        {
+            "termo": "Pleroma",
+            "definicao": "A 'Plenitude' — a realidade espiritual plena onde as categorias de bem e mal, luz e trevas, deixam de existir como opostos separados."
+        },
+        {
+            "termo": "Arcontes",
+            "definicao": "Governadores das esferas planetárias — os poderes hostis que a alma encontra e vence durante a sua ascensão de regresso ao Pleroma."
+        },
+        {
+            "termo": "Anthropos",
+            "definicao": "O Ser Humano ou Homem Primordial — a totalidade espiritual à qual o Salvador se refere quando diz que 'nos fez Seres Humanos', em contraste com o medo psíquico dos discípulos."
+        }
+    ]
+},
+
   "referencias": {
     "texto_original": {
       "fonte": "Nag Hammadi Scriptures",

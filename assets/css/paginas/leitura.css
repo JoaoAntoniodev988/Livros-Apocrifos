@@ -129,7 +129,7 @@
 .reading-layout {
     max-width: calc(var(--reading-width) + 240px);
     margin: 0 auto;
-    padding: var(--space-sm) 0;
+    padding: 0 0 0 16px;
     display: grid;
     grid-template-columns: 1fr 220px;
     gap: var(--space-xl);
@@ -194,6 +194,47 @@
     color: var(--color-text-muted);
 }
 
+/* ==========================================================
+   GLOSSÁRIO INTELIGENTE (termos destacados no texto)
+   ========================================================== */
+
+.glossario-termo {
+    position: relative;
+    color: var(--color-secondary);
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.glossario-popover {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 30;
+    width: 260px;
+    margin-top: 0.5rem;
+    padding: var(--space-md);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-weight: normal;
+}
+
+.glossario-popover strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+
+.glossario-popover p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
 
 /* ==========================================================
    ÍNDICE DE SEÇÕES (lateral)
@@ -302,6 +343,30 @@
     white-space: nowrap;
 }
 
+/* ==========================================================
+   NAVEGAÇÃO ENTRE SEÇÕES
+   ========================================================== */
+
+.reading-navigation {
+    display: none;
+    padding: var(--space-lg) 0;
+}
+
+.reading-navigation .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+}
+
+.reading-navigation__contador {
+    display: none;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 
 /* ==========================================================
    BARRA DE PROGRESSO DE LEITURA
@@ -338,36 +403,23 @@
         grid-template-columns: 1fr;
     }
 
-    /* Índice desaparece por completo em mobile */
-    .reading-toc,
     .reading-toc__toggle {
-        display: none !important;
+        display: block;
+        width: 100%;
+        margin-bottom: var(--space-md);
+    }
+
+    .reading-toc {
+        display: none;
     }
 
 }
 
 @media (max-width: 640px) {
 
-    .reading-header {
-        padding: var(--space-lg) 0;
-    }
-
-    .ficha-tecnica,
-    .reading-layout {
-        margin: var(--space-md) var(--space-sm);
-        padding: var(--space-md);
-    }
-
-    .ficha-tecnica__grid {
-        grid-template-columns: 1fr;
-    }
-
-    .reading-text {
-        font-size: 1rem;
-    }
-
-    /* Navegação vira barra fixa no fundo do ecrã */
+    /* Navegação volta a aparecer, como barra fixa no fundo do ecrã */
     .reading-navigation {
+        display: block;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -389,9 +441,16 @@
         font-size: 0.85rem;
     }
 
-    /* Compensa a barra fixa para o conteúdo não ficar escondido atrás dela */
     .reading-layout {
         padding-bottom: 4rem;
     }
 
+}
+
+/* ==========================================================
+   TOGGLE DO ÍNDICE (escondido por padrão, só aparece em mobile)
+   ========================================================== */
+
+.reading-toc__toggle {
+    display: none;
 }

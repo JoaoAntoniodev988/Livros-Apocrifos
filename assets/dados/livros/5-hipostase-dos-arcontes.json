@@ -58,6 +58,55 @@
     ]
   },
 
+  "recursos_estudo": {
+    "glossario": [
+        {
+            "termo": "Saclas",
+            "definicao": "'O tolo' em aramaico — nome deste texto para o Arconte principal, também identificado com Ialdabaoth, que se proclama falsamente o único Deus."
+        },
+        {
+            "termo": "Norea",
+            "definicao": "Filha de Adão e Eva, irmã de Seth — figura que resiste às investidas dos Arcontes por saber quem é e de onde vem, sendo protegida pelo anjo Eleleth."
+        },
+        {
+            "termo": "Eleleth",
+            "definicao": "'Compreensão' ou 'Discernimento' em hebraico — um dos quatro luminares do Pleroma que desce em resposta ao apelo de Norea e revela a origem e os limites dos Arcontes."
+        },
+        {
+            "termo": "Semente Imóvel",
+            "definicao": "A linhagem espiritual iniciada por Seth — não uma descendência biológica, mas a qualidade de consciência transmitida por gnose a quem desperta para a sua natureza luminosa em cada geração."
+        },
+        {
+            "termo": "Seth",
+            "definicao": "Terceiro filho de Adão e Eva, fundador da linhagem gnóstica setiana — figura arquetípica do ser humano que conhece a sua origem divina e sobrevive à violência do mundo sem ser corrompido por ela."
+        },
+        {
+            "termo": "Incorruptibilidade",
+            "definicao": "O estado original de perfeição anterior a tudo, de onde emanou Sophia — e, por extensão, o destino final de repouso prometido a Norea e à sua linhagem."
+        },
+        {
+            "termo": "Eva Espiritual",
+            "definicao": "A dimensão espiritual do princípio feminino que fala de dentro da árvore do conhecimento, despertando Adão e revelando que a proibição dos Arcontes é mentira."
+        },
+        {
+            "termo": "Sabaoth",
+            "definicao": "Um dos Arcontes que se arrepende e se volta contra Ialdabaoth, sendo elevado acima dele como recompensa pela sua conversão."
+        },
+        {
+            "termo": "Sophia",
+            "definicao": "O Éon da Incorruptibilidade cuja emanação, em ignorância, dá origem a Saclas — repetindo aqui o mesmo papel que tem no Apócrifo de João e na Pistis Sophia."
+        },
+        {
+            "termo": "Arcontes",
+            "definicao": "Governadores criados por Saclas que constroem o mundo material a partir de luz roubada, com poder real mas limitado — não alcançam o décimo terceiro Éon, o Pleroma, nem a centelha de luz no ser humano."
+        },
+        {
+            "termo": "Pleroma",
+            "definicao": "A Plenitude espiritual acima de tudo, onde residem os quatro luminares (incluindo Eleleth) e da qual o Ser Humano Imortal é a forma original."
+        }
+    ]
+    },
+
   "referencias": {
     "texto_original": {
       "fonte": "Nag Hammadi Scriptures",

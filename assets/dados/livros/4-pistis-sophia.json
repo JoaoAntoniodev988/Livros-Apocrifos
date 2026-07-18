@@ -59,6 +59,55 @@
     ]
   },
 
+  "recursos_estudo": {
+    "glossario": [
+        {
+            "termo": "Metanoia",
+            "definicao": "Cântico de arrependimento e súplica — Sophia entoa treze destes momentos de crise e apelo enquanto está aprisionada no caos, antes do seu resgate."
+        },
+        {
+            "termo": "Authades",
+            "definicao": "'O Auto-Presunçoso' — Arconte que engana Sophia fazendo-a descer ao caos, personificando o egocentrismo cósmico que usa a aparência da luz para servir as trevas."
+        },
+        {
+            "termo": "Tesouro da Luz",
+            "definicao": "O mundo de luz supremo, acima de todos os outros mundos espirituais, dividido em doze tesouros governados cada um por um ser de luz."
+        },
+        {
+            "termo": "Décimo Terceiro Éon",
+            "definicao": "A última e mais elevada esfera abaixo do Pleroma verdadeiro, onde Sophia habitava antes da queda e onde é restaurada — ainda não purificada — após o resgate."
+        },
+        {
+            "termo": "Amente",
+            "definicao": "O mundo dos mortos, abaixo das esferas dos Arcontes, onde as almas sem gnose esperam o regresso ao mundo material através da reencarnação."
+        },
+        {
+            "termo": "Almas Pneumáticas",
+            "definicao": "Almas que possuem a centelha de luz e capacidade natural para a gnose — reconhecem o ensinamento como verdadeiro por já o terem esquecido, não por aprendê-lo de novo."
+        },
+        {
+            "termo": "Almas Psíquicas",
+            "definicao": "Almas que não possuem a faísca pneumática — podem viver moralmente bem, mas dependem da graça e da intercessão dos pneumáticos para ascender ao Pleroma."
+        },
+        {
+            "termo": "Pleroma",
+            "definicao": "A 'Plenitude' — o mundo espiritual pleno de luz, composto pelos doze Éons, situado acima do décimo terceiro Éon onde Sophia habita."
+        },
+        {
+            "termo": "Sophia",
+            "definicao": "'Fé-Sabedoria' — o Éon do décimo terceiro grau que, dominada pelo desejo de alcançar a Luz das Luzes, é enganada por Authades e desce ao caos, sendo depois resgatada por Jesus."
+        },
+        {
+            "termo": "Arcontes",
+            "definicao": "Governadores das esferas planetárias, liderados por Authades neste texto, que roubam a luz de Sophia e tentam deter a ascensão de Jesus e das almas."
+        },
+        {
+            "termo": "Éons",
+            "definicao": "As doze esferas de luz que constituem o Pleroma, cada uma com os seus próprios governadores e leis, situadas abaixo do Tesouro da Luz."
+        }
+    ]
+},
+
   "referencias": {
     "texto_original": {
       "fonte": "Pistis Sophia: A Gnostic Gospel",

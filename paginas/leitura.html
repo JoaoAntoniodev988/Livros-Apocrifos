@@ -48,49 +48,50 @@
         </div>
     </details>
 
-        <!-- Layout de Leitura: conteúdo + índice lateral -->
-    <div class="reading-layout">
+      <!-- Layout de Leitura: conteúdo + índice lateral -->
+<div class="reading-layout">
 
-        <!-- Área de Leitura -->
-        <section class="reading-area" id="readingArea" hidden>
-            <div class="reading-container">
-                <article class="reading-content">
-                    <header class="reading-content__header">
-                        <h2 id="chapterTitle"></h2>
-                    </header>
+    <!-- Área de Leitura -->
+    <section class="reading-area" id="readingArea" hidden>
+        <div class="reading-container">
+            <article class="reading-content">
+                <header class="reading-content__header">
+                    <h2 id="chapterTitle"></h2>
+                </header>
 
-                    <div class="reading-text" id="readingText"></div>
-                    <div class="exegesis" id="exegesis"></div>
-                </article>
-            </div>
+                <div class="reading-text" id="readingText"></div>
+                <div class="exegesis" id="exegesis"></div>
+            </article>
+        </div>
+    </section>
 
-                    <!-- Navegação -->
-            <section class="reading-navigation" id="readingNavigation" hidden>
-                <div class="container">
-                    <button class="button-secondary" id="btnAnterior">
-                        ← Seção anterior
-                    </button>
+    <!-- Botão para abrir/fechar índice (só visível em mobile) -->
+    <button class="reading-toc__toggle" id="btnToggleToc" hidden>
+        Índice de Seções
+    </button>
 
-                    <span class="reading-navigation__contador" id="seccaoContador"></span>
+    <!-- Índice de Seções (lateral) -->
+    <aside class="reading-toc" id="readingToc" hidden>
+        <h3 class="reading-toc__titulo">Índice</h3>
+        <nav id="tocLista" class="reading-toc__lista"></nav>
+    </aside>
 
-                    <button class="button-primary" id="btnProxima">
-                        Próxima seção →
-                    </button>
-                </div>
-            </section>
+</div>
 
-                <!-- Botão para abrir/fechar índice (só visível em mobile) -->
-            <button class="reading-toc__toggle" id="btnToggleToc" hidden>Índice de Seções
-            </button>
+<!-- Navegação -->
+<section class="reading-navigation" id="readingNavigation" hidden>
+    <div class="container">
+        <button class="button-secondary" id="btnAnterior">
+            ← Seção anterior
+        </button>
 
-            <!-- Índice de Seções (lateral) -->
-            <aside class="reading-toc" id="readingToc" hidden>
-                <h3 class="reading-toc__titulo">Índice</h3>
-                <nav id="tocLista" class="reading-toc__lista"></nav>
-            </aside>
-        </section>
+        <span class="reading-navigation__contador" id="seccaoContador"></span>
+
+        <button class="button-primary" id="btnProxima">
+            Próxima seção →
+        </button>
     </div>
-
+</section>
   
 
 </main>
