@@ -134,6 +134,7 @@
     grid-template-columns: 1fr 220px;
     gap: var(--space-xl);
     align-items: start;
+    hyphens: auto
 }
 
 .reading-layout .reading-area {
@@ -167,6 +168,7 @@
 .reading-text {
     font-size: 1.125rem;
     line-height: 1.8;
+    max-width: 100%;
 }
 
 .reading-text p {
@@ -180,7 +182,7 @@
 
 .exegesis {
     margin-top: var(--space-md);
-    padding: var(--space-lg);
+    padding: var(--space-lg) 16px;
     background-color: var(--color-surface);
     border-left: 4px solid var(--color-secondary);
     border-radius: var(--radius-md);
