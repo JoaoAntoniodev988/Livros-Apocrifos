@@ -142,11 +142,11 @@
                 "titulo": "Introdução: A Natureza deste Texto",
                 "texto_sagrado": {
                     "paragrafos": [
-                        "Antes de entrar no conteúdo, é importante compreender que o Evangelho de Filipe é estruturalmente diferente de tudo o que leste até agora. O Apócrifo de João é uma narrativa cosmológica com começo, meio e fim. O Evangelho de Filipe não é nenhuma destas coisas. É um florilégio — uma colecção de meditações, aforismos, parábolas e reflexões teológicas sem ordem narrativa aparente. Lê-se como um caderno de notas de um místico profundo — cada entrada é completa em si mesma mas ressoa com todas as outras."
+                        "Antes de entrar no conteúdo, é importante compreender que o Evangelho de Filipe é estruturalmente diferente. O Apócrifo de João é uma narrativa cosmológica com começo, meio e fim. O Evangelho de Filipe não é nenhuma destas coisas. É um florilégio — uma colecção de meditações, aforismos, parábolas e reflexões teológicas sem ordem narrativa aparente. Lê-se como um caderno de notas de um místico profundo — cada entrada é completa em si mesma mas ressoa com todas as outras."
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Introdução",
+                    "titulo": "Exegese",
                     "paragrafos": [
                         "A tradição atribui este texto à escola valentiniana — os seguidores de Valentim, o gnóstico do século II considerado por muitos o mais sofisticado teólogo cristão do seu tempo. O texto foi provavelmente compilado na Síria no século III, reunindo ensinamentos orais e escritos da comunidade.",
                         "O seu tema central não é a cosmogonia — essa já foi estabelecida no Apócrifo de João. O seu tema central é a transformação — como o ser humano, conhecendo a sua natureza, se transforma e regressa à luz."
@@ -168,7 +168,7 @@
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte I",
+                    "titulo": "Exegese",
                     "paragrafos": [
                         "Esta abertura estabelece imediatamente o tom do texto. Não estamos perante uma distinção étnica ou religiosa superficial. O texto está a falar de três modos de existência espiritual.",
                         "O 'Hebreu' representa quem recebe a tradição e a preserva mas não a aprofunda — a fé herdada, não vivida. O 'Grego' representa quem usa o intelecto mas sem transformação interior — a filosofia sem gnose. O 'Cristão verdadeiro' — no sentido gnóstico — é quem recebeu a unção interior, o conhecimento vivo que transforma.",
@@ -193,10 +193,10 @@
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte II",
+                    "titulo": "Exegese",
                     "paragrafos": [
                         "Esta meditação sobre os nomes é uma das mais profundas do texto inteiro. O gnóstico valentiniano está a trabalhar com uma idea que encontraremos mais tarde em tradições tão diversas como o sufismo islâmico e o budismo zen: a linguagem não consegue capturar a realidade última.",
-                        "O nome verdadeiro do Pai não pode ser pronunciado porque qualquer som, qualquer sílaba, qualquer conceito já é uma limitação — e o Pai está além de toda a limitação. Reconheces aqui o mesmo movimento do Apócrifo de João quando descreve o Deus supremo apenas pelo que não é.",
+                        "O nome verdadeiro do Pai não pode ser pronunciado porque qualquer som, qualquer sílaba, qualquer conceito já é uma limitação — e o Pai está além de toda a limitação. O mesmo movimento do Apócrifo de João quando descreve o Deus supremo apenas pelo que não é.",
                         "Mas há algo mais subtil aqui. O texto diz que a verdade veio ao mundo 'em tipos e imagens' — em parábolas, em rituais, em símbolos. Esta é a justificação gnóstica para os sacramentos que o texto vai desenvolver: os rituais não são a verdade — são imagens da verdade que a alma usa como degraus para ascender ao inominável.",
                         "A afirmação 'é preciso verdadeiramente renascer através da imagem' é uma das frases mais densas do texto. O renascimento espiritual não acontece apesar dos símbolos mas através deles — desde que sejam compreendidos como símbolos e não confundidos com a realidade que apontam."
                     ],
@@ -211,37 +211,20 @@
                 "titulo": "Parte III — Os Cinco Sacramentos: Os Ritos da Transformação",
                 "texto_sagrado": {
                     "paragrafos": [
-                        "O Evangelho de Filipe enumera cinco sacramentos que constituem o caminho de regresso à luz:"
-                    ],
-                    "sacramentos": [
-                        {
-                            "nome": "O Baptismo",
-                            "descricao": "A purificação inicial. A morte do ser antigo nas águas. Mas o texto adverte: há quem deça à água e suba sem ter recebido nada — porque desceu apenas com o corpo e não com o espírito."
-                        },
-                        {
-                            "nome": "A Unção",
-                            "descricao": "O chrism, o óleo sagrado. É superior ao baptismo. O baptismo purifica. A unção transforma. Quem foi ungido não é apenas purificado — é tornado cristo, participante da natureza do ungido."
-                        },
-                        {
-                            "nome": "A Eucaristia",
-                            "descricao": "Não como simples memorial. O texto diz: 'Jesus tomou todos eles por engano — pois não se revelou tal como era, mas de modo que pudesse ser visto. Revelou-se a esses grandes como grande, a esses pequenos como pequeno, a esses anjos como anjo e aos homens como homem.' A eucaristia é o momento em que o ser humano come a luz — ingere o que o transforma."
-                        },
-                        {
-                            "nome": "A Redenção",
-                            "descricao": "A libertação da heimarmene, da cadeia do destino que os Arcontes fabricaram. O sacramento que quebra os grilhões do mundo material."
-                        },
-                        {
-                            "nome": "A Câmara Nupcial",
-                            "descricao": "O mais sagrado de todos. O texto descreve-o com uma linguagem de intimidade mística: é a união da alma com o seu anjo celestial, com o seu ser de luz original. É o retorno à androginia primordial — à totalidade que existia antes da separação."
-                        }
+                        "O Evangelho de Filipe enumera cinco sacramentos que constituem o caminho de regresso à luz:",
+                        "O Baptismo — a purificação inicial. A morte do ser antigo nas águas. Mas o texto adverte: há quem deça à água e suba sem ter recebido nada — porque desceu apenas com o corpo e não com o espírito.",
+                        "A Unção — o chrism, o óleo sagrado. É superior ao baptismo. O baptismo purifica. A unção transforma. Quem foi ungido não é apenas purificado — é tornado cristo, participante da natureza do ungido.",
+                        "A Eucaristia — mas não como simples memorial. O texto diz: \"Jesus tomou todos eles por engano — pois não se revelou tal como era, mas de modo que pudesse ser visto. Revelou-se a esses grandes como grande, a esses pequenos como pequeno, a esses anjos como anjo e aos homens como homem.\" A eucaristia é o momento em que o ser humano come a luz — ingere o que o transforma.",
+                        "A Redenção — a libertação da heimarmene, da cadeia do destino que os Arcontes fabricaram. O sacramento que quebra os grilhões do mundo material.",
+                        "A Câmara Nupcial — o mais sagrado de todos. O texto descreve-o com uma linguagem de intimidade mística: é a união da alma com o seu anjo celestial, com o seu ser de luz original. É o retorno à androginia primordial — à totalidade que existia antes da separação."
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte III",
+                    "titulo": "Exegese",
                     "paragrafos": [
                         "A hierarquia dos cinco sacramentos revela muito sobre a teologia valentiniana. Os dois primeiros — baptismo e unção — são purificação e transformação. Os três últimos — eucaristia, redenção e câmara nupcial — são progressivamente mais interiores, mais secretos, mais próximos da experiência directa do divino.",
                         "A câmara nupcial é o sacramento que mais perturbou os intérpretes ao longo dos séculos. A linguagem é explicitamente erótica — fala de união, de abraço, de intimidade entre a alma e o seu parceiro celestial. Mas o texto é absolutamente claro: 'Ninguém que tenha saído do mundo poderá ser retido, e ninguém que tenha entrado no mundo poderá fugir, porque o mundo surgiu através de um erro.' A câmara nupcial não é um rito sexual — é a experiência mística da reunificação com o ser de luz de que a alma foi separada quando desceu ao mundo.",
-                        "Esta ideia tem raízes profundas na antropologia gnóstica. No Apócrifo de João viste que o ser humano foi criado à imagem do Homem Primordial andrógino. A separação em masculino e feminino é, para os gnósticos, uma consequência da queda — uma fragmentação da totalidade original. A câmara nupcial é o sacramento que restaura a totalidade — não biologicamente mas ontologicamente."
+                        "Esta ideia tem raízes profundas na antropologia gnóstica. No Apócrifo de João o ser humano foi criado à imagem do Homem Primordial andrógino. A separação em masculino e feminino é, para os gnósticos, uma consequência da queda — uma fragmentação da totalidade original. A câmara nupcial é o sacramento que restaura a totalidade — não biologicamente mas ontologicamente."
                     ],
                     "referencias": [
                         "Apócrifo de João — Anthropos e fragmentação"
@@ -262,12 +245,12 @@
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte IV",
+                    "titulo": "Exegese",
                     "paragrafos": [
                         "A frase 'o mundo surgiu através de um erro' é uma das mais famosas de toda a literatura gnóstica — e é de uma honestidade brutal. Não há aqui a tentativa de justificar o sofrimento, de encontrar um sentido redentor no mal, de explicar a dor como parte de um plano divino. O mundo material é simplesmente mal feito. Nasceu de um acidente, de uma queda, de uma incompetência.",
                         "Esta posição distingue radicalmente o gnosticismo de quase todas as outras tradições religiosas. O budismo diz que o sofrimento nasce do apego — mas o mundo em si não é necessariamente mau. O Hinduísmo diz que o mundo é maya — ilusão — mas uma ilusão que emana do divino. O Judaísmo e o Cristianismo ortodoxo dizem que o mundo é criação boa de um Deus bom. O gnosticismo diz: o mundo é um erro de um deus menor. Ponto.",
                         "A afirmação 'quem não ressuscita antes de morrer não ressuscitará depois de morrer' é talvez a frase mais importante do texto inteiro para compreender a soteriologia valentiniana. A ressurreição não é um evento físico futuro — é uma transformação presente. A morte e o renascimento que importam acontecem enquanto o ser humano ainda está vivo. É o despertar da gnose — o momento em que a alma recorda a sua origem luminosa — que constitui a verdadeira ressurreição.",
-                        "Reconheces aqui o eco mais directo de todo o Evangelho de Tomás: 'Quem encontrar a interpretação destas palavras não provará a morte.' Em Filipe percebemos agora mais completamente o que significa 'não provar a morte' — significa ter ressuscitado enquanto ainda se está vivo."
+                        "O eco mais directo de todo o Evangelho de Tomás: 'Quem encontrar a interpretação destas palavras não provará a morte.' Em Filipe percebemos agora mais completamente o que significa 'não provar a morte' — significa ter ressuscitado enquanto ainda se está vivo."
                     ],
                     "referencias": [
                         "Evangelho de Tomás — Prólogo e imortalidade"
@@ -284,7 +267,7 @@
                     ],
                     "citacoes": [
                         "A companheira do Salvador é Maria Madalena. O Senhor amava-a mais do que todos os discípulos e costumava beijá-la frequentemente na boca. Os outros discípulos ofenderam-se com isso e expressaram desaprovação. Disseram-lhe: Por que amas mais do que a todos nós? O Salvador respondeu e disse-lhes: Por que não vos amo como a ela?",
-                        "Três caminhavam sempre com o Senhor: Maria sua mãe, a irmã desta e Madalena, chamada sua companheira. Pois Maria é seu nome, o de sua mãe e o de sua irmã."
+                        "E noutra entrada: Três caminhavam sempre com o Senhor: Maria sua mãe, a irmã desta e Madalena, chamada sua companheira. Pois Maria é seu nome, o de sua mãe e o de sua irmã."
                     ],
                     "conceitos_chave": [
                         "Koinonos — parceira espiritual / consorte",
@@ -292,13 +275,13 @@
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte V",
+                    "titulo": "Exegese",
                     "paragrafos": [
                         "Esta passagem foi e continua a ser enormemente mal lida — tanto por quem a usa para especular sobre uma relação física entre Jesus e Maria Madalena, como por quem a descarta como heresia absurda.",
                         "O que o texto está realmente a dizer exige compreender dois conceitos valentinianos fundamentais.",
                         "Primeiro: a palavra traduzida como 'companheira' é em copta koinonos — que significa literalmente 'parceira espiritual', 'consorte', 'aquela que partilha o mesmo caminho'. É o mesmo tipo de relação que existe no Pleroma entre os Éons — uma relação de complementaridade espiritual, não necessariamente física.",
                         "Segundo: o 'beijo na boca' é, na tradição valentiniana, o símbolo da transmissão da gnose. O beijo transmite o sopro — e o sopro é o pneuma, o espírito. Quando o texto diz que Jesus beijava Maria na boca, está a dizer que lhe transmitia o conhecimento mais elevado, o sopro que desperta a faísca de luz.",
-                        "O que torna Maria Madalena especial no Evangelho de Filipe — e ainda mais no Evangelho de Maria Madalena que leremos a seguir — é que ela é a única discípula que compreendeu completamente. Os outros receberam palavras. Ela recebeu o sopro. Daí que o Salvador a ame mais — não com amor preferencial humano mas com reconhecimento de que ela é a que mais completamente acordou."
+                        "O que torna Maria Madalena especial no Evangelho de Filipe — e ainda mais no Evangelho de Maria Madalena — é que ela é a única discípula que compreendeu completamente. Os outros receberam palavras. Ela recebeu o sopro. Daí que o Salvador a ame mais — não com amor preferencial humano mas com reconhecimento de que ela é a que mais completamente acordou."
                     ],
                     "referencias": [
                         "Evangelho de Maria Madalena — Liderança e revelação secreta"
@@ -318,22 +301,11 @@
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte VI",
+                    "titulo": "Exegese",
                     "paragrafos": [
-                        "Esta última secção revela a dimensão mais profunda e mais radical do pensamento valentiniano. A afirmação de que bem e mal, luz e escuridão, vida e morte são 'bros' que não podem ser separados pode parecer relativismo moral — mas não o é.",
-                        "O que o texto está a dizer é que todas as categorias são relativas ao mundo material. No Pleroma — na realidade espiritual plena — não há opostos porque não há separação. A dualidade é uma consequência da queda, não uma estrutura fundamental do ser. Quando a alma regresa à sua origem, as categorias dissolvem-se — não porque o bem e o mal sejam iguais, mas porque ambos pertencem a um nível de realidade que a alma transcendeu.",
-                        "A frase final é de uma beleza esmagadora: 'Porque és a própria luz.' Esta é a conclusão de todo o sistema gnóstico valentiniano — não que a alma tem luz ou que a alma recebe luz. A alma é luz. O esquecimento é o único obstáculo. A gnose não dá nada — remove o que foi posto a cobrir o que sempre existiu."
-                    ]
-                }
-            },
-            {
-                "id": "sintese",
-                "numero": 7,
-                "titulo": "Síntese: O Que o Evangelho de Filipe Acrescenta",
-                "texto_sagrado": {
-                    "paragrafos": [
-                        "Se o Apócrifo de João nos deu o mapa — a cosmologia, a origem do universo, a estrutura da queda e da redenção — o Evangelho de Filipe dá-nos o caminho — os ritos, as práticas, as experiências concretas através das quais a alma percorre esse mapa.",
-                        "Os dois textos são complementares de uma forma muito precisa. João explica porquê estamos aqui e para onde precisamos de ir. Filipe explica como nos movemos — através dos sacramentos, através da transformação interior, através do reconhecimento de que a luz que procuramos somos nós próprios."
+                        "Esta última secção revela a dimensão mais profunda e mais radical do pensamento valentiniano. A afirmação de que bem e mal, luz e escuridão, vida e morte são irmãos que não podem ser separados pode parecer relativismo moral — mas não o é",
+                        "O que o texto está a dizer é que todas as categorias são relativas ao mundo material. No Pleroma — na realidade espiritual plena — não há opostos porque não há separação. A dualidade é uma consequência da queda, não uma estrutura fundamental do ser. Quando a alma regressa à sua origem, as categorias dissolvem-se — não porque o bem e o mal sejam iguais, mas porque ambos pertencem a um nível de realidade que a alma transcendeu.",
+                        "A frase final é de uma beleza esmagadora: \"Porque és a própria luz.\" Esta é a conclusão de todo o sistema gnóstico valentiniano — não que a alma tem luz ou que a alma recebe luz. A alma é luz. O esquecimento é o único obstáculo. A gnose não dá nada — remove o que foi posto a cobrir o que sempre existiu."
                     ]
                 }
             }

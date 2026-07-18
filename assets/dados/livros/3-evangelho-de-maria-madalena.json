@@ -124,41 +124,36 @@
             {
                 "id": "introducao",
                 "numero": 0,
-                "titulo": "Introdução: O Silêncio das Páginas Ausentes",
+                "titulo": "O Texto e o Seu Silêncio",
                 "texto_sagrado": {
                     "paragrafos": [
-                        "O Evangelho de Maria Madalena é simultaneamente o mais curto e o mais incompleto dos grandes textos gnósticos. Das dezoito páginas do manuscrito copta, seis foram totalmente destruídas antes da sua catalogação definitiva: as páginas 1 a 6 e as páginas 11 a 14 estão irremediavelmente perdidas. O texto começa abruptamente a meio de um diálogo cosmológico.",
-                        "Há um impacto profundo no facto de o único evangelho que dá voz direta a uma mulher — considerada a iniciada perfeita na tradição valentiniana — ter chegado à modernidade mutilado. As lacunas e o silêncio destas páginas fazem parte da sua própria identidade histórica."
-                    ]
-                },
-                "exegese": {
-                    "titulo": "Exegese da Introdução",
-                    "paragrafos": [
-                        "O manuscrito inicia com o Salvador a responder a perguntas dos discípulos sobre a natureza da matéria e o fim do mundo. O foco não é a criação física em si, mas a dissolução de todas as coisas na sua raiz original.",
-                        "Diferente do Apócrifo de João, que se alonga na emanação cósmica, Maria Madalena assume a cosmologia como um dado adquirido e foca-se na urgência da libertação interior e na preparação da consciência para a jornada pós-morte."
+                        "O Evangelho de Maria Madalena é simultaneamente o mais curto e o mais incompleto. Das dezoito páginas originais do manuscrito copta encontrado em Nag Hammadi, seis foram destruídas antes da descoberta — as páginas 1 a 6 e as páginas 11 a 14 estão irremediavelmente perdidas. O que temos são fragmentos de um texto que já era fragmentário.",
+                        "E no entanto — ou talvez precisamente por isso — é um dos textos mais poderosos de toda a literatura gnóstica. O que sobreviveu é suficiente para revelar uma visão do cosmos, da alma e da salvação que é ao mesmo tempo a mais intimista e a mais radical.",
+                        "Há também algo simbolicamente perturbador no facto de as páginas estarem em falta. O único evangelho que dá voz a uma mulher — a única discípula que compreendeu completamente, segundo o Evangelho de Filipe — chegou até nós mutilado. A ausência faz parte da sua mensagem."
                     ]
                 }
             },
             {
                 "id": "parte-1",
                 "numero": 1,
-                "titulo": "Parte I — A Dissolução da Matéria e a Ilusão do Pecado",
+                "titulo": "Parte I — O que se Perdeu: as Páginas Desaparecidas",
                 "texto_sagrado": {
                     "paragrafos": [
-                        "O texto sobrevivente abre com uma pergunta sobre a subsistência do mundo material, avançando para a desconstrução do conceito tradicional de pecado:"
-                    ],
-                    "citacoes": [
-                        "Não há pecado. Fostes vós que criastes o pecado quando agistes segundo a natureza do adultério, que se chama pecado. Por isso o Bem veio ao vosso meio, até ao que pertence a cada natureza, para restaurar cada natureza à sua raiz.",
-                        "Por isso adoeceis e morreis — porque amais o que vos engana. Quem tiver mente que compreenda, que compreenda.",
-                        "A paz seja convosco. Recebei a minha paz. Guardai-vos de que ninguém vos engane dizendo: 'Aqui está!' ou 'Acolá está!' Pois o Filho do Homem está dentro de vós. Segui-o. Os que o buscam encontrá-lo-ão."
+                        "O texto começa já no meio de um diálogo entre Jesus ressuscitado e os seus discípulos. As primeiras seis páginas estão perdidas — não sabemos como o diálogo começou nem o que foi dito antes.",
+                        "O que encontramos quando o texto começa é Jesus a responder a uma pergunta sobre a natureza do pecado. E a resposta é imediata e desconcertante:",
+                        "\"Não há pecado. Fostes vós que criastes o pecado quando agistes segundo a natureza do adultério, que se chama pecado. Por isso o Bem veio ao vosso meio, até ao que pertence a cada natureza, para restaurar cada natureza à sua raiz.\"",
+                        "Jesus continua: \"Por isso adoeceis e morreis — porque amais o que vos engana. Quem tiver mente que compreenda, que compreenda.\"",
+                        "E então diz a palavra que fecha esta secção e abre tudo o que se segue:",
+                        "\"A paz seja convosco. Recebei a minha paz. Guardai-vos de que ninguém vos engane dizendo: 'Aqui está!' ou 'Acolá está!' Pois o Filho do Homem está dentro de vós. Segui-o. Os que o buscam encontrá-lo-ão.\"",
+                        "Dito isto — Jesus parte. E os discípulos ficam sozinhos."
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte I",
+                    "titulo": "Exegese",
                     "paragrafos": [
-                        "Esta abertura estabelece a ausência do pecado como categoria cósmica ou ontológica. Para o gnóstico, o pecado não é a quebra de uma lei moral ditada por um Deus exterior, mas sim uma desorientação: agir contra a própria essência espiritual, misturando-a com a ilusão material (o 'adultério' da consciência com a matéria).",
-                        "A doença e a morte não são castigos divineis, mas consequências mecânicas de se amar e identificar com o que é perecível. A gnose atua desfazendo este engano primitivo.",
-                        "A localização da salvação é estritamente imanente. O aviso do Salvador para não seguir líderes externos ('Aqui está! ou Acolá está!') e a afirmação de que 'o Filho do Homem está dentro de vós' ecoa o Dito 3 do Evangelho de Tomás, invalidando a necessidade de intermediários clericais ou templos de pedra."
+                        "Esta abertura estabelece de imediato os dois temas centrais do texto. O primeiro é a natureza do pecado — ou antes, a sua ausência como categoria ontológica. Para o gnóstico, o pecado não é uma transgressão de uma lei divina. É uma desorientação — agir segundo a natureza do mundo material em vez de agir segundo a natureza espiritual. O pecado não é moral — é ontológico. É confundir o que somos com o que o mundo diz que somos.",
+                        "A frase \"adoeceis e morreis porque amais o que vos engana\" é de uma precisão extraordinária. A doença e a morte não são punições — são consequências naturais de se identificar com o que é perecível. O corpo adoece porque é material. A consciência que se identifica completamente com o corpo sofre com ele. A gnose não cura o corpo — liberta a consciência da identificação total com o corpo.",
+                        "O segundo tema é a localização do divino. \"O Filho do Homem está dentro de vós.\" Esta frase, dita no momento da partida de Jesus, é o seu último ensinamento — e é a síntese de toda a teologia gnóstica. O divino não está fora. Não está num templo. Não está numa instituição. Não está numa escritura. Está dentro. E a busca que importa é interior. Ressoa ao dito 3 do Evangelho de Tomás: \"Se os que vos guiam disserem: 'O reino está no céu'... o reino está dentro de vós e está fora de vós.\""
                     ],
                     "referencias": [
                         "Evangelho de Tomás — Dito 3"
@@ -168,68 +163,63 @@
             {
                 "id": "parte-2",
                 "numero": 2,
-                "titulo": "Parte II — O Medo dos Discípulos e a Elevação de Maria",
+                "titulo": "Parte II —  O Choro Dos Discípulos E A Voz De Maria",
                 "texto_sagrado": {
                     "paragrafos": [
-                        "Após a partida do Salvador, os discípulos caem em desespero e medo perante a missão de pregar aos gentios. É neste momento que Maria se destaca:"
-                    ],
-                    "citacoes": [
-                        "Não choreis e não vos aflijais nem sejais indecisos. Pois a sua graça estará convosco e vos protegerá. Em vez disso, louvemos a sua grandeza, pois nos preparou e nos fez Seres Humanos.",
-                        "Pedro disse a Maria: 'Irmã, sabemos que o Salvador te amava mais do que às outras mulheres. Diz-nos as palavras do Salvador que recordas — as que conheces mas nós não conhecemos e não ouvimos.'"
+                        "Com a partida de Jesus os discípulos entram em colapso. O texto descreve-os a chorar — não de tristeza espiritual mas de medo. Temem ser perseguidos e mortos como o seu mestre. É neste momento de paralisia que Maria Madalena se levanta.",
+                        "Não chora. Não treme. Volta-se para os discípulos e diz:",
+                        "\"Não choreis e não vos aflijais nem sejais indecisos. Pois a sua graça estará convosco e vos protegerá. Em vez disso, louvemos a sua grandeza, pois nos preparou e nos fez Seres Humanos.\"",
+                        "E então — numa inversão extraordinária da hierarquia estabelecida — Pedro pede a Maria que lhes ensine. O discípulo que Jesus havia chamado \"rocha\" da sua Igreja pede à mulher que os conduza:",
+                        "\"Irmã, sabemos que o Salvador te amava mais do que às outras mulheres. Diz-nos as palavras do Salvador que recordas — as que conheces mas nós não conhecemos e não ouvimos.\""
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte II",
+                    "titulo": "Exegese",
                     "paragrafos": [
-                        "O texto cria uma oposição deliberada entre o medo institucional/psíquico dos apóstolos masculinos e a estabilidade espiritual (pneumática) de Maria Madalena. Enquanto eles choram, ela foca-se na graça que 'nos fez Seres Humanos' (Anthropos — a totalidade espiritual).",
-                        "O pedido de Pedro é um reconhecimento implícito da assimetria de revelação. Ele aceita temporariamente que Maria possui uma categoria de instrução esotérica direta que o grupo desconhece.",
-                        "Isto estabelece a base da antropologia gnóstica: o género físico é irrelevante; o que qualifica o transmissor da verdade é o nível de despertar da sua consciência interna."
+                        "Este momento é de uma riqueza sociológica e teológica imensurada. Pedro — o fundador da Igreja segundo a tradição ortodoxa — reconhece aqui publicamente a superioridade espiritual de Maria. Não a superioridade moral, não a superioridade hierárquica, mas a superioridade do conhecimento. Maria sabe coisas que eles não sabem. Ouviu coisas que eles não ouviram.",
+                        "A distinção que o texto faz entre os discípulos comuns e Maria é exactamente a distinção que o Evangelho de Filipe estabeleceu: há quem receba palavras e há quem receba o sopro. Os discípulos receberam palavras — ensinamentos, parábolas, instruções. Maria recebeu o sopro — a transmissão directa, a gnose viva.",
+                        "O choro e o medo dos discípulos contrasta deliberadamente com a serenidade de Maria. Ela não está acima do sofrimento por insensibilidade — está acima dele porque já ressuscitou enquanto ainda vive, para usar a linguagem do Evangelho de Filipe. A morte de Jesus não a destruiu porque a sua identidade não estava ancorada na presença física de Jesus mas no conhecimento que ele lhe transmitiu."
                     ]
                 }
             },
             {
                 "id": "parte-3",
                 "numero": 3,
-                "titulo": "Parte III — A Visão no Nous: A Ponte da Consciência",
+                "titulo": "Parte III — A Visão: O Que Maria Viu",
                 "texto_sagrado": {
                     "paragrafos": [
-                        "Maria concorda em partilhar a sua revelação privada e descreve o encontro místico com o Salvador, definindo o canal pelo qual a visão opera:"
-                    ],
-                    "citacoes": [
-                        "Eu vi o Senhor numa visão e disse-lhe: 'Senhor, vi-te hoje numa visão.' Ele respondeu e disse-me: 'Bem-aventurada és tu, por não vacilares ao ver-me. Pois onde está a mente (Nous), aí está o tesouro.'",
-                        "Eu disse-lhe: 'Senhor, quem vê a visão vê-la através da alma ou através do espírito?' O Salvador respondeu e disse: 'Não vê através da alma nem através do espírito, mas a mente (Nous) que está entre os dois — é essa que vê a visão...'"
-                    ]
-                },
-                "exegese": {
-                    "titulo": "Exegese da Parte III",
-                    "paragrafos": [
-                        "A visão relatada por Maria não é um fenómeno sensorial, mediúnico ou um fantasma materializado. É uma experiência puramente noética. O Salvador explica que o canal de percepção não é a psique (a alma ligada às emoções e à mente inferior) nem o pneuma absoluto (o espírito puro e incognoscível), mas o Nous.",
-                        "O Nous atua aqui como a mente espiritual superior, a faculdade intermédia de discernimento divino capaz de traduzir os mistérios do Pleroma em consciência inteligível.",
-                        "É exatamente após este ponto que o manuscrito sofre a sua segunda grande mutilação (páginas 11 a 14), ocultando a porção intermédia da revelação secreta."
+                        "Maria responde ao pedido de Pedro. Conta-lhes que teve uma visão de Jesus — uma experiência interior, não uma aparição física. E Jesus lhe perguntou:",
+                        "\"Como vês uma visão? Através da alma ou através do espírito?\"",
+                        "Maria respondeu: \"Nem através da alma nem através do espírito mas através da mente — que está entre os dois.\"",
+                        "E então — nas páginas que se perderam — Maria descreve a visão. Quatro páginas inteiras do que Jesus lhe revelou nessa visão interior estão irremediavelmente ausentes.",
+                        "O texto recomeça com Maria a descrever a ascensão da alma — a viagem de regresso ao Pleroma que a alma faz depois da morte ou depois da gnose. E nessa ascensão a alma encontra quatro poderes que tentam detê-la:"
                     ]
                 }
             },
             {
                 "id": "parte-4",
                 "numero": 4,
-                "titulo": "Parte IV — A Ascensão da Alma: O Confronto com as Quatro Potências",
+                "titulo": "Parte IV — A Ascensão Da Alma: O Confronto Com Os Arcontes",
                 "texto_sagrado": {
                     "paragrafos": [
-                        "O texto regressa na página 15, apanhando a descrição de Maria sobre a jornada pós-morte da alma individual à medida que ela sobe pelas esferas e derrota os Arcontes do Demiurgo:"
-                    ],
-                    "citacoes": [
-                        "E a Alma encontrou a primeira potência, chamada Trevas. A potência perguntou-lhe: 'Para onde vais, assassina? Para onde vais, conquistadora do espaço?' A Alma respondeu: 'O que me prendia foi morto; o que me envolvia foi destruído. O meu desejo chegou ao fim e a ignorância morreu.'",
-                        "Encontrou a segunda potência, chamada Desejo. Ela disse: 'Não te vi descer, mas agora vejo-te subir. Por que mentes, se me pertences?' A Alma respondeu: 'Eu vi-te, mas tu não me viste nem me reconheceste. Servi-te apenas como uma veste, e tu não deste por isso.'",
-                        "Encontrou a terceira potência, chamada Ignorância. Esta questionou a Alma. E a Alma disse: 'Por que me julgas, se eu não julguei? Fui dominada, mas eu não dominei. Não fui reconhecida, mas reconheci que o Todo está a ser dissolvido...'",
-                        "A Alma superou a quarta potência, que tinha sete formas: a primeira é Trevas; a segunda, Desejo; a terceira, Ignorância; a quarta, o Zelo da Morte; a quinta, o Reino da Carne; a sexta, a Sabedoria Tola da Carne; a sétima, a Sabedoria Irada. A Alma disse: 'De agora em diante receberei o repouso... no silêncio do Éon.'"
+                        "A alma em ascensão encontra o primeiro poder — chamado Trevas. Ele interroga-a:",
+                        "\"Para onde vais, assassina? Para onde vais, conquista do espaço?\"",
+                        "A alma responde: \"O que me prende foi morto. O que me envolvia foi destruído. O meu desejo chegou ao seu fim. A ignorância morreu.\"",
+                        "Encontra o segundo poder — chamado Desejo. Ele diz: \"Eu não te vi descer — e agora vejo-te subir. Por que mentes, pertencendo-me?\"",
+                        "A alma responde: \"Vi-te — mas tu não me viste nem me reconheceste. Servi-te como uma veste — e tu não me reconheceste.\"",
+                        "Encontra o terceiro poder — chamado Ignorância. Ele também a interroga. E a alma responde: \"Por que me julgas? Eu também te julguei. Não te reconheci — não fui reconhecida. Estávamos em paz, eu e tu.\"",
+                        "Encontra o quarto poder — que tem sete formas: Trevas, Desejo, Ignorância, Entusiasmo pela Morte, Reino da Carne, Sabedoria Tola da Carne, Sabedoria Irada. E a alma responde ao quarto poder: \"O que me prendia foi morto e o que me girava foi destruído. O meu desejo chegou ao seu fim e a ignorância morreu. Num mundo fui libertada de um mundo. Numa imagem fui libertada de uma imagem superior. E das algemas do esquecimento que são transitórias fui liberta. De agora em diante receberei o repouso do tempo da estação do éon em silêncio.\""
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte IV",
+                    "titulo": "Exegese",
                     "paragrafos": [
-                        "Esta secção é um dos vislumbres mais puros da escatologia gnóstica prática. A jornada da alma não é um julgamento moral num tribunal divino, mas um teste de identidade cósmica e desapego psicológico face aos governantes planetários (Arcontes).",
-                        "A Alma vence cada potência demonstrando que já não reage aos seus impulsos. Ao Desejo, ela afirma que ele foi apenas uma 'veste' exterior; à Ignorância, contrapõe o conhecimento da dissolução da matéria.",
-                        "As sete formas da quarta potência alinham-se de forma idêntica com os guardiões descritos no Apócrifo de João. O destino final da alma vitoriosa não é o louvor eterno ou a atividade paradisíaca, mas o Anapausis (o Repouso Absoluto) fundido no Silêncio primordial do Éon."
+                        "A ascensão da alma através dos quatro poderes é uma das descrições mais vívidas e psicologicamente precisas de todo o corpus gnóstico. Cada poder que a alma encontra corresponde a uma dimensão do aprisionamento que experimentou durante a vida no mundo material.",
+                        "As Trevas representam a ignorância primordial — o não saber que se é luz. A alma que ascende já não é prisioneira das trevas porque reconheceu a sua natureza luminosa.",
+                        "O Desejo é o poder que mais ressoa com o que leste no Livro de Tomás — a epithymia, a força que prende a consciência ao mundo material através da identificação com os apetites do corpo. A resposta da alma é extraordinária: \"Servi-te como uma veste — e tu não me reconheceste.\" O desejo não é a alma — é algo que a alma vestiu temporariamente e que pode despir.",
+                         "A Ignorância é o poder mais subtil. A alma não o combate — estabelece paz com ele. Porque a ignorância não é um inimigo externo — é uma condição que existiu dentro da própria alma. Ao reconhecê-la como tal, a alma liberta-se sem violência",
+                         "O quarto poder com as suas sete formas corresponde exactamente às sete esferas dos Arcontes que encontrámos no Apócrifo de João — os governadores das esferas planetárias que revestiram a alma ao descer. A alma que ascende despe esses revestimentos um a um.",
+                         "A frase final da alma é de uma beleza serena e absoluta: \"De agora em diante receberei o repouso do tempo da estação do éon em silêncio.\" O destino da alma libertada não é actividade, não é júbilo, não é celebração. É silêncio. O mesmo silêncio que é a natureza do Pai supremo no Apócrifo de João. A alma regressa ao que sempre foi — ao silêncio luminoso de onde nunca verdadeiramente partiu."
                     ],
                     "referencias": [
                         "Apócrifo de João — O Domínio dos Arcontes e as Esferas"
@@ -239,37 +229,31 @@
             {
                 "id": "parte-5",
                 "numero": 5,
-                "titulo": "Parte V — A Rebelião dos Apóstolos: O Conflito de Autoridade",
+                "titulo": "Parte V — A Rebelião De Pedro E André: O Conflito Que Define Tudo",
                 "texto_sagrado": {
                     "paragrafos": [
-                        "Assim que Maria termina de relatar a visão, o texto regista uma rutura imediata no grupo de discípulos, expondo a incompreensão da mensagem:"
-                    ],
-                    "citacoes": [
-                        "André respondeu e disse aos irmãos: 'Dizei o que pensais sobre o que ela disse. Eu, pelo menos, não acredito que o Salvador tenha dito isto. Pois estes ensinamentos são ideias estranhas.' Pedro acrescentou: 'Ele falaria realmente em privado com uma mulher e não abertamente connosco? Havemos de nos voltar e ouvir todos a ela? Preferiu-a a nós?'",
-                        "Maria chorou e disse a Pedro: 'Meu irmão Pedro, o que pensas? Pensas que inventei isto no meu coração ou que minto acerca do Salvador?'",
-                        "Levi interveio e disse a Pedro: 'Pedro, sempre foste temperamental. Agora vejo-te a contender com a mulher como se fosse um adversário. Se o Salvador a tornou digna, quem és tu para a rejeitar? Certamente o Salvador conhece-a muito bem. Por isso a amou mais do que a nós. Antes nos envergonhemos, revistamo-nos do Homem Perfeito e partamos para anunciar o evangelho, sem estabelecer outra regra nem outra lei além do que o Salvador ordenou.'"
+                        "Quando Maria termina de falar, dois discípulos reagem.",
+                        "André diz: \"Dizei o que pensais sobre o que disse. Quanto a mim, não acredito que o Salvador disse isto. Pois estes ensinamentos são ideias estranhas.\"",
+                        "Pedro vai mais longe. Com hostilidade evidente diz: \"Ele falaria realmente em privado com uma mulher sem o nosso conhecimento? Havemos de nos voltar e ouvir todos a ela? Preferiu-a a nós?\"",
+                        "Maria chora. Não de fraqueza — de incompreensão perante a injustiça. Diz a Pedro:",
+                        "\"Meu irmão Pedro, o que pensas? Pensas que inventei isto no meu coração ou que minto acerca do Salvador?\"",
+                        "É então Levi que intervém — o único que defende Maria. Diz a Pedro com uma clareza cortante:",
+                        "\"Pedro, sempre foste temperamental. Agora vejo-te a contender com a mulher como se fosse um adversário. Se o Salvador a tornou digna, quem és tu para a rejeitar? Certamente o Salvador conhece-a muito bem. Por isso a amou mais do que a nós. Antes nos envergonhemos e nos revistamos do Homem Perfeito, partamos como nos ordenou e proclamemos o evangelho sem estabelecer outra regra nem outra lei além do que o Salvador disse.\"",
+                        "E com isto — o texto termina."
+                        
                     ]
                 },
                 "exegese": {
-                    "titulo": "Exegese da Parte V",
+                    "titulo": "Exegese",
                     "paragrafos": [
-                        "O desfecho do evangelho dramatiza a grande fratura teológica e eclesiológica do cristianismo primitivo. André representa a rejeição do conteúdo teológico por 'estranheza' (o medo do misticismo profundo); Pedro personifica a vertente institucional e patriarcal, escandalizado pelo facto de a revelação contornar a suposta linha de liderança masculina.",
-                        "A resposta de Levi (Mateus) funciona como a apologia da Gnose: a única validação legítima no reino do espírito é o reconhecimento do Salvador. Ele repreende o ciúme de Pedro lembrando que o amor do Salvador por Maria decorre do seu nível superior de compreensão.",
-                        "A exortação final de Levi para 'nos revestirmos do Homem Perfeito' liga-se diretamente com o sacramento da Câmara Nupcial do Evangelho de Filipe: a reintegração da androginia espiritual que quebra o legalismo. O aviso de não criar 'outra regra nem outra lei' é um manifesto explícito contra a dogmatização da fé que viria a definir a Igreja ortodoxa."
+                        "Este final é de uma violência e de uma honestidade absolutamente surpreendentes. O texto não tenta suavizar o conflito — expõe-no com uma precisão cirúrgica.",
+                        "Pedro e André representam aqui algo muito específico: a resistência institucional ao conhecimento interior. A objecção de Pedro não é teológica — é de autoridade. \"Falaria ele em privado com uma mulher?\" A pergunta não questiona o conteúdo do que Maria disse — questiona o direito de ela ter recebido esse conhecimento. É a lógica da hierarquia a tentar invalidar a experiência directa.",
+                        "André vai mais longe — rejeita o conteúdo como \"ideias estranhas\". Mas não oferece qualquer argumento. A estranheza é, para ele, suficiente razão para rejeitar. É a lógica da tradição a proteger-se da revelação.",
+                        "A intervenção de Levi é o momento mais luminoso do texto. \"Quem és tu para a rejeitar?\" É uma pergunta que derruba toda a hierarquia de uma vez. A autoridade espiritual não vem da posição, do género ou da antiguidade — vem do conhecimento vivo. Jesus tornou Maria digna — e isso é suficiente.",
+                        "A frase final de Levi contém um ensinamento que ressoa com toda a tradição gnóstica: \"sem estabelecer outra regra nem outra lei além do que o Salvador disse.\" O gnosticismo é fundamentalmente anti-institucional — não porque rejeite a comunidade mas porque rejeita a institucionalização do espiritual. A lei mata. O conhecimento vivo."
                     ],
                     "referencias": [
                         "Evangelho de Filipe — O Beijo e a Koinonos"
-                    ]
-                }
-            },
-            {
-                "id": "sintese",
-                "numero": 6,
-                "titulo": "Síntese: O Encerramento do Tríptico Gnóstico",
-                "texto_sagrado": {
-                    "paragrafos": [
-                        "O Evangelho de Maria Madalena encerra de forma cirúrgica a trilogia de Nag Hammadi e do Códice de Berlim. Se o Apócrifo de João traçou a arquitetura cosmológica do aprisionamento da luz e o Evangelho de Filipe codificou os sacramentos ritualísticos da câmara nupcial, o Evangelho de Maria documenta a aplicação prática desse conhecimento.",
-                        "Ele atesta que a ascensão através das potências arcontes é uma realidade exequível pela alma desperta e que a Gnose, por natureza, recusa submeter-se a estruturas hierárquicas, geográficas ou de género. A revelação interior é o tribunal final da verdade."
                     ]
                 }
             }
