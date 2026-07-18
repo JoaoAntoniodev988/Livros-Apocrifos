@@ -184,7 +184,7 @@ function renderIndice() {
         btn.addEventListener("click", () => {
             seccaoIndex = parseInt(btn.dataset.index, 10);
             renderSeccaoAtual();
-            document.getElementById("readingArea").scrollIntoView({ behavior: "smooth" });
+            scrollParaTopoDoTexto();
         });
     });
 
@@ -204,6 +204,7 @@ function irParaAnterior() {
     if (seccaoIndex > 0) {
         seccaoIndex--;
         renderSeccaoAtual();
+        scrollParaTopoDoTexto();
     }
 }
 
@@ -212,7 +213,12 @@ function irParaProxima() {
     if (seccaoIndex < total - 1) {
         seccaoIndex++;
         renderSeccaoAtual();
+        scrollParaTopoDoTexto();
     }
+}
+
+function scrollParaTopoDoTexto() {
+    document.getElementById("chapterTitle").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function renderSeccaoAtual() {
