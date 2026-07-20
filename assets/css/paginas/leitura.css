@@ -215,6 +215,7 @@
     top: 100%;
     z-index: 30;
     width: 260px;
+    max-width: calc(100vw - 2rem);
     margin-top: 0.5rem;
     padding: var(--space-md);
     background-color: var(--color-background);
@@ -222,6 +223,7 @@
     border-radius: var(--radius-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-weight: normal;
+    box-sizing: border-box;
 }
 
 .glossario-popover strong {

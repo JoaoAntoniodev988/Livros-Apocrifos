@@ -45,6 +45,15 @@ document.addEventListener("click", (evento) => {
 
     termo.appendChild(popover);
 
+    // Corrige a posição para nunca ultrapassar a margem direita do ecrã
+    const rect = popover.getBoundingClientRect();
+    const margem = 16; // 1rem de respiro
+
+    if (rect.right > window.innerWidth - margem) {
+        const excesso = rect.right - (window.innerWidth - margem);
+        popover.style.left = `-${excesso}px`;
+    }
+
     evento.stopPropagation();
 
 });
