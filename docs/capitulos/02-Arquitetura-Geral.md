@@ -401,3 +401,303 @@ A estrutura apresentada neste capítulo foi planejada para manter uma clara sepa
 Essa organização reduz o acoplamento entre módulos, facilita a manutenção e permite que o projeto continue crescendo sem necessidade de reorganizações estruturais.
 
 Nos próximos capítulos serão detalhadas as camadas JavaScript que compõem o núcleo da aplicação.
+
+---
+
+# 2.3 Organização dos Recursos
+
+A Biblioteca Apócrifa foi estruturada seguindo o princípio da organização por responsabilidade.
+
+Cada recurso do projeto possui um local específico dentro da estrutura de diretórios, evitando duplicação de código, facilitando a manutenção e permitindo a evolução contínua da aplicação.
+
+Os recursos do projeto encontram-se divididos em quatro grandes grupos:
+
+- Estilos (CSS)
+- Scripts (JavaScript)
+- Dados (JSON)
+- Recursos Visuais (Imagens)
+
+Cada grupo possui uma finalidade específica.
+
+---
+
+# 2.3.1 Organização do CSS
+
+Toda a estilização da aplicação encontra-se centralizada na pasta:
+
+```text
+assets/css/
+```
+
+A estrutura do CSS foi organizada de forma modular.
+
+```text
+assets/
+└── css/
+    ├── style.css
+    ├── componentes/
+    └── paginas/
+```
+
+### style.css
+
+Representa o arquivo principal de estilos da aplicação.
+
+Sua responsabilidade é importar ou reunir os estilos globais do projeto.
+
+Entre eles:
+
+- Reset
+- Variáveis CSS
+- Tipografia
+- Layout global
+- Utilitários
+
+Esse arquivo funciona como ponto central da estilização.
+
+---
+
+### componentes/
+
+Contém estilos reutilizáveis.
+
+Cada componente visual possui seu próprio arquivo CSS.
+
+Exemplos:
+
+- header.css
+- footer.css
+- slider.css
+- cardLivro.css
+- modal.css
+
+Essa abordagem evita arquivos gigantescos e facilita manutenção.
+
+---
+
+### paginas/
+
+Contém estilos exclusivos de cada página.
+
+Exemplos:
+
+```text
+home.css
+biblioteca.css
+leitura.css
+perfil.css
+comunidade.css
+```
+
+Esses estilos nunca devem ser utilizados em outras páginas.
+
+---
+
+# 2.3.2 Organização do JavaScript
+
+Todo o JavaScript encontra-se centralizado em:
+
+```text
+assets/js/
+```
+
+A arquitetura JavaScript foi dividida em camadas independentes.
+
+```text
+core/
+services/
+components/
+pages/
+utils/
+```
+
+Cada camada possui uma responsabilidade específica.
+
+Essa organização será detalhada completamente no Capítulo 3.
+
+---
+
+# core/
+
+Responsável pela inicialização da aplicação.
+
+Controla aspectos estruturais do sistema.
+
+Exemplos:
+
+- inicialização
+- configurações
+- armazenamento
+- roteamento
+
+Nenhuma regra de negócio deve ficar nesta camada.
+
+---
+
+# services/
+
+Responsável pela comunicação com os dados.
+
+Exemplos:
+
+- LivrosService
+- LeituraService
+- PesquisaService
+- FavoritosService
+
+Os Services nunca manipulam HTML.
+
+Sua única responsabilidade é fornecer informações para o restante da aplicação.
+
+---
+
+# components/
+
+Contém componentes reutilizáveis.
+
+Exemplos:
+
+- Slider
+- CardLivro
+- Modal
+- Menu
+- Paginação
+
+Esses componentes podem ser utilizados em diversas páginas diferentes.
+
+---
+
+# pages/
+
+Cada página possui um controlador próprio.
+
+Exemplos:
+
+```text
+home.js
+biblioteca.js
+leitura.js
+perfil.js
+```
+
+Esses arquivos controlam exclusivamente sua própria página.
+
+---
+
+# utils/
+
+Reúne funções auxiliares reutilizadas por todo o sistema.
+
+Exemplos:
+
+- validações
+- formatação
+- manipulação do DOM
+- funções utilitárias
+
+Esses arquivos não possuem dependência de páginas específicas.
+
+---
+
+# 2.3.3 Organização dos Dados
+
+Todos os dados da Biblioteca Apócrifa encontram-se na pasta:
+
+```text
+assets/data/
+```
+
+A estrutura atual é composta por:
+
+```text
+assets/
+└── data/
+    ├── livros.json
+    └── livros/
+```
+
+---
+
+### livros.json
+
+Representa o índice geral da biblioteca.
+
+Contém apenas informações resumidas de cada obra.
+
+Exemplo:
+
+- título
+- descrição
+- categoria
+- autor
+- imagem
+- slug
+
+Seu objetivo é alimentar:
+
+- Home
+- Biblioteca
+- Pesquisa
+- Destaques
+
+---
+
+### livros/
+
+Esta pasta contém um arquivo JSON para cada obra.
+
+Exemplo:
+
+```text
+apocrifo-de-joao.json
+evangelho-de-filipe.json
+evangelho-de-tome.json
+```
+
+Cada arquivo possui todo o conteúdo do livro.
+
+Incluindo:
+
+- capítulos
+- exegese
+- referências
+- notas
+- comentários
+
+Essa estratégia evita carregar centenas de páginas de conteúdo quando o usuário apenas navega pela biblioteca.
+
+---
+
+# 2.3.4 Organização das Imagens
+
+Todas as imagens permanecem centralizadas em:
+
+```text
+assets/imagens/
+```
+
+Exemplo de organização:
+
+```text
+imagens/
+
+livros/
+icones/
+logos/
+backgrounds/
+placeholders/
+```
+
+Cada categoria possui um diretório próprio.
+
+Essa organização facilita manutenção e localização dos recursos gráficos.
+
+---
+
+# Considerações Finais
+
+A organização dos recursos da Biblioteca Apócrifa foi planejada para manter uma clara separação entre apresentação, lógica, dados e elementos gráficos.
+
+Essa divisão reduz a complexidade do projeto e torna sua evolução mais previsível.
+
+Nos próximos capítulos será apresentada em detalhes a arquitetura JavaScript, explicando como essas camadas interagem para formar a aplicação.
