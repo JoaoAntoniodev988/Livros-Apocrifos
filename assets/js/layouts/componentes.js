@@ -24,17 +24,7 @@ async function loadComponent(selector, file) {
 
 }
 
-function getBasePath() {
-
-    const path = window.location.pathname;
-
-    if (path.includes("/paginas/")) {
-        return "../";
-    }
-
-    return "";
-
-}
+// getBasePath() já vem de utils/helpers.js — não é redefinida aqui
 
 document.addEventListener("DOMContentLoaded", async () => {
 
