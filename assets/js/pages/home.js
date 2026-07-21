@@ -6,7 +6,7 @@ let livrosDestaque = [];
 let bookIndex = 0;
 let booksAutoplay = null;
 
-const AUTOPLAY_INTERVALO = 6000;
+const AUTOPLAY_INTERVALO = 9000;
 
 document.addEventListener("DOMContentLoaded", async () => {
 
