@@ -1,120 +1,78 @@
-class Slider {
+function createSlider({ trackSelector, dotsSelector, prevSelector, nextSelector, autoplayMs, onIndexChange }) {
 
-    constructor(selector) {
+    let index = 0;
+    let total = 0;
+    let timer = null;
 
-        this.container = document.querySelector(selector);
+    const trackEl = trackSelector ? document.querySelector(trackSelector) : null;
+    const dotsEl = dotsSelector ? document.querySelector(dotsSelector) : null;
+    const prevEl = prevSelector ? document.querySelector(prevSelector) : null;
+    const nextEl = nextSelector ? document.querySelector(nextSelector) : null;
 
-        if (!this.container) return;
+    function renderDots() {
+        if (!dotsEl) return;
+        dotsEl.innerHTML = Array.from({ length: total }, (_, i) => `
+            <button class="carousel-dot ${i === index ? "is-active" : ""}" data-index="${i}"></button>
+        `).join("");
 
-        this.track = this.container.querySelector(".books-track");
-
-        this.prev = this.container.querySelector(".slider-prev");
-
-        this.next = this.container.querySelector(".slider-next");
-
-        this.index = 0;
-
-        this.maxIndex = 0;
-
-        this.init();
-
-    }
-
-    init() {
-
-        this.updateSizes();
-
-        this.events();
-
-        this.update();
-
-    }
-
-    getCardWidth() {
-
-        const card = this.track.querySelector(".book-card");
-
-        if (!card) return 0;
-
-        const gap = parseFloat(
-            getComputedStyle(this.track).gap
-        ) || 0;
-
-        return card.offsetWidth + gap;
-
-    }
-
-    updateSizes() {
-
-        const cards = this.track.querySelectorAll(".book-card");
-
-        if (!cards.length) return;
-
-        const slider = this.container.querySelector(".books-slider");
-
-        const cardWidth = this.getCardWidth();
-
-        const visibleCards = Math.max(
-            1,
-            Math.floor(slider.offsetWidth / cardWidth)
-        );
-
-        this.maxIndex = Math.max(
-            0,
-            cards.length - visibleCards
-        );
-
-        if (this.index > this.maxIndex) {
-
-            this.index = this.maxIndex;
-
-        }
-
-    }
-
-    events() {
-
-        this.next?.addEventListener("click", () => {
-
-            if (this.index < this.maxIndex) {
-
-                this.index++;
-
-                this.update();
-
-            }
-
+        dotsEl.querySelectorAll(".carousel-dot").forEach(dot => {
+            dot.addEventListener("click", () => goTo(parseInt(dot.dataset.index, 10)));
         });
-
-        this.prev?.addEventListener("click", () => {
-
-            if (this.index > 0) {
-
-                this.index--;
-
-                this.update();
-
-            }
-
-        });
-
-        window.addEventListener("resize", () => {
-
-            this.updateSizes();
-
-            this.update();
-
-        });
-
     }
 
-    update() {
-
-        const largura = this.getCardWidth();
-
-        this.track.style.transform =
-            `translateX(-${this.index * largura}px)`;
-
+    function atualizarDots() {
+        if (!dotsEl) return;
+        dotsEl.querySelectorAll(".carousel-dot").forEach((dot, i) => {
+            dot.classList.toggle("is-active", i === index);
+        });
     }
+
+    function aplicar() {
+        if (trackEl) trackEl.style.transform = `translateX(-${index * 100}%)`;
+        atualizarDots();
+        if (onIndexChange) onIndexChange(index);
+    }
+
+    function goTo(novoIndex) {
+        if (total === 0) return;
+        index = ((novoIndex % total) + total) % total;
+        aplicar();
+        reiniciarAutoplay();
+    }
+
+    function next() { goTo(index + 1); }
+    function prev() { goTo(index - 1); }
+
+    function iniciarAutoplay() {
+        pararAutoplay();
+        if (total <= 1 || !autoplayMs) return;
+        timer = setInterval(next, autoplayMs);
+    }
+
+    function pararAutoplay() {
+        if (timer) clearInterval(timer);
+    }
+
+    function reiniciarAutoplay() {
+        iniciarAutoplay();
+    }
+
+    if (prevEl) prevEl.addEventListener("click", prev);
+    if (nextEl) nextEl.addEventListener("click", next);
+
+    return {
+        setTotal(novoTotal) {
+            total = novoTotal;
+            index = 0;
+            renderDots();
+            aplicar();
+            iniciarAutoplay();
+        },
+        goTo,
+        next,
+        prev,
+        iniciarAutoplay,
+        pararAutoplay
+    };
 
 }
