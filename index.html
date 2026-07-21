@@ -51,19 +51,25 @@
             <a href="paginas/biblioteca.html" class="button-primary">Explorar Biblioteca</a>
         </div>
 
-        <!-- LIVROS EM DESTAQUE -->
-        <section class="featured-books">
-            <div class="container">
-                <h2>Livros em Destaque</h2>
+     <!-- LIVROS EM DESTAQUE -->
+<section class="featured-books">
+    <div class="container">
+        <h2>Livros em Destaque</h2>
 
-                <div class="books-carousel">
-                    <div class="books-track" id="booksTrack"></div>
+        <div class="books-carousel">
 
-                    <button class="carousel-arrow carousel-arrow--prev" id="booksPrev" aria-label="Livro anterior">←</button>
-                    <button class="carousel-arrow carousel-arrow--next" id="booksNext" aria-label="Próximo livro">→</button>
-                </div>
+            <div class="books-viewport">
+                <div class="books-track" id="booksTrack"></div>
             </div>
-        </section>
+
+            <button class="carousel-arrow carousel-arrow--prev" id="booksPrev" aria-label="Livro anterior">←</button>
+            <button class="carousel-arrow carousel-arrow--next" id="booksNext" aria-label="Próximo livro">→</button>
+
+        </div>
+
+        <div class="carousel-dots" id="booksDots"></div>
+    </div>
+</section>
 
         <!-- NOTA DO EDITOR -->
         <section class="editor-note">

@@ -169,9 +169,12 @@
     position: relative;
 }
 
+.books-viewport {
+    overflow: hidden;
+}
+
 .books-track {
     display: flex;
-    overflow: hidden;
     transition: transform 0.3s ease;
 }
 
@@ -210,11 +213,11 @@
 }
 
 .books-carousel .carousel-arrow--prev {
-    left: -0.5rem;
+    left: 0;
 }
 
 .books-carousel .carousel-arrow--next {
-    right: -0.5rem;
+    right: 0;
 }
 
 
