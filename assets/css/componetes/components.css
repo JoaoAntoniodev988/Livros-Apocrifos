@@ -595,6 +595,50 @@ img {
     text-align: center;
 }
 
+/* ==========================================================
+   TAB BAR (navegação fixa no fundo — estilo app mobile)
+   ========================================================== */
+
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-background);
+    border-top: 1px solid var(--color-border);
+    padding: 0.4rem 0;
+    padding-bottom: calc(0.4rem + env(safe-area-inset-bottom));
+}
+
+.tab-bar__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 0.3rem 0.6rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: color var(--transition-normal);
+}
+
+.tab-bar__icon {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.tab-bar__item.is-active {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+/* Compensa a tab bar fixa, para o conteúdo não ficar escondido atrás dela */
+body {
+    padding-bottom: 4.5rem;
+}
 
 /* ==========================================================
    RODAPÉ INFERIOR

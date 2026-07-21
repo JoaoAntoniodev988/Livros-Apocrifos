@@ -1,18 +1,17 @@
-
 document.addEventListener("componentsLoaded", () => {
 
     const currentPage = window.location.pathname
         .split("/")
         .pop() || "index.html";
 
-    const links = document.querySelectorAll(".app-header__nav a");
+    const links = document.querySelectorAll(".tab-bar__item");
 
     links.forEach(link => {
 
-        const href = link.getAttribute("href");
+        const pagina = link.dataset.page;
 
-        if (href && href.endsWith(currentPage)) {
-            link.classList.add("active");
+        if (pagina === currentPage) {
+            link.classList.add("is-active");
         }
 
     });

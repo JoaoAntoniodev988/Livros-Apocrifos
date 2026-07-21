@@ -1,181 +1,191 @@
 /* ==========================================================
-   HOME LAYOUT
-========================================================== */
-
-.home-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 2fr) 340px;
-    gap: var(--space-md);
-    align-items: start;
-    margin-bottom: var(--space-lg);
-}
-
-.main-content {
-    min-width: 0;
-}
-
-/* ==========================================================
-   HERO
-========================================================== */
+   HOME.CSS — Página Inicial (layout mobile-first)
+   ========================================================== */
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 20vh;
+    padding: var(--space-xl) 0 var(--space-lg);
     text-align: center;
 }
 
-.hero__content {
-    max-width: 760px;
-    margin-inline: auto;
-}
-
-.hero h1 {
-    margin-bottom: var(--space-md);
-}
-
-.hero p {
-    margin-bottom: var(--space-lg);
-}
-
-/* ==========================================================
-   INTRODUÇÃO
-========================================================== */
-
-.intro__content {
-    max-width: var(--reading-width);
-    margin-inline: auto;
-}
-
-.intro h2 {
-    margin-bottom: var(--space-md);
-    text-align: center;
-}
-
-/* ==========================================================
-   HISTÓRIA
-========================================================== */
-
-.history-section article {
-    max-width: var(--reading-width);
-    margin-inline: auto;
-}
-
-.history-section h2 {
-    text-align: center;
-    margin-bottom: var(--space-md);
-}
-
-.history-section p:last-child {
-    margin-bottom: var(--space-md);
-}
-
-/* ==========================================================
-   SIDEBAR
-========================================================== */
-.home-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    position: sticky;
-    top: 2rem;
-}
-
-.home-sidebar section {
-    padding: var(--space-md);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-}
-
-.home-sidebar h2 {
-    margin-bottom: var(--space-lg);
-    padding-bottom: var(--space-sm);
-    border-bottom: 1px solid var(--color-border);
-    font-size: 1rem;
-}
-
-.home-sidebar h3 {
-    font-size: 1rem;
-}
-
-.home-sidebar p {
-    font-size: 0.8rem;
-}
-
-/* ==========================================================
-   COMO FUNCIONA
-========================================================== */
-
-.platform-grid {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-}
-
-.feature-card {
-    padding: var(--space-md);
-    background: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
-}
-
-.feature-card h3 {
+.hero__content h1 {
     margin-bottom: var(--space-sm);
 }
 
+.hero__content p {
+    color: var(--color-text-muted);
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+ header {
+        display: none;
+    }
+
+
+/* ==========================================================
+   CARROSSEL INFORMATIVO
+   ========================================================== */
+
+.info-carousel {
+    padding: var(--space-md) 0;
+}
+
+.info-carousel__card {
+    position: relative;
+    min-height: 320px;
+    padding: var(--space-lg);
+    padding-top: calc(var(--space-lg) + 2.5rem);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.info-carousel__card h2 {
+    font-size: 1.15rem;
+    margin-bottom: var(--space-md);
+}
+
+.info-carousel__card p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: var(--space-md);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: border-color var(--transition-normal);
+}
+
+.carousel-arrow:hover {
+    border-color: var(--color-secondary);
+}
+
+.carousel-arrow--prev {
+    left: var(--space-md);
+}
+
+.carousel-arrow--next {
+    right: var(--space-md);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: var(--space-md);
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-border);
+    cursor: pointer;
+    padding: 0;
+}
+
+.carousel-dot.is-active {
+    background-color: var(--color-secondary);
+}
+
+
+/* ==========================================================
+   CTA EXPLORAR BIBLIOTECA
+   ========================================================== */
+
+.cta-explorar {
+    text-align: center;
+    padding: var(--space-md) 0 var(--space-lg);
+}
+
+
 /* ==========================================================
    LIVROS EM DESTAQUE
-========================================================== */
+   ========================================================== */
 
-/* .books-track .book-card{
-    min-width:320px;
-    flex:0 0 320px;
-} */
+.featured-books {
+    padding: var(--space-lg) 0;
+}
+
+.featured-books h2 {
+    margin-bottom: var(--space-md);
+    font-size: 1.15rem;
+}
+
+.books-carousel {
+    position: relative;
+}
+
+.books-track {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.book-card {
+    flex: 0 0 100%;
+    display: block;
+    padding: var(--space-lg);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.book-card__categoria {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-secondary);
+}
+
+.book-card__titulo {
+    margin: var(--space-sm) 0;
+    color: var(--color-text);
+}
+
+.book-card__descricao {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.books-carousel .carousel-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.books-carousel .carousel-arrow--prev {
+    left: -0.5rem;
+}
+
+.books-carousel .carousel-arrow--next {
+    right: -0.5rem;
+}
+
 
 /* ==========================================================
    NOTA DO EDITOR
-========================================================== */
+   ========================================================== */
 
-.editor-note p {
-    margin: 0;
-    line-height: 1.8;
+.editor-note {
+    padding: var(--space-lg) 0;
+    text-align: center;
     color: var(--color-text-muted);
 }
 
-/* ==========================================================
-   RESPONSIVIDADE
-========================================================== */
-
-@media (max-width:1024px){
-
-    .home-layout{
-        grid-template-columns:1fr;
-    }
-
-    .home-sidebar{
-        position:static;
-        margin-top:var(--space-lg);
-    }
-
-    .home-sidebar section{
-        padding:var(--space-md);
-    }
-
-}
-
-@media (max-width:640px){
-
-    .hero{
-        min-height:40vh;
-    }
-
+.editor-note h2 {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
 }

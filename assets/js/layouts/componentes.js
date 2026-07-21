@@ -1,10 +1,3 @@
-/**
- * Sistema de Componentes
- * Biblioteca Apócrifa
- *
- * Carrega componentes HTML reutilizáveis.
- */
-
 async function loadComponent(selector, file) {
 
     const element = document.querySelector(selector);
@@ -31,9 +24,6 @@ async function loadComponent(selector, file) {
 
 }
 
-/*
-    Detecta o caminho base
-*/
 function getBasePath() {
 
     const path = window.location.pathname;
@@ -46,9 +36,6 @@ function getBasePath() {
 
 }
 
-/*
-    Carrega os componentes
-*/
 document.addEventListener("DOMContentLoaded", async () => {
 
     const basePath = getBasePath();
@@ -59,13 +46,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
 
     await loadComponent(
-        "[data-component='navbar-desktop']",
-        `${basePath}componentes/navbar.html`
-    );
-
-    await loadComponent(
-        "[data-component='navbar-mobile']",
-        `${basePath}componentes/navbar.html`
+        "[data-component='tabbar']",
+        `${basePath}componentes/tabbar.html`
     );
 
     await loadComponent(

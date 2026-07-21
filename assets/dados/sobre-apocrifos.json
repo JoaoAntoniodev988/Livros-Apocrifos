@@ -1,0 +1,60 @@
+{
+    "slides": [
+        {
+            "id": "intro",
+            "titulo": "O que são textos apócrifos?",
+            "paragrafos": [
+                "A palavra \"apócrifo\" origina-se do grego apokryphos, que significa \"oculto\" ou \"secreto\". Inicialmente, esse termo poderia sugerir um sentido de respeito por escritos de conteúdo profundo ou esotérico, acessível apenas a círculos restritos.",
+                "Com o tempo, porém, passou a adquirir uma conotação de espúrio ou de autenticidade questionável. O termo foi criado por Jerônimo, no quinto século, para designar antigos documentos judaicos escritos entre o último livro das escrituras judaicas (Malaquias) e a vinda de Jesus Cristo."
+            ]
+        },
+        {
+            "id": "origem",
+            "titulo": "Origem dos textos apócrifos",
+            "paragrafos": [
+                "Os livros apócrifos surgiram aproximadamente entre os séculos III a.C. e I d.C., um período de grande fermentação cultural e religiosa no judaísmo, muitas vezes em resposta às necessidades dos judeus sob domínio de impérios estrangeiros.",
+                "Os apócrifos do Novo Testamento têm origem mais recente, difundindo-se desde o século II d.C. — alguns escritos por hereges, outros por cristãos piedosos que buscavam preencher lacunas da história evangélica."
+            ]
+        },
+        {
+            "id": "exclusao",
+            "titulo": "Por que foram excluídos do cânon?",
+            "paragrafos": [
+                "A exclusão baseou-se em critérios como a autenticidade questionável, a falta de citação por Jesus e os apóstolos, e a não inclusão no cânon hebraico do Antigo Testamento.",
+                "Muitos são fantasiosos sobre a Pessoa de Jesus e outros personagens bíblicos, e alguns contêm heresias como o gnosticismo — mas guardam verdades históricas importantes para os estudos."
+            ]
+        },
+        {
+            "id": "canones",
+            "titulo": "A questão do cânon: Católicos, Ortodoxos e Protestantes",
+            "paragrafos": [
+                "Católicos e ortodoxos aceitaram Tobias, Judite, Sabedoria, Sirácida, I e II Macabeus e Baruque como deuterocanônicos — uma diferença de 7 livros face ao cânon protestante.",
+                "A Igreja Católica os admitiu como canônicos após cinco Concílios: Roma (382), Hipona (393), Cartago (397), Florença (1431) e Trento (1545). A Reforma Protestante retornou à autoridade das Escrituras hebraicas, solidificada na Confissão de Westminster (1647)."
+            ]
+        },
+        {
+            "id": "nag-hammadi",
+            "titulo": "A grande descoberta: Nag Hammadi (1945)",
+            "paragrafos": [
+                "A Biblioteca de Nag Hammadi é uma coleção de textos gnósticos descoberta no Alto Egito em 1945 por um camponês, Mohammed Ali Samman, numa jarra selada com treze códices de papiro.",
+                "A descoberta não foi reportada de imediato — os lavradores chegaram a rasgar volumes e repartir páginas entre si, atrasando o reconhecimento do seu valor.",
+                "Os textos revelaram doutrinas próximas das que os Padres da Igreja denunciavam como heréticas — como o Apócrifo de João, cuja cosmogonia Irineu de Lyon já descrevia em Contra as Heresias."
+            ]
+        },
+        {
+            "id": "mar-morto",
+            "titulo": "Os Manuscritos do Mar Morto (1947)",
+            "paragrafos": [
+                "Descobertos por beduínos em 1947, os Manuscritos do Mar Morto foram compilados pelos essênios, que viveram em Qumran entre os séculos II a.C. e 70 d.C., incluindo porções de quase toda a Bíblia Hebraica e livros apócrifos."
+            ]
+        },
+        {
+            "id": "importancia",
+            "titulo": "Importância para a história do Cristianismo",
+            "paragrafos": [
+                "A descoberta destes textos revisou radicalmente a compreensão do gnosticismo e da Igreja cristã primitiva, sendo hoje reconhecidos pelo seu valor histórico mais do que doutrinário.",
+                "Os apócrifos constituem um espelho das múltiplas vozes, crenças e debates que atravessaram o Judaísmo e o Cristianismo primitivo, muito antes de qualquer cânon se consolidar."
+            ]
+        }
+    ]
+}
