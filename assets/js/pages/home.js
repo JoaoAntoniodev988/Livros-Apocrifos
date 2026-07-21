@@ -20,6 +20,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("infoPrev").addEventListener("click", () => mudarInfoSlide(-1));
     document.getElementById("infoNext").addEventListener("click", () => mudarInfoSlide(1));
 
+    document.getElementById("infoToggle").addEventListener("click", () => {
+
+        const card = document.querySelector(".info-carousel__card");
+        const wrapper = document.getElementById("infoSlideConteudoWrapper");
+        const toggle = document.getElementById("infoToggle");
+
+        const expandido = wrapper.classList.toggle("is-expanded");
+        card.classList.toggle("is-expanded", expandido);
+        toggle.textContent = expandido ? "Ler menos" : "Ler mais";
+
+    });
+
     // Carrossel de livros em destaque
     livrosDestaque = await livrosService.carregar();
     renderBooksTrack();
@@ -39,6 +51,21 @@ function renderInfoSlide() {
     document.getElementById("infoSlideConteudo").innerHTML = slide.paragrafos
         .map(p => `<p>${escapeHTML(p)}</p>`)
         .join("");
+
+    // Sempre que trocamos de slide, volta ao estado colapsado
+    fecharInfoCard();
+
+}
+
+function fecharInfoCard() {
+
+    const card = document.querySelector(".info-carousel__card");
+    const wrapper = document.getElementById("infoSlideConteudoWrapper");
+    const toggle = document.getElementById("infoToggle");
+
+    card.classList.remove("is-expanded");
+    wrapper.classList.remove("is-expanded");
+    toggle.textContent = "Ler mais";
 
 }
 

@@ -640,6 +640,73 @@ body {
     padding-bottom: 4.5rem;
 }
 
+.info-carousel__card {
+    position: relative;
+    height: 320px;
+    padding: var(--space-lg);
+    padding-top: calc(var(--space-lg) + 2.5rem);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.info-carousel__card h2 {
+    font-size: 1.15rem;
+    margin-bottom: var(--space-md);
+    flex-shrink: 0;
+}
+
+.info-carousel__conteudo {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.info-carousel__conteudo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    background: linear-gradient(to bottom, transparent, var(--color-background));
+    pointer-events: none;
+}
+
+.info-carousel__conteudo.is-expanded {
+    overflow: visible;
+}
+
+.info-carousel__conteudo.is-expanded::after {
+    display: none;
+}
+
+.info-carousel__conteudo p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+}
+
+.info-carousel__toggle {
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: var(--space-sm);
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+/* Quando expandido, o card cresce e o fade desaparece */
+.info-carousel__card.is-expanded {
+    height: auto;
+}
+
 /* ==========================================================
    RODAPÉ INFERIOR
 ========================================================== */
