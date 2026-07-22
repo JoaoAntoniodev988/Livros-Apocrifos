@@ -635,11 +635,6 @@ img {
     font-weight: 700;
 }
 
-/* Compensa a tab bar fixa, para o conteúdo não ficar escondido atrás dela */
-body {
-    padding-bottom: 4.5rem;
-}
-
 .info-carousel__card {
     position: relative;
     height: 320px;
@@ -712,7 +707,7 @@ body {
 ========================================================== */
 
 .footer__bottom {
-    padding: var(--space-sm);
+    padding-top: var(--space-md);
     border-top: 1px solid rgba(255,255,255,.15);
     font-size: .75rem;
     margin-bottom: 50px;

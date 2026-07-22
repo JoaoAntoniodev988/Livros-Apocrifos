@@ -29,7 +29,7 @@
     padding: var(--space-md) 0;
 }
 
-.info-carousel__card {
+/* .info-carousel__card {
     position: relative;
     height: 320px;
     padding: var(--space-lg);
@@ -39,29 +39,29 @@
     border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
-}
+} */
 
-.info-carousel__card.is-expanded {
+/* .info-carousel__card.is-expanded {
     height: auto;
-}
+} */
 
-.info-carousel__card h2 {
+/* .info-carousel__card h2 {
     font-size: 1.15rem;
     margin-bottom: var(--space-md);
     flex-shrink: 0;
-}
+} */
 
-.info-carousel__conteudo {
+/* .info-carousel__conteudo {
     position: relative;
     flex: 1;
     overflow: hidden;
-}
+} */
 
-.info-carousel__conteudo.is-expanded {
+/* .info-carousel__conteudo.is-expanded {
     overflow: visible;
-}
+} */
 
-.info-carousel__conteudo::after {
+/* .info-carousel__conteudo::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -70,19 +70,19 @@
     height: 3rem;
     background: linear-gradient(to bottom, transparent, var(--color-background));
     pointer-events: none;
-}
+} */
 
-.info-carousel__conteudo.is-expanded::after {
+/* .info-carousel__conteudo.is-expanded::after {
     display: none;
-}
+} */
 
-.info-carousel__conteudo p {
+/* .info-carousel__conteudo p {
     color: var(--color-text-muted);
     line-height: 1.6;
     margin-bottom: var(--space-sm);
-}
+} */
 
-.info-carousel__toggle {
+/* .info-carousel__toggle {
     flex-shrink: 0;
     align-self: flex-start;
     margin-top: var(--space-sm);
@@ -93,17 +93,17 @@
     font-weight: 600;
     font-size: 0.85rem;
     cursor: pointer;
-}
+} */
 
 .carousel-arrow {
     position: absolute;
-    top: var(--space-md);
+    top: 150px;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
     border: 1px solid var(--color-border);
     background-color: var(--color-background);
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     cursor: pointer;
     transition: border-color var(--transition-normal);
 }
@@ -149,6 +149,7 @@
 .cta-explorar {
     text-align: center;
     padding: var(--space-md) 0 var(--space-lg);
+    margin: 0 var(--space-xl);
 }
 
 
@@ -163,6 +164,7 @@
 .featured-books h2 {
     margin-bottom: var(--space-md);
     font-size: 1.15rem;
+    text-align: center;
 }
 
 .books-carousel {
@@ -181,10 +183,12 @@
 .book-card {
     flex: 0 0 100%;
     display: block;
-    padding: var(--space-lg);
+    max-width: 250px;
+    max-height: 250px;
+    /* padding: var(--space-lg); */
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     text-decoration: none;
     box-sizing: border-box;
 }

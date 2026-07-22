@@ -27,6 +27,10 @@ body {
     background-color: var(--color-background);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+
+    /* Compensa a tab bar fixa, para o conteúdo não ficar escondido atrás dela */
+    padding-bottom: var(--space-lg);
+
 }
 
 /* ==========================================================
