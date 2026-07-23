@@ -14,8 +14,8 @@
 .frase-momento__card {
     padding: var(--space-lg);
     background-color: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
+    /* border: 1px solid var(--color-border); */
+    /* border-radius: var(--radius-md); */
 }
 
 .frase-momento__fonte {
@@ -30,7 +30,7 @@
 .frase-momento__texto {
     font-family: var(--font-reading);
     font-size: 1.1rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     color: var(--color-text);
     line-height: 1.5;
     margin-bottom: var(--space-md);
