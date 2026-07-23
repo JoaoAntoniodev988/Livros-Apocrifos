@@ -60,7 +60,7 @@
 .info-carousel__card {
     position: relative;
     height: 320px;
-    padding: var(--space-xl);
+    padding: var(--space-lg);
     background-color: var(--color-background);
     border-radius: var(--radius-lg);
     display: flex;
@@ -123,7 +123,7 @@
     cursor: pointer;
 } */
 
-.carousel-arrow {
+/* .carousel-arrow {
     position: absolute;
     top: 150px;
     width: 2.5rem;
@@ -145,7 +145,7 @@
 
 .carousel-arrow--next {
     right: var(--space-sm);
-}
+} */
 
 .carousel-dots {
     display: flex;
