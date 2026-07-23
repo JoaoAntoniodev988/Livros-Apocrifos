@@ -1,242 +1,299 @@
 /* ==========================================================
-   HOME.CSS — Página Inicial (layout mobile-first)
+   HOME.CSS — Página Inicial (Frase do Momento / Saiba Mais / Sequência)
    ========================================================== */
 
-.hero {
-    padding: var(--space-xl) 0 var(--space-lg);
-    text-align: center;
-}
-
-.hero__content h1 {
-    margin-bottom: var(--space-sm);
-}
-
-.hero__content p {
-    color: var(--color-text-muted);
-    max-width: 32rem;
-    margin: 0 auto;
-}
-
- header {
-        display: none;
-    }
 
 /* ==========================================================
-   CARROSSEL INFORMATIVO
+   FRASE DO MOMENTO
    ========================================================== */
 
-.info-carousel {
-    padding: var(--space-md) 0;
+.frase-momento {
+    padding: var(--space-lg) 0 var(--space-md);
 }
 
-/* .info-carousel__card {
-    position: relative;
-    height: 320px;
+.frase-momento__card {
     padding: var(--space-lg);
-    padding-top: calc(var(--space-lg) + 2.5rem);
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .info-carousel__card.is-expanded {
-    height: auto;
-} */
-
-/* .info-carousel__card h2 {
-    font-size: 1.15rem;
-    margin-bottom: var(--space-md);
-    flex-shrink: 0;
-} */
-
-/* .info-carousel__conteudo {
-    position: relative;
-    flex: 1;
-    overflow: hidden;
-} */
-
-/* .info-carousel__conteudo.is-expanded {
-    overflow: visible;
-} */
-
-/* .info-carousel__conteudo::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3rem;
-    background: linear-gradient(to bottom, transparent, var(--color-background));
-    pointer-events: none;
-} */
-
-/* .info-carousel__conteudo.is-expanded::after {
-    display: none;
-} */
-
-/* .info-carousel__conteudo p {
-    color: var(--color-text-muted);
-    line-height: 1.6;
-    margin-bottom: var(--space-sm);
-} */
-
-/* .info-carousel__toggle {
-    flex-shrink: 0;
-    align-self: flex-start;
-    margin-top: var(--space-sm);
-    padding: 0;
-    border: none;
-    background: none;
-    color: var(--color-secondary);
-    font-weight: 600;
-    font-size: 0.85rem;
-    cursor: pointer;
-} */
-
-.carousel-arrow {
-    position: absolute;
-    top: 150px;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-background);
-    /* font-size: 1.1rem; */
-    cursor: pointer;
-    transition: border-color var(--transition-normal);
 }
 
-.carousel-arrow:hover {
-    border-color: var(--color-secondary);
-}
-
-.carousel-arrow--prev {
-    left: var(--space-md);
-}
-
-.carousel-arrow--next {
-    right: var(--space-md);
-}
-
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.4rem;
-    margin-top: var(--space-md);
-}
-
-.carousel-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--color-border);
-    cursor: pointer;
-    padding: 0;
-}
-
-.carousel-dot.is-active {
-    background-color: var(--color-secondary);
-}
-
-
-/* ==========================================================
-   CTA EXPLORAR BIBLIOTECA
-   ========================================================== */
-
-.cta-explorar {
-    text-align: center;
-    padding: var(--space-md) 0 var(--space-lg);
-    margin: 0 var(--space-xl);
-}
-
-
-/* ==========================================================
-   LIVROS EM DESTAQUE
-   ========================================================== */
-
-.featured-books {
-    padding: var(--space-lg) 0;
-}
-
-.featured-books h2 {
-    margin-bottom: var(--space-md);
-    font-size: 1.15rem;
-    text-align: center;
-}
-
-.books-carousel {
-    position: relative;
-}
-
-.books-viewport {
-    overflow: hidden;
-}
-
-.books-track {
-    display: flex;
-    transition: transform 0.3s ease;
-}
-
-.book-card {
-    flex: 0 0 100%;
+.frase-momento__fonte {
     display: block;
-    max-width: 250px;
-    max-height: 250px;
-    /* padding: var(--space-lg); */
-    background-color: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-.book-card__categoria {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--color-secondary);
-}
-
-.book-card__titulo {
-    margin: var(--space-sm) 0;
-    color: var(--color-text);
-}
-
-.book-card__descricao {
     color: var(--color-text-muted);
-    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+}
+
+.frase-momento__texto {
+    font-family: var(--font-reading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text);
     line-height: 1.5;
+    margin-bottom: var(--space-md);
 }
 
-.books-carousel .carousel-arrow {
-    top: 50%;
-    transform: translateY(-50%);
+.frase-momento__acoes {
+    display: flex;
+    gap: var(--space-md);
 }
 
-.books-carousel .carousel-arrow--prev {
-    left: 0;
-}
-
-.books-carousel .carousel-arrow--next {
-    right: 0;
+.frase-momento__acao {
+    border: none;
+    background: none;
+    color: var(--color-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
 }
 
 
 /* ==========================================================
-   NOTA DO EDITOR
+   SAIBA MAIS
    ========================================================== */
 
-.editor-note {
-    padding: var(--space-lg) 0;
-    text-align: center;
-    color: var(--color-text-muted);
+.saiba-mais {
+    padding: 0 0 var(--space-md);
 }
 
-.editor-note h2 {
-    font-size: 1rem;
-    color: var(--color-text);
+.saiba-mais__card {
+    display: block;
+    width: 100%;
+    padding: var(--space-lg);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-align: left;
+    cursor: pointer;
+}
+
+.saiba-mais__card p {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* ==========================================================
+   SEQUÊNCIA DE LEITURA
+   ========================================================== */
+
+.sequencia-leitura {
+    padding: var(--space-md) 0 var(--space-lg);
+}
+
+.sequencia-leitura h2 {
+    font-size: 1.1rem;
     margin-bottom: var(--space-sm);
+}
+
+.sequencia-leitura__card {
+    display: block;
+    padding: var(--space-lg);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+}
+
+.sequencia-leitura__livro {
+    display: block;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+}
+
+.sequencia-leitura__resumo {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem;
+}
+
+.sequencia-leitura__progresso {
+    font-size: 0.8rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   MODAL DE NOTA
+   ========================================================== */
+
+.nota-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: var(--color-background);
+}
+
+.nota-modal:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+}
+
+.nota-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.nota-modal__voltar {
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+.nota-modal__header h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.nota-modal__corpo {
+    flex: 1;
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.nota-modal__corpo textarea {
+    flex: 1;
+    min-height: 160px;
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.nota-modal__frase {
+    padding: var(--space-md);
+    background-color: var(--color-reading-background);
+    border-radius: var(--radius-md);
+}
+
+.nota-modal__frase span {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.nota-modal__frase p {
+    font-style: italic;
+    color: var(--color-text);
+    margin: 0;
+}
+
+
+/* ==========================================================
+   BOTTOM SHEET: PERSONALIZAR
+   ========================================================== */
+
+.personalizar-sheet {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+}
+
+.personalizar-sheet:not([hidden]) {
+    display: block;
+}
+
+.personalizar-sheet__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.personalizar-sheet__painel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-background);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.personalizar-sheet__tabs {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+}
+
+.personalizar-sheet__tabs button {
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    background: none;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.personalizar-sheet__tabs button.is-active {
+    background-color: var(--color-secondary);
+    color: #fff;
+    border-color: transparent;
+}
+
+.personalizar-sheet__preview {
+    margin: 0 auto;
+    padding: var(--space-lg);
+    background-color: var(--color-reading-background);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.personalizar-sheet__preview p {
+    font-family: var(--font-reading);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.personalizar-sheet__preview.is-quadrado {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.personalizar-sheet__preview.is-vertical {
+    width: 70%;
+    aspect-ratio: 9 / 16;
+}
+
+.personalizar-sheet__preview.is-texto {
+    width: 100%;
+    aspect-ratio: auto;
+    min-height: 120px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.personalizar-sheet__acoes {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.personalizar-sheet__acoes button {
+    flex: 1;
 }

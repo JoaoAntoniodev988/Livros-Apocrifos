@@ -17,94 +17,113 @@
     <div data-component="header"></div>
 
     <main>
-        <!-- HERO -->
-        <section class="hero">
-            <div class="container hero__content">
-                <!-- <h1>Biblioteca Apócrifa</h1> -->
-                <p>Uma plataforma digital dedicada ao estudo, preservação e pesquisa de textos antigos, apócrifos e gnósticos.</p>
-            </div>
-        </section>
 
-       <!-- CARROSSEL: O QUE SÃO LIVROS APÓCRIFOS -->
-        <section class="info-carousel">
+        <!-- Frase do Momento -->
+        <section class="frase-momento" id="fraseMomentoSection" hidden>
             <div class="container">
-                <div class="info-carousel__card">
-                    <h2 id="infoSlideTitulo"></h2>
-
-                    <div class="info-carousel__conteudo" id="infoSlideConteudoWrapper">
-                        <div id="infoSlideConteudo"></div>
+                <div class="frase-momento__card">
+                    <span class="frase-momento__fonte" id="fraseFonte"></span>
+                    <p class="frase-momento__texto" id="fraseTexto"></p>
+                    <div class="frase-momento__acoes">
+                        <button id="btnPartilharFrase" class="frase-momento__acao">🔗 Partilhar</button>
+                        <button id="btnNotaFrase" class="frase-momento__acao">✏️ Nota</button>
                     </div>
-
-                    <button class="info-carousel__toggle" id="infoToggle">Ler mais</button>
-
-                    <button class="carousel-arrow carousel-arrow--prev" id="infoPrev" aria-label="Anterior">←</button>
-                    <button class="carousel-arrow carousel-arrow--next" id="infoNext" aria-label="Próximo">→</button>
                 </div>
-
-                <div class="carousel-dots" id="infoDots"></div>
             </div>
         </section>
 
-        <!-- CTA -->
-        <div class="cta-explorar">
-            <a href="paginas/biblioteca.html" class="button-primary">Explorar Biblioteca</a>
-        </div>
-
-     <!-- LIVROS EM DESTAQUE -->
-<section class="featured-books">
-    <div class="container">
-        <h2>Sequência de Leitura</h2>
-
-        <div class="books-carousel">
-
-            <div class="books-viewport">
-                <div class="books-track" id="booksTrack"></div>
-            </div>
-
-            <button class="carousel-arrow carousel-arrow--prev" id="booksPrev" aria-label="Livro anterior">←</button>
-            <button class="carousel-arrow carousel-arrow--next" id="booksNext" aria-label="Próximo livro">→</button>
-
-        </div>
-
-        <div class="carousel-dots" id="booksDots"></div>
-    </div>
-</section>
-
-        <!-- NOTA DO EDITOR
-        <section class="editor-note">
+        <!-- Saiba Mais -->
+        <section class="saiba-mais" id="saibaMaisSection" hidden>
             <div class="container">
-                <h2>Nota do Editor</h2>
-                <p>Este site possui fins puramente históricos, literários e académicos. O objetivo é preservar e disponibilizar o acesso à literatura antiga.</p>
+                <button class="saiba-mais__card" id="saibaMaisCard">
+                    <p id="saibaMaisTexto"></p>
+                </button>
             </div>
-        </section> -->
+        </section>
+
+        <!-- Sequência de Leitura -->
+        <section class="sequencia-leitura" id="sequenciaLeituraSection" hidden>
+            <div class="container">
+                <h2>Sequência de Leitura</h2>
+                <a class="sequencia-leitura__card" id="sequenciaLeituraCard" href="#">
+                    <span class="sequencia-leitura__livro" id="sequenciaLivroTitulo"></span>
+                    <p class="sequencia-leitura__resumo" id="sequenciaResumo"></p>
+                    <span class="sequencia-leitura__progresso" id="sequenciaProgresso"></span>
+                </a>
+            </div>
+        </section>
 
     </main>
+
+    <!-- Bottom Sheet: Personalizar -->
+    <div class="personalizar-sheet" id="personalizarSheet" hidden>
+        <div class="personalizar-sheet__backdrop" id="personalizarBackdrop"></div>
+        <div class="personalizar-sheet__painel">
+
+            <div class="personalizar-sheet__tabs">
+                <button data-formato="quadrado" class="is-active">Quadrado</button>
+                <button data-formato="vertical">Vertical</button>
+                <button data-formato="texto">Texto</button>
+            </div>
+
+            <div class="personalizar-sheet__preview is-quadrado" id="personalizarPreview">
+                <p id="personalizarTexto"></p>
+            </div>
+
+            <div class="personalizar-sheet__acoes">
+                <button class="button-secondary" id="btnPersonalizar">Personalizar</button>
+                <button class="button-primary" id="btnPartilharPersonalizado">Partilhar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal de Nota -->
+    <div class="nota-modal" id="notaModal" hidden>
+        <header class="nota-modal__header">
+            <button class="nota-modal__voltar" id="btnFecharNota" aria-label="Voltar">←</button>
+            <h2 id="notaModalTitulo"></h2>
+            <button class="button-primary" id="btnGuardarNota">Guardar</button>
+        </header>
+        <div class="nota-modal__corpo">
+            <textarea id="notaTexto" placeholder="O que gostaria de dizer sobre esta frase?"></textarea>
+            <div class="nota-modal__frase">
+                <span id="notaFraseFonte"></span>
+                <p id="notaFraseTexto"></p>
+            </div>
+        </div>
+    </div>
 
     <div data-component="footer"></div>
     <div data-component="tabbar"></div>
 
-<script src="assets/js/config/app.config.js"></script>
-<script src="assets/js/config/data.config.js"></script>
+    <script src="assets/js/config/app.config.js"></script>
+    <script src="assets/js/config/data.config.js"></script>
 
-<script src="assets/js/utils/dom.js"></script>
-<script src="assets/js/utils/helpers.js"></script>
-<script src="assets/js/utils/format.js"></script>
+    <script src="assets/js/core/storage.js"></script>
 
-<script src="assets/js/repositories/livrosRepository.js"></script>
-<script src="assets/js/repositories/institucionalRepository.js"></script>
+    <script src="assets/js/utils/dom.js"></script>
+    <script src="assets/js/utils/helpers.js"></script>
+    <script src="assets/js/utils/format.js"></script>
 
-<script src="assets/js/services/livrosService.js"></script>
+    <script src="assets/js/repositories/livrosRepository.js"></script>
 
-<script src="assets/js/components/slider.js"></script>
-<script src="assets/js/components/cardLivro.js"></script>
-<script src="assets/js/components/infoCarousel.js"></script>
-<script src="assets/js/components/bookCarousel.js"></script>
+    <script src="assets/js/services/livrosService.js"></script>
+    <script src="assets/js/services/frasesService.js"></script>
+    <script src="assets/js/services/notasService.js"></script>
+    <script src="assets/js/services/historicoService.js"></script>
 
-<script src="assets/js/layouts/componentes.js"></script>
-<script src="assets/js/layouts/navigation.js"></script>
+    <script src="assets/js/components/notaModalComponent.js"></script>
+    <script src="assets/js/components/fraseMomentoComponent.js"></script>
+    <script src="assets/js/components/saibaMaisComponent.js"></script>
+    <script src="assets/js/components/personalizarSheetComponent.js"></script>
+    <script src="assets/js/components/sequenciaLeituraComponent.js"></script>
 
-<script src="assets/js/controllers/homeController.js"></script>
-<script src="assets/js/pages/home.js"></script>
+    <script src="assets/js/layouts/componentes.js"></script>
+    <script src="assets/js/layouts/navigation.js"></script>
+
+    <script src="assets/js/controllers/homeController.js"></script>
+    <script src="assets/js/pages/home.js"></script>
 
 </body>
 </html>

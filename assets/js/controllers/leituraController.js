@@ -105,16 +105,18 @@ const leituraController = {
 
     _renderSeccaoAtual() {
 
-        const seccoes = this.conteudo.conteudo.seccoes;
-        const seccao = seccoes[this.seccaoIndex];
-        const glossario = this.conteudo.recursos_estudo?.glossario;
+    const seccoes = this.conteudo.conteudo.seccoes;
+    const seccao = seccoes[this.seccaoIndex];
+    const glossario = this.conteudo.recursos_estudo?.glossario;
 
-        seccaoLeituraComponent.render(seccao, glossario);
+    seccaoLeituraComponent.render(seccao, glossario);
 
-        navegacaoLeituraComponent.atualizarBotoes(this.seccaoIndex, seccoes.length);
-        indiceComponent.atualizarAtivo(this.seccaoIndex);
-        progressoComponent.atualizar(this.seccaoIndex, seccoes.length);
+    navegacaoLeituraComponent.atualizarBotoes(this.seccaoIndex, seccoes.length);
+    indiceComponent.atualizarAtivo(this.seccaoIndex);
+    progressoComponent.atualizar(this.seccaoIndex, seccoes.length);
 
-    }
+    historicoService.registrar(this.livro.id, this.seccaoIndex, seccoes.length);
+
+}
 
 };
