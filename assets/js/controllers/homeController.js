@@ -3,10 +3,10 @@ const homeController = {
     async init() {
 
         await this._initFraseDoMomento();
+        setInterval(() => this._initFraseDoMomento(), appConfig.fraseMomentoIntervaloMs);
 
-        // As próximas secções ficam por agora, até resolvermos a lógica delas:
-        // this._initSaibaMais();
-        // this._initSequenciaLeitura();
+        await this._initCarrosselInformativo();
+        await this._initSequenciaLeitura();
 
         notaModalComponent.init();
 
@@ -16,17 +16,38 @@ const homeController = {
 
         try {
 
-            const frase = await frasesService.obterFraseAleatoria();
+            const frase = await frasesService.obterFraseAtual();
 
             if (!frase) {
                 document.getElementById("fraseMomentoSection").hidden = true;
                 return;
             }
 
-            fraseMomentoComponent.init(frase);
+            fraseMomentoComponent.render(frase);
 
         } catch (erro) {
             console.error("Erro ao carregar frase do momento:", erro);
+        }
+
+    },
+
+    async _initCarrosselInformativo() {
+
+        try {
+            const slides = await institucionalRepository.getSobreApocrifos();
+            await infoCarouselComponent.init(slides);
+        } catch (erro) {
+            console.error("Erro ao carregar carrossel informativo:", erro);
+        }
+
+    },
+
+    async _initSequenciaLeitura() {
+
+        try {
+            await sequenciaLeituraComponent.init();
+        } catch (erro) {
+            console.error("Erro ao carregar sequência de leitura:", erro);
         }
 
     }

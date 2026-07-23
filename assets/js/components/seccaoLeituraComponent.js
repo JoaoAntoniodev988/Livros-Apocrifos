@@ -15,7 +15,9 @@ const seccaoLeituraComponent = {
 
         if (!texto) return "";
 
-        const paragrafos = texto.paragrafos?.map(p => `<p>${p}</p>`).join("") || "";
+        const paragrafos = texto.paragrafos
+            ?.map((p, index) => `<p data-p-index="${index}">${p}</p>`)
+            .join("") || "";
 
         const dialogo = texto.dialogo_divino
             ? (Array.isArray(texto.dialogo_divino) ? texto.dialogo_divino : [texto.dialogo_divino])
@@ -40,6 +42,20 @@ const seccaoLeituraComponent = {
             : "";
 
         return `<h3>${exegese.titulo || "Exegese"}</h3>${paragrafos}${referencias}`;
+
+    },
+
+    // Faz scroll até ao parágrafo e aplica um destaque temporário —
+    // usado quando a pessoa volta a uma leitura em progresso.
+    destacarParagrafo(index) {
+
+        const paragrafo = document.querySelector(`#readingText p[data-p-index="${index}"]`);
+        if (!paragrafo) return;
+
+        paragrafo.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        paragrafo.classList.add("paragrafo-destacado");
+        setTimeout(() => paragrafo.classList.remove("paragrafo-destacado"), 2500);
 
     },
 

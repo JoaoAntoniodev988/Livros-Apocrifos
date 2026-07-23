@@ -508,3 +508,13 @@ header {
 .reading-toc__toggle {
     display: none;
 }
+
+/* ==========================================================
+   DESTAQUE DE PARÁGRAFO (retomar leitura)
+   ========================================================== */
+
+.paragrafo-destacado {
+    background-color: rgba(255, 213, 128, 0.35);
+    border-radius: 4px;
+    transition: background-color 1.5s ease;
+}

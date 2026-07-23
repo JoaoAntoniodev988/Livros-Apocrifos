@@ -26,8 +26,10 @@ const sequenciaLeituraComponent = {
             `Continuar na secção ${ultima.seccaoIndex + 1} de ${ultima.totalSeccoes}`;
         document.getElementById("sequenciaProgresso").textContent = `${percentual}% concluído`;
 
+        const paragrafo = ultima.paragrafoIndex ?? 0;
+
         document.getElementById("sequenciaLeituraCard").href =
-            `paginas/leitura.html?id=${encodeURIComponent(livro.id)}`;
+            `paginas/leitura.html?id=${encodeURIComponent(livro.id)}&seccao=${ultima.seccaoIndex}&paragrafo=${paragrafo}`;
 
     }
 

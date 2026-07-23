@@ -6,13 +6,14 @@ const historicoService = {
         return storageCore.get(HISTORICO_KEY, {});
     },
 
-    registrar(livroId, seccaoIndex, totalSeccoes) {
+    registrar(livroId, seccaoIndex, totalSeccoes, paragrafoIndex = 0) {
 
         const historico = this.obterTodos();
 
         historico[livroId] = {
             seccaoIndex,
             totalSeccoes,
+            paragrafoIndex,
             atualizadoEm: new Date().toISOString()
         };
 

@@ -1,5 +1,5 @@
 /* ==========================================================
-   HOME.CSS — Página Inicial (Frase do Momento / Saiba Mais / Sequência)
+   HOME.CSS — Página Inicial (Frase do Momento / Carrossel / Sequência)
    ========================================================== */
 
 
@@ -12,10 +12,18 @@
 }
 
 .frase-momento__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 160px;
     padding: var(--space-lg);
     background-color: var(--color-background);
     /* border: 1px solid var(--color-border); */
-    /* border-radius: var(--radius-md); */
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .frase-momento__fonte {
@@ -30,51 +38,137 @@
 .frase-momento__texto {
     font-family: var(--font-reading);
     font-size: 1.1rem;
-    /* font-weight: 700; */
+    font-weight: 700;
     color: var(--color-text);
     line-height: 1.5;
-    margin-bottom: var(--space-md);
+    margin: 0;
+
+    /* Corta o texto em 3 linhas, com reticências, se for mais longo */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.frase-momento__acoes {
+
+/* ==========================================================
+   CARROSSEL INFORMATIVO
+   ========================================================== */
+
+.info-carousel {
+    padding: var(--space-md) 0;
+}
+
+.info-carousel__card {
+    position: relative;
+    height: 320px;
+    padding: var(--space-lg);
+    padding-top: calc(var(--space-lg) + 2.5rem);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
     display: flex;
-    gap: var(--space-md);
+    flex-direction: column;
 }
 
-.frase-momento__acao {
+.info-carousel__card.is-expanded {
+    height: auto;
+}
+
+.info-carousel__card h2 {
+    font-size: 1.15rem;
+    margin-bottom: var(--space-md);
+    flex-shrink: 0;
+}
+
+.info-carousel__conteudo {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.info-carousel__conteudo.is-expanded {
+    overflow: visible;
+}
+
+.info-carousel__conteudo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    background: linear-gradient(to bottom, transparent, var(--color-background));
+    pointer-events: none;
+}
+
+.info-carousel__conteudo.is-expanded::after {
+    display: none;
+}
+
+.info-carousel__conteudo p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+}
+
+.info-carousel__toggle {
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: var(--space-sm);
+    padding: 0;
     border: none;
     background: none;
     color: var(--color-secondary);
-    font-size: 0.85rem;
     font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: var(--space-md);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: border-color var(--transition-normal);
+}
+
+.carousel-arrow:hover {
+    border-color: var(--color-secondary);
+}
+
+.carousel-arrow--prev {
+    left: var(--space-md);
+}
+
+.carousel-arrow--next {
+    right: var(--space-md);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: var(--space-md);
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-border);
     cursor: pointer;
     padding: 0;
 }
 
-/* ==========================================================
-   SAIBA MAIS
-   ========================================================== */
-
-.saiba-mais {
-    padding: 0 0 var(--space-md);
-}
-
-.saiba-mais__card {
-    display: block;
-    width: 100%;
-    padding: var(--space-lg);
-    background-color: var(--color-background);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    text-align: left;
-    cursor: pointer;
-}
-
-.saiba-mais__card p {
-    color: var(--color-text-muted);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0;
+.carousel-dot.is-active {
+    background-color: var(--color-secondary);
 }
 
 

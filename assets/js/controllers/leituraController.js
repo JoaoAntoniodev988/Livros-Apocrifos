@@ -3,8 +3,9 @@ const leituraController = {
     livro: null,
     conteudo: null,
     seccaoIndex: 0,
+    paragrafoAlvo: null,
 
-    async init(id) {
+    async init(id, seccaoInicial = null, paragrafoInicial = null) {
 
         if (!id) {
             estadoVazioComponent.mostrar("Escolhe um livro na biblioteca para começares a ler.");
@@ -23,6 +24,13 @@ const leituraController = {
         document.getElementById("btnComecarLeitura").addEventListener("click", () => this._iniciarLeitura());
 
         glossarioPopoverComponent.init();
+
+        if (seccaoInicial !== null && !Number.isNaN(seccaoInicial)) {
+            this.paragrafoAlvo = (paragrafoInicial !== null && !Number.isNaN(paragrafoInicial))
+                ? paragrafoInicial
+                : null;
+            this._iniciarLeitura(seccaoInicial);
+        }
 
     },
 
@@ -44,7 +52,7 @@ const leituraController = {
 
     },
 
-    async _iniciarLeitura() {
+    async _iniciarLeitura(seccaoInicial = 0) {
 
         const btn = document.getElementById("btnComecarLeitura");
         btn.disabled = true;
@@ -59,7 +67,8 @@ const leituraController = {
             return;
         }
 
-        this.seccaoIndex = 0;
+        const totalSeccoes = this.conteudo.conteudo.seccoes.length;
+        this.seccaoIndex = Math.min(Math.max(seccaoInicial, 0), totalSeccoes - 1);
 
         document.getElementById("readingToc").hidden = false;
         document.getElementById("btnToggleToc").hidden = false;
@@ -69,6 +78,7 @@ const leituraController = {
         fichaTecnicaComponent.colapsar();
 
         indiceComponent.init(this.conteudo.conteudo.seccoes, (index) => {
+            this.paragrafoAlvo = null; // navegação manual não deve reaplicar o destaque antigo
             this.seccaoIndex = index;
             this._renderSeccaoAtual();
             navegacaoLeituraComponent.scrollParaTopoDoTexto();
@@ -88,6 +98,7 @@ const leituraController = {
 
     _irParaAnterior() {
         if (this.seccaoIndex > 0) {
+            this.paragrafoAlvo = null;
             this.seccaoIndex--;
             this._renderSeccaoAtual();
             navegacaoLeituraComponent.scrollParaTopoDoTexto();
@@ -97,6 +108,7 @@ const leituraController = {
     _irParaProxima() {
         const total = this.conteudo.conteudo.seccoes.length;
         if (this.seccaoIndex < total - 1) {
+            this.paragrafoAlvo = null;
             this.seccaoIndex++;
             this._renderSeccaoAtual();
             navegacaoLeituraComponent.scrollParaTopoDoTexto();
@@ -105,18 +117,32 @@ const leituraController = {
 
     _renderSeccaoAtual() {
 
-    const seccoes = this.conteudo.conteudo.seccoes;
-    const seccao = seccoes[this.seccaoIndex];
-    const glossario = this.conteudo.recursos_estudo?.glossario;
+        const seccoes = this.conteudo.conteudo.seccoes;
+        const seccao = seccoes[this.seccaoIndex];
+        const glossario = this.conteudo.recursos_estudo?.glossario;
 
-    seccaoLeituraComponent.render(seccao, glossario);
+        seccaoLeituraComponent.render(seccao, glossario);
 
-    navegacaoLeituraComponent.atualizarBotoes(this.seccaoIndex, seccoes.length);
-    indiceComponent.atualizarAtivo(this.seccaoIndex);
-    progressoComponent.atualizar(this.seccaoIndex, seccoes.length);
+        navegacaoLeituraComponent.atualizarBotoes(this.seccaoIndex, seccoes.length);
+        indiceComponent.atualizarAtivo(this.seccaoIndex);
+        progressoComponent.atualizar(this.seccaoIndex, seccoes.length);
 
-    historicoService.registrar(this.livro.id, this.seccaoIndex, seccoes.length);
+        historicoService.registrar(this.livro.id, this.seccaoIndex, seccoes.length);
 
-}
+        // Deteta automaticamente o parágrafo visível enquanto a pessoa lê,
+        // e vai atualizando o histórico com essa posição.
+        leituraTrackerComponent.iniciar((paragrafoIndex) => {
+            historicoService.registrar(this.livro.id, this.seccaoIndex, seccoes.length, paragrafoIndex);
+        });
+
+        // Se chegámos aqui a partir de "continuar leitura", destaca o parágrafo certo.
+        if (this.paragrafoAlvo !== null) {
+            setTimeout(() => {
+                seccaoLeituraComponent.destacarParagrafo(this.paragrafoAlvo);
+                this.paragrafoAlvo = null;
+            }, 300);
+        }
+
+    }
 
 };
