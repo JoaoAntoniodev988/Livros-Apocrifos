@@ -7,19 +7,17 @@
    FRASE DO MOMENTO
    ========================================================== */
 
-.frase-momento {
+/* .frase-momento {
     padding: var(--space-lg) 0 var(--space-md);
-}
+} */
 
 .frase-momento__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 200px;
-    padding: var(--space-lg);
+    padding: 0 var(--space-lg);
     background-color: var(--color-background);
-    /* border: 1px solid var(--color-border); */
-    /* border-radius: var(--radius-md); */
     text-decoration: none;
     color: inherit;
     box-sizing: border-box;
@@ -56,13 +54,13 @@
    ========================================================== */
 
 .info-carousel {
-    padding: var(--space-md) 0;
+    padding-bottom: var(--space-md);
 }
 
 .info-carousel__card {
     position: relative;
     height: 320px;
-    padding: 32px var(--space-xl);
+    padding: var(--space-xl);
     background-color: var(--color-background);
     border-radius: var(--radius-lg);
     display: flex;
@@ -133,7 +131,6 @@
     border-radius: 50%;
     border: 1px solid var(--color-border);
     background-color: var(--color-background);
-    font-size: 1.1rem;
     cursor: pointer;
     transition: border-color var(--transition-normal);
 }
@@ -143,11 +140,11 @@
 }
 
 .carousel-arrow--prev {
-    left: var(--space-md);
+    left: var(--space-sm);
 }
 
 .carousel-arrow--next {
-    right: var(--space-md);
+    right: var(--space-sm);
 }
 
 .carousel-dots {
