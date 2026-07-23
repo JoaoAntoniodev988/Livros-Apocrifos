@@ -55,6 +55,7 @@
 
 .info-carousel {
     padding-bottom: var(--space-md);
+    padding-top: 0;
 }
 
 .info-carousel__card {
@@ -179,9 +180,9 @@
 
 .sequencia-leitura h2 {
     font-size: 1.1rem;
-    margin-bottom: var(--space-sm);
+    /* margin-bottom: var(--space-sm); */
     text-align: center;
-    margin: var(--space-lg);
+    margin: var(--space-md);
 }
 
 .sequencia-leitura__card {
