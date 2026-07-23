@@ -514,7 +514,8 @@ header {
    ========================================================== */
 
 .paragrafo-destacado {
-    background-color: rgba(255, 213, 128, 0.35);
-    border-radius: 4px;
+    background-color: var(--color-surface);
+    border-radius: 25px;
     transition: background-color 1.5s ease;
+    padding: var(--space-md);
 }
