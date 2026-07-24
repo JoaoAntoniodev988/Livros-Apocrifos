@@ -69,3 +69,8 @@ const touchGestures = {
     }
 
 };
+
+// Temporário, só para diagnóstico — remove depois de confirmar
+window.addEventListener("touchstart", () => {
+    document.title = "TOQUE DETETADO";
+});

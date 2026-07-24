@@ -395,9 +395,10 @@
 /* ==========================================================
    FRASES DE JESUS
    ========================================================== */
-.container h3 {
-    margin: var(--radius-lg);
+.container h2{
+    font-size: 1.1rem;
     text-align: center;
+    margin: var(--space-md);
 }
 .frase-jesus {
     padding: 0 0 var(--space-md);

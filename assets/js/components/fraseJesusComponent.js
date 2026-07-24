@@ -19,7 +19,7 @@ const fraseJesusComponent = {
         this.frase = frase;
 
         document.getElementById("fraseJesusSection").hidden = false;
-        document.getElementById("fraseJesusFonte").textContent = frase.livroTitulo;
+        // document.getElementById("fraseJesusFonte").textContent = frase.livroTitulo;
         document.getElementById("fraseJesusTexto").textContent = frase.texto;
 
     }
