@@ -38,7 +38,7 @@ header {
 
 .ficha-tecnica {
     max-width: var(--reading-width);
-    margin: 0 var(--space-lg);
+    margin: 0 var(--space-md);
     background-color: var(--color-background);
 }
 
@@ -132,7 +132,7 @@ header {
 .reading-layout {
     max-width: calc(var(--reading-width) + 240px);
     margin: var(--space-lg) auto;
-    padding: 0 0 0 32px;
+    padding: 0 16px;
     display: grid;
     grid-template-columns: 1fr 220px;
     gap: var(--space-xl);
@@ -171,7 +171,6 @@ header {
 .reading-text {
     font-size: 1.125rem;
     line-height: 1.8;
-    max-width: 100%;
 }
 
 .reading-text p {

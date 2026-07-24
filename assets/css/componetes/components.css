@@ -20,10 +20,9 @@
     background: var(--color-primary);
 
     border: none;
-    border-radius: var(--radius-md);
+    border-radius: 25px;
 
     cursor: pointer;
-
 
     transition:
         background-color var(--transition-normal),

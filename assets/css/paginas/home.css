@@ -7,21 +7,18 @@
    FRASE DO MOMENTO
    ========================================================== */
 
-/* .frase-momento {
-    padding: var(--space-lg) 0 var(--space-md);
-} */
-
 .frase-momento__card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 200px;
-    padding: 0 var(--space-lg);
+    padding: 0 var(--space-md);
     background-color: var(--color-background);
     text-decoration: none;
     color: inherit;
     box-sizing: border-box;
     overflow: hidden;
+    hyphens: auto;
 }
 
 .frase-momento__fonte {
@@ -36,12 +33,11 @@
 .frase-momento__texto {
     font-family: var(--font-reading);
     font-size: 1.1rem;
-    /* font-weight: 700; */
     color: var(--color-text);
     line-height: 1.5;
     margin: 0;
 
-    /* Corta o texto em 3 linhas, com reticências, se for mais longo */
+    /* Corta o texto em 4 linhas, com reticências, se for mais longo */
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -62,7 +58,7 @@
 .info-carousel__card {
     position: relative;
     height: 320px;
-    padding: var(--space-lg);
+    padding: var(--space-md);
     background-color: var(--color-background);
     border-radius: var(--radius-lg);
     display: flex;
@@ -70,84 +66,12 @@
     hyphens: auto;
 }
 
-/* .info-carousel__card.is-expanded {
-    height: auto;
-} */
-
 .info-carousel__card h2 {
     font-size: 1.15rem;
     margin-bottom: var(--space-md);
     flex-shrink: 0;
     text-align: center;
 }
-
-/* .info-carousel__conteudo {
-    position: relative;
-    flex: 1;
-    overflow: hidden;
-}
-
-.info-carousel__conteudo.is-expanded {
-    overflow: visible;
-} */
-
-/* .info-carousel__conteudo::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3rem;
-    background: linear-gradient(to bottom, transparent, var(--color-background));
-    pointer-events: none;
-} */
-
-/* .info-carousel__conteudo.is-expanded::after {
-    display: none;
-} */
-
-/* .info-carousel__conteudo p {
-    color: var(--color-text-muted);
-    line-height: 1.6;
-    margin-bottom: var(--space-sm);
-} */
-
-/* .info-carousel__toggle {
-    flex-shrink: 0;
-    align-self: flex-start;
-    margin-top: var(--space-sm);
-    padding: 0;
-    border: none;
-    background: none;
-    color: var(--color-secondary);
-    font-weight: 600;
-    font-size: 0.85rem;
-    cursor: pointer;
-} */
-
-/* .carousel-arrow {
-    position: absolute;
-    top: 150px;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-background);
-    cursor: pointer;
-    transition: border-color var(--transition-normal);
-}
-
-.carousel-arrow:hover {
-    border-color: var(--color-secondary);
-}
-
-.carousel-arrow--prev {
-    left: var(--space-sm);
-}
-
-.carousel-arrow--next {
-    right: var(--space-sm);
-} */
 
 .carousel-dots {
     display: flex;
@@ -181,14 +105,13 @@
 
 .sequencia-leitura h2 {
     font-size: 1.1rem;
-    /* margin-bottom: var(--space-sm); */
     text-align: center;
     margin: var(--space-md);
 }
 
 .sequencia-leitura__card {
     display: block;
-    padding: var(--space-lg);
+    padding: var(--space-md);
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
@@ -224,6 +147,7 @@
     inset: 0;
     z-index: 100;
     background-color: var(--color-background);
+    margin-top: 100px;
 }
 
 .nota-modal:not([hidden]) {
@@ -232,24 +156,28 @@
 }
 
 .nota-modal__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--space-md);
-    border-bottom: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: stretch;
+    align-items:center;
+    justify-content: start;
+    align-content: start;
+    place-content: center;
+    margin: 16px var(--space-lg);
 }
 
 .nota-modal__voltar {
     border: none;
     background: none;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     cursor: pointer;
     color: var(--color-text);
+    height: -40px;
 }
 
 .nota-modal__header h2 {
     font-size: 1rem;
-    margin: 0;
+    padding-top: 10px;   
 }
 
 .nota-modal__corpo {
@@ -398,18 +326,16 @@
 .container h2{
     font-size: 1.1rem;
     text-align: center;
-    margin: var(--space-md);
-}
-.frase-jesus {
-    padding: 0 0 var(--space-md);
+    margin: var(--space-lg) 0 var(--space-md);
 }
 
 .frase-jesus__card {
-    padding: var(--space-lg);
+    padding: var(--space-md);
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     border-left: 4px solid var(--color-secondary);
+    hyphens: auto;
 }
 
 .frase-jesus__fonte {
@@ -438,7 +364,7 @@
     display: flex;
     justify-content: center;
     gap: var(--space-xl);
-    padding-top: var(--space-md);
+    padding-top: var(--space-sm);
     border-top: 1px solid var(--color-border);
 }
 
