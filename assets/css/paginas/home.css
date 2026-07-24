@@ -247,7 +247,7 @@
     bottom: 0;
     background-color: var(--color-background);
     border-radius: var(--radius-md) var(--radius-md) 0 0;
-    padding: var(--space-lg);
+    padding: var(--space-md);
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
@@ -277,8 +277,8 @@
 
 .personalizar-sheet__preview {
     margin: 0 auto;
-    padding: var(--space-lg);
-    background-color: var(--color-reading-background);
+    padding: var(--space-md);
+    background-color: var(--color-secondary);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
@@ -296,19 +296,21 @@
 .personalizar-sheet__preview.is-quadrado {
     width: 100%;
     aspect-ratio: 1 / 1;
+    max-height: 200px;
 }
 
 .personalizar-sheet__preview.is-vertical {
     width: 70%;
     aspect-ratio: 9 / 16;
+    max-height: 300px;
 }
 
 .personalizar-sheet__preview.is-texto {
     width: 100%;
     aspect-ratio: auto;
-    min-height: 120px;
     text-align: left;
     justify-content: flex-start;
+    background-color: none;
 }
 
 .personalizar-sheet__acoes {
