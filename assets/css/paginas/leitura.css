@@ -513,8 +513,8 @@ header {
    ========================================================== */
 
 .paragrafo-destacado {
-    background-color: var(--color-secondary);
-    border-radius: 25px;
+    background-color: wheat;
+    border-radius: 15px;
     transition: background-color 1.5s ease;
-    padding: var(--space-sm);
+    padding: 10px;
 }
