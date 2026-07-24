@@ -14,6 +14,7 @@ const touchGestures = {
             inicioX = toque.clientX;
             inicioY = toque.clientY;
             inicioTempo = Date.now();
+            document.title = "touchstart OK"; // DIAGNÓSTICO TEMPORÁRIO
         }, { passive: true });
 
         elemento.addEventListener("touchend", (evento) => {
@@ -22,6 +23,9 @@ const touchGestures = {
             const deltaX = toque.clientX - inicioX;
             const deltaY = toque.clientY - inicioY;
             const duracao = Date.now() - inicioTempo;
+
+            // DIAGNÓSTICO TEMPORÁRIO — mostra os valores no título da aba
+            document.title = `dX:${Math.round(deltaX)} dY:${Math.round(deltaY)} t:${duracao}`;
 
             // Ignora gestos muito lentos (mais parecido com arrastar que deslizar)
             if (duracao > 600) return;
@@ -69,8 +73,3 @@ const touchGestures = {
     }
 
 };
-
-// Temporário, só para diagnóstico — remove depois de confirmar
-window.addEventListener("touchstart", () => {
-    document.title = "TOQUE DETETADO";
-});
