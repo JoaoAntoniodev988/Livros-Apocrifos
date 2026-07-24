@@ -8,7 +8,12 @@ const homeController = {
         await this._initCarrosselInformativo();
         await this._initSequenciaLeitura();
 
+        await this._initFraseJesus();
+        setInterval(() => this._initFraseJesus(), appConfig.fraseJesusIntervaloMs);
+
         notaModalComponent.init();
+        personalizarSheetComponent.init();
+        fraseJesusComponent.init();
 
     },
 
@@ -48,6 +53,25 @@ const homeController = {
             await sequenciaLeituraComponent.init();
         } catch (erro) {
             console.error("Erro ao carregar sequência de leitura:", erro);
+        }
+
+    },
+
+    async _initFraseJesus() {
+
+        try {
+
+            const frase = await frasesJesusService.obterFraseAtual();
+
+            if (!frase) {
+                document.getElementById("fraseJesusSection").hidden = true;
+                return;
+            }
+
+            fraseJesusComponent.render(frase);
+
+        } catch (erro) {
+            console.error("Erro ao carregar frase de Jesus:", erro);
         }
 
     }

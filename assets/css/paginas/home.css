@@ -391,3 +391,69 @@
 .personalizar-sheet__acoes button {
     flex: 1;
 }
+
+/* ==========================================================
+   FRASES DE JESUS
+   ========================================================== */
+.container h3 {
+    margin: var(--radius-lg);
+    text-align: center;
+}
+.frase-jesus {
+    padding: 0 0 var(--space-md);
+}
+
+.frase-jesus__card {
+    padding: var(--space-lg);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-secondary);
+}
+
+.frase-jesus__fonte {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+}
+
+.frase-jesus__texto {
+    font-family: var(--font-reading);
+    font-size: 1.1rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    margin: 0 0 var(--space-md);
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.frase-jesus__acoes {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.card-acao-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    border: none;
+    background: none;
+    color: var(--color-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card-acao-btn__icone {
+    font-size: 1.1rem;
+}

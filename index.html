@@ -36,9 +36,6 @@
                     </div>
 
                     <button class="info-carousel__toggle" id="infoToggle">Ler mais</button>
-
-                    <!-- <button class="carousel-arrow carousel-arrow--prev" id="infoPrev" aria-label="Anterior">←</button>
-                    <button class="carousel-arrow carousel-arrow--next" id="infoNext" aria-label="Próximo">→</button> -->
                 </div>
 
                 <div class="carousel-dots" id="infoDots"></div>
@@ -49,6 +46,27 @@
         <div class="cta-explorar">
             <a href="paginas/biblioteca.html" class="button-primary">Explorar Biblioteca</a>
         </div>
+
+                <!-- Frases de Jesus -->
+        <section class="frase-jesus" id="fraseJesusSection" hidden>
+            <div class="container">
+                <h3>Gnose</h3>
+                <div class="frase-jesus__card">
+                    <span class="frase-jesus__fonte" id="fraseJesusFonte"></span>
+                    <p class="frase-jesus__texto" id="fraseJesusTexto"></p>
+                    <div class="frase-jesus__acoes">
+                        <button id="btnPartilharFraseJesus" class="card-acao-btn">
+                            <span class="card-acao-btn__icone">🔗</span>
+                            <span>Partilhar</span>
+                        </button>
+                        <button id="btnNotaFraseJesus" class="card-acao-btn">
+                            <span class="card-acao-btn__icone">✏️</span>
+                            <span>Nota</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
             <!-- Sequência de Leitura -->
         <section class="sequencia-leitura" id="sequenciaLeituraSection" hidden>
@@ -124,13 +142,16 @@
 <!-- Services -->
 <script src="assets/js/services/livrosService.js"></script>
 <script src="assets/js/services/frasesService.js"></script>
+<script src="assets/js/services/frasesJesusService.js"></script>
 <script src="assets/js/services/notasService.js"></script>
 <script src="assets/js/services/historicoService.js"></script>
 
 <!-- Components -->
 <script src="assets/js/components/slider.js"></script>
 <script src="assets/js/components/notaModalComponent.js"></script>
+<script src="assets/js/components/personalizarSheetComponent.js"></script>
 <script src="assets/js/components/fraseMomentoComponent.js"></script>
+<script src="assets/js/components/fraseJesusComponent.js"></script>
 <script src="assets/js/components/infoCarousel.js"></script>
 <script src="assets/js/components/sequenciaLeituraComponent.js"></script>
 
@@ -141,4 +162,5 @@
 <!-- Controller + Page -->
 <script src="assets/js/controllers/homeController.js"></script>
 <script src="assets/js/pages/home.js"></script>
+<script src="assets/js/utils/touchGestures.js"></script>
 </html>

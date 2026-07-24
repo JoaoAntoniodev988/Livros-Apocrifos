@@ -57,8 +57,22 @@ function createSlider({ trackSelector, dotsSelector, prevSelector, nextSelector,
         iniciarAutoplay();
     }
 
+    function ativarGestoDeslizar() {
+
+        const elemento = trackEl || (prevEl ? prevEl.parentElement : null);
+        if (!elemento) return;
+
+        touchGestures.aoDeslizar(elemento, {
+            onSwipeLeft: next,
+            onSwipeRight: prev
+        });
+
+    }
+
     if (prevEl) prevEl.addEventListener("click", prev);
     if (nextEl) nextEl.addEventListener("click", next);
+
+    ativarGestoDeslizar();
 
     return {
         setTotal(novoTotal) {
