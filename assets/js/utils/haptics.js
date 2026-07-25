@@ -6,7 +6,7 @@ const haptics = {
 
     // Toque muito leve — trocar slide, marcar/desmarcar algo
     leve() {
-        if (this.suportado()) navigator.vibrate(10);
+        if (this.suportado()) navigator.vibrate(35);
     },
 
     // Confirmação — guardar nota, marcar favorito
