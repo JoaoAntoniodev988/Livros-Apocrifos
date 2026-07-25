@@ -59,13 +59,26 @@ function createSlider({ trackSelector, dotsSelector, prevSelector, nextSelector,
 
     function ativarGestoDeslizar() {
 
+        console.log("--- Diagnóstico do slider ---");
+        console.log("trackEl:", trackEl);
+        console.log("prevEl:", prevEl);
+        console.log("nextEl:", nextEl);
+
         const elemento = trackEl || (prevEl ? prevEl.parentElement : null);
-        if (!elemento) return;
+
+        console.log("elemento escolhido para deslizar:", elemento);
+
+        if (!elemento) {
+            console.warn("Nenhum elemento encontrado — gesto de deslizar NÃO foi ativado.");
+            return;
+        }
 
         touchGestures.aoDeslizar(elemento, {
             onSwipeLeft: next,
             onSwipeRight: prev
         });
+
+        console.log("Gesto de deslizar ativado com sucesso.");
 
     }
 

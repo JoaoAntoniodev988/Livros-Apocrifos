@@ -14,8 +14,9 @@ const touchGestures = {
             inicioX = toque.clientX;
             inicioY = toque.clientY;
             inicioTempo = Date.now();
-            document.title = "touchstart OK"; // DIAGNÓSTICO TEMPORÁRIO
+            console.log("touchstart OK", elemento);
         }, { passive: true });
+         
 
         elemento.addEventListener("touchend", (evento) => {
 
@@ -25,7 +26,7 @@ const touchGestures = {
             const duracao = Date.now() - inicioTempo;
 
             // DIAGNÓSTICO TEMPORÁRIO — mostra os valores no título da aba
-            document.title = `dX:${Math.round(deltaX)} dY:${Math.round(deltaY)} t:${duracao}`;
+            console.log("touchend — dX:", deltaX, "dY:", deltaY, "duracao:", duracao);
 
             // Ignora gestos muito lentos (mais parecido com arrastar que deslizar)
             if (duracao > 600) return;
