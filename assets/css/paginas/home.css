@@ -386,3 +386,80 @@
 .card-acao-btn__icone {
     font-size: 1.1rem;
 }
+
+/* ==========================================================
+   COMPORTAMENTO TÁTIL GLOBAL
+   ========================================================== */
+
+/* Impede o zoom por duplo-toque em elementos interativos */
+button,
+a,
+.book-card,
+.info-carousel__card,
+.frase-jesus__card,
+.frase-momento__card {
+    touch-action: manipulation;
+}
+
+/* Nos carrosséis horizontais, permite scroll vertical da página
+   mas impede que o browser tente "arrastar a página" horizontalmente
+   enquanto o dedo desliza sobre o carrossel */
+.info-carousel__card,
+.books-viewport {
+    touch-action: pan-y;
+}
+
+/* ==========================================================
+   FEEDBACK VISUAL AO TOQUE (:active)
+   ========================================================== */
+
+.button-primary,
+.button-secondary,
+.book-card,
+.info-carousel__card,
+.frase-jesus__card,
+.frase-momento__card,
+.saiba-mais__card,
+.tab-bar__item,
+.reading-toc__item,
+.card-acao-btn,
+.sequencia-leitura__card {
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.button-primary:active,
+.button-secondary:active {
+    transform: scale(0.97);
+    opacity: 0.9;
+}
+
+.book-card:active,
+.info-carousel__card:active,
+.frase-jesus__card:active,
+.frase-momento__card:active,
+.saiba-mais__card:active,
+.sequencia-leitura__card:active {
+    transform: scale(0.985);
+    opacity: 0.95;
+}
+
+.tab-bar__item:active,
+.card-acao-btn:active {
+    opacity: 0.6;
+}
+
+/* ==========================================================
+   IMPEDIR SELEÇÃO DE TEXTO EM ELEMENTOS TOCÁVEIS
+   ========================================================== */
+
+.info-carousel__card,
+.frase-jesus__card,
+.frase-momento__card,
+.saiba-mais__card,
+.book-card,
+.tab-bar__item,
+.sequencia-leitura__card {
+    -webkit-user-select: none;
+    /* user-select: none; */
+    -webkit-tap-highlight-color: transparent;
+}

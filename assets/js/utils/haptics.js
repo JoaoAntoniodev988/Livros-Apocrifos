@@ -25,13 +25,3 @@ const haptics = {
     }
 
 };
-
-// Temporário, só para diagnóstico — remove depois de confirmar
-document.addEventListener("touchend", () => {
-    const suportado = "vibrate" in navigator;
-    document.title = suportado ? "Vibrate: suportado" : "Vibrate: NÃO suportado";
-    if (suportado) {
-        const resultado = navigator.vibrate(200);
-        document.title += " | resultado: " + resultado;
-    }
-});
