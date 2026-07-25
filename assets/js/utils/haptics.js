@@ -6,22 +6,22 @@ const haptics = {
 
     // Toque muito leve — trocar slide, marcar/desmarcar algo
     leve() {
-        if (this.suportado()) navigator.vibrate(35);
+        if (this.suportado()) navigator.vibrate(50);
     },
 
     // Confirmação — guardar nota, marcar favorito
     confirmar() {
-        if (this.suportado()) navigator.vibrate(20);
+        if (this.suportado()) navigator.vibrate(50);
     },
 
     // Abrir/fechar um modal ou bottom sheet
     transicao() {
-        if (this.suportado()) navigator.vibrate(15);
+        if (this.suportado()) navigator.vibrate(50);
     },
 
     // Aviso/erro — ação falhou
     aviso() {
-        if (this.suportado()) navigator.vibrate([20, 40, 20]);
+        if (this.suportado()) navigator.vibrate([40, 80, 40]);
     }
 
 };
