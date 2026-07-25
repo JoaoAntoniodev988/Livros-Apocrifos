@@ -21,6 +21,8 @@ const personalizarSheetComponent = {
         document.getElementById("personalizarTexto").textContent = frase.texto;
         document.getElementById("personalizarSheet").hidden = false;
 
+        haptics.transicao();
+
     },
 
     fechar() {
@@ -52,6 +54,7 @@ const personalizarSheetComponent = {
             alert("Frase copiada para a área de transferência.");
         }
 
+        haptics.confirmar();
         this.fechar();
 
     }

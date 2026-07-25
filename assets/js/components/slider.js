@@ -93,3 +93,12 @@ function createSlider({ trackSelector, dotsSelector, prevSelector, nextSelector,
     };
 
 }
+
+function goTo(novoIndex) {
+    if (total === 0) return;
+    const mudou = novoIndex !== index;
+    index = ((novoIndex % total) + total) % total;
+    aplicar();
+    reiniciarAutoplay();
+    if (mudou) haptics.leve();
+}

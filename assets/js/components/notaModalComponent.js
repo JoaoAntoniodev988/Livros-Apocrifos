@@ -16,6 +16,8 @@ const notaModalComponent = {
 
         document.getElementById("notaModal").hidden = false;
 
+        haptics.transicao();
+
     },
 
     fechar() {
@@ -33,6 +35,7 @@ const notaModalComponent = {
                 frase: this.fraseAtual.texto,
                 texto
             });
+            haptics.confirmar();
         }
 
         this.fechar();

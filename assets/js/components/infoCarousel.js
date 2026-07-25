@@ -11,8 +11,6 @@ const infoCarouselComponent = {
 
         this.toggleEl.addEventListener("click", () => this.alternarExpandir());
 
-        // Tocar em qualquer parte do card também expande/recolhe —
-        // exceto se o toque foi no próprio botão "Ler mais" (evita duplo toggle)
         touchGestures.aoTocar(this.cardEl, (evento) => {
             if (evento.target.closest("button")) return;
             this.alternarExpandir();
@@ -49,6 +47,8 @@ const infoCarouselComponent = {
         const expandido = this.wrapperEl.classList.toggle("is-expanded");
         this.cardEl.classList.toggle("is-expanded", expandido);
         this.toggleEl.textContent = expandido ? "Ler menos" : "Ler mais";
+
+        haptics.transicao();
 
         if (expandido) {
             this.slider.pararAutoplay();
