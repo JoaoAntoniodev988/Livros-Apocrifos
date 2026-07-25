@@ -1,4 +1,4 @@
-function createSlider({ trackSelector, dotsSelector, prevSelector, nextSelector, autoplayMs, onIndexChange }) {
+function createSlider({ trackSelector, dotsSelector, prevSelector, nextSelector, swipeTargetSelector, autoplayMs, onIndexChange }) {
 
     let index = 0;
     let total = 0;
@@ -8,6 +8,7 @@ function createSlider({ trackSelector, dotsSelector, prevSelector, nextSelector,
     const dotsEl = dotsSelector ? document.querySelector(dotsSelector) : null;
     const prevEl = prevSelector ? document.querySelector(prevSelector) : null;
     const nextEl = nextSelector ? document.querySelector(nextSelector) : null;
+    const swipeEl = swipeTargetSelector ? document.querySelector(swipeTargetSelector) : null;
 
     function renderDots() {
         if (!dotsEl) return;
@@ -59,26 +60,15 @@ function createSlider({ trackSelector, dotsSelector, prevSelector, nextSelector,
 
     function ativarGestoDeslizar() {
 
-        console.log("--- Diagnóstico do slider ---");
-        console.log("trackEl:", trackEl);
-        console.log("prevEl:", prevEl);
-        console.log("nextEl:", nextEl);
+        // Prioridade: elemento explícito > track > pai do botão "prev" (se existir)
+        const elemento = swipeEl || trackEl || (prevEl ? prevEl.parentElement : null);
 
-        const elemento = trackEl || (prevEl ? prevEl.parentElement : null);
-
-        console.log("elemento escolhido para deslizar:", elemento);
-
-        if (!elemento) {
-            console.warn("Nenhum elemento encontrado — gesto de deslizar NÃO foi ativado.");
-            return;
-        }
+        if (!elemento) return;
 
         touchGestures.aoDeslizar(elemento, {
             onSwipeLeft: next,
             onSwipeRight: prev
         });
-
-        console.log("Gesto de deslizar ativado com sucesso.");
 
     }
 

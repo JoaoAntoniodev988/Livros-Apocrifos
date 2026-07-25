@@ -11,11 +11,17 @@ const infoCarouselComponent = {
 
         this.toggleEl.addEventListener("click", () => this.alternarExpandir());
 
+        // Tocar em qualquer parte do card também expande/recolhe —
+        // exceto se o toque foi no próprio botão "Ler mais" (evita duplo toggle)
+        touchGestures.aoTocar(this.cardEl, (evento) => {
+            if (evento.target.closest("button")) return;
+            this.alternarExpandir();
+        });
+
         this.slider = createSlider({
             trackSelector: null,
             dotsSelector: "#infoDots",
-            prevSelector: "#infoPrev",
-            nextSelector: "#infoNext",
+            swipeTargetSelector: ".info-carousel__card",
             autoplayMs: appConfig.autoplayIntervalo,
             onIndexChange: (index) => this.renderSlide(index)
         });
