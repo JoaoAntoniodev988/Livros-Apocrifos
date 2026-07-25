@@ -1,62 +1,72 @@
 const personalizarSheetComponent = {
+  formatoAtual: "quadrado",
 
-    formatoAtual: "quadrado",
+  init() {
+    document
+      .getElementById("personalizarBackdrop")
+      .addEventListener("click", () => this.fechar());
 
-    init() {
+    document
+      .querySelectorAll(".personalizar-sheet__tabs button")
+      .forEach((btn) => {
+        btn.addEventListener("click", () =>
+          this._selecionarFormato(btn.dataset.formato),
+        );
+      });
 
-        document.getElementById("personalizarBackdrop").addEventListener("click", () => this.fechar());
+    document
+      .getElementById("btnPersonalizar")
+      .addEventListener("click", () => this.fechar());
+    document
+      .getElementById("btnPartilharPersonalizado")
+      .addEventListener("click", () => this._partilhar());
 
-        document.querySelectorAll(".personalizar-sheet__tabs button").forEach(btn => {
-            btn.addEventListener("click", () => this._selecionarFormato(btn.dataset.formato));
-        });
+    // Deslizar para baixo no painel fecha o bottom sheet
+    touchGestures.aoDeslizar(
+      document.querySelector(".personalizar-sheet__painel"),
+      {
+        onSwipeDown: () => this.fechar(),
+      },
+    );
+  },
 
-        document.getElementById("btnPersonalizar").addEventListener("click", () => this.fechar());
-        document.getElementById("btnPartilharPersonalizado").addEventListener("click", () => this._partilhar());
+  abrir(frase) {
+    this.frase = frase;
+    document.getElementById("personalizarTexto").textContent = frase.texto;
+    document.getElementById("personalizarSheet").hidden = false;
 
-    },
+    haptics.transicao();
+  },
 
-    abrir(frase) {
+  fechar() {
+    document.getElementById("personalizarSheet").hidden = true;
+  },
 
-        this.frase = frase;
-        document.getElementById("personalizarTexto").textContent = frase.texto;
-        document.getElementById("personalizarSheet").hidden = false;
+  _selecionarFormato(formato) {
+    this.formatoAtual = formato;
 
-        haptics.transicao();
+    document
+      .querySelectorAll(".personalizar-sheet__tabs button")
+      .forEach((btn) => {
+        btn.classList.toggle("is-active", btn.dataset.formato === formato);
+      });
 
-    },
+    const preview = document.getElementById("personalizarPreview");
+    preview.classList.remove("is-quadrado", "is-vertical", "is-texto");
+    preview.classList.add(`is-${formato}`);
+  },
 
-    fechar() {
-        document.getElementById("personalizarSheet").hidden = true;
-    },
+  _partilhar() {
+    const texto = `"${this.frase.texto}" — ${this.frase.livroTitulo}`;
 
-    _selecionarFormato(formato) {
-
-        this.formatoAtual = formato;
-
-        document.querySelectorAll(".personalizar-sheet__tabs button").forEach(btn => {
-            btn.classList.toggle("is-active", btn.dataset.formato === formato);
-        });
-
-        const preview = document.getElementById("personalizarPreview");
-        preview.classList.remove("is-quadrado", "is-vertical", "is-texto");
-        preview.classList.add(`is-${formato}`);
-
-    },
-
-    _partilhar() {
-
-        const texto = `"${this.frase.texto}" — ${this.frase.livroTitulo}`;
-
-        if (navigator.share) {
-            navigator.share({ text: texto }).catch(() => {});
-        } else if (navigator.clipboard) {
-            navigator.clipboard.writeText(texto);
-            alert("Frase copiada para a área de transferência.");
-        }
-
-        haptics.confirmar();
-        this.fechar();
-
+    if (navigator.share) {
+      navigator.share({ text: texto }).catch(() => {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(texto);
+      alert("Frase copiada para a área de transferência.");
     }
 
+    haptics.confirmar();
+    this.fechar();
+  },
 };

@@ -15,6 +15,13 @@
 <body>
 
     <main>
+
+        
+    <!-- Indicador de Pull-to-Refresh -->
+    <div class="pull-refresh-indicator" id="pullRefreshIndicator">
+        <span class="pull-refresh-indicator__icone">↓</span>
+        <span class="pull-refresh-indicator__spinner"></span>
+    </div>
         <!-- Frase do Momento -->
         <section class="frase-momento" id="fraseMomentoSection" hidden>
             <div class="container">
@@ -162,6 +169,7 @@
 <script src="assets/js/layouts/navigation.js"></script>
 
 <!-- Controller + Page -->
+ <script src="assets/js/components/pullToRefreshComponent.js"></script>
 <script src="assets/js/controllers/homeController.js"></script>
 <script src="assets/js/pages/home.js"></script>
 </html>
